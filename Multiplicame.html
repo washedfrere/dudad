@@ -1,0 +1,697 @@
+﻿<!DOCTYPE html>
+<html lang="es-ES">
+<head><title>Multiplícame (by df.roibas@gmail.com)</title>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Ranchers" rel="stylesheet">
+	<style>
+		body {
+			background-color: DodgerBlue;
+			font-family: 'Pacifico', cursive;
+			color: OrangeRed;
+			border: 2px solid DodgerBlue;
+			border-radius: 9px;
+			}
+		#infoPag {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 10vw;
+			height: 93vh;
+			background-color: Aquamarine ;
+			border-radius: inherit;
+			border: inherit;
+			cursor: default;
+		}
+		#objetivo {
+			position: absolute;
+			top: 2px;
+			left: 3px;
+			right: 3px;
+			height: 5vh;
+			background-color: SpringGreen;
+			color: OrangeRed;
+			border-radius: inherit;
+			border: inherit ;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: calc((4vh + 3vw)/2);
+		}
+		#puntos {
+			position: absolute;
+			top: 10vh;
+			left: 3px;
+			right: 3px;
+			height: 5vh;
+			background-color: SpringGreen;
+			color: OrangeRed;
+			border-radius: inherit;
+			border: inherit ;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: calc((4vh + 3vw)/2);
+			cursor: default;
+		}
+		#nombre {
+			position: absolute;
+			top: 20vh;
+			left: 3px;
+			width: 9vw;
+			height: 5vh;
+			background-color: Spring;
+			color: OrangeRed;
+			border-radius: inherit;
+			border: inherit ;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Pacifico', cursive;
+			font-size: 2vh;
+		}
+		.opciones {
+			position: absolute;
+			left: 3px;
+			right: 3px;
+			height: 5vh;
+			background-color: Khaki  ;
+			color: GoldenRod  ;
+			border-radius: inherit;
+			border: inherit ;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: 4vh;
+			cursor: pointer;
+		}
+		.lista {
+			background-color: Khaki;
+			color: GoldenRod;
+			border-radius: inherit;
+			border: inherit ;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: 3vh;
+			cursor: pointer;
+		}
+		#pausa {top: 30vh;}
+		#multiplicar {top: 36vh;background-color: SpringGreen;}
+		#sumar {top: 42vh;}
+		#reiniciar {top: 48vh;}
+		#facil {top: 54vh;}
+		#puntuar {top: 60vh;}
+		#vida {
+			position: absolute;
+			bottom: 2px;
+			left: 3px;
+			right: 3px;
+			height: 25vh;
+			background-color: SpringGreen;
+			color: OrangeRed;
+			border-radius: inherit;
+			border: 1px dotted Red;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: 4vh;
+		}
+		#piePag {
+			position: absolute;
+			bottom:0;
+			left:0;
+			width: 99vw;
+			height: 6vh;
+			background-color: Tan;
+			border-radius: inherit;
+			border: inherit ;
+			color: RosyBrown ;
+		}
+		#areaJuego {
+			position: absolute;
+			top:0;
+			left:11vw;
+			width: 88vw;
+			height: 93vh;
+			background-color: Wheat ;
+			border-radius: inherit;
+			border: inherit ;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: 4vh;
+		}
+		#nubes {
+			position: absolute;
+			top:0vw;
+			left:0vw;
+			width: 100%;
+			height: 7vh;
+			background-color: White ;
+			border-radius: inherit;
+			border: Grey ;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: 3vh;
+			color: Grey;
+			opacity: 0.7;
+			z-index: 100;
+			white-space: nowrap;
+			background: linear-gradient(to right, White,Wheat,White,Wheat,White,Wheat);
+		}
+		.pelota {
+			position: absolute;
+			top:0px;
+			left:11vw;
+			width: 3.2vw;
+			height: 3.2vw;
+			color: Brown;
+			background-color: Salmon  ;
+			border: Salmon ;
+			border-radius: 50%;
+			text-align: center;
+			vertical-align: text-bottom;
+			font-family: 'Ranchers', cursive;
+			font-size: 2.4vw;
+			background: -webkit-radial-gradient(White, Blue); /* Safari 5.1- 6.0 */
+			background: -o-radial-gradient(White, Blue); /* Opera 11.6-12.0 */
+			background: -moz-radial-gradient(White, Blue); /* Firefox 3.6-15 */
+			background: radial-gradient(White, Blue); /* Standard syntax */
+			cursor: default;
+		}
+		#canasta {
+			position: absolute;
+			left: 20px;
+			top: 10px;
+			background-color: Peru;
+			border-radius: 5px 5px 25px 25px;
+			border: Wheat ;
+			color: Sienna ;
+			cursor: pointer;
+			opacity: 0.7;
+			z-index: 99;
+		}	
+		#tablon {
+			position: absolute;
+			top: 2px;
+			left: 3px;
+			right: 3px;
+			bottom: 3px;
+			background-color: SpringGreen;
+			color: OrangeRed;
+			border-radius: inherit;
+			border: 1px dotted Red;
+			text-align: center;
+			vertical-align: text-top;
+			font-family: 'Ranchers', cursive;
+			font-size: 4vh;
+		}
+	</style>
+</head>
+<body onload="cargaPagina()" onresize="inicializaEntorno()">
+<div id="areaJuego">
+	<div id="nubes"></div>
+	<div id="canasta">\__/</div>
+	<div id="pelota" class="pelota"></div>
+</div>
+<div id="infoPag">
+	<div id="objetivo">3x7</div>
+	<div id="puntos">00000</div>
+	<input id="nombre" type="text" name="nombre" list="listaNombres" onchange="cambiaNombre()">
+	<datalist id="listaNombres"><option value="Alguien"/></datalist>
+
+	<div id="pausa" class="opciones">crucis</div>
+	<div id="reiniciar" class="opciones">YA</div>
+	<div id="facil" class="opciones">fácil</div>
+	<div id="puntuar" onclick="muestraTablon()"  class="opciones">puntos</div>
+	<div id="vida">vida</div>
+</div>
+<div id="piePag"><strong id="mensajito">Pon tu nombre, dale a "YA" y ¡a jugar!... ¡multiplícame!</strong></div>
+<div id="tablon" onclick="escondeTablon()" hidden="true" ><h1>Puntuación</h1><p id="tabla"></p></div>
+</body>
+<script type="text/javascript">
+var reloj=null; //Guarda el temporizador del sistema que se acuerda de cuándo hay que volver a calcular la caída de las pelotas.
+var tRep=10; //Tiempo que tarda en moverse cada pelota (en milisegundos: 1000 milisegundos = 1 segundo)
+var jugando=false; //Guardamos si se está jugando con true, o no se está jugando con false
+var pelotas=[]; // Montón de variables para guardar las pelotas
+var alturas=[-1]; //Monton de variables para guardar la altura a la que están las pelotas
+var dilataciones=[]; //Guarda el engorde de las pelotas
+var engordas=[]; //Guarda si engorda o adelgaza
+var maxPelotas=21; //Máximo de pelotas
+var op1=Math.floor(Math.random()*10); //Primer operando de la operación objetivo
+var op2=Math.floor(Math.random()*10); //Segundo operando de la operación objetivo
+var sx='x'; //Operador de la operación objetivo
+var paso=1; //Rapidez con la que bajan las pelotas
+var limite=0; //Hasta dónde bajan las pelotas (luego se informa mejor)
+var nombres=[]; //Nombres de los jugadores diferentes
+var puntos=[]; //Puntos máximos de los jugadores diferentes
+var jugador=0; //Índice de la tabla de jugadores
+var puntuacion=0; //Puntos de la última jugada
+var objetivoCalculado=0; //Guarda el valor de la operación para ir más deprisa al comprobar si se acierta o falla.
+var alturaCero=0; //Guarda el valor de distancia desde donde empezamos a ver las pelotas
+var numVida=0; //Guarda la vida inicial
+var tamPelo=0; //Guarda el tamaño de la pelota
+
+var gota=[]; //Sonidos de gota
+
+//La funcion cargaPagina:
+// Pone todas las cosas en su sitio justo después de haber cargado la página web.
+// También recoje, si es que lo hay, las cookies donde se guardan los nombres y los puntos.
+function cargaPagina() {
+		//Vaciamos las pelotas y las alturas de las pelotas
+		pelotas=[];
+		alturas=[];
+		dilataciones=[];
+		engordas=[];
+		var pelotaAux = document.getElementById('pelota');
+		pelotaAux.setAttribute('id', "pelota_0");
+		tamPelo=pelotaAux.offsetWidth;
+		dilatacion=tamPelo;
+		pelotas.push(pelotaAux);
+		alturas.push(-1);
+		dilataciones.push(tamPelo+tamPelo*(Math.random()/2-0.2));
+		engordas.push(Math.random()>0.5? true:false);
+		for (var i=1;i<maxPelotas;i++) {
+			pelotas.push(pelotas[0].cloneNode(true)); //Clonamos la pelota original
+			document.getElementById('areaJuego').appendChild(pelotas[i]); //La ponemos en el documento
+			pelotas[i].setAttribute('id', "pelota_" + i.toString()); //Cambiamos el ID de cada pelota
+			alturas.push(-1);
+			dilataciones.push(tamPelo+tamPelo*(Math.random()/2-0.2));
+			engordas.push(Math.random()>0.5? true:false);
+		}
+		document.getElementById('reiniciar').onclick=reinicia;
+		document.getElementById('pausa').onclick=pausar;
+		document.getElementById('facil').onclick=dificultad;
+		document.getElementById('puntuar').onclick=muestraTablon;
+		document.getElementById('tablon').onclick=escondeTablon;
+		document.getElementById('nombre').onchange=cambiaNombre;
+		escondeTablon();
+		if (typeof(Storage) != "undefined") {
+			nombres=[];
+			puntos=[];
+			var opciones=document.getElementById('listaNombres').innerHTML;
+			for (var i = 0; i < localStorage.length; i++) {
+				var clave = localStorage.key(i);
+				var valor = localStorage.getItem(clave);
+				if (clave != "undefined") {
+					nombres.push(clave);
+					puntos.push(parseInt(valor));
+					opciones += '<option value="'+clave+'"/>';
+				}
+			}
+			jugador=0;
+			document.getElementById('listaNombres').innerHTML=opciones;
+			//document.getElementById('nombre').value=nombres[0];
+		} else {
+			alert("No se pueden guardar los puntos :-(")
+		}
+		numVida=document.getElementById('vida').offsetHeight;
+		inicializaEntorno();
+		return true;
+}
+// La función inicializaEntorno:
+// Pone todos los valores como al principio, como si se acabara de abrir la página.
+function inicializaEntorno() {
+	jugando=false;
+	if (reloj != null) clearInterval(reloj);
+	puntuacion=0;
+	document.getElementById("canasta").style.display="inline"; //Para poder acceder a sus propiedades
+	pelotas[0].style.display="inline"; //Visible para recoger propiedades
+	tamPelo=pelotas[0].offsetWidth;
+	limite=document.getElementById("areaJuego").offsetHeight - document.getElementById("canasta").offsetHeight;
+	alturaCero+=maxPelotas*tamPelo; //Una zona encima de la pantalla donde ir guardando las pelotas que caen
+	document.getElementById("canasta").style.top=limite+"px";
+	document.getElementById('vida').style.height="25vh";
+	numVida=document.getElementById('vida').offsetHeight;
+	document.getElementById("canasta").style.display="none";
+	document.getElementById('pausa').innerText="crucis";
+	otrasPelotas();
+	otraOperacion();
+	return true;
+}
+//Función reinicia:
+// Intercambia el modo juego con el modo interactivo
+function reinicia() {
+	if (jugando) {
+		if (puntos[jugador]<puntuacion) {
+			puntos[jugador]=puntuacion;
+		}
+		document.getElementById('areaJuego').onmousemove = null;
+		otrasPelotas();
+		if (reloj != null) clearInterval(reloj);
+		document.getElementById('vida').style.height=numVida+"px";
+		document.getElementById("canasta").style.display="none";
+		jugando=false;
+	} else {
+		inicializaEntorno();
+		document.getElementById('areaJuego').onmousemove = mueveLaCanasta;
+		dile("¡EMPEZAMOS! ¿Tienes suerte o practicas a menudo?");
+		document.getElementById("canasta").style.display="inline";
+		jugando=true;
+		reloj = setInterval(motorDeJuego,tRep);
+	}
+	return true;
+}
+//Funcion pausar:
+// congela el juego
+function pausar() {
+	if (jugando) {
+		if (document.getElementById('pausa').innerText=="crucis") {
+			if (reloj != null) clearInterval(reloj);
+			document.getElementById('pausa').innerText="seguir";
+		} else {
+			document.getElementById('pausa').innerText="crucis";
+			reloj=setInterval(motorDeJuego,tRep);
+		}
+	}
+	return true;
+}
+//La función dificultad:
+// Ocurre cuando se pincha en la opción de dificultad (que se llama "facil" sin acento)
+function dificultad() {
+	if (document.getElementById('facil').innerText=="fácil") {
+		document.getElementById('facil').innerText="difícil";
+		tRep=10;
+		paso=1;
+	} else if (document.getElementById('facil').innerText=="difícil") {
+		document.getElementById('facil').innerText="¡PRO!";
+		tRep=5;
+		paso=1;
+	} else {
+		document.getElementById('facil').innerText="fácil";
+		tRep=20;
+		paso=1;
+	}
+	return true;
+}
+//La función motorDeJuego:
+// Ocurre cada cierto tiempo para recalcular la caída de las pelotas
+// Borra el reloj al empezar (para que no salte nada) y lo pone otra vez al terminar para que vuelva a pasar por aquí.
+function motorDeJuego() {
+	clearInterval(reloj);
+	//------------------------------------------------------------
+	for (i=0;i<pelotas.length;i++) {
+		//Caída de las pelotas
+		alturas[i] = alturas[i] + paso;
+		if (alturas[i] > limite + alturaCero) { //Cuando la pelota ha llegado abajo...
+			compruebaCanasta(i); //Y comprobamos si está la canasta o no
+			lanzaPelota(i);
+		} else {
+			if (alturas[i]<alturaCero) {
+				pelotas[i].style.display="none";
+			} else {
+				pelotas[i].style.display="inline";
+				pelotas[i].style.top=(alturas[i] - alturaCero)+"px";
+				//Vigila que no estén demasiado juntas
+				if (i>0) {
+					if (pelotas[i].offsetLeft - pelotas[i-1].offsetLeft < tamPelo*2) {
+						pelotas[i].offsetLeft-=1;
+						pelotas[i-1].offsetLeft+=1;
+					}
+				}
+			}
+		}
+		//Tembleque de las pelotas
+		var engorde=Math.random()/10;
+		if (engordas[i]==true) {
+			dilataciones[i]+=engorde;
+			if (dilataciones[i] > tamPelo*1.1) {
+				engordas[i]=false;
+			} else {
+				pelotas[i].style.height=(dilataciones[i])+"px"; //Tembleque Y de pelota
+			}
+		} else {
+			dilataciones[i]-=engorde;
+			if (dilataciones[i] < tamPelo/1.1) {
+				engordas[i]=true;
+			} else {
+				pelotas[i].style.height=(dilataciones[i])+"px"; //Tembleque Y de pelota
+			}
+		}
+		if (Math.random()>0.98) {
+			if (Math.random()>0.5) {
+				document.getElementById("nubes").style.background= "linear-gradient(to right, Wheat,White,Wheat,White,Wheat,White,Wheat,White,Wheat)";
+			} else {
+				document.getElementById("nubes").style.background= "linear-gradient(to right, White,Wheat,Wheat,White,White,Wheat,White,Wheat)";
+			}
+		}
+	}
+	//------------------------------------------------------------
+	if (jugando==true) reloj=setInterval(motorDeJuego,tRep);
+	return true;
+}
+//La función mueveLaCanasta:
+// Ocurre cuando se mueve el ratón o puntero por la zona de juego y se está jugando.
+function mueveLaCanasta(e) {
+	var tempX = e.clientX;
+	if (tempX < 0) {
+		tempX = 0;
+	} else {
+		if (tempX > (document.getElementById("areaJuego").offsetWidth+70)) {
+			tempX=document.getElementById("areaJuego").offsetWidth+70;
+		}
+	}
+	document.getElementById("canasta").style.left=(tempX-150)+"px";
+	return true;
+}
+//La funcion compruebaCanasta:
+// Mira que la pelota entre o no en la canasta
+//  Si entra en la canasta, manda a mirar los puntos
+function compruebaCanasta(iPe) {
+	if ( (pelotas[iPe].offsetLeft > document.getElementById("canasta").offsetLeft)
+	&& ((pelotas[iPe].offsetLeft+pelotas[iPe].offsetWidth) < (document.getElementById("canasta").offsetLeft + document.getElementById("canasta").offsetWidth))) {
+	// La pelota está dentro de la canasta
+		compruebaPuntos(iPe);
+	} else {
+		if (parseInt(pelotas[iPe].innerText)==objetivoCalculado) {
+			//El resultado es el correcto pero no ha habido canasta
+			restaVida(5); //Perder una pelota correcta puede ser falta de atención.
+		}
+	}
+	return true;
+}
+//La funcion compruebaPuntos:
+// Recibe de entrada el número de pelota que ha llegado al límite
+// Comprueba si la pelota entró en la canasta.
+// Compruaba si el resultado de la pelota es el mismo que el que había que calcuar
+// Suma o resta puntos si hace falta
+function compruebaPuntos(idx) {
+	if (parseInt(pelotas[idx].innerText)==objetivoCalculado) {
+		//El resultado es el correcto
+		if (op1>op2) { //Sumamos tantos puntos como el mayor de los operandos + 1
+			puntuacion+=1+op1;
+		} else {
+			puntuacion+=1+op2;
+		}
+		sumaVida(2);
+		otraOperacion();
+		dile("Bienn... " + puntuacion.toString() + " puntos.");
+	} else {
+		//Canasta de resultado incorrecto (-1 punto)
+		if (puntuacion>0) {
+			restaVida(20); //Coger una pelota incorrecta es lo peor
+			dile("¡Alaa! ... tienes que coger la pelota con el número correcto");
+		} else {
+			restaVida(10); //Si coges una pelota correcta sin puntos, a lo mejor es que te falta entrenamiento.
+			dile("¿Pero, cómo coges una pelota con " + pelotas[idx].innerText + "? ¿No ves que el resultado es " + objetivoCalculado.toString()+" ?")
+		}
+	}
+	//Ponemos el resultado en la casilla de puntos
+	var aux = "00000"
+	aux	+= puntuacion.toString();
+	document.getElementById("puntos").innerText=aux.substr(aux.length - 5);
+	//Guardamos los puntos que sobrepasen el record
+	if (puntuacion>puntos[jugador]) {
+		puntos[jugador]=puntuacion;
+	}
+	return true;
+}
+//La función lanzaPelota:
+// Pone un número aleatorio en una pelota
+// Coloca la pelota en una posición horizontal aleatoria
+// Coloca la pelota en la parrilla de salida
+function lanzaPelota(idx) {
+	//
+	var anchoCanasta=document.getElementById('canasta').offsetWidth;
+	var anchoCampo=document.getElementById('areaJuego').offsetWidth;
+	var canastasEnAncho=Math.floor(anchoCampo/anchoCanasta);
+	var mitad=canastasEnAncho/2;
+	if (Math.random()>=0.4) { //Un menor número de veces, la pelota es aleatoria
+		pelotas[idx].innerText=(Math.floor(Math.random()*100)).toString(); //Ponemos otro valor en la pelota
+	} else {//Un mayor número de veces, la pelota es el resultado
+		pelotas[idx].innerText=objetivoCalculado; //Ponemos el resultado la mitad de las veces
+	}
+	pelotas[idx].style.display="inline"; //La vemos para acceder a sus propiedades
+	var par=idx-Math.floor(idx/2)*2;
+	if (par==0) {
+		pelotas[idx].style.left=(Math.floor(anchoCanasta*Math.random()*(mitad)))+"px";
+	} else {
+		pelotas[idx].style.left=(Math.floor(anchoCanasta*(Math.random()*(mitad)+mitad)))+"px";
+	}
+	var iold=idx-1;
+	if (iold<0) {iold+=maxPelotas;}
+	alturas[idx]=(alturas[iold]-tamPelo); //Ponemos la pelota arriba del todo
+	pelotas[idx].style.display="none"; //Dejamos de verla
+}
+
+//La función otrasPelotas:
+// Cambia los valores de cada pelota
+// Vuelve a colocar las pelotas en la parrilla de salida (que no se vean)
+function otrasPelotas() {
+	anchoCanasta=document.getElementById('canasta').style.display="inline"; //Para coger el ancho
+	var anchoCanasta=document.getElementById('canasta').offsetWidth;
+	var anchoCampo=document.getElementById('areaJuego').offsetWidth;
+	var canastasEnAncho=Math.floor(anchoCampo/anchoCanasta);
+	var mitad=canastasEnAncho/2;
+	for ( var i=0; i<pelotas.length; i++) {
+		pelotas[i].style.display="inline";
+		if (Math.random>0.6) {
+			pelotas[i].innerText=objetivoCalculado.toString(); //Números de 0 a 99
+		} else {
+			pelotas[i].innerText=(Math.floor(Math.random()*100)).toString(); //Números de 0 a 99
+		}
+		
+		var par=i-Math.floor(i/2)*2;
+		if (par==0) {
+			pelotas[i].style.left=(Math.floor(anchoCanasta*Math.random()*mitad))+"px";
+		} else {
+			pelotas[i].style.left=(Math.floor(anchoCanasta*(Math.random()*mitad+mitad)))+"px";
+		}
+		alturas[i]=alturaCero-tamPelo*i; //Ponemos las pelotas en orden de altura
+		pelotas[i].style.top=alturas[i]+"px";
+		pelotas[i].style.display="none";
+	}
+	pelotas[Math.floor(Math.random()*pelotas.length)].innerText=objetivoCalculado.toString(); //número de pelota al azar con el resultado correcto.
+	return true;
+}
+//La función otraOperacion:
+// Pone el nuevo objetivo a calcular al azar.
+// Calcula el resultado nuevo
+function otraOperacion() {
+	op1=Math.floor(Math.random()*10);
+	op2=Math.floor(Math.random()*10);
+	if (document.getElementById('facil').innerText=="fácil") {
+		sx="+";
+		objetivoCalculado = op1 + op2;
+	}
+	else {
+		if (document.getElementById('facil').innerText=="difícil") {
+			objetivoCalculado = op1 * op2;
+			sx="x";
+		} else {
+			var dado = Math.floor(Math.random()*10);
+			if (dado<=3) {
+				objetivoCalculado = op1 + op2;
+				sx="+";
+			} else {
+				if (dado <=6) {
+					objetivoCalculado = op1 * op2;
+					sx='x';
+				} else {
+					if (op1 < op2) {
+						var aux = op1;
+						op1=op2;
+						op2=aux;
+					}
+					objetivoCalculado = Math.abs(op1 - op2);
+					sx="-";
+				}
+			}
+		}
+	}
+	document.getElementById("objetivo").innerText =""+op1+sx+op2;
+	//pelotas[Math.floor(Math.random()*pelotas.length)].innerText=objetivoCalculado.toString(); //número de pelota al azar con el resultado correcto.
+	return true;
+}
+//La función cambiaNombre:
+// Pasa cuando se cambia el nombre en la casilla de nombre
+// Comprueba si el nombre ya está en la lista y recupera los puntos máximos del jugador
+function cambiaNombre() {
+	var encontrado=false;
+	var nom = 0;
+	for  (nom in nombres) {
+		if (nombres[nom] == document.getElementById('nombre').value) {
+			encontrado = true;
+			break;
+		}
+	}
+	jugador=nom;
+	if (encontrado) {
+		puntuacion=puntos[nom];
+		var aux = "00000"
+		aux	+= puntuacion.toString();
+		document.getElementById("puntos").innerText=aux.substr(aux.length - 5);
+	} else {
+		nombres.push(document.getElementById('nombre').value);
+		puntos.push(0);
+		puntuacion=0;
+		document.getElementById("puntos").innerText="00000";
+		localStorage.setItem(nombres[jugador], "00000");
+	}
+	return true;
+}
+//Funcion dile:
+//  Se le pasa un mensaje y lo pone en la barra de abajo de mensajes.
+function dile(msg) {
+	if (msg>"") document.getElementById('mensajito').innerText=msg;
+	return true;
+}
+//Función restaVida:
+// Quita columna de vida y descubre si se han agotado las vidas.
+function restaVida(cantidad) {
+	var vidaActual=document.getElementById('vida').offsetHeight;
+	vidaActual-=(cantidad*numVida/100);
+	document.getElementById('vida').style.height=vidaActual+"px";
+	if (vidaActual < numVida/5 ) {
+		document.getElementById('vida').style.height="1px";
+		if (puntuacion>puntos[jugador]) {
+			puntos[jugador]=puntuacion;
+			localStorage.setItem(nombres[jugador], puntuacion.toString());
+		}
+		dile("¡KO!");
+		reinicia();
+		//alert("¡Ooooooh! ... Se te han acabado los intentos.");
+		return false;
+	}
+	return true;
+}
+//Función sumaVida:
+// Suma a la columna de vida controlando que llegue a tope
+function sumaVida(cantidad) {
+	var vidaActual=document.getElementById('vida').offsetHeight;
+	if (vidaActual+cantidad < numVida) {
+		vidaActual+=cantidad;
+		document.getElementById('vida').style.height=vidaActual+"px"; //Sumamos vida
+	} else {
+		document.getElementById('vida').style.height=numVida+"px"; //Vida completa
+	}
+	return true;
+}
+//Función escondeTablon:
+// Oculta el tablón de puntos
+function escondeTablon(){
+	document.getElementById("tablon").style.display="none";
+	document.getElementById("nubes").style.display="inline";
+}
+//Función muestraTablón;
+// Pone visible el tablón de puntos
+function muestraTablon(){
+	var maximaP=0;
+	var maximaN="";
+	var texto=""
+	var i = 0;
+	for (nombre in nombres) {
+		//texto+='<p class="lista" onclicl ="localStorage.removeItem(' + "'" + nombres[nombre] + "'" + ')" alt="eliminar">'
+		texto+='<p class="lista">'
+			+ nombres[nombre] + ": " + parseInt(puntos[nombre]) +"</p>";
+		if (puntos[nombre]>maximaP) {
+			maximaP=puntos[nombre];
+			maximaN=nombres[nombre];
+		}
+	}
+	document.getElementById("tabla").innerHTML="<hr/>Máxima puntuación de <strong>"+maximaN+" con "+maximaP.toString()+"</strong> puntos.<hr/>"+texto;
+	document.getElementById("tablon").style.display="inline";
+	document.getElementById("nubes").style.display="none";
+	document.getElementById("canasta").style.display="none";
+}
+</script>
+</html>
