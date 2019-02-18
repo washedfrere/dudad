@@ -1,0 +1,2121 @@
+﻿<html>
+	<head>
+		<title>MiNombre</title>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alex+Brush"/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aladin"/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dekko"/>
+
+<style>
+		body {
+    background-color: Linen;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	#background-image: url("https://cdn.pixabay.com/photo/2014/01/07/18/34/fog-240075_960_720.jpg");
+	#background-image: url("https://cdn.pixabay.com/photo/2017/06/24/20/34/morning-2438775_960_720.jpg");
+	#background-image: url("https://cdn.pixabay.com/photo/2018/01/04/16/53/fog-3061127_960_720.jpg");
+	font-family: "Dekko", Tahoma, Sans-serif;
+	font-size: 130%;
+	text-align: justify;
+	#text-justify: inter-word;
+	color: #335577;
+	width: 95%;
+}
+
+p {
+	text-indent: 5%;
+}
+
+h1 {
+    color: #77aaff;
+    margin-left: 5%;
+	font-size: 170%;
+	font-family: "Aladin", cursive;
+	#position: fixed;
+	#left: 5%;
+	#top: 2%;
+}
+
+h2 {
+	color: #5588ff;
+	margin-left: 10%;
+	font-size: 150%;
+	font-family: 'Aladin', cursive;
+}
+
+h3 {
+	color: #3366ff;
+	margin-left: 15%;
+	font-size: 130%;
+	font-family: 'Aladin', cursive;
+}
+
+hr {
+	border: 0;
+	width: 90%;
+	height: 5%;
+	color: #003322;
+	background-color: #005588;
+	height: 5px;
+	-moz-border-radius: 2%;
+ 	border-radius: 20%;
+}
+a {
+	color: #007744;
+	font-family: 'Aladin', cursive;
+	font-size: 110%;
+	text-decoration: none;
+	background-color: #ccddff; #ccffcc
+	-moz-border-radius: 50%;
+ 	border-radius: 50%;
+}
+
+a:hover {
+	color: #00aa88;
+    text-decoration: none;
+	background-color: #aaffbb;
+	-moz-border-radius: 50%;
+ 	border-radius: 50%;
+}
+
+.capitular {
+	font-size: 170%;
+	font-family: "Aladin", Script, cursive;
+}
+</style>
+
+
+<script type="text/javascript">
+
+//--------------------------------------------------------------------
+// ------------------------  macro funciones   -----------------------
+//--------------------------------------------------------------------
+
+
+// Función que suma todos los dígitos de un número dado
+//   sin contemplar los números maestros.
+//   El valor de retorno es el número reducido.
+//
+function ReduceNumero(numero)
+{
+	while ( numero > 9 )
+	{
+		var millar = Math.floor( numero / 1000 );
+		var centena = Math.floor( (numero - (millar * 1000)) / 100);
+		var decena = Math.floor( (numero - (millar * 1000) - (centena * 100) ) / 10 );
+		var unidad = numero - (decena * 10) -(centena * 100) - (millar * 1000);
+		//alert("millar " + millar.toString() + " / centena " + centena.toString() + " / decena " + decena.toString() + " / unidad " + unidad.toString() + ".")
+		numero = millar + centena + decena + unidad;
+	}
+	return numero;
+}
+
+// Función que suma todos los dígitos de un número dado
+//   El valor de retorno es el número kármico encontrado, si no, será 0.
+//
+function ReduceKarmico(numero)
+{
+	var karma = 0;
+	while ( numero > 12 )
+	{
+		if ( numero == 13 || numero == 14 || numero == 16 || numero == 19 )
+			karma = numero;
+
+		var millar = Math.floor( (numero / 1000) );
+		var centena = Math.floor( (( numero - (millar * 1000)) / 100) );
+		var decena = Math.floor( (( numero - (millar * 1000) - (centena * 100))/10) );
+		var unidad = numero - (decena * 10) -(centena * 100) - (millar * 1000);
+		numero = millar + centena + decena + unidad;
+	}
+	if (karma>12) 	return karma;
+	else return 0;
+}
+
+// Función que suma todos los dígitos de un número dado
+//   contemplando los números maestros (los deja si aparacen).
+//   El valor de retorno es el número.
+function ReduceNumeroMae(numero)
+{
+	while ( numero > 9 && numero != 11 && numero != 22 && numero != 33 )
+	{
+		var millar = Math.floor( (numero / 1000) );
+		var centena = Math.floor( ( numero - (millar * 1000))/100 );
+		var decena = Math.floor( ( numero - (millar * 1000) - (centena * 100))/10 );
+		var unidad = numero - (decena * 10) -(centena * 100) - (millar * 1000);
+		numero = millar + centena + decena + unidad;
+	}
+	return numero;
+}
+
+// Suma los valores numéricos de las vocales de una cadena
+//
+function SumaVocales( cadena )
+{
+	if (typeof cadena === 'undefined' || cadena === null) {
+		return 0;
+	} else {
+		var i, maximo, valor=0;
+		var letra;
+		maximo = cadena.length;
+		for ( i = 0 ; i < maximo ; i++ )
+		{
+			letra = cadena.charAt( i );
+			switch( letra )
+			{
+			case 'A':
+			case 'a':
+			case 'Á':
+			case 'á':
+				valor += 1;
+				break;
+			case 'E':
+			case 'e':
+			case 'É':
+			case 'é':
+				valor += 5;
+				break;
+			case 'I':
+			case 'i':
+			case 'Í':
+			case 'í':
+				valor += 9;
+				break;
+			case 'O':
+			case 'o':
+			case 'ó':
+			case 'Ó':
+				if ( es_sin_enie == true ) valor += 6;
+				else valor += 7;
+				break;
+			case 'U':
+			case 'u':
+			case 'Ú':
+			case 'ú':
+			case 'Ü':
+			case 'ü':
+				if ( es_sin_enie == true ) valor += 3;
+				else valor += 22;
+			}
+		}
+		return valor;
+	}
+}
+
+// Suma los valores numéricos de las consonantes de una cadena
+// Tiene en cuenta el flag es_sin_enie para contemplar la Ñ
+//
+function SumaConsonantes(cadena)
+{
+	if (typeof cadena === 'undefined' || cadena === null) {
+		return 0;
+	} else {
+		var i, maximo, valor=0;
+		var letra;
+		maximo = cadena.length;
+		for ( i = 0 ; i < maximo ; i++ )
+		{
+			letra =  cadena.charAt( i );
+			if ( es_sin_enie == true )
+			{ // Valores de las consonantes sin la Ñ
+				switch( letra )
+				{
+				case 'J':case 'S':
+				case 'j':case 's':
+					valor += 1;
+					break;
+				case 'B':case 'T':
+				case 'b':case 't':
+					valor += 2;
+					break;
+				case 'C':case 'L':
+				case 'c':case 'l':
+					valor += 3;
+					break;
+				case 'D':case 'M':
+				case 'd':case 'm':
+					valor += 4;
+					break;
+				case 'N':case 'W':
+				case 'n':case 'w':
+					valor += 5;
+					break;
+				case 'F':case 'X':
+				case 'f':case 'x':
+					valor += 6;
+					break;
+				case 'G':case 'P':case 'Y':
+				case 'g':case 'p':case 'y':
+					valor += 7;
+					break;
+				case 'H':case 'Q':case 'Z':
+				case 'h':case 'q':case 'z':
+					valor += 8;
+					break;
+				case 'R':
+				case 'r':
+					valor += 9;
+					break;
+				case 'K':
+				case 'k':
+					valor += 11;
+					break;
+				case 'V':
+				case 'v':
+					valor += 22;
+				}
+			}
+			else
+			{ // Valores de las consonantes con la Ñ
+				switch( letra )
+				{
+				case 'J':case 'R':
+				case 'j':case 'r':
+					valor += 1;
+					break;
+				case 'B':case 'S':
+				case 's':case 's':
+					valor += 2;
+					break;
+				case 'C':case 'L':case 'T':
+				case 'c':case 'l':case 't':
+					valor += 3;
+					break;
+				case 'D':case 'M':
+				case 'd':case 'm':
+					valor += 4;
+					break;
+				case 'N':case 'V':
+				case 'n':case 'v':
+					valor += 5;
+					break;
+				case 'F':case 'Ñ':case 'W':
+				case 'f':case 'ñ':case 'w':
+					valor += 6;
+					break;
+				case 'G':case 'X':
+				case 'g':case 'x':
+					valor += 7;
+					break;
+				case 'H':case 'P':case 'Y':
+				case 'h':case 'p':case 'y':
+					valor += 8;
+					break;
+				case 'Q':case 'Z':
+				case 'q':case 'z':
+					valor += 9;
+					break;
+				case 'K':
+				case 'k':
+					valor += 11;
+				}
+			}
+		}
+		return valor;
+	}
+}
+
+//--------------------------------------------------------------------
+// ------------------------    validaciones    -----------------------
+//--------------------------------------------------------------------
+
+
+//-----------------------------------------------------
+//Principio del cálculo: valida los datos introducidos.
+//-----------------------------------------------------
+function calculaMiNombre() {
+//Validaciones de los datos de entrada.
+	var swValidado = true;
+	if (document.getElementById("dia").value == "") {
+		alert("Informa la fecha, por favor.");
+		swValidado = false;
+	}
+	if (swValidado == true) {
+		if (document.getElementById("nombre").value == "") {
+			alert("Escribe el nombre, por favor.");
+			swValidado = false;
+		}
+	}
+	if (swValidado == true) {
+		if (document.getElementById("ap1").value == "") {
+			alert("Escribe el primer apellido, por favor.");
+			swValidado = false;
+		}
+	}
+	if (swValidado == true) {
+		if (document.getElementById("ap2").value == "" && confirm("¿Sin segundo apellido?")) {
+			if ( swValidado == false ) { alert("Procedemos sin el segundo apellido."); }
+		} else {
+			if ( document.getElementById("ap2").value == "" && swValidado == true ) {
+				alert("Escribe el segundo apellido, por favor.");
+				swValidado = false;
+			}
+		}
+	}
+	if (swValidado == true ) {
+		procesaDatos();
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Devuelve un una cadena sin los nexos de nombre más comunes
+//
+function quitaNexos(cadena) {
+	cadena=cadena.replace(" DE "," ");
+	cadena=cadena.replace("DE "," ");
+	cadena=cadena.replace(" DEL "," ");
+	cadena=cadena.replace("DEL "," ");
+	cadena=cadena.replace(" LA "," ");
+	cadena=cadena.replace("LA "," ");
+	cadena=cadena.replace(" Y "," ");
+	cadena=cadena.replace("Y "," ");
+	cadena=cadena.replace("-"," ");
+	cadena=cadena.replace(" LOS "," ");
+	cadena=cadena.replace("LOS "," ");
+	cadena=cadena.replace(" OF "," ");
+	cadena=cadena.replace("OF "," ");
+	cadena=cadena.replace(" FROM "," ");
+	cadena=cadena.replace("FROM "," ");
+	return cadena;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Devuelve un número en formato cadena de dos dígitps
+//
+function dosDig(numero) {
+	var digitos = numero.toString();
+	if (digitos.length < 2) {
+		digitos="0".concat(digitos);
+	}
+	return digitos;
+}
+
+
+//--------------------------------------------------------------------
+// ------------------------calculos a realizar -----------------------
+//--------------------------------------------------------------------
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Recoge las variables, lanza los procesos de cálculo y muestra el resultado
+//
+function procesaDatos(){
+	//Indicadores globales
+	es_sin_enie = document.getElementById("chkSinEnie").checked;
+	es_sin_apell = document.getElementById("chkSinApell").checked;
+	es_sin_nexos = document.getElementById("chkSinNexos").checked;
+
+	//Se guarda en las variables y se lanzan los procesos de cálculo
+	var m_nFecha = new Date(document.getElementById("dia").value);
+	m_nAno = m_nFecha.getFullYear();
+	m_nMes = m_nFecha.getMonth() + 1;
+	m_nDia = m_nFecha.getDate();
+	//alert("dia " + m_nDia.toString() + " / mes " + m_nMes.toString() + " / año " + m_nAno.toString() + ".")
+	m_aNom = document.getElementById("nombre").value.toUpperCase();
+	m_aAp1 = document.getElementById("ap1").value.toUpperCase();
+	m_aAp2 = document.getElementById("ap2").value.toUpperCase();
+	
+	if (es_sin_nexos==true) {
+		m_aNom = quitaNexos(m_aNom);
+		m_aAp1 = quitaNexos(m_aAp1);
+		m_aAp2 = quitaNexos(m_aAp2);
+	}
+	
+	CalculaFecha();
+	//alert("dia " + m_9Dia.toString() + " / mes " + m_9Mes.toString() + " / año " + m_9Ano.toString() + ".")
+	CalculaNumeros();
+	ObtieneTextos();
+}
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cálculo de los números pertenecientes a dia, mes y año.
+//
+function CalculaFecha()
+{
+	/*Calcula el número del día sin contemplar los números maestros*/
+	m_9Dia = ReduceNumero( m_nDia );
+	
+	/* Calcula el número del mes sin contemplar los números maestros */
+	m_9Mes = ReduceNumero( m_nMes );
+	
+	/* Calcula el número del año sin contemplar los número maestros */
+	m_9Ano = ReduceNumero( m_nAno );
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Calcula todos los números de significado con los datos obtenidos
+// de la entrada.
+//
+function CalculaNumeros()
+{
+
+	/*Cadena auxiliar*/
+	if (es_sin_apell==true) {
+		nombre = m_aNom;
+	} else {
+		nombre = m_aNom + " " + m_aAp1 + " " + m_aAp2;
+	}
+
+	// General -----------------------------------------m_GeNomAp
+	/* Suma de letras de nombre y apellidos */
+	m_GeNomAp = SumaVocales(nombre)+SumaConsonantes(nombre);
+	m_GeNomAp = ReduceNumeroMae(m_GeNomAp);
+	// General -----------------------------------------m_GeNom
+	/* Suma de letras de nombre*/
+	m_GeNom = SumaVocales(m_aNom)+SumaConsonantes(m_aNom);
+	m_GeNom = ReduceNumeroMae(m_GeNom);
+	
+	
+	// Camino de vida-----------------------------------m_Cam, Karma= m_KCam
+	/*Suma de dia+mes+año de nacimiento*/
+
+	/* Obtengo el camino de vida tomando numeros maestros*/
+	m_Cam = m_nDia + m_nMes + m_nAno;
+	m_KCam = ReduceKarmico(m_Cam);
+	m_Cam = ReduceNumeroMae(m_Cam);
+
+	//Realización---------------------------------------m_Rea
+	/*Suma horizontal de dia+mes+año de nacimiento*/
+	m_Rea = m_9Dia + m_9Mes + m_9Ano;
+    {/*Bloque de aumento de karma en camino de vida*/
+		var karma;
+		karma = ReduceKarmico( m_Rea );
+		m_Rea = ReduceNumeroMae( m_Rea );
+		if ( karma > m_KCam ) m_KCam = karma;
+	}
+
+
+	// Alma o Yo Interno--------------------------------m_Alm, Karma = m_KAlm
+	/*Suma de vocales de nombre (y apellido)*/
+	if ( es_sin_apell == true )	m_Alm = SumaVocales( m_aNom );
+	else m_Alm = SumaVocales( nombre );
+	m_KAlm = ReduceKarmico(m_Alm)
+	m_Alm=ReduceNumeroMae( m_Alm );
+
+
+	// Personalidad o Yo Externo------------------------m_Per
+	/*Suma de consonantes de nombre (y apellido)*/
+	if ( es_sin_apell == true ) m_Per = SumaConsonantes( m_aNom );
+	else m_Per = SumaConsonantes( nombre );
+	m_Per=ReduceNumeroMae( m_Per );
+
+
+	// Temperamento-------------------------------------m_Tem
+	/*Suma alma+personalidad*/
+	m_Tem=ReduceNumeroMae( m_Alm + m_Per );
+
+
+	// Misión-------------------------------------------m_Mis
+	/*Dia+mes de nacimiento + Iniciales nombre + Inicial primer apell.*/
+	{ /* Bloque de vida de variables de este subproceso*/
+		var longitud, i;
+		var cadena=" ";	/*Inicializo una cadena con un espacio*/
+								/* como destino de las iniciales      */
+		/* Busco iniciales del nombre */
+		var es_blanco = true;
+		longitud = m_aNom.length;
+		for ( i = 0; i < longitud ; i++ )
+		{
+			if ( m_aNom.charAt( i ) == ' ' ) es_blanco = true;
+			else if ( es_blanco == true )
+			{
+				cadena = cadena + m_aNom.charAt( i );
+				es_blanco = false;
+				break; /* Solo la primera inicial*/
+			}
+		}
+		/* Busco iniciales del primer apellido*/
+		es_blanco = true;
+		longitud = m_aAp1.length;
+		for ( i = 0; i < longitud ; i++ )
+		{
+			if ( m_aAp1.charAt( i ) == ' ' ) es_blanco = true;
+			else if ( es_blanco == true )
+			{
+				cadena = cadena + m_aAp1.charAt( i );
+				es_blanco = false;
+				break; /* Solo la primera inicial*/
+			}
+		}
+	m_Mis = m_9Dia + m_9Mes + SumaVocales( cadena ) + SumaConsonantes( cadena );
+	}
+	m_KMis = ReduceKarmico(m_Mis);
+	m_Mis=ReduceNumeroMae( m_Mis );
+
+
+	// Traido por Dia de Nacimiento---------------------m_Tra
+	/*Valor del dia de nacimiento*/
+	m_Tra = m_nDia;
+
+
+	// Meta---------------------------------------------m_Met, Karma = m_KMet
+	/*Suma de temperamento+camino*/
+	m_KMet = ReduceKarmico(m_Tem + m_Cam);
+	m_Met = ReduceNumeroMae(m_Tem + m_Cam);
+	
+
+	// Necesidad de Ámbito------------------------------m_Amb
+	/*Primera letra de primer nombre*/
+	{ /* Bloque de vida de variables de este subproceso*/
+		var longitud,i;
+		var cadena=" ";	/*Inicializo una cadena con un espacio*/
+								/* como destino de la  inicial        */
+		/* Busco primera inicial del nombre */
+		var es_blanco = true;
+		longitud = m_aNom.length;
+		for ( i = 0; i < longitud ; i++ )
+		{
+			if ( m_aNom.charAt( i ) == ' ' ) es_blanco = true;
+			else if ( es_blanco == true )
+			{
+				cadena = cadena + m_aNom.charAt( i );
+				break; /* Sólo la primera inicial*/
+			}
+		}
+		m_Amb = SumaVocales( cadena ) + SumaConsonantes ( cadena );
+	}
+	m_Amb = ReduceNumeroMae( m_Amb );
+
+
+	// Necesidad de Equilibrio--------------------------m_Equ
+	/* Iniciales del nombre + Inicial de primer apellido */
+	{ /* Bloque de vida de variables de este subproceso*/
+		var longitud,i;
+		var cadena=" ";	/*Inicializo una cadena con un espacio*/
+								/* como destino de las iniciales      */
+		/* Busco iniciales del nombre */
+		var es_blanco = true;
+		longitud = m_aNom.length;
+		for ( i = 0; i < longitud ; i++ )
+		{
+			if ( m_aNom.charAt( i ) == ' ' ) es_blanco = true;
+			else if ( es_blanco == true )
+			{
+				cadena = cadena + m_aNom.charAt( i );
+				es_blanco = false;
+				break; /*Solo la primera inicial*/
+			}
+		}
+		/* Busco primera inicial del primer apellido */
+		es_blanco = true;
+		longitud = m_aAp1.length;
+		for ( i = 0; i < longitud ; i++ )
+		{
+			if ( m_aAp1.charAt( i ) == ' ' ) es_blanco = true;
+			else if ( es_blanco == true )
+			{
+				cadena = cadena + m_aAp1.charAt( i );
+				break; /*Solo la primera inicial*/
+			}
+		}
+		m_Equ = SumaVocales( cadena ) + SumaConsonantes( cadena );
+	}
+	m_Equ = ReduceNumeroMae( m_Equ );
+
+
+	// Necesidad de Conqista----------------------------m_Con
+	/*Primera inicial de primer apellido*/
+	{ /* Bloque de vida de variables de este subproceso*/
+		var longitud,i;
+		var cadena=" ";	/*Inicializo una cadena con un espacio*/
+								/* como destino de las iniciales      */
+		/* Busco inicial de primer apellido */
+		var es_blanco = true;
+		longitud = m_aAp1.length;
+		for ( i = 0; i < longitud ; i++ )
+		{
+			if ( m_aAp1.charAt( i ) == ' ' ) es_blanco = true;
+			else if ( es_blanco == true )
+			{
+				cadena = cadena + m_aAp1.charAt( i );
+				es_blanco = false;
+			}
+		}
+		m_Con = SumaVocales( cadena ) + SumaConsonantes( cadena );
+	}
+	m_Con = ReduceNumeroMae( m_Con );
+
+
+	// Necesidad de Acción------------------------------m_Acc
+	/* Letra que más se repite en nombre y primer apellido*/
+	{/*ambito de vida de variables*/
+		var letras=[];
+		var cantidades=[];
+		var alFinal="A";
+		var i
+		var longitud=0;
+		var cadena = m_aNom + m_aAp1;
+		cadena=cadena.replace(" ","");
+		for( i=0; i<cadena.length; i++ )
+		{
+			if (letras.includes(cadena.charAt(i))) {
+				cantidades[cadena.lastIndexOf(cadena.charAt(i))]+=1
+			} else {
+				letras.push(cadena.charAt(i));
+				cantidades.push(1);
+				longitud+=1;
+			}
+		}
+		longitud=i
+		var i1=0;
+		for ( i=0; i<=longitud; i++)
+		{
+			if ( cantidades[i] > cantidades[i1] ) i1=i;
+		}
+		alFinal = letras[i1];
+		m_Acc = SumaVocales( alFinal ) + SumaConsonantes( alFinal );
+	}
+	m_Acc = ReduceNumeroMae( m_Acc );
+
+
+	// Reacción Cotidiana-------------------------------m_Cot
+	/*Última letra de primer nombre*/
+	{
+		var letra = m_aNom.trim();
+		letra= letra.charAt( letra.length - 1 );
+		m_Cot = SumaVocales( letra ) + SumaConsonantes( letra );
+	}
+	m_Cot = ReduceNumeroMae( m_Cot );
+
+
+	// Reacción Súbita----------------------------------m_Sub
+	/* 11 menos el número de items que tiene el nombre */
+	{
+		var i, longitud, cuenta, numero;
+		var letra;
+		var nomap1=m_aNom+m_aAp1;
+		var item=[];
+		for (i=0;i<10;i++) item.push(0);
+		longitud = nomap1.length;
+		for (i=0;i<longitud;i++)
+		{
+			letra = nomap1.charAt(i);
+			numero= SumaVocales(letra)+SumaConsonantes(letra);
+			if (numero==11) numero=2;
+			if (numero==22) numero=4;
+			if (numero==33) numero=6;
+			item[numero]+=1; //Lo tiene el nombre
+		}
+		cuenta=0;
+		for(i=1;i<10;i++)
+		{
+			if ( item[i]==0 ) cuenta++; //No lo tiene el nombre
+		}
+		m_Sub=11 - cuenta;
+	}
+	/*No se reduce el número*/
+
+
+	// Aprendizaje Básico-------------------------------m_Apr
+	/*personalidad + temperamento + camino + dia */
+	m_Apr = m_Per + m_Tem + m_Cam + m_9Dia;
+	m_Apr = ReduceNumeroMae( m_Apr);
+
+
+	// Desafío del Nacimiento---------------------------m_Nac
+	if ( m_nDia > 9 )
+	{
+		decena = Math.floor(m_nDia / 10);
+		unidad = m_nDia - (decena * 10);
+		m_Nac = Math.abs(unidad - decena);
+	}
+	else m_Nac = 0;
+	m_Nac = ReduceNumero(m_Nac);
+	
+
+	// Don para el desafío del dia de nacimiento--------m_Don
+	if ( m_Nac > 0 ) m_Don = 9 - m_Nac;
+	else m_Don = 0;
+	m_Don = ReduceNumero(m_Don);
+
+
+	// Desafío del Alma---------------------------------m_Ral
+	/*Diferencia de primera vocal nombre con ultima  1º apell*/
+	{
+		var i,longitud;
+		var vocal="";
+		var letra;
+		longitud=m_aNom.length;
+		for(i=0;i<longitud&&vocal=="";i++)
+		{
+			letra=m_aNom.charAt(i);
+			if(letra == 'A' || letra== 'E' || letra=='I' ||
+			   letra == 'O' || letra== 'U' || letra=='Ü' ||
+			   letra == 'a' || letra== 'e' || letra=='i' ||
+			   letra == 'o' || letra== 'u' ||
+			   letra == 'á' || letra== 'é' || letra=='í' ||
+			   letra == 'ó' || letra== 'ú' || letra== 'ü' )
+			{
+				vocal = letra;
+				break;
+			}
+		}
+		m_Ral = SumaVocales( vocal );
+
+		longitud=m_aAp1.length;
+		vocal="";
+		for(i=(longitud-1);i>-1&&vocal=="";i--)
+		{
+			letra=m_aAp1.charAt(i);
+			if(letra == 'A' || letra== 'E' || letra=='I' ||
+			   letra == 'O' || letra== 'U' || letra=='Ü' ||
+			   letra == 'a' || letra== 'e' || letra=='i' ||
+			   letra == 'o' || letra== 'u' ||
+			   letra == 'á' || letra== 'é' || letra=='í' ||
+			   letra == 'ó' || letra== 'ú' || letra== 'ü' )
+			{
+				vocal = letra;
+				break;
+			}
+		}
+		m_Ral=Math.abs(m_Ral - SumaVocales( vocal ));
+	}
+	m_Ral=ReduceNumero(m_Ral);
+
+
+	// Desafío de la personalidad-----------------------m_Rpe
+	/*Diferencia de 1ª consonanate nombre con ultima conson. 1º apell.*/
+	{
+		var i,longitud;
+		var consonante="";
+		var letra;
+		longitud=m_aNom.length;
+		for(i=0;i<longitud && consonante=="";i++)
+		{
+			letra=m_aNom.charAt(i);
+			if(letra == 'A' || letra== 'E' || letra=='I' ||
+			   letra == 'O' || letra== 'U' || letra=='Ü' ||
+			   letra == 'a' || letra== 'e' || letra=='i' ||
+			   letra == 'o' || letra== 'u' ||
+			   letra == 'á' || letra== 'é' || letra=='í' ||
+			   letra == 'ó' || letra== 'ú' || letra== 'ü' )
+			{
+				consonante = letra;
+				break;
+			}
+		}
+		m_Rpe = SumaConsonantes( consonante );
+
+		longitud=m_aAp1.length;
+		consonante="";
+		for(i=(longitud-1);i>-1&&consonante=="";i--)
+		{
+			letra=m_aAp1.charAt(i);
+			if(letra == 'A' || letra== 'E' || letra=='I' ||
+			   letra == 'O' || letra== 'U' || letra=='Ü' ||
+			   letra == 'a' || letra== 'e' || letra=='i' ||
+			   letra == 'o' || letra== 'u' ||
+			   letra == 'á' || letra== 'é' || letra=='í' ||
+			   letra == 'ó' || letra== 'ú' || letra== 'ü' )
+			{
+				consonante = letra;
+				break;
+			}
+		}
+		m_Rpe=Math.abs(m_Rpe - SumaConsonantes( consonante ));
+	}
+	m_Rpe=ReduceNumero(m_Rpe);
+
+
+	// Desafío del temperamento-------------------------m_Rte
+	/*Se obtiene restando la primera de la ultima letra de nombre y apellidos*/
+	{
+		var alFinal;
+		var letra;
+		letra = m_aNom.charAt(0);
+		m_Rte = SumaVocales( letra ) + SumaConsonantes( letra );
+		for(alFinal = m_aAp1.length - 1;alFinal>-1&&m_aAp1.charAt(alFinal)==' ';alFinal--);
+		if(alFinal>-1) letra = m_aAp1.charAt(alFinal);
+		else letra = " ";
+		m_Rte = Math.abs( m_Rte - SumaVocales(letra) - SumaConsonantes(letra));
+	}
+	m_Rte=ReduceNumero(m_Rte);
+	
+
+	// Desafío del espíritu-----------------------------m_Res
+	/*No se entiende la explicación del libro*/
+}
+
+function ObtieneTextos() {
+
+	var textoSalida="";
+	var numero;
+	var inicio, fin;
+
+	informaDatos();
+
+	textoSalida+="<h1>Números para " + nombre + " ("+ m_nAno.toString() + "/" + m_nMes.toString() + "/" + m_nDia.toString() + ")</h1>";
+	textoSalida+="<h2>Números básicos: fecha=" + m_Cam.toString() + " / nombre=" + m_GeNom.toString() + " con apellidos=" + m_GeNomAp.toString() +"</h2>";
+	textoSalida+="<h2>Fecha de nacimiento:</h2>";
+	
+	// Camino de vida-----------------------------------m_Cam, Karma= m_KCam
+	/*Suma de dia+mes+año de nacimiento*/
+	numero=dosDig(m_Cam);
+	inicio = camNumData.indexOf(numero)+2;
+	fin = camNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Camino de vida -"+ m_Cam.toString() +"-</h3>"+camNumData.substring(inicio,fin)+"<br>";
+	if (m_KCam > 0) {
+		numero=dosDig(m_KCam);
+		inicio = camKarNumData.indexOf(numero)+2;
+		fin = camKarNumData.lastIndexOf(numero);
+		textoSalida+="<h4>Karma de Camino -"+ m_Cam.toString() +"-</h4>"+camKarNumData.substring(inicio,fin)+"<br>";
+	}
+
+	
+	//Realización---------------------------------------m_Rea
+	/*Suma horizontal de dia+mes+año de nacimiento*/
+	numero=dosDig(m_Rea);
+	inicio = reaNumData.indexOf(numero)+2;
+	fin = reaNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Realización -"+ m_Rea.toString() +"-</h3>"+reaNumData.substring(inicio,fin)+"<br>";
+
+	// Alma o Yo Interno--------------------------------m_Alm, Karma = m_KAlm
+	/*Suma de vocales de nombre (y apellido)*/
+	numero=dosDig(m_Alm);
+	inicio = almNumData.indexOf(numero)+2;
+	fin = almNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Alma o Yo interno -"+ m_Alm.toString() +"-</h3>"+almNumData.substring(inicio,fin)+"<br>";
+	if (m_KAlm > 0) {
+		numero=dosDig(m_KAlm);
+		inicio = almKarNumData.indexOf(numero)+2;
+		fin = almKarNumData.lastIndexOf(numero);
+		textoSalida+="<h4>Karma de Alma -"+ m_KAlm.toString() +"-</h4>"+almKarNumData.substring(inicio,fin)+"<br>";
+	}
+
+	// Personalidad o Yo Externo------------------------m_Per
+	/*Suma de consonantes de nombre (y apellido)*/
+	numero=dosDig(m_Per);
+	inicio = perNumData.indexOf(numero)+2;
+	fin = perNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Personalidad o Yo externo -"+ m_Per.toString() +"-</h3>"+perNumData.substring(inicio,fin)+"<br>";
+
+	// Temperamento-------------------------------------m_Tem
+	numero=dosDig(m_Tem);
+	inicio = temNumData.indexOf(numero)+2;
+	fin = temNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Temperamento -"+ m_Tem.toString() +"-</h3>"+temNumData.substring(inicio,fin)+"<br>";
+	
+	// Misión-------------------------------------------m_Mis
+	/*Dia+mes de nacimiento + Iniciales nombre + Inicial primer apell.*/
+	numero=dosDig(m_Mis);
+	inicio = misNumData.indexOf(numero)+2;
+	fin = misNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Misión -"+ m_Mis.toString() +"-</h3>"+misNumData.substring(inicio,fin)+"<br>";
+	if (m_KMis > 0) {
+		numero=dosDig(m_KMis);
+		inicio = misKarNumData.indexOf(numero)+2;
+		fin = misKarNumData.lastIndexOf(numero);
+		textoSalida+="<h4>Karma de Misión -"+ m_KMis.toString() +"-</h4>"+misKarNumData.substring(inicio,fin)+"<br>";
+	}
+
+	// Traido por Dia de Nacimiento---------------------m_Tra
+	/*Valor del dia de nacimiento*/
+	numero=dosDig(m_Tra);
+	inicio = traNumData.indexOf(numero)+2;
+	fin = traNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Equipaje -"+ m_Tra.toString() +"-</h3>"+traNumData.substring(inicio,fin)+"<br>";
+
+	// Meta---------------------------------------------m_Met, Karma = m_KMet
+	/*Suma de temperamento+camino*/
+	numero=dosDig(m_Met);
+	inicio = metNumData.indexOf(numero)+2;
+	fin = metNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Meta -"+ m_Met.toString() +"-</h3>"+metNumData.substring(inicio,fin)+"<br>";
+	if (m_KMet > 0) {
+		//numero=dosDig(m_KMet);
+		//inicio = metKarNumData.indexOf(numero)+2;
+		//fin = metKarNumData.lastIndexOf(numero);
+		textoSalida+="<h4>Karma de Meta -"+ m_KMet.toString() +"-</h4>";//+metKarNumData.substring(inicio,fin)+"<br>";
+	}
+
+	textoSalida+="<h2>Necesidades:</h2>";
+	
+	// Necesidad de Ámbito------------------------------m_Amb
+	/*Primera letra de primer nombre*/
+	numero=dosDig(m_Amb);
+	inicio = ambNumData.indexOf(numero)+2;
+	fin = ambNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Ámbito -"+ m_Amb.toString() +"-</h3>"+ambNumData.substring(inicio,fin)+"<br>";
+
+	// Necesidad de Equilibrio--------------------------m_Equ
+	/* Iniciales del nombre + Inicial de primer apellido */
+	numero=dosDig(m_Equ);
+	inicio = equNumData.indexOf(numero)+2;
+	fin = equNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Equilibrio -"+ m_Equ.toString() +"-</h3>"+equNumData.substring(inicio,fin)+"<br>";
+
+	// Necesidad de Conqista----------------------------m_Con
+	/*Primera inicial de primer apellido*/
+	numero=dosDig(m_Con);
+	inicio = conNumData.indexOf(numero)+2;
+	fin = conNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Conquista -"+ m_Con.toString() +"-</h3>"+conNumData.substring(inicio,fin)+"<br>";
+
+	// Necesidad de Acción------------------------------m_Acc
+	/* Letra que más se repite en nombre y primer apellido*/
+	numero=dosDig(m_Acc);
+	inicio = accNumData.indexOf(numero)+2;
+	fin = accNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Acción -"+ m_Acc.toString() +"-</h3>"+accNumData.substring(inicio,fin)+"<br>";
+
+	textoSalida+="<h2>Reacciones:</h2>";
+	
+	// Reacción Cotidiana-------------------------------m_Cot
+	/*Última letra de primer nombre*/
+	numero=dosDig(m_Cot);
+	inicio = cotNumData.indexOf(numero)+2;
+	fin = cotNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Cotidiana -"+ m_Cot.toString() +"-</h3>"+cotNumData.substring(inicio,fin)+"<br>";
+
+	// Reacción Súbita----------------------------------m_Sub
+	/* 11 menos el número de items que tiene el nombre */
+	numero=dosDig(m_Sub);
+	inicio = subNumData.indexOf(numero)+2;
+	fin = subNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Espontánea -"+ m_Sub.toString() +"-</h3>"+subNumData.substring(inicio,fin)+"<br>";
+	
+	textoSalida+="<h2>Desafíos:</h2>";
+
+	// Aprendizaje Básico-------------------------------m_Apr
+	/*personalidad + temperamento + camino + dia */
+	numero=dosDig(m_Apr);
+	inicio = aprNumData.indexOf(numero)+2;
+	fin = aprNumData.lastIndexOf(numero);
+	textoSalida+="<h3>para el Aprendizaje -"+ m_Apr.toString() +"-</h3>"+aprNumData.substring(inicio,fin)+"<br>";
+
+	// Desafío del Nacimiento---------------------------m_Nac
+	numero=dosDig(m_Nac);
+	inicio = nacNumData.indexOf(numero)+2;
+	fin = nacNumData.lastIndexOf(numero);
+	textoSalida+="<h3>Laboral -"+ m_Nac.toString() +"-</h3>"+nacNumData.substring(inicio,fin)+"<br>";
+	
+	// Dones del Nacimiento---------------------------m_Don
+	numero=dosDig(m_Don);
+	inicio = donNumData.indexOf(numero)+2;
+	fin = donNumData.lastIndexOf(numero);
+	textoSalida+="<h4>Don Laboral -"+ m_Don.toString() +"-</h4>"+donNumData.substring(inicio,fin)+"<br>";
+
+	// Desafío del Alma---------------------------------m_Ral
+	/*Diferencia de primera vocal nombre con ultima  1º apell*/
+	numero=dosDig(m_Ral);
+	inicio = ralNumData.indexOf(numero)+2;
+	fin = ralNumData.lastIndexOf(numero);
+	textoSalida+="<h3>para el Alma -"+ m_Ral.toString() +"-</h3>"+ralNumData.substring(inicio,fin)+"<br>";
+
+	// Desafío de la personalidad-----------------------m_Rpe
+	/*Diferencia de 1ª consonanate nombre con ultima conson. 1º apell.*/
+	numero=dosDig(m_Rpe);
+	inicio = rpeNumData.indexOf(numero)+2;
+	fin = rpeNumData.lastIndexOf(numero);
+	textoSalida+="<h3>para la Personalidad -"+ m_Rpe.toString() +"-</h3>"+rpeNumData.substring(inicio,fin)+"<br>";
+
+	// Desafío del temperamento-------------------------m_Rte
+	/*Se obtiene restando la primera de la ultima letra de nombre y apellidos*/
+	numero=dosDig(m_Rte);
+	inicio = rteNumData.indexOf(numero)+2;
+	fin = rteNumData.lastIndexOf(numero);
+	textoSalida+="<h3>temperamental -"+ m_Rte.toString() +"-</h3>"+rteNumData.substring(inicio,fin)+"<br>";
+
+	// Desafío del espíritu-----------------------------m_Res
+	/*No se entiende la explicación del libro*/
+	
+	
+	textoSalida+="<br/><br/><br/><sub> by AFA & DFR </sub>"
+	document.getElementById("resultado").innerHTML=textoSalida;
+	
+}
+
+
+//------------------------------------------------------------------------
+// Funcion fantasma para guardar los diferentes aspectos de los números
+// en variables para su posterior obtención desde los procesos de cálculo.
+//------------------------------------------------------------------------
+function informaDatos() {
+
+//--------------------------------------------------------------------
+// ----------------------- datos a presentar -------------------------
+//--------------------------------------------------------------------
+camNumData = `
+01
+ Vine a aprender la Acción. Debo desarrollar el llevar a la práctica mis ideas originales y creativas, utilizando mis cualidades innatas de creador e inventor.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Liderazgo, entusiasmo, recursos mentales, ideas y métodos originales, capacidad de acción y conducción, dinamismo y seguridad.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Soberbia, testarudez, egoismo, despotismo, intolerancia y autoritarismo.
+01
+02
+ Vine a aprender la Cooperación. Debo desarrollar la capacidad de cooperación, el tacto, la diplomacia y la consideración por los otros, utilizando mis cualidades innatas de bondad y compasión.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Bondad, ingenuidad, comprensión, colaboración, imaginación y sensibilidad.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Timidez, sumisión, susceptibilidad, capricho, dependencia, baja estima y exceso de sensibilidad.
+02
+03
+ Vine a aprender la creatividad, expresión y optimismo. Debo desarrollar mi talento expresivo, sea en la situación que sea, utilizando mis cualidades innatas de creatividad, imaginación, intuición, alegría, optimismo, buen sentido del humor y sociabilidad.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Alegría, optimismo, rapidez mental, imaginación, creatividad, sociabilidad, intuición y don de la palabra.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Intolerancia, criticar a los demás, impaciencia, dispersión y depresión.
+03
+04
+ Vine a aprender el Trabajo. Debo aprender a trabajar con precisión, a ser práctico, confiable, objetivo, tesonero, minucioso, constante y eficaz, utilizando mis cualidades innatas de minuciosidad, detallista, puntual, sistemático, y sumamente ordenado.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Orden, lealtad, capacidad de rutina, eficiencia, veracidad, lógica, mente analítica y capacidad de trabajo.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Materialismo, adicción al trabajo, falta de sentido del humor, exceso de rigidez o estrechez mental, severidad, dureza, empecinamiento, fanatismo, crueldad, mezquindad y desconfianza.
+04
+05
+ Vine a aprender la Libertad y el Cambio. Debo aprender a adaptarme con rapidez a las distintas circunstancias que se me presenten, utilizando mis cualidades innatas de versatilidad, inteligencia, anhelo de libertad e imaginación.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Carisma, imaginación, energía vital, creatividad, mente ágil y curiosa, capacidad de cambio, adaptación a las circunstancias, versatilidad y libertad de pensamiento y movimiento.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Caer en adicciones, ansiedad, inconstancia, descontento, descontrol, violencia y avidez de cambios constantes.
+05
+06
+ Vine a aprender la Responsabilidad. Debo aprender a procurar el bienestar de los demás, asumiendo el esfuerzo y la responsabilidad, desarrollando la tolerancia y el amor, util y el amor, utilizando mis cualidades innatas de cariño, agradable, sociable, recto, generoso, tolerante, perfeccionista.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Amor, responsabilidad, abnegación, simpatía, generosidad, honestidad, dedicación y espíritu de sacrificio.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Testarudez, excesiva comodidad, sobreprotección, dominación, irracionalidad, compulsión, intolerancia, celos e irresponsabilidad.
+06
+07
+ Vine a aprender la Reflexión y Búsqueda del Conocimiento. Debo aprender a desarrollar mis poderes psíquicos, la reflexión e introspección, utilizando mis cualidades innatas de reservado, intuitivo, silencioso, perfeccionista, estudioso, psíquico, observador, curioso, buen lector, contemplativo, místico, enigmático e introvertido.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Espíritu de investigación, introspección, reflexión, intuición, agilidad mental, capacidad de análisis y síntesis, temperamento perfeccionista, espiritionista, espiritual,sta, espiritual, psíquico, prudente y observador.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Falta de integración social, soledad, omnipotencia, egoismo, frialdad, inaccesibilidad, tendencia a ser sombrío, melancólico, huraño, acomplejado, sarcástico y desconfiado.
+07
+08
+ Vine a aprender el Poder. Debo aprender a manejar las fuerzas materiales y el poder, utilizando mis cualidades innatas de organización y dirección.
+<br>-Los aspectos positivos de, a potenciar, son:
+<br> Responsabilidad, capacidad ejecutiva, claridad mental, solidez de pensamiento, juicio certero, resolución, firmeza de propósitos, creatividad, originalidad, fortaleza física y resistencia.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Ser excesivamente dominante, frío, calculador, violento, agresivo, tirano y falto de diplomacia.
+08
+09
+ Vine a aprender el Idealismo. Debo aprender a desarrollar mis ideales en beneficio de la humanidad utilizando mis cualidades innatas de amor y ayuda a los demás, servicio y bondad.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Inteligencia, percepción, compasión, bondad, amor, intuición, energía renovadora, dignidad, nobleza, honestidad y poder de observación.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Malhumor, altibajos emocionales, impulsividad, vacilación, agresividad, altanería, capricho, cólera, indulgencia, fatalismo, neurosis y egoismo.
+09
+11
+ Vine a aprender la Inspiración. Debo aprender a desarrollar mis capacidades de lider nato con nuevas formas de pensamiento y a despertar expectativas en los demás, utilizando mis cualidades  innatas de talento, inspiración, humildad, imaginación y creatividad.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Bondad, ingenuidad, comprensión, colaboración, imaginación y sensibilidad.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Timidez, sumisión, susceptibilidad, capricho, dependencia, baja estima y exceso de sensibilidad.
+11
+22
+ Vine a aprender el Construir para los Demás. Debo aprender a construir para otros y a desarrollar mi inspiración en forma práctica, utilizando mis cualidades innatas de vitalidad, fortaleza, ingenio, talento y capacidad para amasar grandes fortunas.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Orden, lealtad, capacidad de rutina, eficiencia, veracidad, lógica, mente analítica y capacidad de trabajo.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Materialismo, adicción al trabajo, falta de sentido del humor, exceso de rigidez o estrechez mental, severidad, dureza, empecinamiento, fanatismo, crueldad, mezquindad y desconfianza.
+22
+33
+ Vine a aprender el Sacrificio y la Compasión. Debo aprender la entrega, el sacrificio, la compasión y el desapego de todo lo material, utilizando mis cualidades innatas de percepción e intuición excepcionales, luz interior.
+<br>-Los aspectos positivos de mi aprendizaje, a potenciar, son:
+<br> Amor, responsabilidad, abnegación, simpatía, generosidad, honestidad, dedicación y espíritu de sacrificio.
+<br>-Los aspectos negativos de mi aprendizaje, a suavizar, son:
+<br> Testarudez, excesiva comodidad, sobreprotección, dominación, irracionalidad, compulsión, intolerancia, celos.
+33`
+
+//----------------------------------------------
+
+reaNumData=`
+01
+ Expongo y aprendo a dosificar mis impulsos para tener en cuenta mi compromiso frente a mis elecciones y poder asumirlas
+01
+02
+ Se ponen de manifiesto en mí cualidades de receptividad y escucha profunda que permiten el reconocimiento y la colaboración conmigo mismo y con el otro.
+02
+03
+ Se me abren las puertas de la comunicación y de la alegría de vivir a través de los juegos, las reuniones y la expresión artística.
+03
+04
+ Mi experiencia me enseña el sentido de las realidades concretas, el sentido de mi compromiso sobre cada instante de la vida y el sentido de las exigencias materiales.
+04
+05
+ Se me manifiesta el sentido de la vida despojado de todo astificio, de toda atadura que pueda aprisionarme.
+05
+06
+ Se me presentan tareas importantes y grandes responsabilidades para que ejerza en ellas mi sentido común y mi rectitud, a través de una actuación correcta, que tienda a armonizar.
+06
+07
+ Me dedico intensamente, con inteligencia y sabiduría, a intentar captar el sentido vivo del misterio y su acción tras la apariencia de las cosas.
+07
+08
+ Vivo y manifiesto una fuerza que lo dirige todo; lo ordena y lo coordina para desembocar finalmente en el éxito.
+08
+09
+ A lo largo de mi realización, advierto y aprendo la fuerza y el poder sanador de la liberación interior.
+09
+11
+ Si sé abrirme a mi realización, ésta me invita a obrar siempre en la misma línea que mi Ser Verdadero (Espíritu), transmitiendo su conocimiento y poder vivificante a todo lo que emprenda.
+11
+22
+ Si sé abrirme a mi realización, ésta me invita a obrar siempre en la misma línea que mi Ser Verdadero (Espíritu), transmitiendo su conocimiento y poder vivificante a todo lo que emprenda.
+22
+33
+ Si sé abrirme a mi realización, ésta me invita a obrar siempre en la misma línea que mi Ser Verdadero (Espíritu), transmitiendo su conocimiento y poder vivificante a todo lo que emprenda.
+33`
+
+//-------------------------------------
+camKarNumData=`
+13
+ Estoy en aviso: Debo precaverme de la tendencia a la haraganería.
+<br> La pereza me puede dominar de algún modo, lo que implica la anulación de mi capacidad de trabajo y la imposibilidad de aprender, de disfrutar, de aportar y de crecer en mi tarea cotidiana.
+<br> Si no venzo la desidia y la pereza, se me reprochará permanentemente mi bajo rendimiento y viviré con exigencias por las pruebas de eficiencia que deberé atravesar en mi área laboral.
+<br> Podría decir que esto lo llevo arrastrando desde tiempos remotos, hasta que lo solucione... aprendiendo de ello.
+13
+14
+ Estoy en aviso: Debo aprender a despegarme de personas y cosas.
+<br> No deberé aferrarme a las personas o a las cosas como si fuesen de mi posesión, pues así las perderé.
+<br> Podría decirse que esto lo llevo arrastrando desde tiempos remotos, hasta que lo solucione... aprendiendo de ello.
+14
+16
+ Estoy en aviso: Puedo encontrarme con que perdí a la persona que amaba o que me cuesta formar una pareja.
+<br> Para llegar a determinados logros, primero deberé perder para valorar el amor, caer para volver a ascender en la vida.
+<br> Podría decir que esto lo llevo arrastrando desde tiempos remotos, hasta que lo solucione... aprendiendo de ello.
+16
+19
+ Estoy en aviso: Deberé hacerme cargo de mis errores pasados y repararlos.
+<br> Todos los obstáculos a vencer son el precio a pagar por mi libertad. Primero no dominaré para luego no ser una persona dominada.
+<br> Podría decirse que esto lo llevo arrastrando desde tiempos remotos, hasta que lo solucione... aprendiendo de ello.
+19`
+
+//----------------------------
+almNumData=`
+01
+ Soy una persona con gran capacidad de conducción, creativa, de ideas originales y de marcado carácter intelectual.
+<br>Tengo alma de pionero y me atrae indagar diferentes caminos de acceso al conocimiento.
+01
+02
+ Soy un ser amable y muy sensible. Poseo una gran aceptación social, a pesar de que no soy exhibicionista ni me gusta llamar la atención.
+<br>Tengo un arraigado sentido del tacto y de la discrección, siendo una persona culta y de gustos refinados. Me atrae mucho el sexo opuesto.
+02
+03
+ Soy una persona jovial, muy sociable y afectiva. Poseo un entusiasmo contagioso que me genera muchas relaciones, de las que disfruto. Me gustan las reuniones y fiestas, siendo, generalmente, el centro de atención.
+<br>Soy desenvuelto, simpático, osado y muy independiente, aunque en ocasiones puedo resultar demasiado ambicioso.
+03
+04
+ Soy una persona sensata, realista y muy disciplinada. Soy metódico y detallista. Me trazo un objetivo y camino resueltamente hacia su concrección.
+<br>Tengo gran habilidad para los trabajos manuales que exijan concentración y minuciosidad. Poseo una mente analítica y una actitud práctica frente a los hechos que la vida me propone.
+04
+05
+ Amo viajar, vivir la aventura, buscar permanentemente la novedad. Soy un ser que necesita relacionarse con diferentes tipos de personas y conocer distintos lugares, pues detesto la rutina y el sedentarismo.
+<br>Tengo una mente ágil y una personalidad magnética que atrae al sexo opuesto, el cual me gusta  mucho. Soy nervioso, impaciente, ansioso e impulsivo, versátil y dinámico. También se mediar en las discusiones ajenas.
+05
+06
+ Soy un ser bondadoso, compasivo, de una vibración amatoria que vuelco en mi familia y sociedad. Se asumir responsabilidades y trato siempre de ayudar a los demás; eso sí, me encanta que me reconozcan mi buena disposición y que me la agradezcan.
+<br>Amo, sobre todas las cosas, el hogar y me empeño en lograr un clima familiar de armonía y calidez. Me gustan las bellas artes y poseo facilidad para la música y el canto.
+06
+07
+ Soy un ser profundo, introspectivo y espiritual que busca la perfección e indago minuciosamente en los conocimientos. No soy muy sociable, ya que no disfruto de fiestas ni de las compañías bulliciosas y frívolas.
+<br>Detesto el ruido de las ciudades y anhelo vivir en lugares tranquilos y silenciosos. Necesito quietud y soledad para la meditación, la introspección y la búsqueda del verdadero conocimiento.
+<br>No soy apto para los trabajos manuales, ya que mi mente teórica privilegia el pensamiento abstracto.
+07
+08
+ Soy un ser sólido y recio. Trato de alcanzar de alguna forma el poder. Soy de mente clara, justo, equilibrado, con capacidad organizativa, enérgico, autoritario, magnético, seguro y con una voluntad inquebrantable. Me gusta dirigir y no tolero recibir órdenes.
+<br>Tengo una gran capacidad comercial y, generalmente, alcanzo mis objetivos.
+<br>Carezco de flexibilidad y puedo tener un exceso de ambición.
+08
+09
+ Soy una persona de arraigados sentimientos filantrópicos. Me brindo generosamente a todos, sin ningún tipo de especulación. Me encantan los viajes y relacionarme con distintas personas, ya que siempre veo el lado positivo de éstas.
+<br>Amo las bellas artes, en especial la música y el teatro, pues tengo un espíritu artístico y universalista. Desearía poseer poderes curativos para aliviar el dolor humano, porque soy bondadoso por naturaleza y soy capaz de sentir amor por todos y por todo.
+09
+11
+ Me destaco porque mi meta primordial es ayudar y enseñar con mi ejemplo, para lo cual utilizo mi capacidad psíquica, ingenio, inventiva, creatividad, imaginación tenacidad y corazonadas.
+<br>Soy un ser inspirado, intuitivo, espiritual y visionario, con condiciones de medium y estoy predestinado a ser guía de los demás, dada la luz de mi alma.
+11
+22
+ Soy un ser de valores morales altos y de aspiraciones elevadas, que desea construir en el plano material y espiritual a fin de servir a la humanidad. Soy realista, práctico, lógico y dominante. Soy un visionario para los negocios, además de poseer una actitud filosófica ante la vida.
+<br>Deseo el poder, para ponerlo al servicio del espíritu y así he de hacerlo, porque si me dejo vencer por la codicia, me retraeré a puro materialista.
+22
+33
+ Soy un ser con alta capacidad de sacrificio y devoción por todo y por todos.
+33`
+
+//---------------------------------------
+
+almKarNumData=`
+13
+ Estoy en aviso: Muchas veces encontraré descontento en mi trabajo, pues no tendré la voluntad de llevarlo a cabo.
+<br> Con frecuencia sentiré indiferencia por las personas de mi entorno o tendré con ellas un mal trato.
+13
+14
+ Estoy en aviso: En esta vida sufriré altibajos y problemas emocionales.
+<br> Tengo que aprender a buscar la templanza y actuar con comprensión.
+14
+16
+ Estoy en aviso: En esta vida puedo perder dinero, poder o fama.
+<br> Estas pruebas las atravesaré para lograr el desapego.
+16
+19
+ Estoy en aviso: En esta vida deberé indagar sobre el sentido de la existencia en general y el de mi existencia en particular.
+<br> Tendré que desentrañar mis inclinaciones más ocultas y el deseo más profundo de mi corazón.
+19`
+
+//-------------------------------------
+
+perNumData=`
+01
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como dinámico, activo, entusiasta, independiente, individualizata, creativo, original, inventivo y con talento. También abierto ante un afecto real y de buena amistad.
+<br>- Aunque también me muestro egoista, obstinado, dominante, engreido, vanidoso, autoritario y no admito consejos.
+01
+02
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como pulcro, tranquilo, pacífico, diplomático, cordial, modesto, equilibrado, dulce, encantador, servicial, cooperativo, imaginativo, cariñoso y colaborador en los equipos.
+<br>- Aunque también me muestro tímido, de baja estima, irritable, susceptible e inseguro.
+02
+03
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como optimista, creativo, espontáneo, simpático, encantador, artístico, sociable, alegre, amable, tierno, con facilidad de palabra, y atraigo a los demás con mi personalidad.
+<br>- Aunque también me muestro orgulloso, disperso, egocéntrico, y a veces excesivamente frontal.
+03
+04
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como serio, sensato, estable, trabajador, responsable, detallista, discreto, práctico, conservador, noble, ordenado, honesto, tenaz, transmitiendo seguridad y confianza.
+<br>- Aunque también me muestro obstinado, riguroso, austero, estricto, e inadaptable a los cambios.
+04
+05
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como comunicativo, dinámico, adaptable, magnético, interesante, vigoroso, versátil, rápido, aventurero, libre, actualizado, seductor, jovial, inquieto, atrayendo a los demás y no dejando lugar para el aburrimiento a mi lado.
+<br>- Aunque también me muestro impulsivo, nervioso, inestable y con poca facilidad para establecer lazos duraderos con mi pareja.
+05
+06
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como responsable, encantador, amable, generoso, equilibrado, sociable, comunicativo, noble, fiel, pulcro, atractivo, paternal, compasivo, hogareño, armónico, justo y honrado.
+<br>- Aunque también me muestro orgulloso, cabeza dura, excesivamente perfeccionista, entrometido, e imponiendo mis ideas a los demás.
+06
+07
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como analítico, intelectual, estudioso, reflexivo, introspectivo, inquieto, espiritual, místico, intuitivo, inspirado, selectivo y reservado, aceptando puntos de vista diferentes a los míos, con una elegancia auténtica y natural.
+<br>- Aunque también me muestro frío, excluyente, tímido, sin dar explicaciones de mis actos y costándome expresar mis sentimientos.
+07
+08
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como magnético, apasionado, ambicioso, seguro, amigable, persuasivo, honrado, valiente, justo, lider natural y auténtico, con grandes aptitudes para el comercio y las finanzas.
+<br>- Aunque también me muestro explosivo, violento, dominante, sin disfrutar de las pequeñas cosas de la vida por estar enfrascado en mis ambiciones y objetivos personales.
+08
+09
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como generoso, noble, franco, apasionado, idealista, amigable, magnético, romántico, encantador, simpático, emotivo, sensible y afectuoso, ocupándome y afligiéndome por las necesidades de los otros.
+<br>- Aunque también me muestro con altibajos cíclicos, descuidado, excesivamente frontal a veces y cayendo fácilmente en estados melancólicos.
+09
+11
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como espiritual, inspirado, místico, intuitivo, clarividente, individualista en mi quehacer, inquieto y soñador, ayudando a otros en sus problemas y desenvolvimiento espiritual.
+<br>- Aunque también me muestro nervioso e inadaptable al mundo de los negocios.
+11
+22
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como constructor por excelencia, cooperador, servicial, práctico a la vez que idealista, alcanzando prestigio, riqueza, poder y dedicando parte de mis ingresos al bienestar de los demás.
+<br>- Aunque también me muestro egoista, y puedo utilizar mis triunfos sólo en mi beneficio personal.
+22
+33
+ Esto lo puedo cambiar facilmente, pero:
+<br>- Me muestro externamente como compasivo, tolerante, místico, espiritual, clarividente, sabiendo escuchar y ayudar a los demás tanto en sus problemas como en su evolución espiritual.
+<br>- Aunque también me muestro excesivamente sacrificado y responsable hacia los demás, lo que no me permite vivir mi intimidad.
+33`
+
+//------------------------------------------
+
+temNumData=`
+01
+ Lograré mis objetivos siendo más individualista, independiente, y encarando con decisión y firmeza mis proyectos.
+ <br>Haciéndolo positivamente, se me verá ingenioso y activo, pero haciéndolo negativamente, se me verá egoista y despótico.
+01
+02
+ Lograré mis objetivos siendo de naturaleza dual y pacifista para ver las dos caras de una situación.
+ <br>Haciéndolo positivamente, se me verá sensible, dulce y prudente, pero haciéndolo negativamente, se me verá inseguro, confuso y de baja autoestima.
+02
+03
+ Lograré mis objetivos siendo el eterno joven que vive a fondo, con entusiasmo y alegría en todas las situaciones de la vida.
+ <br>Haciéndolo positivamente, se me verá alegre, creativo y sociable, pero haciéndolo negativamente, se me verá malhumorado, orgulloso e intolerante.
+03
+04
+ Lograré mis objetivos siendo trabajador, de mentalidad práctica, concreta y siendo seguro al reaccionar.
+ <br>Haciéndolo positivamente, se me verá honesto, preciso y trabajador, pero haciéndolo negativamente, se me verá frío, rígido y ávaro.
+04
+05
+ Lograré mis objetivos siendo vital, inteligente, amante de la libertad y la expansión en todas sus formas.
+ <br>Haciéndolo positivamente, se me verá lleno de vida y libre, pero haciéndolo negativamente, se me verá inconstante e irresponsable.
+05
+06
+ Lograré mis objetivos siendo hogareño, benévolo, tolerante, privilegiando el amor sobre todas las cosas.
+ <br>Haciéndolo positivamente, se me verá comprometido, serio, cordial, responsable y bondadoso, pero haciéndolo negativamente, se me verá intransigente, testarudo e insoportable.
+06
+07
+ Lograré mis objetivos siendo intelectual, estudioso, introvertido, reflexivo y justo.
+ <br>Haciéndolo positivamente, se me verá como un ser reflexivo que está en busca de la verdad, pero haciéndolo negativamente, se me verá inabordable y solitario.
+07
+08
+ Lograré mis objetivos siendo fuerte, de mucha energía, exigente conmigo mismo y con los demás.
+ <br>Haciéndolo positivamente, se me verá como una persona de éxito, magnetismo y poder, pero haciéndolo negativamente, se me verá como un déspota, dominante y egoista.
+08
+09
+ Soy, ante todo un ser especialmente dotado para sentir y practicar el más profundo amor por el prójimo.
+ <br>Cuando actúo en positivo, los demás me ven como un ser bondadoso y luchador, pero si actúo en negativo, me ven como un fanático impulsivo.
+09
+11
+ Soy muy poco práctico.
+ <br>Cuando actúo en positivo, los demás me ven como un ser visionario y original, pero cuando actúo en negativo, me ven como extravagante e indisciplinado.
+11
+22
+ Soy una persona de grandes ideales.
+ <br>Cuando actúo en positivo, los demás me ven como una persona que construye y organiza tareas beneficiosas para la humanidad, pero cuando actúo en negativo, me ven como un ser temible, dominante y egoista.
+22
+33
+Lograré mis objetivos de cualquier manera que yo decida.
+33`
+
+//-----------------------------------------
+
+misNumData=`
+01
+Tengo que afirmarme en mi personalidad y triunfar por mi propia capacidad, mediante la construcción y fuerza de voluntad.
+01
+02
+Deberé tratar siempre de conciliar en medio de las situaciones conflictivas o de disputa, ya que tengo la capacidad de ser imparcial y ver las dos caras de una misma moneda.
+02
+03
+Mi misión consiste en alegrar a los demás y levantarles el espíritu a través del entusiasmo y el optimismo.
+03
+04
+La base de mi misión es el desarrollar bases firmes para mi mismo y para mi mmi entorno, construyendo a través del trabajo y dando ejemplo de honestidad, laboriosidad, practicidad y persistencia.
+04
+05
+Debo aprender a adaptarme a las diferentes personalidades con las que he de tratar y las distintas circunstancias en las que me ponga la vida.
+05
+06
+He de lograr desplegar una vibración amatoria y de responsabilidad sobre mis semejantes, protegiéndolos y conteniéndolos como un padre lo haría con sus hijos.
+06
+07
+Mi misión consiste en formarme para educar a los otros a través de la investigación, las ciencias o los misterios.
+07
+08
+La base de mi misión es impartir justicia, organizar y/o producir economicamente para los demás.
+08
+09
+Mi misión consiste en ayudar a los demás desinteresadamente, practicando la caridad, el amor y la compasión sin esperar nada en retorno a mis esfuerzos.
+09
+11
+Esta misión consiste en construir para los demás para generar en ellos una verdadera transformación espiritual.
+11
+22
+Mi misión consiste en construir para los demás en el plano material y concreto, todo lo que capte desde mi espíritu y genio creador. Si no lo logro, viviré la misión del trabajo.
+22
+33
+Mi misión consiste en desplegar un espíritu de sacrificio por mis semejantes, orientado en un acto amatorio y de suma responsabilidad, hacia una comunidad determinadad o a la humanidad.
+33`
+
+//---------------------------
+
+misKarNumData=`
+13
+Estoy en aviso: He de evitar mi tendencia a la haraganería y mi descontento con el trabajo.
+<br>Esto último debo evitarlo, ya que resultará contraproducente para mi crecimiento y evolución.
+<br>Esta vida es otra oportunidad para aprenderlo.
+13
+14
+Estoy en aviso: En esta vida experimentaré diversos contratiempos y pérdidas.
+<br>He de procurar superar esto último, ya que forma parte de un antíguo aprendizaje que no he realizado aún.
+<br>Esta vida es otra oportunidad para aprenderlo.
+14
+16
+ Estoy en aviso: En esta vida me encontraré con muestras de engaño.
+<br>Confiaré en personas que luego resultarán ser falsas. Depositaré mi confianza en sueños que no se cumplirán.
+<br>He de procurar superar esto último ya que forma parte de un antiguo aprendizaje que no he realizado aún.
+<br>Esta vida es mi oportunidad para aprenderlo.
+16
+19
+Estoy en aviso: He de aprender que SIEMPRE se cosecha lo que se siembra.
+<br>Si no aprendo esto, si no modifico mi naturaleza autoritaria y despótica, nunca me liberaré y, en esta vida, puedo encontrarme con que he perdido todo al final de mi camino.
+<br>Esta vida es mi oportunidad para aprenderlo.
+19`
+
+//-------------------------------------
+
+traNumData=`
+01
+ Al nacer traje independencia, individualidad, habilidad general, originalidad, practicidad, creatividad, lucidez, y una buena capacidad de razonamiento.
+01
+02
+ Al nacer traje dulzura, comprensión, paz, conciliación, cooperación y protección.
+02
+03
+ Al nacer traje simpatía, expresividad, creatividad, optimismo, imaginación, positivismo, comunicación, entusiasmo y sociabilidad.
+03
+04
+ Al nacer traje seriedad, introversión, practicidad, orden, honestidad, economia, compasión oculta, trabajo, detallismo, minuciosidad, rutina, cautela y confiabilidad.
+04
+05
+ Al nacer traje actividad, nerviosismo, inquietud, imaginación, inteligencia, viveza, investigación, intelectualidad, recursos expresivos, magnetismo, versatilidad, curiosidad y entusiasmo.
+05
+06
+ Al nacer traje dulzura, cariño, dedicación al hogar, la familia y los amigos, preocupación por la comunidad y amor por las tradiciones.
+06
+07
+ Al nacer traje seriedad, análisis, profundidad, psiquismo, sensibilidad, perfeccionismo, formalidad, inteligencia, sensatez, reserva y capacidad para el estudio.
+07
+08
+ Al nacer traje aplomo, seguridad, fortaleza, ambición, buen juicio, eficiencia y fortuna.
+08
+09
+ Al nacer traje altruismo, sensibilidad, humanitarismo, intelectualidad, emotividad, desinterés, generosidad y creatividad, con capacidades artísticas.
+09
+10
+ Al nacer traje audacia, mente muy clara, liderazgo, creatividad, originalidad y absorbencia.
+10
+11
+ Al nacer traje inspiración, intuición, inteligencia, psiquismo, receptividad mente brillante y llena de recursos y capacidades como guía espiritual.
+11
+12
+ Al nacer traje simpatía, capacidad, agradabilidad, buen razonamiento, amistad, entusiasmo, actividad, practicidad, bondad y buena expresión con la palabra.
+12
+13
+ Al nacer traje disciplina, trabajo, metodicidad, responsabilidad, introversión, orden y practicidad.
+13
+14
+ Al nacer traje libertad mental, versatilidad, construcción, originalidad, dinamismo, riesgo, lógica, compasión y fuerza.
+14
+15
+ Al nacer traje cariño, generosidad, actividad, responsabilidad, sobreproteccionismo, saber observar y ser buen padre y esposo.
+15
+16
+ Al nacer traje psiquismo, intuición, soledad, introversión, perfeccionismo y espiritualidad.
+16
+17
+ Al nacer traje practicidad, astucia, fortuna, honradez, conservacionismo, inteligencia, fortaleza y capacidad de mando.
+17
+18
+ Al nacer traje intelectualidad, vehemencia, refinamiento, crítica, eficiencia, independencia, análisis, agudeza, exigencia, capacidad de observación y de selección.
+18
+19
+ Al nacer traje extremismo, independencia, originalidad, creatividad, altibajos emocionales, aptitudes artísticas y exaltación.
+19
+20
+ Al nacer traje pacificación, tranquilidad, bondad, candor, ingenuidad, diplomacia, amor por la belleza y equilibrio mental.
+20
+21
+ Al nacer traje sociabilidad, efusividad, suspicacia, curiosidad, comunicación e independencia.
+21
+22
+ Al nacer traje ideas amplias, humanismos, intuición, practicidad, universalismo, constructividad, con grandes proyectos y metas, aunque también muchos nervios y tensiones.
+22
+23
+ Al nacer traje intelectualidad, arte, inteligencia, análisis, mente rápida y perspicaz, simpatía, cariño y talante agradable.
+23
+24
+ Al nacer traje trabajo, responsabilidad, humanitarismo, atractivo, capacidades artísticas y consagración a la familia.
+24
+25
+ Al nacer traje reserva, intuición elevada, soledad, clarividencia, exigencia, perfeccionismo y capacidad para el estudio.
+25
+26
+ Al nacer traje emotividad, temperamento, dulzura, cariño, buena organización, bondad, responsabilidad y amabilidad.
+26
+27
+ Al nacer traje capacidad de esfuerzo, generosidad, afectividad, versatilidad, independencia, psiquismo y capacidades de medium y liderazgo religioso o espiritual, con aficiones al conocimiento esotérico.
+27
+28
+ Al nacer traje extrañeza, extravagancia, sentimientos afectivos muy fuertes, altos ideales y amor por la libertad.
+28
+29
+ Al nacer traje temperamento, vigorosidad, cambio, intuición, idealismo y emotividad.
+29
+30
+ Al nacer traje simpatía, popularidad, creatividad, sociabilidad, capacidades artísticas, imaginación, talento, optimismo y entusiasmo.
+30
+31
+ Al nacer traje simpatía, amor al trabajo, creatividad, sociabilidad, meticulosidad, imaginación capacidad de mando y optimismo.
+31`
+
+//-------------------------------------
+
+metNumData=`
+01
+ Seré seguro de mí mismo, independiente, activo, creador, original y tendré oportunidad de ejercer la autoridad o dirigir.
+01
+02
+ Podré dedicarme a algún área artística o disfrutar de ella. Seré buen consejero, pacífico, diplomático y me gustará participar de grupos o equipos donde siempre ocuparé un papel conciliador.
+ <br>Dada mi sensibilidad en esta etapa de la vida, puedo también volcarme hacia lo espiritual.
+02
+03
+Me inclinaré a escribir o hacer uso de la palabra en alguna otra forma, como canto, teatro, idiomas, oratoria, locución, etc. Esencialmente desarrollaré la expresividad, imaginación y creatividad.
+03
+04
+Asentaré bases firmes y se me verá como una persona práctica, segura, convencional. honrada, ordenada y tenaz, que lleva sus ideas a la meta concretándolas, y a la que es muy difícil desarraigar o proponerle cambios.
+04
+05
+Se me verá libre, versátil, con posibilidades de viajer y acumular experiencia, con una mente ágil y sumamente activo, haciendo muchas cosas a la vez, lo cual tendré que revisar y tratar de enfocarme hacie el objetivo que considere más valioso para no diversificarme tanto que no pueda concluir nada.
+05
+06
+Me dedicaré y asumiré responsabilidades de labor comunitaria, dando servicio a los otros como a mi entorno más cercano, incluyendo la familia, con una vibración amatoria y reconocimiento de los demás.
+06
+07
+Me dedicaré a la investigación, el recogimiento o la vida espiritual, y seré respetado por los demás por mi conocimiento y sabiduría.
+<br>Puedo destacarme tanto en tareas mentales como espirituales y gustaré de la soledad y la meditación, adoptando una actitud introvertida y reservada.
+07
+08
+Puedo moverme dentro de líneas de poder, ejecutivas, de fama y/o riqueza. También puede ser que tenga que administrar tierras, propiedades o supervisas bienes ajenos.
+08
+09
+Daré ayuda a la humanidad o entorno cercano, a través de la caridad, la compasión y la bondad, pudiendo desplegar un espíritu de combate en pos de mis ideales. También tendrá la posibilidad de unir arte, belleza y filantropía.
+09
+11
+Tendré la posibilidad de desarrollar un liderazgo o ser notable en lo que me proponga, pudiendo ser inspiración de los demás, o ser alguien que lucha por la paz del mundo o hacer algún tipo de descubrimiento que me reporte fama y reconocimiento.
+11
+22
+Tengo posibilidades de reconocimiento nacional e internacional en el campo en que me mueva, sea éste empresarial, de gobierno o profesional.
+<br>Se me verá práctico, idealista, organizador y constructor.
+<br>Trabajaré más en beneficio de los otros que de mí mismo.
+22
+33
+Mi capacidad de sacrificio será plena, realizando acciones en beneficio de otros y mío propio, cuesten lo que cuesten.
+33`
+
+ambNumData=`
+00
+No necesito un ámbito en concreto
+00
+01
+Necesito sentirme valorado y reconocido por mi entorno.
+01
+02
+Necesito estar acompañado, rodeado de más gente.
+02
+03
+Necesito agradar a los demás.
+03
+04
+Necesito que me dejen hacer mi trabajo.
+04
+05
+Necesito que me dejen libertad de movimientos.
+05
+06
+Necesito que los que me rodean estén contentos y felices.
+06
+07
+Necesito momentos de tranquilidad para estar conmigo mismo.
+07
+08
+Necesito gobernar mi propia vida y disponer de mis cosas.
+08
+09
+Necesito que los demás se ajusten a mis ideales.
+09
+11
+Necesito poder expresar mis ideas renovadoras y poco ortodoxas.
+11
+22
+Necesito organizar y guiar grupos de personas para beneficio de todos.
+22
+33
+Necesito un ambito en el que poder desplegar mi capacidad de sacrificio y compasión por los demás.
+33`
+
+//------------------------
+
+equNumData=`
+01
+Necesito ser independiente y dirigir.
+01
+02
+Necesito afecto y pareja.
+02
+03
+Necesito ser aceptado socialmente.
+03
+04
+Necesito trabajo seguro y orden.
+04
+05
+Necesito libertad de pensamiento y movimiento.
+05
+06
+Necesito armonía en mi entorno.
+06
+07
+Necesito silencio, quietud y meditación.
+07
+08
+Necesito seguridad económica y concreciones materiales.
+08
+09
+Necesito lograr mis ideales.
+09
+11
+Necesito distinguirme.
+11
+22
+Necesito trascendencia.
+22
+33
+No tengo necesidad real.
+33`
+
+//-----------------------------------
+
+conNumData=`
+Archivo   de   la   necesidad    de    conquista.
+La necesidad de conquista es el  elemento  básico
+que la  persona  trata  de  lograr  en  la  vida.
+Esta se obtiene por el número de la letra inicial
+del apellido  y  se  interpreta  por  el  sentido
+general         de          los          números.
+00
+No tengo una necesidad de conquista en  concreto.
+00
+01
+El elemento básico que trato de lograr en la vida es el hacer, no estar quieto, así como motivar e impulsar a los demás, sin acatar órdenes de ningún otro, y ser yo el que desarrolle  y dirija mis propias ideas.
+01
+02
+El elemento básico que trato de lograr en la vida es el expresar mi sensibilidad en la vida diaria, uniéndome a grupos en los que yo no sea el líder, pero sin tener que estar constantemente en actividad, tomándome mis momentos de reposo.
+02
+03
+El elemento básico que trato de lograr en la vida es la expresión de mi optimismo, creatividad y generosidad, así como estar bien físicamente y confortable sin caer por ello en la superficialidad.
+03
+04
+El elemento básico que trato de lograr en la vida es la constancia en mi vida, alejado de sorpresas que me descolocan, como dedicarme a mi trabajo diario y a todo lo que requiera meticulosidad y laboriosidad.
+04
+05
+El elemento básico que trato de lograr en la vida es el tenervida es el tener la sus el tener la suficienener la suficiente lila suficiente libertuficiente libertad coente libertad como p libertad como para dar rienda suelta a mi espontaneidad y mis ganas de probarlo todo y e vendría bien cierta dosis de precaución.
+05
+06
+El elemento básico que trato de lograr en la vida es el ver a los demás felices y ser yo el que medie para ello, suavizando riñas y malentendidos, sin hacer mucho caso de mis propias emociones, mientras busco posiciones de responsabilidad.
+06
+07
+El elemento básico que trato de lograr en la vida es la soledad con mi mundo profundo y místico, estudioso de todas las cosas en su significado más hondo, desinteresándome por las actividades y placeres mundanos.
+07
+08
+El elemento básico que trato de lograr en la vida es el poder, ya sea material o espiritual, sin temerle a nada, dando prioridad a mi ambición, perseverancia y previsión, llegando al equilibrio entre las fuerzas materiales y espirituales.
+08
+09
+El elemento básico que trato de lograr en la vida es el perseguir ms el perseguir mis a perseguir mis altos eguir mis altos idear mis altos ideales, combatiendo lo neombatiendo lo necesariendo lo necesario, llegando a alcanzar beneficios para todo y toddo a través de mis idealizaciones del mundo.
+09
+11
+El elemento básico que trato de lograr en la vida es el poner de manifiesto en el mundo terreno todo aquello que obtengo gracias a mi espíritu conectado con el Universo, siendo tolerante, aunque pueda liderar con gran facilidad, a pesar de mi espíritu rebelde.
+11
+22
+El elemento básico que trato de lograr en la vida es el organizar y dirigir grandes grupos o corporaciones, ya sean dedicadas a lo material o a lo espiritual, repartiendo mi amor universal y mi conocimiento de espíritu.
+22
+33
+El
+33`
+
+//-------------------------------------------------
+
+accNumData=`
+Necesidad de comportamiento o Necesidad de Acción. Se calcula de
+obtener el valor numérico de la letra que más posee en el nombre
+y apellido.
+
+00
+ No tengo una necesidad de comportamiento concreta.
+00
+01
+ Es ser eficiente y poder ejercer la autoridad.
+01
+02
+ Es no tener que hacer frente a la soledad.
+02
+03
+ Es ser el centro de atención.
+03
+04
+ Es no tener que relacionarme con los demás y ser discreto.
+04
+05
+ Es ser capaz de adaptarme a las situaciones.
+05
+06
+ Es dar buenos consejos o mediar alguna discusión.
+06
+07
+ Es no tener que dedicarme a necesidades mundanas.
+07
+08
+ Es ser capaz de alcanzar mis objetivos.
+08
+09
+ Es tener capacidad de juicio.
+09
+11
+ Es el ser tolerante en cualquier ocasión.
+11
+22
+ Es el ser capaz de construir, organizar o dirigir en algún momento.
+22
+33
+ Es el ser capaz de sacrificarme por los demás.
+33`
+
+//------------------------------------
+
+cotNumData=`
+Reacción    ante    los    sucesos    cotidianos.
+Se obtiene el número del valor de la última letra
+del  primer  nombre,  interpretándose   por   las
+características   generales   de   los   números.
+00
+ Mi reacción ante lo cotidiano es diferente cada vez.
+00
+01
+ Tomo normalmente las riendas y dirijo a los demás hacia un camino concreto.
+01
+02
+ Pregunto a mi pareja o seres más cercanos su decisión y actúo en consecuencia.
+02
+03
+ Realizo todo aquello que haga que los demás me acepten, como regla general.
+03
+04
+ Mi reacción normal es el hacer aquello que ya me funcionó otras veces en sircunstancias similares, esperando los mismos resultados.
+04
+05
+ Hago aquello que se salga de la norma, escapándome de los comportamientos convencionales en la medida de lo posible.
+05
+06
+ Tomo normalmente el camino que menos influya en los que me rodean, a menos que sea para calmar o apaciguar.
+06
+07
+ Normalmente me dedico a meditar las cosas en calma, prefiriendo ver cómo ocurren a participar de ellas.
+07
+08
+ Voy a lo seguro y que me reporte algún beneficio en concreto. Muy rara vez actúo a lo loco excepto en explosiones de mal genio.
+08
+09
+ Hago lo que debo hacer según mis ideales de lo que tenga entre manos, sin hacer caso a lo que pueda parecer realmente.
+09
+11
+ Mi reacción cotidiana es hacer aquello que me distinga de los demás, que haga ver a otros mi propio yo.
+11
+22
+ Busco el que mis actos queden en los demás como algo que perdura, si puede ser a gran escala, mejor.
+22
+33
+ Mi reacción, normalmente, es comprensiva, actuando de forma que pueda beneficiar a un máximo de personas, aunque yo no me encuentre entre ese máximo.
+33`
+
+//----------------------------------------
+
+subNumData=`
+Reacción ante los  incidentes  fortuitos  o  decisiones
+súbitas. Se obtiene este número de restarle  al  numero
+once la cantidad de números, en el nombre, que no tenga.
+04
+ Analizo el conflicto detalladamente, dando vueltas sobre éste y me cuesta tomar una decisión.
+04
+05
+ Me comporto con tensión y nerviosismo, lo que puede llevarme a actuar en forma compulsiva y atropellada.
+05
+06
+ Reacciono de forma responsable y teniendo en cuenta primero a mi familia o entorno cercano.
+06
+07
+ Tomo distancia y adopto una actitud fría y pensante, pero en realidad me siento solo y me aíslo esperanzado en la fe de que todo se solucione.
+07
+08
+ Reacciono en forma concreta y segura, soy fuerte y no me pierdo en devaneos ni me paralizo, por lo cual se puede contar conmigo ante cualquier emergencia.
+08
+09
+ Actúo en forma arrebatada, intentando solucionar el conflicto.
+09
+10
+ Primero planteo el suceso en mi interior para luego resolver lo que sea necesario.
+10`
+
+//---------------------------------------------
+
+aprNumData=`
+00
+ No tengo un desafío de aprendizaje en concreto.
+00
+01
+ Mi desafío de aprendizaje es el ejercer la autoridad, individualidad y desarrollo de mis ideas, sin autoritarismo ni actitud egoista.
+01
+02
+ Mi reto de aprendizaje es la colaboración y dominar o controlar las emociones sin depender de los demás.
+02
+03
+ Mi reto de aprendizaje es no desperdiciar las energías inútilmente y tratar de dominar mi amor propio u orgullo.
+03
+04
+ Mi reto de aprendizaje es aplicarme en el trabajo con entusiasmo, sin bloqueo ni obsesión.
+04
+05
+ Mi reto de aprendizaje es encontrar el manejo de mi libertad, tanto sea que no me la coarten como no hacer abuso de ella.
+05
+06
+ Mi reto de aprendizaje es asumir las responsabilidades sin sentirme agobiado por ellas, y aprender a aceptar a los otros como son, con sus virtudes y defectos.
+06
+07
+ Mi reto de aprendizaje es enfrentar los hechos reales y no escapar de la responsabilidad.
+07
+08
+ Mi reto de aprendizaje es buscar el justo equilibrio entre las fuerzas materiales y espirituales, dominando el poder en el área en que me maneje.
+08
+09
+ Mi reto de aprendizaje es ayudar a los otros sin esperar recompensa alguna, tratando de concretar mis ideales sin fanatismos.
+09
+11
+ Mi reto de aprendizaje es desarrollar la humildad siendo notable y llevar las revelaciones que capto en el Universo a mi vida real, para ponerlas al servicio de la humanidad.
+11
+22
+ Mi reto de aprendizaje es construir en beneficio de la humanidad, utilizando todos los dones que poseo.
+22
+33
+ Mi reto de aprendizaje es desarrollar el sentido de la justicia y la compasión sin vivir constantemente en pruebas y procurándome ciertas dosis de paz.
+33`
+
+//-----------------------------------------------
+
+
+nacNumData=`
+00
+Ninguna profesión es un reto para mí.
+00
+01
+Deberé tratar de independizarme y/o desarrollar mi individualidad y autoridad.
+01
+02
+Tendré que tratar de colaborar con mis equipos de trabajo y desarrollar la paciencia y el tacto con mis compañeros.
+02
+03
+Debo intentar comunicarme con mi entorno y desarrollar la sociabilidad y creatividad.
+03
+04
+Debo trabajar de forma minuciosa, rutinaria y detallista.
+04
+05
+Debo adaptarme a los distintos compañeros y circunstancias haciendo buen uso de la energía.
+05
+06
+Debo asumir los compromisos del trabajo y del entorno, actuando de forma responsable.
+06
+07
+Debo obligarme a trabajar con los demás, informando, ayudando, educando.
+07
+08
+Debo tratar de ser justo y utilizar de manera correcta el mando.
+08`
+
+//------------------------------------------
+
+donNumData=`
+00
+ Cualquier trabajo me sirve por igual.
+00
+01
+ Mi don es el haber nacido con la capacidad de accionar, de hacer.
+01
+02
+ Mi don es el ser sensible y ello hace que pueda captar a los otros.
+02
+03
+ Mi don es el tener la capacidad de distenderme y expandirme.
+03
+04
+ Mi don es el tener disciplina interior y estabilidad en mi hacer cotidiano.
+04
+05
+ Mi don es el poseer libertad y ser una persona polifacética.
+05
+06
+ Mi don es el tener una vibración amorosa y responsable.
+06
+07
+ Mi don es el saber hacer mi trabajo.
+07
+08
+ Mi don es el poseer la capacidad de alcazar mis logros exitosamente.
+08`
+
+//---------------------------------------------
+
+ralNumData=`
+Desafío  del   alma   o   desafío   sentimental.
+Es el reto que tenemos en la faz  sentimental  y
+afectiva, especialmente de pareja. Se obtiene de
+restar la primera vocal del nombre de la  ultima
+vocal        del        primer         apellido.
+00
+Mis emociones son muy fuertes y tendré que trabajar sobre ellas tratando de manejarlas, pues pueden desequilibrarme totalmente.
+00
+01
+ Debo ser el eje motor de la pareja, la parte que toma las decisiones y actúa.
+01
+02
+ Tengo que desarrollar mi faz sensible y afectiva con my afectiva con mi pareja.
+02
+03
+ Debo expresarme, comunicarme y dar a mi pareja.
+03
+04
+ Debo contener y construir para mi pareja y familia.
+04
+05
+ No debo ser infiel ni desempeñar mal los papeles, como por ejemplo el de ser padre de la esposa.
+05
+06
+ Debo cuidar, proteger y conducir a mi pareja y familia.
+06
+07
+ Debo prestar asistencia y servicio a mi pareja y entorno.
+07
+08
+ Debo exteriorizar y asumir mi sexualiad.
+08
+13
+ Debo contener y construir para mi pareja y familia.
+13
+15
+ Debo cuidar, proteger y conducir a mi pareja y familia.
+15
+17
+ Debo exteriorizar y asumir mi sexualiad.
+17
+21
+ Debo expresarme, comunicarme y dar a mi pareja.
+21
+22
+ Debo contener y construir para mi pareja y familia.
+22`
+
+//--------------------------------------------------
+
+rpeNumData=`
+Desafío de la personalidad o del comportamiento diario.
+00
+No tengo un desafío concreto ante mi comportamiento diario.
+00
+01
+La vida me colocará ante circunstancias que deberé resolver velozmente.
+01
+02
+Me costará que los demás colaboren como yo lo hago o deseo.
+02
+03
+Tendré que dominar mi amor propio y no dispersarme.
+03
+04
+Deberé dominar la ansiedad aprendiendo a desarrollar paciencia.
+04
+05
+Deberé aprender a adaptarme a los cambios que le presente la vida.
+05
+06
+Tengo que aprender a hacerme cargo y ser responsable.
+06
+07
+Tengo que aprender a desarrollar el silencio, la reflexión y estudiar e investigar.
+07
+08
+Debo aprender a manejar el plano concreto, las cuestiones materiales y de dinero.
+08
+09
+Debo ayudar a los demás o dedicarme a alguna actividad humanitaria de solidaridad.
+09
+11
+Debo aprender a ser condescendiente con los demás.
+11
+22
+ Característica no definida.
+22
+33
+ Característica no definida.
+33`
+
+//-----------------------------------------------
+
+rteNumData=`
+Desafio de comportamiento con los demás.
+Se obtiene de la diferencia entre la primera letra del nombre y la
+ultima letra del primer apellido.
+00
+ No tengo un desafío de comportamiento con los demás en concreto.
+00
+01
+ Es no ser eficiente y no poder ejercer la autoridad frente a otros.
+01
+02
+ Es tener que hacer frente a que los demás me dejen solo.
+02
+03
+ Es no ser el centro de atención.
+03
+04
+ Es tener que relacionarme con los demás y ser indiscreto.
+04
+05
+ Es no ser capaz de adaptarme a alguien.
+05
+06
+ Es no ser capaz de dar un buen consejo o mediar alguna discusión.
+06
+07
+ Es tener que dedicarme a necesidades mundanas con otros.
+07
+08
+ Es no ser capaz de alcanzar mis objetivos frente a alguien.
+08
+09
+ Es no se capaz de encajar a alguien en mis ideales.
+09
+11
+ Es el no ser tolerante con todo el mundo.
+11
+22
+ Es no el ser capaz de organizar o dirigir en algún momento.
+22
+33
+ Es ser cruel con alguien en concreto en un momento determinado.
+33
+`
+}
+//-----------------------------------------------------
+
+</script>
+	</head>
+
+	<body>
+		<h1>MiNombre</h1>
+		<p>Un ejemplo de interpretación numerológica del nombre y la fecha de nacimiento siguiendo una reinterpretación de tradiciones ancestrales que han llegado hasta nuestros días por los más variados caminos.</p>
+		<p>Según algunas tradiciones, el nombre lo elige nuestra alma para adaptar la actual encarnación, enfocándola a los objetivos que pretende cumplir en ella. De igual forma, el momento del nacimiento está elegido por un conocimiento más allá de toda lógica y pensamiento racional, pudiendo encontrar su verdadero significado a través de los dígitos numéricos como si fueran marcadores de una realidad existente aunque intangible.</p>
+		<h2>Datos:</h2>
+		<form>
+		  <label for="nombre">Nombre</label>
+		  <input type="text" name="nombre" id="nombre"/><br/>
+		  <label for="ap1">Primer Apellido</label>
+		  <input type="text" name="ap1" id="ap1"/><br/>
+		  <label for="ap2">Segundo Apellido</label>
+		  <input type="text" name="ap2" id="ap2"/><br/>
+		  <label for="dia">Fecha de Nacimiento</label>
+		  <input type="date" name="dia" id="dia"/><br/>
+		  <input type="checkbox" name="chkSinEnie" id="chkSinEnie" value="false"><label for="chkSinEnie">Sin contar la letra eñe.</label>
+		  <input type="checkbox" name="chkSinApell" id="chkSinApell" value="false"><label for="chkSinEnie">Sin contar apellidos.</label>
+		  <input type="checkbox" name="chkSinNexos" id="chkSinNexos" value="false"><label for="chkSinEnie">Sin contar nexos como "la", "del", etc.</label>
+			<br/>
+		  <input type="button" value="Calcular" onclick="calculaMiNombre()">
+		  <p>Hacen falta sólo estos datos. Si te produce inquietud introducirlos, puedes ver en el código fuente de la página qué se hace con ellos y verás que no se utilizan más que para realizar los cálculos y obtener el resultado. En ningún caso se envían ni se recopilan. <sub>Todo queda en casa.</sub>
+		  </p>
+		</form>
+		<hr/>
+		<div id="resultado">
+		</div>
+
+	</body>
+	
+</html>

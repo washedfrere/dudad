@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cultivo de Vida Electrónica 2life-v201309.112340R</title>
+<script type="text/javascript">
+//Variables globales para todos los scripts
+var is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
+var is_chrome= navigator.userAgent.toLowerCase().indexOf('chrome/') > -1;
+var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox/') > -1;
+var is_ie = navigator.userAgent.toLowerCase().indexOf('msie ') > -1;
+var is_texto = true;
+var pizarra = null;
+var info1 = null;
+var ctx = null;
+var imagen = null;
+var maxX = 30; //Maximo valor X del campo de cultivo
+var maxY = 50; //Máximo valor Y del campo de cultivo
+var maxSeres = maxX*maxY*3; //Máximo valor para la tabla de seres
+var maxMapa = maxX*maxY*2; //Máximo valor para el mapa de búsqueda
+var tesperas = 100; // Tiempo por ciclo
+var ciclos = 0; //Ciclos de evolucion
+var timout;
+var unMineral=0;
+var unDeshecho=1;
+var unaBacteria=2;
+var unHongo=3;
+var unaPlanta=4;
+var unHervivoro=5;
+var unCarnivoro=7;//6; lo cambio por parecer que es anterior en la evolucion
+var unOmnivoro=6;//7; lo cambio por parecer que es posterior en la evolucion
+var brujula=0; //Variable para elegir el lugar de la reproducción o la comida
+
+var ambiente = new Array(); //Array de evaluación aleatorio (maxX*maxY*2) o mapa de secuencia
+//Inicializa el array de evaluacion con un orden secuencial para...
+for (ix=0;ix< maxX;ix++) {
+  for (iy=0;iy<maxY;iy++) {
+    ambiente[(iy*maxX + ix)*2]=ix;
+    ambiente[(iy*maxX + ix)*2+1]=iy;
+  }
+}
+for (repite=0;repite<maxMapa;repite++) { //...intercambiar aleatoriamente los puntos de evaluacion
+  i0=(Math.floor(Math.random()*maxX) + Math.floor(Math.random()*maxY)*maxX)*2;
+  i1=(Math.floor(Math.random()*maxX) + Math.floor(Math.random()*maxY)*maxX)*2;
+  ix=ambiente[i0];iy=ambiente[i0+1];
+  ambiente[i0]=ambiente[i1];
+  ambiente[i0+1]=ambiente[i1+1];
+  ambiente[i1]=ix;
+  ambiente[i1+1]=iy;
+}
+
+var ser = new Array(); //Array de seres (maxX*maxY*3)
+/*Primero creamos la funcion setSer
+para utilizarla en la inicialización principal*/
+function setSer(x,y,tipo,edad,vida) { //Asigna un valor al array de seres
+  if (x>=maxX) {x-=maxX;} //Si la X se pasa por la derecha, comienza desde la izquierda de nuevo
+  if (y>=maxY) {y-=maxY;} //Si la Y se pasa por abajo, comienza desde arriba de nuevo
+  if (x<0) {x+=maxX;} //Si la X se pasa por la izquierda, comienza por la derecha
+  if (y<0) {y+=maxY;} //Si la Y se pasa por arriba, comienza por abajo
+  indice = (y*maxX + x)*3;
+  ser[indice]=tipo;
+  ser[indice+1]=edad;
+  ser[indice+2]=vida;
+}
+
+//Inicializa el array de seres con "deshecho" porque puede evolucionar a vida.
+for (ix=0;ix< maxX;ix++) {
+  for (iy=0;iy<maxY;iy++) {
+    if (Math.random()>0.9) {setSer(ix,iy,unDeshecho,0,0);} else {setSer(ix,iy,unMineral,0,0);}
+  }
+}
+
+function verLeyenda() {
+  if (document.getElementById("leyenda").style.visibility=="hidden") {
+      window.clearTimeout(timout);//Quitamos el timeout para que no de problemas
+      document.getElementById("leyenda").style.visibility="visible";
+  } else {
+      document.getElementById("leyenda").style.visibility="hidden";
+      timout=window.setTimeout(elCiclo,tesperas);//Restablecemos el timeout
+  }
+}
+
+function cicloRapido(){tesperas=10;}
+function cicloNormal(){tesperas=100;}
+function cicloLento(){tesperas=1000;}
+
+function creatabla() {//Crea una tabla html que ocupa toda la ventana
+  document.write('<table id="mapeo" border="0" onclick="verLeyenda()" style="z-index:1; width:100%; height:100%; padding:0px; border:0px; margin:0px; position:fixed; top:0px; right:0px;">');
+  numero=0;
+  for (iy=0;iy<maxY;iy++) {
+    document.write('<tr>');
+    for (ix=0;ix<maxX;ix++) {
+      numero=(iy*maxX+ix);
+      document.write('<td id="casilla' + numero.toString() + '" class="ser0"> </td>');
+    }
+    document.write('</tr>');
+  }
+  document.write('</table>');
+  document.write('<span id="leyenda" onclick="verLeyenda()" style="');
+  document.write('z-index:2;background-color:#b0c4de;foreground-color:#a0ffff;');
+  document.write('width:30%;padding:2px;border:2px solid gray;margin:3%;');
+  document.write('position:fixed;top:30%;right:30%;visibility:hidden;"> ');
+  document.write('Cultivo de Vida Electrónica 2life<br><b>Leyenda de colores</b>');
+  document.write('<table style="width:100%; height:100%; padding:0px; border:2px solid gray; margin:0px; background-color:#ffffff">');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unMineral) + ';">');
+  document.write('·</td><td>Mineral (no vida)</td></tr>');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unDeshecho) + ';">');
+  document.write('·</td><td>Deshecho (genera bacterias)</td></tr>');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unaBacteria) + ';">');
+  document.write('·</td><td>Bacteria (muta a planta o hervívoro)</td></tr>');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unaPlanta) + ';">');
+  document.write('·</td><td>Planta (muta a hongo)</td></tr>');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unHongo) + ';">');
+  document.write('·</td><td>Hongo</td></tr>');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unHervivoro) + ';">');
+  document.write('·</td><td>Hervivoro (muta a omnivoro)</td></tr>');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unOmnivoro) + ';">');
+  document.write('·</td><td>Omnivoro (muta a carnivoro)</td></tr>');
+  document.write('<tr><td style="background-color:' + getHexRGBSer(unCarnivoro) + ';">');
+  document.write('·</td><td>Carnivoro</td></tr>');
+  document.write('</table>');
+  document.write('<button onclick="cicloRapido()">Deprisa</button>');
+  document.write('<button onclick="cicloNormal()">Normal</button>');
+  document.write('<button onclick="cicloLento()">Lento</button>');
+  document.write('</span>');
+}
+
+function getHexRGBSer(t) {
+  switch (t) {
+   case unMineral: return "#101020";
+   case unDeshecho: return "#c0c0c0";
+   case unaBacteria: return "#ffff80";
+   case unHongo: return "#80ff00";
+   case unaPlanta: return "#00a000";
+   case unHervivoro: return "#ffffff";
+   case unCarnivoro: return "#8000ff";
+   case unOmnivoro: return "#ff0000";
+   default: return "#000000";
+  }
+}
+
+function getTipoSer(x,y) { //Extrae el tipo ser del array de seres
+  if (x>=maxX) {x-=maxX;} //Si la X se pasa por la derecha, comienza desde la izquierda de nuevo
+  if (y>=maxY) {y-=maxY;} //Si la Y se pasa por abajo, comienza desde arriba de nuevo
+  if (x<0) {x+=maxX;} //Si la X se pasa por la izquierda, comienza por la derecha
+  if (y<0) {y+=maxY;} //Si la Y se pasa por arriba, comienza por abajo
+  indice = (y*maxX + x)*3;
+  return ser[indice];
+}
+
+function getEdadSer(x,y) { //Extrae la edad del ser del array de seres
+  if (x>=maxX) {x-=maxX;} //Si la X se pasa por la derecha, comienza desde la izquierda de nuevo
+  if (y>=maxY) {y-=maxY;} //Si la Y se pasa por abajo, comienza desde arriba de nuevo
+  if (x<0) {x+=maxX;} //Si la X se pasa por la izquierda, comienza por la derecha
+  if (y<0) {y+=maxY;} //Si la Y se pasa por arriba, comienza por abajo
+  indice = (y*maxX + x)*3;
+  return ser[indice+1];
+}
+
+function getVidaSer(x,y) { //Extrae la vida/energía del ser del array de seres
+  if (x>=maxX) {x-=maxX;} //Si la X se pasa por la derecha, comienza desde la izquierda de nuevo
+  if (y>=maxY) {y-=maxY;} //Si la Y se pasa por abajo, comienza desde arriba de nuevo
+  if (x<0) {x+=maxX;} //Si la X se pasa por la izquierda, comienza por la derecha
+  if (y<0) {y+=maxY;} //Si la Y se pasa por arriba, comienza por abajo
+  indice = (y*maxX + x)*3;
+  return ser[indice+2];
+}
+
+
+function pintaSeres() {//Cambia la clase de cada cuadrado para que adquiera el nuevo color
+//obtención del area de dibujo y los datos de imagen
+  for (y=0;y<maxY;y++) {
+    for (x=0;x<maxX;x++) {
+      numero=(y*maxX+x);
+      t=getTipoSer(x,y);
+      //document.getElementById("casilla"+numero.toString()).setAttribute("class", "ser"+t.toString());
+      document.getElementById("casilla"+numero.toString()).style.backgroundColor=getHexRGBSer(t);
+    }
+  }
+}
+
+function reproduceSer(x,y,ser) {
+	if (Math.random() > 0.995) { //Evoluciona espontaneamente
+	  switch (ser) {
+     case unMineral: break; //el mineral no evoluciona
+     case unDeshecho: ser=unaBacteria; break; //el desecho evoluciona a bacteria
+     case unaBacteria: if (Math.random() > 0.5) {ser=unHervivoro;} else {ser=unaPlanta;} break;//la bacteria genera dos tipos de seres
+     case unHongo: ser=unDeshecho; break; //los hongos involucionan
+     case unaPlanta: ser=unHongo; break; //las plantas evolucionan a hongos
+     case unHervivoro: ser=unOmnivoro; break;//los hervívoros evolucionan a omnívoros
+     case unCarnivoro: ser=unDeshecho; break; //los carnívoros generan fetos defectuosos
+     default: ser=unCarnivoro; break; //los omnívoros evolucionan a carnívoros puros
+    }
+		setSer(x,y,ser,0,9);//A la categoría superior y con energía(vida) excesiva (cáncer)
+	} else {
+		setSer(x,y,ser,0,3);//El nuevo retoño, no se puede reproducir por poca energía (vida)
+	}
+	
+}
+
+function evaluaNido(tipo,x,y,tnido1,tnido2) { //Evalua el nido y reproduce un ser si cumple condiciones
+	for (rueda=0;rueda<4;rueda++){
+    switch (brujula) {
+      case 0: nido=getTipoSer(x+1,y);
+              if (nido==tnido1 || nido==tnido2) { reproduceSer(x+1,y,tipo); return true; }
+              break;
+      case 1: nido=getTipoSer(x,y+1);
+              if (nido==tnido1 || nido==tnido2) { reproduceSer(x,y+1,tipo); return true; }
+              break;
+      case 2: nido=getTipoSer(x-1,y);
+              if (nido==tnido1 || nido==tnido2) { reproduceSer(x-1,y,tipo); return true; }
+              break;
+      default: nido=getTipoSer(x,y-1);
+              if (nido==tnido1 || nido==tnido2) { reproduceSer(x,y-1,tipo); return true; }
+              break;
+    }
+    brujula++; if (brujula>3) {brujula=0;}
+	}
+	return false;
+}
+
+function evaluaComida(tipo,x,y,caca,alim1,alim2,alim3) {
+  for (rueda=0;rueda<4;rueda++) {
+    switch (brujula) {
+      case 0: comida=getTipoSer(x+1,y);
+              if (comida==alim1 || comida==alim2 || comida==alim3) { setSer(x+1,y,caca,0,0); return true;}
+              break;
+      case 1: comida=getTipoSer(x,y+1);
+              if (comida==alim1 || comida==alim2 || comida==alim3) { setSer(x,y+1,caca,0,0); return true;}
+              break;
+      case 2: comida=getTipoSer(x-1,y);
+              if (comida==alim1 || comida==alim2 || comida==alim3) { setSer(x-1,y,caca,0,0); return true;}
+              break;
+      default: comida=getTipoSer(x,y-1);
+              if (comida==alim1 || comida==alim2 || comida==alim3) { setSer(x,y-1,caca,0,0); return true;}
+              break;
+    }
+    brujula++; if (brujula>3) {brujula=0;}
+  }
+	return false;
+}
+
+function aCazar(tipo,edad,vida,x,y,victima1,victima2,victima3) {//Rutina de desplazamiento de caza
+	objetivo=getTipoSer(x+2,y);
+	if (objetivo==victima1 || objetivo==victima2 || objetivo==victima3) {
+		setSer(x,y,getTipoSer(x+1,y),getEdadSer(x+1,y),getVidaSer(x+1,y));
+		setSer(x+1,y,tipo,edad,vida-1);
+		return true;
+	} else {
+		objetivo=getTipoSer(x,y+2);
+		if (objetivo==victima1 || objetivo==victima2 || objetivo==victima3) {
+			setSer(x,y,getTipoSer(x,y+1),getEdadSer(x,y+1),getVidaSer(x,y+1));
+			setSer(x,y+1,tipo,edad,vida-1);
+			return true;
+		} else {
+			objetivo=getTipoSer(x-2,y);
+			if (objetivo==victima1 || objetivo==victima2 || objetivo==victima3) {
+				setSer(x,y,getTipoSer(x-1,y),getEdadSer(x-1,y),getVidaSer(x-1,y));
+				setSer(x-1,y,tipo,edad,vida-1);
+				return true;
+			} else {
+				objetivo=getTipoSer(x,y-2);
+				if (objetivo==victima1 || objetivo==victima2 || objetivo==victima3) {
+					setSer(x,y,getTipoSer(x,y-1),getEdadSer(x,y-1),getVidaSer(x,y-1));
+					setSer(x,y-1,tipo,edad,vida-1);
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+
+function vidaMineral(x,y) { //La vida mineral es inerte
+	/*if (Math.random() > 0.999) { //Se permitía una generación espontánea de protovida
+		setSer(x,y,1,0,0);
+	}*/
+}
+
+function vidaDeshecho(x,y) {
+	if (Math.random() > 0.999) { //Evoluciona espontaneamente
+		setSer(x,y,unaBacteria,0,6); //Hacia bacteria reproducible
+	} else { //Involuciona espontaneamente (se degrada)
+		if (Math.random() > 0.9999 ) {
+			setSer(x,y,unMineral,0,0); //En mineral
+		} 
+	}
+}
+
+function vidaBacteria(x,y) {
+	vida = getVidaSer(x,y);
+	edad = getEdadSer(x,y);
+	if (vida>2) { //Se reproduce bacteria sobre mineral
+		if (evaluaNido(unaBacteria,x,y,unMineral,unMineral)===true) {
+			vida-=2;
+		}
+	} else { //Se alimenta de deshechos (residuo de bacteria=mineral)
+		if (evaluaComida(unaBacteria,x,y,unMineral,unDeshecho,unDeshecho,unDeshecho)===true) {
+			vida+=2;
+		}
+	}
+	
+	if ( edad > 4 || vida < 1 ) { //muere
+		setSer(x,y,unMineral,0,0);
+	} else { //Cumple un ciclo
+    setSer(x,y,unaBacteria,edad+1,vida);
+	}
+}
+
+function vidaHongo(x,y) {
+	vida = getVidaSer(x,y);
+	edad = getEdadSer(x,y);
+	if (vida>3) { //Se reproduce hongo sobre deshechos o plantas
+		if (evaluaNido(unHongo,x,y,unDeshecho,unaPlanta)===true) {
+			vida-=2;
+		}
+	} else { //Se alimenta de bacterias (residuo de hongo=deshecho)
+		if (evaluaComida(unHongo,x,y,unDeshecho,unaBacteria,unaBacteria,unaBacteria)===true) {
+			vida+=2;
+		}
+	}
+	
+	if ( edad > 6 || vida < 1 ) { //muere
+		setSer(x,y,unDeshecho,0,0);
+	} else { //Cumple un ciclo
+    setSer(x,y,unHongo,edad+1,vida);
+	}
+}
+
+function vidaPlanta(x,y) {
+	vida = getVidaSer(x,y);
+	edad = getEdadSer(x,y);
+	if (vida>2) { //Se reproduce planta sobre mineral 
+		while (vida>2 && evaluaNido(unaPlanta,x,y,unMineral,unMineral)===true) {
+			vida-=2;
+		}
+	}
+	if (vida<9) { //Se alimenta de mineral desde los cuatro sitios (residuo de planta=mineral)
+		while (vida<9 && evaluaComida(unaPlanta,x,y,unMineral,unMineral,unMineral,unMineral)===true) {
+			vida+=1;
+		}
+	}
+	
+	if ( edad > 15 && vida < 1 ) { //muere solo si no tiene vida suficiente
+		setSer(x,y,unDeshecho,0,0);
+	} else { //Cumple un ciclo
+		if (edad<9) { setSer(x,y,unaPlanta,edad+1,vida);}
+	}
+}
+
+function vidaHervivoro(x,y) {
+	vida = getVidaSer(x,y);
+	edad = getEdadSer(x,y);
+	if (vida>2) { //Se reproduce hervivoro sobre mineral o deshechos
+		if (evaluaNido(unHervivoro,x,y,unDeshecho,unMineral)===true) {
+			vida-=2;
+		}
+	} else { //Se alimenta de plantas (residuo de hervivoro=deshecho)
+		if (evaluaComida(unHervivoro,x,y,unDeshecho,unaPlanta,unaPlanta,unaPlanta)===true) {
+			vida+=1;
+		}
+	}
+	
+	if ( edad > 7 || vida < 1 ) { //muere
+		setSer(x,y,unDeshecho,0,0);
+	} else { //Cumple un ciclo
+		setSer(x,y,unHervivoro,edad+1,vida);
+	}
+}
+
+function vidaCarnivoro(x,y) {
+	movido="no";
+	vida = getVidaSer(x,y);
+	edad = getEdadSer(x,y);
+	if (vida>3) { //Se reproduce  sobre mineral o deshechos
+		if (evaluaNido(unCarnivoro,x,y,unDeshecho,unMineral)===true) {
+			vida-=2;
+		}
+	} else { //Se alimenta de plantas (residuo de carnivoro=deshecho)
+		if (evaluaComida(unCarnivoro,x,y,unDeshecho,unHervivoro,unOmnivoro,unCarnivoro)===true) {
+			vida+=3;
+		} else {
+			if (aCazar(unCarnivoro,edad,vida,x,y,unHervivoro,unOmnivoro,unCarnivoro)===true) {
+				movido="si";
+			} else {
+				vida-=1;
+			}
+		}
+	}
+	
+	if (movido=="no") {//Si no se ha movido, se actualiza el bicho
+		if ( edad > 8 || vida < 1 ) { //muere
+			setSer(x,y,unDeshecho,0,0);
+		} else { //Cumple un ciclo
+			setSer(x,y,unCarnivoro,edad+1,vida);
+		}
+	}
+}
+
+function vidaOmnivoro(x,y) {
+	movido="no";
+	vida = getVidaSer(x,y);
+	edad = getEdadSer(x,y);
+	if (vida>6) { //Se reproduce sobre mineral o deshechos
+		if (evaluaNido(unOmnivoro,x,y,unDeshecho,unMineral)===true) {
+			vida-=2;
+		}
+	} else { //Se alimenta de hervivoros, carnivoros y plantas (residuo de omnivoro=deshecho)
+		if (evaluaComida(unOmnivoro,x,y,unDeshecho,unHervivoro,unCarnivoro,unaPlanta)===true) {
+			vida+=3;
+		} else {
+			if (aCazar(unOmnivoro,edad,vida,x,y,unHervivoro,unCarnivoro,unaPlanta)===true) {
+				movido="si";
+			} else {
+				vida-=1;
+			}
+		}
+	}
+	
+	if (movido=="no") {//Si no se ha movido, se actualiza el bicho
+		if ( edad > 6 || vida < 1 ) { //muere
+			setSer(x,y,unDeshecho,0,0);
+		} else { //Cumple un ciclo
+			setSer(x,y,unOmnivoro,edad+1,vida);
+		}
+	}
+}
+
+
+function elCiclo() { //Recorre el mapa del mundo
+  window.clearTimeout(timout);//Quitamos el timeout para que no de problemas
+	ts=0;
+	//Repaso por el mapa de seres en orden aleatorio
+  for (indale=0;indale<maxMapa;indale+=2) {
+      ix=ambiente[indale];
+      iy=ambiente[indale+1];
+      ts=getTipoSer(ix,iy);
+      switch (ts) {
+       case unMineral: vidaMineral(ix,iy); break;
+       case unDeshecho: vidaDeshecho(ix,iy); break;
+       case unaBacteria: vidaBacteria(ix,iy); break;
+       case unHongo: vidaHongo(ix,iy); break;
+       case unaPlanta: vidaPlanta(ix,iy); break;
+       case unHervivoro: vidaHervivoro(ix,iy); break;
+       case unCarnivoro: vidaCarnivoro(ix,iy); break;
+       default: vidaOmnivoro(ix,iy); break;
+      }
+  }
+  //Intercambia orden de evaluación para incrementar el azar.
+  for (repite=0;repite<10;repite++) { //Intercambia aleatoriamente 10 puntos de evaluacion
+    i0=(Math.floor(Math.random()*maxX) + Math.floor(Math.random()*maxY)*maxX)*2;
+    i1=(Math.floor(Math.random()*maxX) + Math.floor(Math.random()*maxY)*maxX)*2;
+    ix=ambiente[i0];iy=ambiente[i0+1];
+    ambiente[i0]=ambiente[i1];
+    ambiente[i0+1]=ambiente[i1+1];
+    ambiente[i1]=ix;
+    ambiente[i1+1]=iy;
+  }
+	pintaSeres();
+	timout=window.setTimeout(elCiclo,tesperas);//Restablecemos el timeout
+}
+
+function inicializa(){ //Recrea el estado del array en la pantalla y comienza la vida
+  creatabla();
+	pintaSeres();
+  timout=window.setTimeout(elCiclo,tesperas); //
+}
+
+</script>
+</head>
+<body onload="inicializa()">
+<NOSCRIPT>Tienes que activar javaScritp</NOSCRIPT>
+</body>
+</html>

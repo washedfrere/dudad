@@ -1,0 +1,361 @@
+﻿<html>
+<head><title>Multiplicando</title>
+	<script type="text/javascript">
+		var tabn = []; //Tabla que guarda los aleatorios multiplicandos
+		var tabpor = []; //Tabla que guarda los aleatorios multiplicadores
+		regenera(); //Inicializa las tablas
+		var indN = 0; //Indice para multiplicandos
+		var indPor = 0; //Indice para multiplicadores
+		var jugada = 1; //Contador de jugadas
+		var maxJugada = 9; //Máximo de jugadas, 9 para tabla fija y 91 para tabla variable
+		var aciertos = 0; //Número de aiertos por jugada (aunque sea con "trampa")
+		var fallos = 0; //Número de fallos por jugada (noes o no-lo-se)
+		var puntos = 0.0;
+		var puntosAnt = 0.0;
+		var periodo;
+		var reescalado = false;
+		function inicializa() {
+			regenera();
+			cambiaTabla();
+			jugada=maxJugada;
+			otra();
+			puntua();
+			//periodo = setTimeout(escalarFuente(),600);
+		}
+		function reescala() {
+			reescalado = false;
+			if(periodo) clearTimeout(periodo);
+			periodo = setTimeout(escalarFuente(),600);
+		}
+		function desactivaTabla() {
+			if (document.getElementById("aleatorio").checked) {
+				document.getElementById("tabla").disabled=true;
+				maxJugada = 81; //Una tabla de multiplicar
+			} else {
+				document.getElementById("tabla").disabled=false;
+				maxJugada = 9; //Todas las tablas de multiplicar
+			}
+			jugada = 1;
+			aciertos = 0;
+			fallos = 0;
+			puntua();
+		}
+		function comprobarResultado(elemento) {
+			var intento = Number(document.getElementById(elemento).innerHTML);
+			var multiplicacion = document.getElementById("origen").innerHTML;
+			var multiplicando = Number(multiplicacion.substring(2));
+			var tabla=Number(document.getElementById("tabla").value);
+			var resultado = tabla*multiplicando;
+			if (intento==resultado) {
+				document.getElementById("muestraok").innerHTML = tabla.toString()+"x"+multiplicando.toString()+"="+resultado.toString();
+				document.getElementById("correcto").style.visibility="visible";
+				aciertos+=1;
+			} else {
+				document.getElementById("muestranok").innerHTML = "¡NO!";
+				document.getElementById("incorrecto").style.visibility="visible";
+				fallos+=1;
+			}
+			puntua();
+			return;
+		}
+		function puntua() {
+			if (jugada==1) puntosAnt = puntos;
+			puntos = aciertos - 0.1*fallos;
+			document.getElementById("estados").innerHTML=  "puntuacion: " + puntos.toFixed(2).toString() + "<br>jugada: " + jugada.toString() + "/" + maxJugada.toString() + "<br> aciertos: " + aciertos.toString() + "<br> fallos: " + fallos.toString() + "<br> Última: " + puntosAnt.toString();
+		}
+		function regenera() { //Rellena las tablas de datos con números aleatorios
+			var yaExiste = true;
+			var aleatorio = 1+Math.floor(Math.random()*9);
+			tabn=[];
+			tabn.push(1+Math.floor(Math.random()*9)); //Primer número aleatorio para multiplicandos
+			tabpor=[];
+			tabpor.push(1+Math.floor(Math.random()*9)); //Primer número aleatorio para multiplicadores
+			
+			for (i=1;i<9;i++) { //Recorremos las ocho últimas porque la primera ya la tenemos
+				yaExiste=true;
+				while (yaExiste) { //Con los multiplicandos
+					aleatorio = 1+Math.floor(Math.random()*9);
+					if (tabn.lastIndexOf(aleatorio)==-1){
+						yaExiste=false;
+						tabn.push(aleatorio);
+					}
+				}
+				yaExiste=true;
+				while (yaExiste) { //Con los multiplicadores
+					aleatorio = 1+Math.floor(Math.random()*9);
+					if (tabpor.lastIndexOf(aleatorio)==-1){
+						yaExiste=false;
+						tabpor.push(aleatorio);
+					}
+				}
+			}
+		}
+		function otra() {
+			if (jugada==maxJugada) { //Regenera las tablas con aleatorios
+				jugada=1; //Reiniciamos el contador de jugadas
+				aciertos=0;
+				fallos=0;
+				regenera();
+				indN=8;
+				indPor=8;
+				puntua();
+			} else { //Continúa con la siguiente
+				jugada += 1;
+				puntua();
+			}
+			document.getElementById("correcto").style.visibility="hidden";
+			var tabla=0;
+			if (document.getElementById("aleatorio").checked) {
+				tabla=cambiaTabla();
+			} else {
+				if (document.getElementById("tabla").value == "0" 
+				|| document.getElementById("tabla").value == "1"
+				|| document.getElementById("tabla").value == "2"
+				|| document.getElementById("tabla").value == "3"
+				|| document.getElementById("tabla").value == "4"
+				|| document.getElementById("tabla").value == "5"
+				|| document.getElementById("tabla").value == "6"
+				|| document.getElementById("tabla").value == "7"
+				|| document.getElementById("tabla").value == "8"
+				|| document.getElementById("tabla").value == "9"
+				) {
+					tabla=Number(document.getElementById("tabla").value);
+				} else {
+					tabla=cambiaTabla();
+				}
+			}
+			if (indN==8) indN=0;
+			else indN += 1;
+			var multiplicando = tabn[indN];
+			var deverdad = 1+Math.floor(Math.random()*4);
+			var valor=0;
+			var n=1;
+			var existe = true;
+			for ( n=1;n<=4;n++) {
+				do {
+					valor = 1+Math.floor(Math.random()*9);
+					existe=false;
+					for (m=1;m<=4;m++) {
+						if (valor == multiplicando || valor*tabla == Number(resultados(m))) {
+							existe = true;
+							break;
+						}
+					}
+				} while (existe);
+				poner(n,tabla*valor);
+			}
+			poner(deverdad,tabla*multiplicando);
+			document.getElementById("origen").innerHTML =  tabla.toString() + "x" + multiplicando.toString(); 
+			return;
+		}
+		function cambiaTabla(){
+			if (indPor == 8) indPor = 0;
+			else indPor += 1;
+			tabpor[indPor];
+			document.getElementById("tabla").value = tabpor[indPor].toString();
+			return tabpor[indPor];
+		}
+		function noLoSe() {
+			var multiplicacion = document.getElementById("origen").innerHTML;
+			var multiplicando = Number(multiplicacion.substring(2));
+			var tabla=Number(document.getElementById("tabla").value);
+			var resultado = tabla*multiplicando;
+			document.getElementById("muestranok").innerHTML = multiplicacion + " es " + resultado.toString();
+			document.getElementById("incorrecto").style.visibility="visible";
+			fallos+=0.5;
+			otra();
+			return;
+		}
+		function poner(indice,valor) { //Asigna valor a los resultados
+			switch (indice) {
+				case 1: document.getElementById("resultado01").innerHTML = valor.toString(); break;
+				case 2: document.getElementById("resultado02").innerHTML = valor.toString();  break;
+				case 3: document.getElementById("resultado03").innerHTML = valor.toString();  break;
+				case 4: document.getElementById("resultado04").innerHTML = valor.toString();  break;
+			}
+			return;
+		}
+		function resultados(indice) {
+			switch (indice) {
+				case 1: return Number(document.getElementById("resultado01").innerHTML);
+				case 2: return Number(document.getElementById("resultado02").innerHTML);
+				case 3: return Number(document.getElementById("resultado03").innerHTML);
+				case 4: return Number(document.getElementById("resultado04").innerHTML);
+			}
+			return 0;
+		}
+		function escalarFuente() {
+			clearTimeout(periodo);
+			escalar(document.getElementById("origen"));
+			escalar(document.getElementById("estados"));
+			//escalar(document.getElementById("infobar"));
+			//alert("x:" + document.getElementById("infobar").clientWidth + " y:" + document.getElementById("infobar").clientHeight);
+			escalar(document.getElementById("resultado01"));
+			escalar(document.getElementById("resultado02"));
+			escalar(document.getElementById("resultado03"));
+			escalar(document.getElementById("resultado04"));
+			escalar(document.getElementById("resolver"));
+			escalar(document.getElementById("otro"));
+			reescalado=true;
+		}
+		function escalar(elemento) {
+			var tamx = elemento.clientWidth;
+			var tamy = elemento.clientHeight;
+			var largo = elemento.innerHTML.length;
+			var maxt = 0;
+			var fontsize = "";
+			tamx = Math.floor(tamx / largo);
+			tamy = Math.floor(tamy / largo);
+			if (tamx > tamy) { maxt = tamy;}
+			else { maxt = tamx;}
+			elemento.style.fontSize = Math.floor(maxt).toString() + "px";
+		}
+	</script>
+</head>
+<body  onload="inicializa()"
+	style="background-color:#ddffdd;
+		font-family: 'Arial', Helvetica, sans-serif;"
+	><div id="infobar"
+		style="position:absolute;
+		height:35%;
+		width:30%;
+		left:5%;
+		top:12%;
+		background-color:#90ff90;
+		font-size:160%;
+		border-radius:8px;"
+		>Tabla del
+		<input id="tabla"
+			type="text"
+			value="7"
+			style="position:relative;
+				width:2em;
+				height:2em;
+				font-family: 'Arial', Helvetica, sans-serif;
+				border-radius:8px;
+				font-size:150%;
+				text-align:center;"
+			onchange="otra();"/>
+		<div style="font-size:160%;">¡TODAS!</>
+		<input id="aleatorio" 
+			type="checkbox"
+			style="width:10%;
+				height:10%;"
+			onclick="desactivaTabla();"
+			value=""/>
+		</div>
+		<div id="estados"
+			style="position:relative;width:90%;left:5%;top:10%;font-size:130%;background-color:#ffff90;border-radius:8px;"
+		>-</div>
+	</div>
+<div
+	style="border-width:1px;
+		border-radius:16px;
+		background-color:#ffaa00;
+		position:relative;
+		height:12%;
+		width:60%;
+		left:35%;
+		text-align:center;
+		font-size:250%;"
+	><span id="origen" style="position:relative;height:50%;top:20%;">7x8</span></div>
+<div 
+	style="border-width:6px;
+		border-radius:16px;
+		position:relative;
+		height:12%;
+		width:60%;
+		left:35%;
+		background-color:#aabbff;
+		text-align:center;
+		font-size:200%;
+		"
+	onmouseover="document.getElementById('resultado01').style.backgroundColor = '#aaffff';"
+	onmouseout="document.getElementById('resultado01').style.backgroundColor = '#aabbff';"
+	onclick="comprobarResultado('resultado01');"
+	><span id="resultado01" style="position:relative;height:50%;top:20%;">34</span></div>
+<div
+	style="border:6px;
+		border-radius:16px;
+		position:relative;
+		height:12%;
+		width:60%;
+		left:35%;
+		background-color:#aabbff;
+		text-align:center;
+		font-size:200%;
+		"
+	onmouseover="document.getElementById('resultado02').style.backgroundColor = '#aaffff';"
+	onmouseout="document.getElementById('resultado02').style.backgroundColor = '#aabbff';"
+	onclick="comprobarResultado('resultado02');"
+	><span id="resultado02" style="position:relative;height:50%;top:20%;">56</span></div>
+<div 
+	style="border-radius:16px;
+		position:relative;
+		height:12%;
+		width:60%;
+		left:35%;
+		background-color:#aabbff;
+		text-align:center;
+		font-size:200%;
+		"
+	onmouseover="document.getElementById('resultado03').style.backgroundColor = '#aaffff';"
+	onmouseout="document.getElementById('resultado03').style.backgroundColor = '#aabbff';"
+	onclick="comprobarResultado('resultado03');"
+	><span id= "resultado03" style="position:relative;height:50%;top:20%;">45</span></div>
+<div
+	style="border-radius:16px;
+		position:relative;
+		height:12%;
+		width:60%;
+		left:35%;
+		background-color:#aabbff;
+		text-align:center;
+		font-size:250%;
+		"
+	onmouseover="document.getElementById('resultado04').style.backgroundColor = '#aaffff';"
+	onmouseout="document.getElementById('resultado04').style.backgroundColor = '#aabbff';"
+	onclick="comprobarResultado('resultado04');"
+	><span id="resultado04" style="position:relative;height:50%;top:20%;">10</span></div>
+<div id="resolver"
+	style="background-color:#ff9090;
+		font-family:'Arial',Helvetica,sans-serif;
+		text-align:center;
+		border-radius:7px;
+		position:relative;
+		width:60%;
+		height:12%;
+		left:35%;
+		"
+	onclick="noLoSe()"
+	><span style="position:relative;height:50%;top:35%;">NO LO SE</span></div>
+<div id="otro"
+	style="background-color:#90ff90;
+		font-family:'Arial',Helvetica,sans-serif;
+		text-align:center;
+		border-radius:7px;
+		position:relative;
+		width:60%;
+		height:12%;
+		left:35%;
+		"
+	onclick="otra()"
+	><span style="position:relative;height:50%;top:35%;">OTRA</span></div>
+<div id="correcto"
+	style="visibility:hidden;
+		position:absolute;
+		width:90%;
+		height:70%;
+		top:5%;
+		left:5%;
+		text-align:center;
+		background-color:#00ff00;
+		font-size:400%;
+		border-radius:16px;"
+	onclick="otra();"
+	><span id="muestraok"
+		style="position:relative;height:50%;top:35%;">CORRECTO</span></div>
+<div id="incorrecto" style="visibility:hidden;position:absolute;width:90%;height:70%;top:5%;left:5%;text-align:center;background-color:#ff5533;font-size:400%;border-radius:16px;" onclick="document.getElementById('incorrecto').style.visibility='hidden'"><span id="muestranok" style="position:relative;height:50%;top:35%;">NO</span></div>
+<div style="font-size:50%;color:#c0c030">David Fernández Roibás - 2016</div>
+</body>
+</html>
