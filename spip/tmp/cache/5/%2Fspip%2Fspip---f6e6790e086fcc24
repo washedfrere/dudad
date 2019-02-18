@@ -1,0 +1,199 @@
+a:9:{s:5:"texte";s:15898:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Parámetros iniciales mecánica - Escribas TorredeKápter</title>
+<meta name="description" content="F&#237;sica inversa Diagrama b&#225;sico: Diagrama explcativo Momentos donde se puede saber la velocidad y la aceleraci&#243;n. Este esquema contiene (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique2">Ciencia</a> &gt; <strong class="on">Parámetros iniciales mecánica</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Parámetros iniciales mecánica</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-05-14T17:48:36Z">Jueves 14 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur1">Torredekapter</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p>Física inversa</p>
+
+<h3 class="spip">Diagrama básico:</h3>
+<dl class='spip_document_1 spip_documents spip_documents_center' >
+<dt><img src='local/cache-vignettes/L500xH354/diagrama_de_composicion_espaciotemporal-ecd41.png' width='500' height='354'  alt='PNG - 24.1 KB' style='height:354px;width:500px;' /></dt>
+<dt class='spip_doc_titre' style='width:350px;'><strong>Diagrama explcativo</strong></dt>
+<dd class='spip_doc_descriptif' style='width:350px;'>Momentos donde se puede saber la velocidad y la aceleración.
+</dd>
+</dl>
+<p>Este esquema contiene representada la base de la matemática física mecánica-dinámica a utilizar en el siguiente desarrollo. Consta de una linea horizontal; la linea espacio-temporal, así denominada por ser la que contiene tanto las longitudes como los tiempos, cada uno en su propia escala que haremos coincidentes en el esquema. Cada par de círculos concéntricos situados sobre esa linea espacio-temporal marca un momento de medición. Y cada línea vertical indica una serie de valores que se pueden obtener en ese momento y no antes (pero sí después) Por ejemplo t0 sería el tiempo inicial y se puede obtener en cualquier parte de la linea, ya que es el punto relativo de partida; lo mismo para d0, que sería la distancia inicial. d1 y d2 serían las distancias medidas en los momentos 1 y 2, al igual que t1 y t2 respecto del tiempo. v1, en cambio, sería la velocidad obtenida en el momento 1 y no se puede obtener antes, ya que para obtener una velocidad es necesario conocer una longitud y un tiempo (d1 y t1). Igualmente, a2 sería la aceleración en el punto 2, cuyo valor sólo se puede obtener a partir de la segunda medición por ser necesario conocer dos velocidades para calcularla. Por último están las llaves horizontales, que marcan el valor de las distancias y los tiempos diferenciales.  T1 sería el valor diferencial entre t0 y t1, marcado con el número 1 porque sólo se puede obtener en el punto 1, así como D2 sería el valor diferencial entre d1 y d2, sus respectivas marcas “absolutas” en la linea espacio-temporal.</p>
+
+<p>Hay que aclarar que el término espacio-temporal no hace mención ninguna a la teoría de la relatividad ni se pretende enlazar con ésta en ningún momento, siendo tan sólo un término descriptivo del esquema en concreto.</p>
+
+<h3 class="spip">Espacio vs Tiempo</h3>
+<p>El espacio, tomado como distancia, es algo medible en comparación con otras distancias definidas.</p>
+
+<p>El tiempo es más impreciso que la distancia, puesto que un suceso A, una vez ocurrido, nada nos dice que sea de la misma duración en la siguiente repetición. Que un suceso repetitivo A sea de la misma duración es algo supuesto que habría que demostrar a priori antes de utilizar el tiempo como base de medida alguna. Si medimos el suceso B en repeticiones del suceso A, el suceso B quedará expuesto a los errores reales de variación del suceso A más los errores de medida.</p>
+
+<p>La distancia, en cambio, tiene un error de medición restringido a los errores de medida, puesto que una distancia, bajo las mismas condiciones, siempre es la misma distancia.</p>
+
+<p>Una regla de un metro a una temperatura determinada, siempre mide un metro, en la superficie de la tierra o en el espacio. En cambio, un segundo dura más en la superficie de la tierra que en el espacio por el simple hecho de estar el espacio en el que sucede sometido a la aceleración gravitatoria.</p>
+
+<p>El tiempo, pues, debería ser la parte medible sobre una base fija espacial y sobre el que descubrir discrepancias. Es momento de rehacer la mecánica clásica bajo otros principios.</p>
+
+<p>La base fija espacial podría quedar establecida como un espacio euclídeo donde existen rectas paralelas y tangentes contenidas en infinitos planos paralelos y tangentes, conformando una estructura lógica sobre la que representar el universo de forma matemática y visualmente acorde con nuestra percepción de la realidad.</p>
+
+<p>Vuelvo a incidir aquí sobre el concepto “espacio-temporal” para prevenir de la idea básica que maneja este escrito. Se asume que el tiempo es algo irreal, marcado por dos sucesos o más entre los cuales ocurre un tercero que es el que se mide “temporalmente”. Esto quiere decir que el tiempo no existe y que la geometría es sólo espacial, siendo la temporalidad la variación sobre dicha geometría. No tomo el tiempo como una coordenada espacial más puesto que sería redundar en la idea de un espacio en evolución (como movimiento, no como elevación o destino) y se nos haría exponencial el concepto de tiempo, curvando nuestro espacio euclídeo y haciendo imposible visualizar la realidad física obtenida de la deducción matemática.</p>
+
+<h3 class="spip">Lentitud vs Velocidad</h3>
+<p>El poner en relación el tiempo con el espacio es algo que se debe hacer con mucha precaución.</p>
+
+<p>Si utilizamos la velocidad como base, estamos basando las mediciones en el tiempo, dado que el divisor es el tiempo. Todo queda relegado a la exactitud de la base temporal y, como he dicho, no es exacta.</p>
+
+<p>La base de la rapidez con que se mueve un objeto habría que establecerla respecto del espacio. De esta manera, mediríamos lentitudes en lugar de velocidades.</p>
+
+<p>La lentitud le quedaría definida como la cantidad de unidades temporales por cada unidad espacial. En el sistema internacional, serían segundos partido por metro, así:
+l sub e = <i>t sub 1 - t sub 0</i> over  <i>d sub 1 - d sub 0</i> = T sub 1 over D sub 1
+(Nota: Para comprender el significado de cada variable utilizada, mirar el diagrama básico; al comienzo de este documento)</p>
+
+<p>En un primer vistazo, nos damos cuenta de que la distancia podría ser cero. Esto significaría una lentitud infinita, puesto que un número dividido entre cero indica una tendencia al infinito, una indeterminación matemática con resultado “lógico” de infinitud. La primera consecuencia es que la lentitud jamás se podrá medir si no hay movimiento alguno (cosa bastante lógica, por cierto), mientras que la velocidad puede valer cero y nadie se asusta por ello.</p>
+
+<p>Por otra parte, una velocidad tendría un significado similar si el tiempo pudiera ser nulo o cero. Ello significaría una velocidad infinita, pero la física establece que la máxima velocidad posible es la de la luz. Para la lentitud, por contrario, la mínima lentitud posible podría ser 3,3·10⁻⁹, que sería la lentitud de la luz (lc)</p>
+
+<p>Este, quizá, sea un buen motivo para tratar con velocidades en lugar de con lentitudes, puesto que la velocidad cero o lentitud infinita es algo que nos podemos encontrar muy a menudo, simplemente tirando una piedra hacia arriba, esta alcanza una altura determinada en la que su velocidad se hace cero, es decir, su lentitud se hace infinita.</p>
+
+<p>Otra cuestión es la de la lentitud igual a cero, lo que significaría la ausencia de tiempo, pero sabemos que esto no es posible, puesto que el tiempo lo medimos en comparación con un suceso repetitivo y no podríamos medir un tiempo cero jamás (como tampoco podríamos medir un tiempo negativo, puesto que el suceso se repite, pero no se invierte)</p>
+
+<h3 class="spip">Inactividad vs Aceleración</h3>
+<p>La inactividad ia sería la variación de la lentitud con respecto a la variación del espacio, así:</p>
+
+<p>i sub a =  <i>L sub 2 - L sub 1</i> over <i>d sub 2 - d sub 1</i></p>
+
+<p>Podría haberse pensado otra cosa. Dado que la lentitud es la inversa de la velocidad, podría haberse definido la inactividad como la inversa de la aceleración.  La diferencia entre una u otra radica en el significado. La  inactividad tal cual la he definido, representa una variación de lentitud con respecto a la base del sistema: el espacio (las distancias) La inversa de la aceleración, sería una variación del tiempo con respecto a las velocidades. Esta idea es muy sugerente, dado que nos lleva a pensar en la variación temporal relativista que se produce con velocidades cercanas a la de la luz y podría sugerirse algún método para aproximar la una a la otra, pero se sale de la norma principal de este paradigma: el espacio como sistema base en sustitución del tiempo.</p>
+
+<p>La inactividad según hemos definido arriba sería:</p>
+
+<p>i sub a = <i>L sub 2 - L sub 1</i> over <i>d sub 2 - d sub 1</i> = <i>T sub 2 over D sub 2 - T sub 1 over D sub 1</i> over <i>D sub 2</i> = <i>T sub 2 cdot D sub 1 - T sub 1 cdot D sub 2</i> over <i>D² sub 2 cdot D sub 1</i> = T sub 2 over <i>D² sub 2 </i> - T sub 1 over <i>D sub 2 cdot D sub 1</i> = <i>L sub 2 over D sub 2 - L sub 1 over D sub 2</i>
+Expuesta la formulación en múltiples formas para su mayor comprensión.</p>
+
+<p>Las unidades de la inactividad serían segundos por metros a la menos 2. La lectura de dichas unidades podría ser “segundos por metro a cada metro” y significaría la cantidad de segundos que varía una lentitud respecto de otra tras recorrer un metro. De esta manera, una inactividad positiva estaría significando una deceleración (incremento de lentitud), mientras que una inactividad negativa estaría significando aceleración (decremento de lentitud).</p>
+
+<p>Al exponer la lentitud, mostré la indeterminación de la distancia igual a cero. En la inactividad podría ser que un móvil parta de una velocidad cero, es decir, una lentitud infinita. En este caso, cualquier inactividad sería infinita negativa, puesto que L1 sería un “menos infinito” sin solución aparente sea cual fuere el valor de L2 o de D2 en la ecuación de arriba.</p>
+
+<h3 class="spip">Conclusión</h3>
+<p>El paradigma del espacio como base matemática para la física mecánica clásica establecería un principio más exacto que la medida sobre una base temporal, más inexacta, pero está claro que la matemática es incapaz de tratar con las indeterminaciones que se producen en los sucesos más cotidianos para los cuales está creada la mecánica clásica.</p>
+
+<p>Esto nos lleva a utilizar el tiempo como base, pero con ciertas condiciones que no habría que olvidar, aunque no se han llevado a cabo por la ciencia en sus más de 200 años de existencia, a saber:</p>
+
+<p><img src="local/cache-vignettes/L8xH11/puce-32883.gif" width='8' height='11'  alt="-" style='height:11px;width:8px;' />&nbsp;El tiempo no existe per se, sino que es una ficción basada en la repetición de un suceso que nada indica que siempre se repita con la misma cadencia exacta. Un simple campo gravitatorio, o su ausencia, podría alterar la cadencia de repetición de suceso y hacernos creer que las cosas van más o menos despacio.
+<br /><img src="local/cache-vignettes/L8xH11/puce-32883.gif" width='8' height='11'  alt="-" style='height:11px;width:8px;' />&nbsp;A pesar de utilizar el tiempo como base, hay que tener presente que el tiempo es menos exacto que la distancia, por lo que hay que incidir en la mejora de las mediciones temporales frente a las métricas (actualmente esto es ya un hecho)
+<br /><img src="local/cache-vignettes/L8xH11/puce-32883.gif" width='8' height='11'  alt="-" style='height:11px;width:8px;' />&nbsp;Dado que el tiempo no existe, nada impide que su valor sea nulo o negativo, pudiendo existir una velocidad infinita aunque no se tenga constancia de ello. Sólo se admite su posibilidad, admitiendo también su poca probabilidad (pero poca probabilidad no es lo mismo que nula probabilidad)
+<br /><img src="local/cache-vignettes/L8xH11/puce-32883.gif" width='8' height='11'  alt="-" style='height:11px;width:8px;' />&nbsp;Hay que tener en cuenta que un tiempo negativo está haciendo referencia al pasado, es decir, a sucesos ya medidos, por lo que un resultado de tiempo negativo, probablemente, esté haciendo referencia a un punto del pasado, no a la inversión de los hechos. Esto quiere decir que el suceso repetitivo en el que se basa el concepto de tiempo, siempre se repite una vez detrás de otra y nunca se deshace su repetición: uno puede tirar una piedra y esperar a que caiga y repetirlo una y otra vez, pero no se puede esperar a que la piedra se eleve del suelo recorriendo el camino inverso hasta la mano desde la que fue lanzada.
+<br /><img src="local/cache-vignettes/L8xH11/puce-32883.gif" width='8' height='11'  alt="-" style='height:11px;width:8px;' />&nbsp;Un tiempo negativo, hace referencia a una situación pasada, pero nada indica a que la repetición del suceso sobre la que nos basamos para establecer un tiempo haya sido igual en ese pasado, sobre todo cuando hablamos de un pasado muy lejano cuyas condiciones respecto a las actuales no son las mismas y no son reproducibles (por ejemplo, el mejor reloj atómico tiene un error de un segundo cada 50 millones de años, pero está basado en condiciones de laboratorio concretas)</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '1',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=1" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique2">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article1" class="on">Parámetros iniciales mecánica</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"5/%2Fspip%2Fspip---f6e6790e086fcc24";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:8:"article1";s:0:"";s:10:"id_article";s:1:"1";s:4:"date";s:19:"2009-05-15 01:22:38";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-15 01:22:38";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

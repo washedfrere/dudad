@@ -1,0 +1,53 @@
+a:9:{s:5:"texte";s:1927:"
+<div id="bas">
+	<a href="http://www.torredekapter.es/spip" title="Portada del sitio">Portada del sitio</a> | 
+	<a href="spip.php?auteur1" title="Contacto">Contacto</a> | 
+	<a href="http://www.torredekapter.es/spip/spip.php?page=plan" title="Mapa del sitio">Mapa del sitio</a> | 
+	  <a href="<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/url_logout.php");
+inclure_balise_dynamique(balise_URL_LOGOUT_dyn(''),1, 6);
+if ($lang_select) lang_select();
+?>">Desconectarse</a>
+	 | 
+	<a href="http://www.torredekapter.es/spip/spip.php?page=statistiques" title="Estad&iacute;sticas del sitio">Estad&iacute;sticas de visitas</a> | 
+	<span style="white-space: nowrap;">visitas: <?php
+	$contexte_inclus = array('fond' => 'inc/inc-affvisit',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?></span>
+
+	<p>
+		<a href="http://www.torredekapter.es/spip/spip.php?page=backend" rel="nofollow" title="Sindicaci&oacute;n Espa&#241;ol"><img src="squelettes-dist/feed.png" alt="Seguir la vida del sitio" style="position:relative;bottom:-0.3em;" width="16" height="16" class="format_png" /><span style="text-transform: uppercase;">&nbsp;es&nbsp;</span></a>
+
+
+
+
+	<big>&nbsp;
+		<b><a href="http://es.wikipedia.org/wiki/Really_Simple_Syndication">?</a></b>
+	</big>
+
+	</p>
+	
+	<p>
+		<a href="http://www.spip.net" title="Sitio desarrollado con SPIP 2.0.8 [13982]"> Sitio desarrollado con SPIP 2.0.8</a> + 
+		<a href="http://edu.ca.edu/rubrique43.html" title="esqueleto AHUNTSIC - 1.0.0 [28087]">AHUNTSIC</a>
+	</p>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bas_cc',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!-- fin bas -->
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bas_menu-lang',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	<!-- SPIP-CRON --><div style="background-image: url('http://www.torredekapter.es/spip/spip.php?action=cron');"></div>
+
+";s:9:"squelette";s:37:"html_cfd6d70febb562b11da51e8b937c2322";s:6:"source";s:38:"plugins/auto/ahuntsic/inc/inc-bas.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:2:{s:5:"cache";s:35:"b/inc%2Finc-bas-1-es--dc46c784486dc";s:7:"session";s:8:"bbfcbf59";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:9:"id_auteur";s:1:"1";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 20:15:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 20:15:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

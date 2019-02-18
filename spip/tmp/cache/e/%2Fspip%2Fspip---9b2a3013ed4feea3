@@ -1,0 +1,185 @@
+a:9:{s:5:"texte";s:11134:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Relatividad lumínica - Escribas</title>
+<meta name="description" content="Relatividad lum&#237;nica Relaci&#243;n entre un movimiento y su observaci&#243;n a una distancia s. En la imagen se presenta un objeto en movimiento descendente (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <a href="spip.php?rubrique2">Ciencia</a> &gt; <strong class="on">Relatividad lumínica</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Relatividad lumínica</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-06-14T11:53:02Z">Domingo 14 de junio de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p><strong>Relatividad lumínica</strong></p>
+
+<p>Relación entre un movimiento y su observación a una distancia <strong>s</strong>.<span class='spip_document_9 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L382xH312/10000000000002800000020C3C097692-016f7.png' width='382' height='312'  alt="" style='height:312px;width:382px;' /></span>En la imagen se presenta un objeto en movimiento descendente a una velocidad <strong>v</strong> y un observador evaluando dicho movimiento a una distancia <strong>s</strong> perpendicular al movimiento del objeto. El objeto se representa por un círculo azul y el observador por un ojo.</p>
+
+<p>El objeto pasa por dos puntos de control <strong>0</strong> y <strong>1</strong> situados en su dirección de desplazamiento. Cuando el objeto pasa por el punto <strong>0</strong>, digamos que ha ocurrido en el tiempo absoluto <strong>tmov0</strong>, situado en la línea horizontal de tiempo en la parte de abajo de la imagen. Igualmente, el tiempo <strong>tmov1</strong> marca el paso por el punto de control <strong>1</strong>.</p>
+
+<p>El observador, en cambio, ve el paso por los puntos de control desde una distancia <strong>s</strong> respecto de la dirección de desplazamiento del objeto. El observador ve el paso del objeto por el punto de control <strong>0</strong> en el momento <strong>tob0</strong> y por el punto de control <strong>1</strong> en el tiempo <strong>tob1</strong>.</p>
+
+<p>Desde que el objeto pasa por el punto de control <strong>0</strong>, la luz que permite observar el fenómeno, tiene que viajar por el trayecto <strong>a</strong> hasta el observador, empleando un tiempo igual a <strong>a/c</strong>, donde <strong>c</strong> es la velocidad de la luz (ahora no nos preocupa el medio en el que esto ocurra) De igual forma, desde que el objeto pasa por el punto de control <strong>1</strong>, la luz que recorre el camino <strong>b</strong>, tarda un tiempo <strong>b/c</strong> en llegar al observador. Estas relaciones permiten conocer el tiempo relativo del observador respecto al suceso:
+<span class='spip_document_11 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L100xH82/Pantallazo-af1d8.png' width='100' height='82'  alt="" style='height:82px;width:100px;' /></span></p>
+
+<p>Cuando el objeto ha recorrido la distancia <strong>d</strong>, emplea un tiempo <strong>t </strong>determinado por <strong>tmov0</strong> y <strong>tmov1</strong>, permitiéndonos obtener la velocidad <strong>v</strong> del objeto:
+<span class='spip_document_12 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L245xH42/Pantallazo-1-d16f1.png' width='245' height='42'  alt="" style='height:42px;width:245px;' /></span></p>
+
+<p>Para el observador, en cambio, el tiempo <strong>to</strong> empleado en recorrer la distancia <strong>d</strong>, viene determinado por <strong>tob0</strong> y <strong>tob1</strong>, permitiéndole calcular la velocidad <strong>vo</strong> del objeto:
+<span class='spip_document_13 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L227xH45/formula3-2c4b1.png' width='227' height='45'  alt="" style='height:45px;width:227px;' /></span></p>
+
+<p>Midiendo en tiempo absoluto, sabemos que <strong>tob0</strong> es posterior a <strong>tmov0</strong> y que <strong>tob1</strong> es posterior a <strong>tmov1</strong> en una relación conocida:
+<span class='spip_document_14 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L375xH123/formula4-1ad33.png' width='375' height='123'  alt="" style='height:123px;width:375px;' /></span></p>
+
+<p>El tiempo del observador <strong>to</strong> es, por tanto:
+<span class='spip_document_15 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L182xH42/formula5-f71a9.png' width='182' height='42'  alt="" style='height:42px;width:182px;' /></span></p>
+
+<p>Para que el observador y el objeto coincidan en la medición de tiempo, tenemos que <strong>a</strong> debe ser igual a <strong>b</strong>:
+<span class='spip_document_16 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L193xH61/formula6-0fb53.png' width='193' height='61'  alt="" style='height:61px;width:193px;' /></span></p>
+
+<p>Cualquier otra posición del observador respecto del movimiento provocará una velocidad diferente respecto de la real en un factor dado por la diferencia de las distancias a los puntos de control:
+<span class='spip_document_17 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L500xH82/formula7-d4e91.png' width='500' height='82'  alt="" style='height:82px;width:500px;' /></span></p>
+
+<p>Hasta aquí, hemos calculado las relaciones en función de los tiempos absolutos conocidos por un tercer observador (nosotros). ¿Podría calcularse la diferencia a partir de los datos conocidos por el observador?</p>
+
+<p>Para el observador, el objeto viaja a velocidad <strong>vo</strong> y cumple las reglas del movimiento, hasta que esto objeto interactúa con otro. Por lo general, un observador suele situarse a la altura de uno de los dos puntos de control (origen o final del objeto) por “comodidad”. Realizando un simple cálculo, puede verse cómo las velocidades así medidas resultan ser siempre iguales para el observador, quien nota efectos extraños en el objeto (la ley de la cantidad de movimiento parece quebrantarse en ocasiones a altas velocidades, por ejemplo) y trata de buscar una explicación desconociendo el hecho que plasmo aquí.</p>
+
+<p>En la siguiente gráfica, se puede observar la variación de velocidad para un observador situado perpendicularmente al movimiento, a la altura del punto final, a una distancia incremental en forma exponencial, midiendo unas velocidades que también van creciendo en forma exponencial. La distancia entre los puntos de control es de 1 unidad de longitud y el valor de <strong>c</strong> se ha establecido en 3x10⁸ unidades de longitud/unidades de tiempo:<span class='spip_document_10 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L500xH370/10000201000002EF0000022B17EA1F1E-2d21b.png' width='500' height='370'  alt="" style='height:370px;width:500px;' /></span>Puede verse cómo a bajas velocidades, la diferencia de velocidad es prácticamente nula, sobre todo si la distancia al punto final es grande (y perpendicular a dicho punto, como ya se ha dicho) y cómo se magnifica dicha diferencia a medida que la velocidad aumenta y la distancia disminuye</p>
+
+<p>Para minimizar la diferencia, en las condiciones dadas y sin recurrir a correcciones, debemos medir velocidades pequeñas desde distancias grandes.</p>
+
+<p>Dicho efecto prevalece independientemente de si se utiliza un medio de ampliación óptico para la medida, dado que el trayecto que recorre la luz es casi el mismo por mucho que se amplíe ópticamente, por lo que tanto telescopios como microscopios mantendrán dicho efecto.</p>
+
+<p>Si se realiza la medida perpendicularmente al centro entre los dos puntos de control, la velocidad calculada por el observador será exactamente igual a la del objeto en movimiento. El cálculo de la velocidad de la luz, por ejemplo, es una medida real debido a que en su cálculo ambos puntos de control están en el observador (si utilizamos experimentos en los que la luz sale desde el observador, rebota en algún punto y vuelve al observador, con lo que <strong>a</strong>=<strong>b</strong>=0)</p>
+
+<p>Estrictamente: una velocidad medida es real si las distancias a los puntos de control de dicha velocidad es la misma (ley de Davidín) Esta medición está dibujada en el inicio del presente escrito.</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '18',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=18" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique2">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article19">Regravitación Newtoniana</a></li>
+                
+                <li><a href="spip.php?article14">Masa Variable</a></li>
+                
+                <li><a href="spip.php?article18" class="on">Relatividad lumínica</a></li>
+                
+                <li><a href="spip.php?article16">Velocidad máxima</a></li>
+                
+                <li><a href="spip.php?article3">Física inversa</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"e/%2Fspip%2Fspip---9b2a3013ed4feea3";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:9:"article18";s:0:"";s:10:"id_article";s:2:"18";s:4:"date";s:19:"2010-10-12 22:07:34";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-12 22:07:34";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

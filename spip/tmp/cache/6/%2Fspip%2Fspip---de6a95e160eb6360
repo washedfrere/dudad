@@ -1,0 +1,235 @@
+a:9:{s:5:"texte";s:13594:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Salud y Enfermedad - Escribas</title>
+<meta name="description" content="Como introducci&#243;n a este apartado sobre la Salud, voy a escribir unas l&#237;neas para mostrar la idea subyacente. La Salud Resulta que la salud, (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <a href="spip.php?rubrique3">Salud</a> &gt; <strong class="on">Salud y Enfermedad</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Salud y Enfermedad</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-05-20T01:32:00Z">Mi&eacute;rcoles 20 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p>Como introducción a este apartado sobre la Salud, voy a escribir unas líneas para mostrar la idea subyacente.</p>
+
+<p><strong>La Salud</strong></p>
+
+<p>Resulta que la salud, según la entendemos y la vivimos, es un estado inexistente, porque no hay nadie que esté realmente sano. Parece una paradoja abrir un tema para tratar de algo que no existe y alguna persona se preguntará por qué estoy diciendo ésto.</p>
+
+<p>La salud es la conjunción de varios factores en un ser vivo. Entran en juego tanto los pormenores físicos como los pormenores psíquicos. Por ejemplo, una persona con algún dolor no puede decirse que esté sana. De igual forma, una persona triste tampoco puede decirse que esté sana.</p>
+
+<p>La salud, entonces, podríamos definirla como el mejor estado físico junto al mejor estado anímico.</p>
+
+<p>Así visto, todos somos un conjunto de enfermos buscando remedio a sus males.</p>
+
+<p>Para alcanzar la salud tan anhelada por todas las personas (los animales no piensan en la salud, sólo padecen la enfermedad) es necesario que la armonía física y mental vayan parejas.</p>
+
+<p><strong>La Enfermedad</strong></p>
+
+<p>Algunos dicen que desde que nacemos estamos muriendo. Puede ser verdad.</p>
+
+<p>El cuerpo de un ser vivo tiene un fin y varias metas. El fin es la muerte, la destrucción de dicho cuerpo y su descomposición para que sus componentes se reutilicen en otro ser vivo o en la composición de rocas, mares, cielo o yo qué se. El cuerpo es biodegradable y reciclable 100%, todo un hito para la moda <i>reciclatoria</i> que se ha instaurado en nuestras sociedades (algo que debería ser una costumbre, no una moda)</p>
+
+<p>Las metas del cuerpo de un ser vivo consisten, según los casos, en crecer, relacionarse y reproducirse. No todos los cuerpos necesitan crecer (algunos organismos unicelulares permanecen tal cual "nacen") ni todos los cuerpos se reproducen (algunos se clonan). En el éxito de sus metas depende su existencia y, en todos los casos, la existencia de la especie o metacuerpo compuesto por individuos que forman sociedades (no solo las humanas, obviamente)</p>
+
+<p>La enfermedad tiene mucho que ver con el camino que transita un cuerpo hasta su muerte. Si en ese camino se encuentra con elementos que lo detienen, lo desvían de sus metas o lo entretienen, podríamos hablar de un cuerpo enfermo.</p>
+
+<p>Vemos, desde este punto de vista, que la enfermedad y la experiencia tienen mucho que ver. Una enfermedad no es más que un funcionamiento anómalo de un ser vivo, entendiendo por anómalo algo que se sale de lo normal, de lo común.</p>
+
+<p>Una enfermedad es tanto un quiste como un catarro como una depresión como un disgusto o una alegría, aunque normalmente la enfermedad tiene una connotación negativa y sólo se aplica a aquellos comportamientos anómalos que impiden desarrollar el funcionamiento "normal" o suponen un perjuicio para el ser que la padece.</p>
+
+<p>Una carcajada es algo que podemos catalogar como de poco normal, pero una carcajada no la catalogamos como enfermedad, a no ser que se trate de un extraño caso de risa incontrolada y constante. A partir del momento en que un ser vivo es incapaz de controlar a voluntad algo, estamos más cerca de la enfermedad. Un tic, por ejemplo, una tristeza inmensa que no se pasa, la ansiedad, el estrés constante que desgasta nuestra mente y nuestro cuerpo; todos son casos de enfermedad.</p>
+
+<p>Estar triste por una eventualidad, no es una enfermedad. Cansarse al realizar una actividad excesiva tampoco es una enfermedad. Incluso aburrirse, si es algo circunstancial, no es una enfermedad, a no ser que todo nos aburra todo el tiempo.</p>
+
+<p>Todos los seres tenemos algún tipo de enfermedad. Absolutamente todos.</p>
+
+<p>El enfermo, entonces, es todo el mundo, porque todo el mundo tiene algún tipo de enfermedad. Lo único que podemos hacer con la enfermedad es cambiarla de sitio, pero por mucho que lo intentemos, seguiremos siendo enfermos y enfermas a punto de morir. Y es algo que hay que aceptar tal y como viene en lugar de malograr la vida con sombras de algo que podría ser y nunca es.</p>
+
+<p>Para pasar de enfermo a sano sólo hay un camino: crear. Y es un camino eterno.</p>
+
+<p>¿Qué es eso de crear?</p>
+
+<p><strong>Creatividad</strong></p>
+
+<p>Todo ser vivo tiene la capacidad de crear.</p>
+
+<p>Crear no es más que poner algo donde no lo hay. Nada más. Así de simple.</p>
+
+<p>Los médicos crean tratamientos.</p>
+
+<p>Los ortopedias crean miembros.</p>
+
+<p>Los sanos crean enfermedades.</p>
+
+<p>Los enfermos crean alternativas.</p>
+
+<p>Crear no es copiar porque copiar es poner algo que ya existe, aunque en ocasiones es preferible copiar a no crear nada (como bien sabe quien ha tenido que enfrentarse a un examen para aprobar o suspender y no tenía nada que crear en ese espacio en blanco bajo la pregunta)</p>
+
+<p>Yo estoy creando para sanarme. Este escrito es una creación (si fuera una copia, me limitaría a buscar en Google y recortar frases y párrafos para ponerlos aquí, que es más sencillo que expresar lo que el alma crea)</p>
+
+<p>Crear es encontrar una motivación. Donde no había ganas, creamos ganas de algo. Para ello es necesario encontrar la musa, que puede ser este mismo texto o la simple palabra de alguna amistad.</p>
+
+<p>No estoy hablando de creación divina (de ser así, este escrito estaría en el apartado de metafísica, no en el de salud) sino de creación pura y simple; de algo que todo ser vivo puede hacer y, de hecho, hace.</p>
+
+<p>Todo ser vivo crea una respuesta a su enfermedad. ¿Cuál es la mía? Sin esa respuesta, sin esa creación, la enfermedad permanecería ahí hasta terminar con la vida o junto a la vida, lo cual es una opción tan válida como otra cualquiera.</p>
+
+<p>Crear implica palabra. Palabra implica acción. Crear implica acción. Acción no implica movimiento. Crear puede, o no, implicar movimiento, pero seguro que implica acción. Acción puede ser desde una intención hasta correr, desde un pensamiento hasta apretar un botón. Incluso dejar la mente en blanco implica acción.</p>
+
+<p>Como he dicho, todo ser vivo crea. Lo único que impide que un ser vivo cree algo es el temor o el miedo. El miedo es opuesto a crear para la salud.</p>
+
+<p>Se entienda, o no, que crear es la "solución" a la enfermedad, sí que se entenderá que el miedo es lo opuesto a salud, porque el miedo es lo que crea un ser vivo para no tener que hacer frente a la enfermedad.</p>
+
+<p><strong>El Miedo</strong></p>
+
+<p>Si un ser vivo crea miedo, está creándolo en lugar de otra cosa. Generalmente esa otra cosa suele ser salud, que ya hemos visto que tiene que ser creada como "solución" a la enfermedad.</p>
+
+<p>Mi abuelo paterno estuvo creando su propia salud hasta poco antes de su muerte. Tan sólo cuando creó miedo, pudo su cuerpo morir. Resulta que le detectaron un cáncer y él, ni corto ni perezoso, como en muchas otras ocasiones de su vida, se enfrentó a él con el objetivo de ganar. Su primera decisión fué no operarse, pero toda la familia se le echó encima y tuvo miedo de ser rechazado por su propia familia, así que se operó. Él, lo que quería, era vivir sus últimos años como los había vivido siempre: disfrutando de la vida. Lo que él no quería era pasar sus últimos momentos sin poder comer lo que le apetecía, porque era de buen comer. Al operarse, obtuvo lo que no quería.</p>
+
+<p>Mi abuelo hubiera muerto, probablemente, en el mismo tiempo, o menos, de no haberse operado. Duró un año, aproximadamente, tras la operación. Muchas personas, gracias a la operación, sobreviven al cáncer y a muchas otras cosas, pagando el precio por ello, claro está, pero sobreviven un tiempo más (recordemos que la muerte es algo que siempre llega por mucho que corras para que no te pille) Pero a mi abuelo no lo mató el cáncer, sino su falta de apetito para con los purés que tenía que tomar desde entonces, provocada por su falta de motivación y de alegría al no poder comer lo que realmente le apetecía.</p>
+
+<p>Si mi abuelo no le tenía miedo a la muerte, ¿dónde está el miedo que le hizo enfermar tanto? En el miedo a ser rechazado por su propia familia o darles el disgusto de ser el que provocara su propia muerte.</p>
+
+<p>Durante la vida, desde que nacemos, nos dedicamos a crear miedos que resultan en un incremento de la enfermedad que los ha provocado. En lugar de crear para sanar, creamos para mantener la enfermedad.</p>
+
+<p>Está claro que una persona sin una enfermedad o con una enfermedad que es persona no considere enfermedad, no puede crear miedo, sino salud, es decir: vida.</p>
+
+<p>Superar un miedo consiste en crear la confianza adecuada para que se anulen el uno con la otra. Un miedo no se puede "descrear", porque está creado por y para algo y permanece ahí por nuestra "santa" voluntad mientras ese algo esté presente.</p>
+
+<p>Me he quitado un miedo y me he puesto otros. En eso consiste la enfermedad, como ya he dicho: en pasarla de un sitio a otro hasta que la muerte nos separa.</p>
+
+<p>La confianza no es suficiente. Puedes saltar con toda confianza por un precipicio y quedar hecho un amasijo de carne, sangre y vísceras en el fondo del abismo. La confianza nos lleva a hacer cosas que nuestros miedos evitan que hagamos.</p>
+
+<p><strong>El Sentido Común</strong></p>
+
+<p>He leído alguna vez que "el sentido común es el menos común de todos los sentidos" y puede ser verdad.</p>
+
+<p>Se puede mostrar una pasión desmedida por algo. Se puede mostrar una confianza exagerada que haga frente a todo tipo de miedos. Se pueden tener herramientas perfectas para todo tipo de trabajos.</p>
+
+<p>¿Qué ocurre cuando se dispone de todo excepto de sentido común? Ocurre la muerte en la mayoría de los casos, cuando no una lesión de por vida.</p>
+
+<p>El sentido común representa la justa medida en los actos. Si habláramos de productos comerciales, diríamos que el sentido común es el precio justo de un producto. No compraríamos una pelota que valiera todo lo que podemos ganar en un año. Entonces, el sentido común impide que tomemos decisiones sin pararnos a meditar mínimamente las consecuencias.</p>
+
+<p>Para crear hace falta sentido común.</p>
+
+<p>Para superar un miedo hace falta creatividad y sentido común.</p>
+
+<p>Para encontrar la salud hace falta confianza, creatividad y sentido común.</p>
+
+<p>Eso es todo, por ahora.</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '10',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=10" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '3',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique3">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article12">Altruismo y salud</a></li>
+                
+                <li><a href="spip.php?article10" class="on">Salud y Enfermedad</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"6/%2Fspip%2Fspip---de6a95e160eb6360";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:9:"article10";s:0:"";s:10:"id_article";s:2:"10";s:4:"date";s:19:"2010-09-08 18:31:57";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-08 18:31:57";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

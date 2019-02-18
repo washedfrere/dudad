@@ -1,0 +1,39 @@
+1>>Escrito De Partida<<1
+Todos los escritos tendrán este aspecto.
+---
+2>>Con títulos descriptivos<<2
+3>>Con subtítulos y demás parafernalia visual.<<3
+<<<
+A partir de aquí, la imaginación y el trabajo de plasmar las ideas en
+palabras lo más fidedignas posibles harán el resto.
+<<<
+Como en todo escrito web, habrá gráficos (_>>como este:i>>smile.jpg<<i<<_), tablas y demás contenido gráfico con el único fin de explicar y explorar.
+<<<
+c>>i>>lapluma.jpg<<i<<c
+No nos queremos quedar en contar batallas de guerras ajenas, sino en
+bucear en los temas con los que más identificados nos sentimos hasta
+sacarles la última gota de jugo. Actualizaremos lo que creamos
+actualizable y corregiremos lo que veamos que es incorrecto. Llenaremos
+los huecos que dejemos por ignorancia o falta de inspiración y
+crearemos, a partir de lo que sea, un escrito ameno, informativo,
+completo y sencillo (al menos para que nosotros mismos seamos capaces
+de entenderlo)
+<<<
+Un ejemplo de listas.
++>>n>>Apartado 1<<n
+<<<
+Con texto incluido para dar más énfasis al apartado. Poder escribir en formato listas es muy interesante, ya que permite numerar y colocar el texto de forma más organizada y concreta, pudiendo hacer un estudio más detallado de las ideas que éste presenta.
+->>n>>Apartado 2<<n
+	+>>n>>Apartado 2.1<<n
+	->>n>>Apartado 2.2<<n
+		+>>n>>Apartado 2.2.1<<n
+		<<<Con contenido de texto más o menos amplio a fin de comprobar el incremento del margen izquierdo en toda su _>>plenitud<<_, no sea que, por fortuna, cambie éste de parecer y se convierta en un texto aleatorio.
+		->>n>>Apartado 2.2.2<<n
+		->>n>>Apartado 2.2.3<<n
+		<<+
+	<<+
+->>n>>Apartado 3<<n
+<<+
+---
+Un servidor de ustedes.
+

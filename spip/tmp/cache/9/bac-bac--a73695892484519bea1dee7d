@@ -1,0 +1,101 @@
+a:9:{s:5:"texte";s:2129:"<?xml 
+version="1.0" encoding="utf-8"?>
+<rss version="2.0" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+>
+
+<channel xml:lang="es">
+	<title>Escribas</title>
+	<link>http://www.torredekapter.es/spip/</link>
+	<description>Lugar para compartir conocimientos de las palomas allegadas y reci&#233;n llegadas</description>
+	<language>es</language>
+	<generator>SPIP - www.spip.net</generator>
+
+	<image>
+		<title>Escribas</title>
+		<url>http://www.torredekapter.es/spip/local/cache-vignettes/L144xH24/siteon0-13a5d.png</url>
+		<link>http://www.torredekapter.es/spip/</link>
+		<height>24</height>
+		<width>144</width>
+	</image>
+
+
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '19',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '12',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '14',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '18',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '17',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '16',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '10',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '13',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '9',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc-rss-item',
+	'id_article' => '7',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+
+
+
+</channel>
+
+</rss>
+";s:9:"squelette";s:37:"html_edf4f250b23330602a9dacb173385c23";s:6:"source";s:28:"squelettes-dist/backend.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"9/bac-bac--a73695892484519bea1dee7d";}s:7:"entetes";a:2:{s:12:"Content-Type";s:23:"text/xml; charset=utf-8";s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"page";s:7:"backend";s:4:"date";s:19:"2010-10-17 00:49:51";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-17 00:49:51";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

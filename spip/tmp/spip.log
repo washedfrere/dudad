@@ -1,0 +1,165 @@
+Oct 16 12:27:43 77.88.26.27 (pid 5761) Creation du cache 1/inc-doc--16-2010_10_16%2-d48b80cd pour 86400 secondes
+Oct 16 12:27:43 77.88.26.27 (pid 5761) calcul (3.0ms) [squelettes-dist/modeles/article_mots] lang=es, id_article=16, id=16, recurs=1, es=es, date='2010-10-16 12:27:43', date_default=1, date_redac='2010-10-16 12:27:43', date_redac_default=1 (1 octets)
+Oct 16 12:27:43 77.88.26.27 (pid 5761) calcul (0.292s) [squelettes-dist/article] id_article=16, date='2010-10-16 12:27:43', date_default=1, date_redac='2010-10-16 12:27:43', date_redac_default=1 (7590 octets)
+Oct 16 12:27:43 77.88.26.27 (pid 5761) Creation du cache b/%2Fspip%2Fspip---771480267a65c27b pour 86400 secondes
+Oct 16 12:27:43 77.88.26.27 (pid 5761) calcul (0.036s) [squelettes-dist/inc-forum] id_article=16, lang=es, date='2010-10-16 12:27:43', date_default=1, date_redac='2010-10-16 12:27:43', date_redac_default=1 (715 octets)
+Oct 16 12:27:43 77.88.26.27 (pid 5761) Creation du cache f/inc-forum-16-es--0479d0ca90badc92 pour 86400 secondes
+Oct 16 12:27:43 77.88.26.27 (pid 5761) calcul (0.4ms) [squelettes-dist/formulaires/recherche] action=http://www.torredekapter.es.., form=recherche, formulaire_args=0jhG5NAldWf1hjKLWyx9Bv36O5F.., id=new, editable=' ', date='2010-10-16 12:27:43', date_default=1, date_redac='2010-10-16 12:27:43', date_redac_default=1 (449 octets)
+Oct 16 12:27:43 77.88.26.27 (pid 5761) Creation du cache 2/for-htt---rec-0jhG-new-a-3c672de9 pour 3600 secondes
+Oct 17 00:49:51 207.46.195.232 (pid 24920) calcul (0.119s) [squelettes-dist/backend] page=backend, date='2010-10-17 00:49:51', date_default=1, date_redac='2010-10-17 00:49:51', date_redac_default=1 (2129 octets)
+Oct 17 00:49:51 207.46.195.232 (pid 24920) Creation du cache 9/bac-bac--a73695892484519bea1dee7d pour 86400 secondes
+Oct 17 00:49:51 207.46.195.232 (pid 24920) calcul (2.4ms) [squelettes-dist/modeles/lesauteurs] id_article=19, lang=es, date='2010-10-17 00:49:51', date_default=1, date_redac='2010-10-17 00:49:51', date_redac_default=1 (95 octets)
+Oct 17 00:49:51 207.46.195.232 (pid 24920) calcul (0.071s) [squelettes-dist/inc-rss-item] id_article=19, lang=es, date='2010-10-17 00:49:51', date_default=1, date_redac='2010-10-17 00:49:51', date_redac_default=1 (1129 octets)
+Oct 17 00:49:51 207.46.195.232 (pid 24920) Creation du cache 4/inc-rss-item-19-es--805a7f6ae624e pour 86400 secondes
+Oct 17 00:49:51 207.46.195.232 (pid 24920) calcul (2.1ms) [squelettes-dist/modeles/lesauteurs] id_article=12, lang=es, date='2010-10-17 00:49:51', date_default=1, date_redac='2010-10-17 00:49:51', date_redac_default=1 (95 octets)
+Oct 17 00:49:51 207.46.195.232 (pid 24920) calcul (0.014s) [squelettes-dist/inc-rss-item] id_article=12, lang=es, date='2010-10-17 00:49:51', date_default=1, date_redac='2010-10-17 00:49:51', date_redac_default=1 (1076 octets)
+Oct 17 00:49:51 207.46.195.232 (pid 24920) Creation du cache d/inc-rss-item-12-es--4e393242c903a pour 86400 secondes
+Oct 17 00:49:51 207.46.195.232 (pid 24920) calcul (2.2ms) [squelettes-dist/modeles/lesauteurs] id_article=14, lang=es, date='2010-10-17 00:49:51', date_default=1, date_redac='2010-10-17 00:49:51', date_redac_default=1 (95 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (9.7ms) [prive/modeles/img] lang=es, id_document=8, id=8, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (184 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.069s) [squelettes-dist/inc-rss-item] id_article=14, lang=es, date='2010-10-17 00:49:51', date_default=1, date_redac='2010-10-17 00:49:51', date_redac_default=1 (1096 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache 0/inc-rss-item-14-es--6bf354a2bb09d pour 86400 secondes
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (2.0ms) [squelettes-dist/modeles/lesauteurs] id_article=18, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (95 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.7ms) [prive/modeles/img] lang=es, id_document=9, id=9, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (184 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=11, id=11, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (162 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.3ms) [prive/modeles/img] lang=es, id_document=12, id=12, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (164 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=13, id=13, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (160 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=14, id=14, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (161 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.5ms) [prive/modeles/img] lang=es, id_document=15, id=15, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (160 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=16, id=16, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (160 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=17, id=17, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (160 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.3ms) [prive/modeles/img] lang=es, id_document=10, id=10, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (185 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.054s) [squelettes-dist/inc-rss-item] id_article=18, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (1048 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache 9/inc-rss-item-18-es--112a736334da4 pour 86400 secondes
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (2.1ms) [squelettes-dist/modeles/lesauteurs] id_article=17, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (95 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.019s) [squelettes-dist/inc-rss-item] id_article=17, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (1098 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache e/inc-rss-item-17-es--273fc40c2cf1a pour 86400 secondes
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (2.0ms) [squelettes-dist/modeles/lesauteurs] id_article=16, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (95 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.015s) [squelettes-dist/inc-rss-item] id_article=16, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (1068 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache 0/inc-rss-item-16-es--fcab95c887b30 pour 86400 secondes
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (2.2ms) [squelettes-dist/modeles/lesauteurs] id_article=10, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (95 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.019s) [squelettes-dist/inc-rss-item] id_article=10, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (1062 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache e/inc-rss-item-10-es--d182829ae859b pour 86400 secondes
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (2.2ms) [squelettes-dist/modeles/lesauteurs] id_article=13, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (95 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.017s) [squelettes-dist/inc-rss-item] id_article=13, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (1066 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache 3/inc-rss-item-13-es--7bc9f03b06bfc pour 86400 secondes
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (2.0ms) [squelettes-dist/modeles/lesauteurs] id_article=9, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (95 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (3.8ms) [prive/modeles/img] lang=es, id_document=5, id=5, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (186 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.172s) [squelettes-dist/inc-rss-item] id_article=9, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (1034 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache 4/inc-rss-item-9-es--eb53f046e3ec4e pour 86400 secondes
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (2.1ms) [squelettes-dist/modeles/lesauteurs] id_article=7, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (103 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) calcul (0.022s) [squelettes-dist/inc-rss-item] id_article=7, lang=es, date='2010-10-17 00:49:52', date_default=1, date_redac='2010-10-17 00:49:52', date_redac_default=1 (940 octets)
+Oct 17 00:49:52 207.46.195.232 (pid 24920) Creation du cache 5/inc-rss-item-7-es--f300ef7ce6f1e7 pour 86400 secondes
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (0.139s) [squelettes-dist/modeles/lesauteurs] id_article=17, lang=es, date='2010-10-17 02:50:58', date_default=1, date_redac='2010-10-17 02:50:58', date_redac_default=1 (95 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (5.6ms) [squelettes-dist/modeles/article_traductions] lang=es, id_article=17, id=17, recurs=1, es=es, date='2010-10-17 02:50:58', date_default=1, date_redac='2010-10-17 02:50:58', date_redac_default=1 (2 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (0.149s) [squelettes-dist/inc-documents] id_article=17, date='2010-10-17 02:50:57', date_default=1, date_redac='2010-10-17 02:50:57', date_redac_default=1, lang=es (14 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) Creation du cache c/inc-doc--17-2010_10_17%2-751d05f3 pour 86400 secondes
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (0.144s) [squelettes-dist/modeles/article_mots] lang=es, id_article=17, id=17, recurs=1, es=es, date='2010-10-17 02:50:58', date_default=1, date_redac='2010-10-17 02:50:58', date_redac_default=1 (1 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (0.698s) [squelettes-dist/article] id_article=17, date='2010-10-17 02:50:57', date_default=1, date_redac='2010-10-17 02:50:57', date_redac_default=1 (14319 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) Creation du cache 2/%2Fspip%2Fspip---5cf7e5ecaadbf523 pour 86400 secondes
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (0.041s) [squelettes-dist/inc-forum] id_article=17, lang=es, date='2010-10-17 02:50:58', date_default=1, date_redac='2010-10-17 02:50:58', date_redac_default=1 (605 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) Creation du cache 8/inc-forum-17-es--f33068311bba1bad pour 86400 secondes
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (0.022s) [squelettes-dist/inc-rubriques] id_rubrique=4, lang=es, date='2010-10-17 02:50:58', date_default=1, date_redac='2010-10-17 02:50:58', date_redac_default=1 (585 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) Creation du cache 5/inc-rubriques-4-es--d656350762de0 pour 86400 secondes
+Oct 17 02:50:58 77.88.26.27 (pid 3079) calcul (0.4ms) [squelettes-dist/formulaires/recherche] action=http://www.torredekapter.es.., form=recherche, formulaire_args=0jhG5NAldWf1hjKLWyx9Bv36O5F.., id=new, editable=' ', date='2010-10-17 02:50:58', date_default=1, date_redac='2010-10-17 02:50:58', date_redac_default=1 (449 octets)
+Oct 17 02:50:58 77.88.26.27 (pid 3079) Creation du cache 2/for-htt---rec-0jhG-new-a-3c672de9 pour 3600 secondes
+Oct 17 12:51:43 88.24.6.75 (pid 10179) calcul (0.029s) [prive/modeles/img] lang=es, id_document=5, id=5, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 12:51:43', date_default=1, date_redac='2010-10-17 12:51:43', date_redac_default=1 (186 octets)
+Oct 17 12:51:43 88.24.6.75 (pid 10179) calcul (0.020s) [squelettes-dist/modeles/lesauteurs] id_article=9, lang=es, date='2010-10-17 12:51:43', date_default=1, date_redac='2010-10-17 12:51:43', date_redac_default=1 (95 octets)
+Oct 17 12:51:43 88.24.6.75 (pid 10179) calcul (3.7ms) [squelettes-dist/modeles/article_traductions] lang=es, id_article=9, id=9, recurs=1, es=es, date='2010-10-17 12:51:43', date_default=1, date_redac='2010-10-17 12:51:43', date_redac_default=1 (2 octets)
+Oct 17 12:51:43 88.24.6.75 (pid 10179) calcul (3.3ms) [prive/modeles/img] lang=es, id_document=5, id=5, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-17 12:51:43', date_default=1, date_redac='2010-10-17 12:51:43', date_redac_default=1 (186 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (0.026s) [squelettes-dist/inc-documents] id_article=9, date='2010-10-17 12:51:43', date_default=1, date_redac='2010-10-17 12:51:43', date_redac_default=1, lang=es (14 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache 7/inc-doc--9-2010_10_17%20-9cbd80da pour 86400 secondes
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (3.7ms) [squelettes-dist/modeles/article_mots] lang=es, id_article=9, id=9, recurs=1, es=es, date='2010-10-17 12:51:44', date_default=1, date_redac='2010-10-17 12:51:44', date_redac_default=1 (1 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (0.682s) [squelettes-dist/article] id_article=9, date='2010-10-17 12:51:43', date_default=1, date_redac='2010-10-17 12:51:43', date_redac_default=1 (211934 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache d/%2Fspip%2Fspip---1b6b08167706282f pour 86400 secondes
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (0.024s) [squelettes-dist/inc-head] lang=es, date='2010-10-17 12:51:44', date_default=1, date_redac='2010-10-17 12:51:44', date_redac_default=1 (952 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache 0/inc-head-es--1549dba8a0f8600a7ccd pour 86400 secondes
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (0.021s) [squelettes-dist/inc-entete] lang=es, date='2010-10-17 12:51:44', date_default=1, date_redac='2010-10-17 12:51:44', date_redac_default=1 (474 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache 5/inc-entete-es--649dc27469bdc6f61d pour 86400 secondes
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (3.4ms) [squelettes-dist/inc-forum] id_article=9, lang=es, date='2010-10-17 12:51:44', date_default=1, date_redac='2010-10-17 12:51:44', date_redac_default=1 (7 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache 0/inc-forum-9-es--e407773a8cba98da3 pour 86400 secondes
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (0.022s) [squelettes-dist/inc-rubriques] id_rubrique=1, lang=es, date='2010-10-17 12:51:44', date_default=1, date_redac='2010-10-17 12:51:44', date_redac_default=1 (585 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache a/inc-rubriques-1-es--ca6ab5def81ef pour 86400 secondes
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (0.4ms) [squelettes-dist/formulaires/recherche] action=http://www.torredekapter.es.., form=recherche, formulaire_args=0jhG5NAldWf1hjKLWyx9Bv36O5F.., id=new, editable=' ', date='2010-10-17 12:51:44', date_default=1, date_redac='2010-10-17 12:51:44', date_redac_default=1 (449 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache 2/for-htt---rec-0jhG-new-a-3c672de9 pour 3600 secondes
+Oct 17 12:51:44 88.24.6.75 (pid 10179) calcul (0.6ms) [squelettes-dist/inc-pied] skel=squelettes-dist/article.html, lang=es, date='2010-10-17 12:51:44', date_default=1, date_redac='2010-10-17 12:51:44', date_redac_default=1 (883 octets)
+Oct 17 12:51:44 88.24.6.75 (pid 10179) Creation du cache b/inc-pie-squ-dis-es--f72064bcb5c11- pour 86400 secondes
+Oct 17 12:51:46 88.24.6.75 (pid 10214) Popularite: purger referer depuis 2010-10-13
+Oct 17 12:51:46 88.24.6.75 (pid 10214) cron: popularites (0.054s) 1
+Oct 17 17:56:01 201.238.134.38 (pid 28474) calcul (2.7ms) [squelettes-dist/modeles/lesauteurs] id_article=2, lang=es, date='2010-10-17 17:56:01', date_default=1, date_redac='2010-10-17 17:56:01', date_redac_default=1 (95 octets)
+Oct 17 17:56:01 201.238.134.38 (pid 28474) calcul (3.2ms) [squelettes-dist/modeles/article_traductions] lang=es, id_article=2, id=2, recurs=1, es=es, date='2010-10-17 17:56:01', date_default=1, date_redac='2010-10-17 17:56:01', date_redac_default=1 (2 octets)
+Oct 17 17:56:01 201.238.134.38 (pid 28474) calcul (0.014s) [squelettes-dist/inc-documents] id_article=2, date='2010-10-17 17:56:00', date_default=1, date_redac='2010-10-17 17:56:00', date_redac_default=1, lang=es (14 octets)
+Oct 17 17:56:01 201.238.134.38 (pid 28474) Creation du cache 4/inc-doc--2-2010_10_17%20-c61afbb7 pour 86400 secondes
+Oct 17 17:56:01 201.238.134.38 (pid 28474) calcul (2.1ms) [squelettes-dist/modeles/article_mots] lang=es, id_article=2, id=2, recurs=1, es=es, date='2010-10-17 17:56:01', date_default=1, date_redac='2010-10-17 17:56:01', date_redac_default=1 (1 octets)
+Oct 17 17:56:01 201.238.134.38 (pid 28474) calcul (0.343s) [squelettes-dist/article] id_article=2, date='2010-10-17 17:56:00', date_default=1, date_redac='2010-10-17 17:56:00', date_redac_default=1 (50456 octets)
+Oct 17 17:56:01 201.238.134.38 (pid 28474) Creation du cache 7/%2Fspip%2Fspip---6241e93410c00b7d pour 86400 secondes
+Oct 17 17:56:01 201.238.134.38 (pid 28474) calcul (3.3ms) [squelettes-dist/inc-forum] id_article=2, lang=es, date='2010-10-17 17:56:01', date_default=1, date_redac='2010-10-17 17:56:01', date_redac_default=1 (7 octets)
+Oct 17 17:56:01 201.238.134.38 (pid 28474) Creation du cache 4/inc-forum-2-es--fe410413ab8d94632 pour 86400 secondes
+Oct 17 17:56:01 201.238.134.38 (pid 28474) calcul (0.4ms) [squelettes-dist/formulaires/recherche] action=http://www.torredekapter.es.., form=recherche, formulaire_args=0jhG5NAldWf1hjKLWyx9Bv36O5F.., id=new, editable=' ', date='2010-10-17 17:56:01', date_default=1, date_redac='2010-10-17 17:56:01', date_redac_default=1 (449 octets)
+Oct 17 17:56:01 201.238.134.38 (pid 28474) Creation du cache 2/for-htt---rec-0jhG-new-a-3c672de9 pour 3600 secondes
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (0.065s) [squelettes-dist/modeles/favicon] lang=es, id_auteur=2, id=2, recurs=1, es=es, date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (109 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (0.215s) [squelettes-dist/auteur] id_auteur=2, date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (3272 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) Creation du cache 0/%2Fspip%2Fspip---c95079c102b85a20 pour 86400 secondes
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (0.017s) [squelettes-dist/inc-head] lang=es, date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (952 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) Creation du cache 0/inc-head-es--1549dba8a0f8600a7ccd pour 86400 secondes
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (6.6ms) [squelettes-dist/inc-entete] lang=es, date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (474 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) Creation du cache 5/inc-entete-es--649dc27469bdc6f61d pour 86400 secondes
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (1.0ms) [squelettes-dist/formulaires/ecrire_auteur] id=_2, id_auteur=2, form=ecrire_auteur, action=spip.php?auteur2, formulaire_args=wjlM5JAlcaLkpjiTOF1r0p8njd8.., editable=' ', lang=es, date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (1802 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) Creation du cache 7/for-aut----_2-2--ecr-aut-b24c6d91 pour 3600 secondes
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (0.013s) [squelettes-dist/inc-rubriques] lang=es, date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (220 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) Creation du cache 1/inc-rubriques-es--b8f6eccb6f4cb3d pour 86400 secondes
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (0.4ms) [squelettes-dist/formulaires/recherche] action=http://www.torredekapter.es.., form=recherche, formulaire_args=0jhG5NAldWf1hjKLWyx9Bv36O5F.., id=new, editable=' ', date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (449 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) Creation du cache 2/for-htt---rec-0jhG-new-a-3c672de9 pour 3600 secondes
+Oct 19 03:01:10 66.249.66.102 (pid 30461) calcul (4.2ms) [squelettes-dist/inc-pied] skel=squelettes-dist/auteur.html, lang=es, date='2010-10-19 03:01:10', date_default=1, date_redac='2010-10-19 03:01:10', date_redac_default=1 (881 octets)
+Oct 19 03:01:10 66.249.66.102 (pid 30461) Creation du cache 4/inc-pie-squ-dis-es--021198f0048e6- pour 86400 secondes
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (0.020s) [squelettes-dist/modeles/lesauteurs] id_article=19, lang=es, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (95 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (2.1ms) [squelettes-dist/modeles/lesauteurs] id_article=12, lang=es, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (95 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (2.0ms) [squelettes-dist/modeles/lesauteurs] id_article=14, lang=es, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (95 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (0.023s) [prive/modeles/img] lang=es, id_document=8, id=8, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (184 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (2.0ms) [squelettes-dist/modeles/lesauteurs] id_article=18, lang=es, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (95 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=9, id=9, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (184 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.5ms) [prive/modeles/img] lang=es, id_document=11, id=11, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (162 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=12, id=12, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (164 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (4.7ms) [prive/modeles/img] lang=es, id_document=13, id=13, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (160 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.3ms) [prive/modeles/img] lang=es, id_document=14, id=14, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (161 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.3ms) [prive/modeles/img] lang=es, id_document=15, id=15, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (160 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.2ms) [prive/modeles/img] lang=es, id_document=16, id=16, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (160 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.2ms) [prive/modeles/img] lang=es, id_document=17, id=17, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (160 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (3.4ms) [prive/modeles/img] lang=es, id_document=10, id=10, args=a:1:{s:5:"align";s:6:"cente.., align=center, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (185 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (2.0ms) [squelettes-dist/modeles/lesauteurs] id_article=17, lang=es, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (95 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (0.027s) [plugins/auto/spip-bonux/modeles/pagination] lang=es, debut=debut_articles_recents, url=./, total=15, pas=5, nombre_pages=3, page_courante=1, ancre=pagination_articles_recents, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (333 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (0.674s) [squelettes-dist/sommaire] date='2010-10-19 06:08:45', date_default=1, date_redac='2010-10-19 06:08:45', date_redac_default=1 (9438 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) Creation du cache 6/%2Fspip%2F--be948a169b5804cdc15c2 pour 3600 secondes
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (0.4ms) [squelettes-dist/formulaires/recherche] action=http://www.torredekapter.es.., form=recherche, formulaire_args=0jhG5NAldWf1hjKLWyx9Bv36O5F.., id=new, editable=' ', date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (449 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) Creation du cache 2/for-htt---rec-0jhG-new-a-3c672de9 pour 3600 secondes
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (0.5ms) [squelettes-dist/formulaires/inscription] _commentaire='El espacio privado de este ..', form=inscription, action=./, formulaire_args=0jlG5JAlcaP0ti7P17bkPnImg2n.., editable=' ', lang=es, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (1765 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) Creation du cache d/for----El-ins-.%2F-0jlG--9578da7a pour 3600 secondes
+Oct 19 06:08:46 66.249.66.102 (pid 23317) calcul (0.7ms) [squelettes-dist/inc-pied] skel=squelettes-dist/sommaire.html, lang=es, date='2010-10-19 06:08:46', date_default=1, date_redac='2010-10-19 06:08:46', date_redac_default=1 (869 octets)
+Oct 19 06:08:46 66.249.66.102 (pid 23317) Creation du cache c/inc-pie-squ-dis-es--478b0c5f6c242- pour 86400 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.026s) [squelettes-dist/modeles/lesauteurs] id_article=2, lang=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (95 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (3.8ms) [squelettes-dist/modeles/article_traductions] lang=es, id_article=2, id=2, recurs=1, es=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (2 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.045s) [squelettes-dist/inc-documents] id_article=2, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1, lang=es (14 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache b/inc-doc--2-2010_10_20%20-b5939d7c pour 86400 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.016s) [squelettes-dist/modeles/article_mots] lang=es, id_article=2, id=2, recurs=1, es=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (1 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.476s) [squelettes-dist/article] id_article=2, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (50456 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache 7/%2Fspip%2Fspip---6241e93410c00b7d pour 86400 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.014s) [squelettes-dist/inc-head] lang=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (952 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache 0/inc-head-es--1549dba8a0f8600a7ccd pour 86400 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.044s) [squelettes-dist/inc-entete] lang=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (474 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache 5/inc-entete-es--649dc27469bdc6f61d pour 86400 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (3.3ms) [squelettes-dist/inc-forum] id_article=2, lang=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (7 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache 4/inc-forum-2-es--fe410413ab8d94632 pour 86400 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.022s) [squelettes-dist/inc-rubriques] id_rubrique=1, lang=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (585 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache a/inc-rubriques-1-es--ca6ab5def81ef pour 86400 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (0.4ms) [squelettes-dist/formulaires/recherche] action=http://www.torredekapter.es.., form=recherche, formulaire_args=0jhG5NAldWf1hjKLWyx9Bv36O5F.., id=new, editable=' ', date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (449 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache 2/for-htt---rec-0jhG-new-a-3c672de9 pour 3600 secondes
+Oct 20 19:08:28 83.43.77.98 (pid 24165) calcul (4.0ms) [squelettes-dist/inc-pied] skel=squelettes-dist/article.html, lang=es, date='2010-10-20 19:08:28', date_default=1, date_redac='2010-10-20 19:08:28', date_redac_default=1 (883 octets)
+Oct 20 19:08:28 83.43.77.98 (pid 24165) Creation du cache b/inc-pie-squ-dis-es--f72064bcb5c11- pour 86400 secondes
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/465fafb895
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/4f289e47bc
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/67544e9b85
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/7ac831eb7c
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/a2f0acd17f
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/d0a286d8a5
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/e15fac64df
+Oct 20 19:08:30 83.43.77.98 (pid 24255) traite la session tmp/visites/e2cdc67c11
+Oct 20 19:08:30 83.43.77.98 (pid 24255) cron: visites (0.203s) 1

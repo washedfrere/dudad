@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:940:"
+	<item xml:lang="es">
+		<title>Continente y contenido</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article7</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article7</guid>
+		<dc:date>2009-05-15T19:01:04Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>Administrador</dc:creator>
+
+
+
+		<description>Aqu&#237; estamos, bajo un ep&#237;grafe com&#250;n a todos los temas que engloban este sitio de documentos &quot;interesantes&quot;. Desde el men&#250; de Contenidos podemos acceder a los temas principales y leer o escribir, dependiendo de nuestro estado en el momento de acceder. Como siempre, por siempre, que la creatividad se adue&#241;e; que la creatividad sea due&#241;a de lo que por aqu&#237; se muestre.
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique7" rel="directory"&gt;Contenidos&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"5/inc-rss-item-7-es--f300ef7ce6f1e7";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:1:"7";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-17 00:49:52";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-17 00:49:52";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

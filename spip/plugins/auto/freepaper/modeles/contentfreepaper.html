@@ -1,0 +1,84 @@
+[(#REM)
+		28 nov 2008
+        Insère un lecteur FreepapeR
+][(#REM)
+        L'id du document à visualiser suit le nom du modèle
+]
+
+[(#REM)
+		xmlData (par défaut freepaper.xml)
+		width (par défaut 600)
+		height (par défaut 800)
+		trace (par défaut false)
+]
+
+<?php
+	//permet de mettre les paramètres sur plusieurs lignes et d'enlever les espaces de fin de chaine (et du coup de début)
+	//sinon les balises (ex SET{autostart,ENV{autostart}} suffisent
+	//$height="#GET{height}";
+	$xmlData=trim("#ENV{xmlData}");
+	if (!$xmlData) $xmlData="nodata";
+	include_spip('inc/utils');
+	$xmlPath=find_in_path("xml/".$xmlData);
+	if (!$xmlPath) $xmlPath=find_in_path("xml/freepaper.xml");
+	$width=trim("#ENV{largeur}");
+	$height=trim("#ENV{hauteur}");
+	$trace=trim("#ENV{trace}");
+	if (!$height) $height=800;
+	if (!$width) $width=600;
+	if (!$trace) $trace=false;
+?>
+
+<?php
+	//On recherche un identifiant unique pour l'objet
+	list($usec, $sec) = explode(" ", microtime());
+	list($rac,$frac) = explode(".", $usec);
+	//RETIRER LES 8 premiers digits
+	$rang= substr($sec . $rac . $frac,8);
+?>
+
+
+<BOUCLE_pdf(DOCUMENTS){id_document=#ID_CONTENTFREEPAPER}>
+	<?php  $s="[(#URL_DOCUMENT|texte_script)]"; ?>
+</BOUCLE_pdf>
+<br />
+<div id="freepaper<?php echo $rang;?>_wrapper" class="freepaper_wrapper">
+	<div id="freepaper<?php echo $rang;?>">
+		<a href="http://www.adobe.com/go/getflashplayer">
+			<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Télécharger le plugin Flash player" />
+		</a>
+	</div>
+</div>
+<br />
+
+<script type="text/javascript">
+	//cacher l'image getFlashPlayer		
+	fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?> a img","display: none",0);
+	//insérer la mire	
+	fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?>","background-image : url(../#CHEMIN{images/ajax-loader.gif})",1);
+	fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?>","background-position : center center",2);
+	fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?>","background-repeat : no-repeat",3);
+	$(function(){
+		//Options pour l'insertion du lecteur FreepapeR
+		var flashvars= {
+			xmlDataPath : "<?php echo $xmlPath; ?>",
+			pdfURL : "<?php echo $s; ?>"
+		};
+		
+		var params= {
+			width : "<?php echo $width; ?>",
+			height : "<?php echo $height; ?>"
+		};
+		var attributes= {
+			trace : <?php if ($trace) {echo "true";} else {echo "false";} ?>,
+			altContentId : "freepaper<?php echo $rang;?>"
+		};
+		//Insertion du lecteur FreepapeR
+		if (typeof freepaper!="undefined") {
+			freepaper.embedDoc(flashvars,params,attributes);
+		}
+	});	
+</script>
+
+
+

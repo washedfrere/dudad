@@ -1,0 +1,86 @@
+body
+{
+	background-color: #c4c4c4;
+	color:#000011;
+	text-indent:0;
+	text-align:justify;
+	font-family:Verdana,Geneva,Tahoma,Sans-serif;
+	font-style:normal;
+	font-size:100%;
+}
+textarea
+{
+	background-color:#b4b4b4;
+	color:#00000a;
+	text-indent:1%;
+	text-align:justify;
+	font-family:Verdana,Geneva,Tahoma,Sans-serif;
+	font-style:normal;
+	font-size:0.7em;
+}
+/*table
+{
+border: 1px solid #e0e0e0;
+}
+th, td
+{
+border: 1px solid #a3a390;
+}*/
+img
+{
+border:0px;
+padding:0px;
+margin:0px;
+}
+hr
+{
+border: 1px solid #b3b3a0;
+}
+td
+{
+/*	background-color:#a3a3a3;*/
+	color:#00000a;
+	text-indent:0%;
+	text-align:justify;
+	font-family:Verdana,Geneva,TahomaSans-serif;
+	font-style:normal;
+	font-size:0.9em;
+}
+a:link {color:#0a0a0a; font-style:italic;}      /* unvisited link */
+a:visited {color:#0a0a0a; font-style:italic;}  /* visited link */
+a:hover {color:#007000; font-style:normal;background-color:#ffffff;font-weight:bold;}  /* mouse over link */
+a:active {color:#b0b0b0;}  /* selected link */
+
+input
+{
+	border:1px solid #00a000;
+}
+
+h1
+{
+	/*background-color:#b4b4b4;*/
+	color:#f0f0f0;
+	font-size:1.3em;
+	font-weight:normal;
+}
+h2
+{
+	/*background-color:#a4a4a4;*/
+	color:#e0e0e0;
+	font-size:1.2em;
+	font-weight:normal;
+}
+h3
+{
+	/*background-color:#a4a4a4;*/
+	color:#d0d0d0;
+	font-size:1.1em;
+	font-weight:bold;
+}
+label
+{
+	background-color:#b4b4b4;
+	color:#101000;
+	font-size:0.7em;
+	font-weight:bold;
+}

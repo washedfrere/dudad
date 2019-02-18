@@ -1,0 +1,45 @@
+a:9:{s:5:"texte";s:1476:"
+	<link rel="stylesheet" href="prive/spip_style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="squelettes-dist/spip_formulaires.css" type="text/css" media="projection, screen, tv" />
+	<link rel="stylesheet" href="plugins/auto/ahuntsic/styles/base.css" type="text/css" media="projection, screen, tv" />
+	<link rel="stylesheet" href="plugins/auto/ahuntsic/styles/alter.css" type="text/css" media="projection, screen, tv" />
+	
+	
+	
+	<link rel="stylesheet" href="http://www.torredekapter.es/spip/plugins/auto/ahuntsic/styles/print.css" type="text/css" media="print" />
+
+
+
+<script src="prive/javascript/jquery.js" type="text/javascript"></script>
+
+<script src="prive/javascript/jquery.form.js" type="text/javascript"></script>
+
+<script src="prive/javascript/ajaxCallback.js" type="text/javascript"></script>
+<!-- insert_head -->
+<script src="http://www.torredekapter.es/spip/plugins/auto/ahuntsic/js/base.js"  type="text/javascript"></script>
+
+	
+
+
+<!--[if lte IE 6]>
+	<style>
+		#menu-rubriques a { height: 1em; }
+		#menu-rubriques li { height: 1em; float: left; clear: both;width: 100%; }
+	</style>
+	<![endif]-->
+
+<!--[if IE 6]>
+	<style>
+		#menu-rubriques li { clear: none;}
+	</style>
+	<![endif]-->
+
+<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+	<style>
+		#menu-recherche{width:16em;margin-top:-4px;}
+		#menu-recherche #recherche{width:10em;margin-top:-4px;}
+	</style>
+
+<![endif]-->
+";s:9:"squelette";s:37:"html_5d38d6e289ed9e1f20bb9359feead90a";s:6:"source";s:33:"plugins/auto/ahuntsic/styles.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"c/styles-es--dbfe9a7d1c342e0d0321f8";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:24:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:24:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

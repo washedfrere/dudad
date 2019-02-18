@@ -1,0 +1,352 @@
+/*----------------------------------------------------------------------------
+	main.css
+
+	this css-file contains all definitions, that are independend from the
+	colorschemes.
+
+	(c) Schlund + Partner AG
+
+
+	----------------------------------------------------------------------
+	Modified and extended by Barti Bartman for the Sports-Template
+
+	This CSS-File uses the original "Tanteks Box Modell Hack"
+	http://www.tantek.com/CSS/Examples/boxmodelhack.html
+
+	NOTE:
+	Older W3C CSS validators return errors when the voice-family property
+	is used in a 'screen' style sheet. This is an error in the W3C CSS
+	validator itself. The validator should report a warning, not an error,
+	when properties which are unsupported by a particular medium are used,
+	and this has been reported to the W3C:
+
+ ----------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------
+ styles for specific classes and ids
+----------------------------------------------------------------------------*/
+
+
+/*-- global container ------------------------------------------------------*/
+
+#container {
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	text-align: left;
+	width: 775px;
+}
+
+/*-- main container: contains all between header and footer ----------------*/
+
+#main_container {
+	position: relative;
+	top: -30px;
+	left:0;
+	padding: 0;
+	margin: 0px 15px 10px 22px;
+}
+
+/*--- the main container is devided in sub containers ----------------------*/
+
+#layout_table {
+	border-collapse: collapse;
+}
+
+#left_column {
+	vertical-align: top;
+}
+
+#right_column {
+	vertical-align: top;
+}
+
+#sub_container1 {
+	margin: 0;
+	padding: 0;
+}
+
+#sub_container2 {
+	clear: both;	
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 520px;
+	overflow: hidden;
+}
+
+#content_container {
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+	width: 510px;
+}
+
+#left_column_container {
+	margin: 0;
+	padding: 0;
+	width: 196px;
+}
+
+/*--- header ---------------------------------------------------------------*/
+
+#header	{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 775px;
+	height: 322px;
+	top: 0px;
+	left: 0px;
+}
+
+/*--- key visual -----------------------------------------------------------*/
+
+#key_visual {
+	position: relative;
+	top: 81px;
+	left: 22px;
+	width: 449px;
+	height: 166px;
+}
+
+/*--- logo -----------------------------------------------------------------*/
+
+#logo {
+	background: no-repeat top center;
+	width: 320px;
+	height: 70px;
+	position: absolute;
+	top: 2px;
+	left: 60px;
+  z-index: 2;
+}
+
+/*--- caption (as text or background image) --------------------------------*/
+
+#text_caption {
+	position: relative;
+	top: -49px;
+	left: 12px;
+	width: 487px;
+	padding-left:20px;
+	line-height: 35px;
+}
+
+/*--- main navigation ------------------------------------------------------*/
+
+#main_nav_container {
+	z-index: 1;
+	width: 520px;
+	padding:0;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+
+#main_nav_list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#main_nav_list li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/*--- main navigation items ------------------------------------------------*/
+
+#main_nav_list a {
+	margin: 0;
+  padding: 0 7px 0 7px;
+  display: block;
+  float: left;
+	height: 32px;
+	line-height: 30px;
+	text-align: center;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	height: 32px;
+}
+
+html>body #main_nav_list a {
+	height: 32px;
+}
+
+#main_nav_list a:hover {
+	background: transparent;
+}
+
+/*--- container for the subnavigation --------------------------------------*/
+
+.sub_nav_container {
+	margin: 0 3px 3px 3px;
+	padding: 0 0 10px 0;
+}
+
+/*--- subnavigation --------------------------------------------------------*/
+
+.sub_nav_list {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.sub_nav_list li {
+	margin: 3px 0 2px 0;
+	padding: 0;
+}
+
+/*--- subnavigation items --------------------------------------------------*/
+
+.sub_nav_list a {
+	text-align: left;
+	line-height: 22px;
+	height: 29px;
+	width: 196px;
+	padding-left: 20px;
+	display: block;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 176px;
+}
+
+html>body .sub_nav_list a {
+  	width: 176px;
+}
+
+/*--- footer ---------------------------------------------------------------*/
+
+#footer {
+	position: relative;
+	top: -40px;
+	left:0;
+	margin: 0;
+	padding: 0 ;
+	width: 775px;
+	height: 114px;
+	clear: both;
+}
+
+#footer_text {
+	padding-top: 70px;
+	margin: 0px 270px 0 20px;
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------
+  default-styles for html-elements
+----------------------------------------------------------------------------*/
+
+/*--- body -----------------------------------------------------------------*/
+
+body#main_body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/*--- paragraph ------------------------------------------------------------*/
+
+#content_container p {
+	margin: 5px 0 20px 0;
+	padding: 0;
+	line-height: 1.2;
+}
+
+/*--- headings -------------------------------------------------------------*/
+
+#content_container h1 {
+	line-height:47px;
+	text-align:center;
+	background-repeat: no-repeat !important;
+}
+
+#content_container h2 {
+	line-height:49px;
+	text-align:center;
+	background-repeat: no-repeat !important;	
+}
+
+#content_container h3 {
+	line-height:51px;
+	text-align:center;
+	background-repeat: no-repeat !important;	
+}
+
+/*--- tables ---------------------------------------------------------------*/
+
+#content_container table {
+	border-style: dotted;
+	border-width: 0px;
+	border-collapse:collapse;
+}
+
+#content_container th {
+	border-left: 1px solid #aaa;
+	padding:3px;
+}
+
+#content_container tr.odd td {
+	border-left: 1px solid #aaa;
+	border-top: 1px solid #000;
+	padding:3px;
+}
+
+#content_container tr.even td {
+	border-left: 1px solid #aaa;
+	border-top: 1px solid #000;
+	padding:3px;
+}
+
+/*--- forms ----------------------------------------------------------------*/
+
+.content form {
+	margin: 0;
+	padding: 0;
+}
+
+.content fieldset {
+	padding: 15px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.content input {
+	border-style: solid;
+	border-width: 1px;
+}
+
+.content textarea {
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*--- special --------------------------------------------------------------*/
+
+#extra_div1 {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 122px;
+	top: 0px;
+	left: 0px;
+	text-align:center;
+}
+
+#extra_div1 span {
+	position: relative;
+	display: block;
+	width: 370px;
+	height: 74px;
+	top:0px;
+	left:190px;
+	margin:0 auto;
+	padding:0;
+}
+
+
+/*--------------------------------------------------------------------------*/

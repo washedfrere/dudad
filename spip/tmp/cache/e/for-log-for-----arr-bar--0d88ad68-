@@ -1,0 +1,20 @@
+a:9:{s:5:"texte";s:734:"
+<fieldset>
+<legend><b>&iquest;Qui&eacute;n eres?</b> (opcional)</legend>
+
+ 
+	<ul>
+		<li class='saisie_session_nom'>
+			<label for="session_nom">Tu nombre (o seud&oacute;nimo):</label>
+			<input type="text" class="text" name="session_nom" id="session_nom" value="" size="40" />
+			 
+			<span class="details">&#91;<a href="http://www.torredekapter.es/spip/spip.php?page=login&amp;url=spip.php%3Fpage%3Dforum%26amp%3Bid_article%3D17" rel="nofollow">Conectarse</a>&#93;</span>
+			
+		</li>
+		<li class='saisie_session_email'>
+			<label for="session_email">Tu direcci&oacute;n de correo electr&oacute;nico:</label>
+			<input type="text" class="text" name="session_email" id="session_email" value="" size="40" />
+		</li>
+	</ul>
+
+</fieldset>";s:9:"squelette";s:37:"html_4defc989f058c782f60c2db9216c98c7";s:6:"source";s:48:"squelettes-dist/formulaires/inc-login_forum.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:2:{s:5:"cache";s:35:"e/for-log-for-----arr-bar--0d88ad68";s:7:"session";s:0:"";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:3600;}s:5:"duree";i:0;s:8:"contexte";a:29:{s:6:"modere";s:0:"";s:8:"nom_site";s:0:"";s:5:"table";s:0:"";s:5:"texte";s:0:"";s:6:"config";a:1:{s:14:"afficher_barre";s:1:" ";}s:5:"titre";s:28:"Muchos Planos y Una Realidad";s:6:"action";s:0:"";s:7:"_hidden";s:492:"<input type='hidden' name='id_article' value='17' /><input type='hidden' name='id_breve' value='' /><input type='hidden' name='id_forum' value='' /><input type='hidden' name='id_rubrique' value='' /><input type='hidden' name='id_syndic' value='' /><input type='hidden' name='arg' value='' /><input type='hidden' name='hash' value='' /><input type='hidden' name='verif_' value='ok' /><input type='hidden' name='afficher_texte' value='' /><input type='hidden' name='retour_forum' value='%21' />";s:8:"url_site";s:7:"http://";s:20:"cle_ajouter_document";N;s:23:"formats_documents_forum";a:0:{}s:16:"ajouter_document";N;s:5:"nobot";N;s:14:"ajouter_groupe";s:0:"";s:11:"ajouter_mot";a:1:{i:0;s:0:"";}s:8:"id_forum";s:1:"0";s:5:"_sign";s:6:"17____";s:4:"form";s:5:"forum";s:15:"formulaire_args";s:196:"qjxa4BI0cSOkNksde8FnxMc65+t6Xs0X526ykFZGdlhs3pgYNTaxg5nGTrrke0PYjlEUfh2jN3+dJEnhePm7giyuEPSrvVD2Vy+l9FOH+B8clkap3a10OeBL+YNfW0UJPmoKBmskhxGPJQGSUcwJSfvKb6zt4jJYVxdVURillYiS7NlhwU9UQIGXf3hZaCCQWA==";s:2:"id";s:3:"new";s:7:"erreurs";a:0:{}s:10:"message_ok";s:0:"";s:14:"message_erreur";s:0:"";s:8:"editable";s:1:" ";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-25 10:40:32";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-25 10:40:32";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

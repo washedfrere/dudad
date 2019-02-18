@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:1062:"
+	<item xml:lang="es">
+		<title>Salud y Enfermedad</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article10</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article10</guid>
+		<dc:date>2009-05-20T01:32:00Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>David</dc:creator>
+
+
+
+		<description>Como introducci&#243;n a este apartado sobre la Salud, voy a escribir unas l&#237;neas para mostrar la idea subyacente. La Salud Resulta que la salud, seg&#250;n la entendemos y la vivimos, es un estado inexistente, porque no hay nadie que est&#233; realmente sano. Parece una paradoja abrir un tema para tratar de algo que no existe y alguna persona se preguntar&#225; por qu&#233; estoy diciendo &#233;sto. La salud es la conjunci&#243;n de varios factores en un ser vivo. Entran en juego tanto los pormenores f&#237;sicos como los pormenores (...)
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique3" rel="directory"&gt;Salud&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"e/inc-rss-item-10-es--d182829ae859b";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:2:"10";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-17 00:49:52";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-17 00:49:52";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

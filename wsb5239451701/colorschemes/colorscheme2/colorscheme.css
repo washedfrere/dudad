@@ -1,0 +1,120 @@
+/*----------------------------------------------------------------------------
+	colorscheme1.css for colorscheme 2
+
+	this css-file contains all definitions, that depend on the colorscheme.
+
+	(c) Schlund + Partner AG
+----------------------------------------------------------------------------*/
+
+/*--- header ---------------------------------------------------------------*/
+#header	{
+	background : url(images/static/header_bg.gif) no-repeat;
+}
+
+/*--- main navigation ------------------------------------------------------*/
+#main_nav_container {
+	background: url(images/static/navbg.gif);
+}
+
+/*--- caption --------------------------------------------------------------*/
+
+#text_caption {
+	background: url(images/static/caption_bg.jpg) no-repeat;
+}
+
+/*--- footer ---------------------------------------------------------------*/
+
+#footer {
+	background: transparent url(images/static/footer_bg.gif) top left no-repeat;
+}
+
+/*----------------------------------------------------------------------------
+  default-styles for html-elements
+----------------------------------------------------------------------------*/
+
+/*--- body -----------------------------------------------------------------*/
+
+body#main_body {
+	color: #fff;
+	background : #666 url(images/static/pgbk.jpg);
+}
+
+/*--- headings -------------------------------------------------------------*/
+
+#content_container h1 {
+	background : url(images/static/hbg.gif);
+}
+
+#content_container h2 {
+	background : url(images/static/hbg.gif);
+
+}
+
+#content_container h3 {
+	background : url(images/static/hbg.gif);
+}
+
+/*--- tables ---------------------------------------------------------------*/
+
+#content_container table {
+	border-color: #000;
+}
+
+#content_container th {
+	color: #ffffff;
+	background-color:#957534;
+	padding: 3px 2px 3px 2px;
+}
+
+#content_container tr.odd {
+	color: #fff;
+	background-color:#555;
+	padding: 3px 2px 3px 2px;
+}
+
+#content_container tr.even {
+	color: #fff;
+	background-color:#444;
+	padding: 3px 2px 3px 2px;
+}
+
+/*--- forms ----------------------------------------------------------------*/
+
+.content fieldset {
+	border-color: #999;
+	color:#ccc;
+}
+
+.content legend{
+	color: #fff;
+}
+
+.content label {
+	color: #fff;
+}
+
+.content input {
+	border-color: #999;
+	background-color:#333;
+	color:#ccc;
+}
+
+.content button
+{
+	color: #FFF;
+	background: transparent url("images/static/inputbutton.gif") top left;
+}
+
+.content textarea {
+	border-color: #999;
+	background-color:#333;
+	color:#ccc;
+}
+
+/*--- special --------------------------------------------------------------*/
+
+#extra_div1 span {
+	background : url(images/static/header_overlay.gif) no-repeat;
+}
+
+/*--------------------------------------------------------------------------*/

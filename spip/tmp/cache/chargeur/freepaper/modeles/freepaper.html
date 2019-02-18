@@ -1,0 +1,79 @@
+[(#REM)
+		28 nov 2008
+        Insère un lecteur FreepapeR
+][(#REM)
+        Les documents à visualiser sont joints à l'article
+]
+
+[(#REM)
+		xmlData (par défaut freepaper.xml)
+		width (par défaut 600)
+		height (par défaut 800)
+		trace (par défaut false)
+]
+
+#SET{xmlData,#ENV{xmlData,nodata}}
+[(#REM) Calcul de l'emplacement du fichier xml de configuration ]
+[(#CHEMIN{xml/#GET{xmlData}}|?{#SET{xmlPath,#CHEMIN{xml/#GET{xmlData}}},#SET{xmlPath,#CHEMIN{xml/freepaper.xml}}})]
+#SET{width,#ENV{largeur}}
+#SET{height,#ENV{hauteur}}
+#SET{trace,#ENV{trace}}
+
+
+<BOUCLE_pdf(DOCUMENTS){id_article}{mode=document}{doublons}{extension==pdf}>
+	<?php
+		//On recherche un identifiant unique pour l'objet
+		list($usec, $sec) = explode(" ", microtime());
+		list($rac,$frac) = explode(".", $usec);
+		//RETIRER LES 8 premiers digits
+		$rang= substr($sec . $rac . $frac,8);
+	?>
+	<br />
+	<div id="freepaper<?php echo $rang;?>_wrapper" class="freepaper_wrapper">
+		<div id="freepaper<?php echo $rang;?>" class="freeAltContent">
+			<a href="http://www.adobe.com/go/getflashplayer">
+				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Télécharger le plugin Flash player" />
+			</a>
+		</div>
+	</div>
+	<br />
+
+	<?php 
+		$s="[(#URL_DOCUMENT|texte_script)]";
+	?>
+	
+	<script type="text/javascript">
+		//cacher l'image getFlashPlayer		
+		fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?> a img","display: none",0);
+		//insérer la mire	
+		fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?>","background-image : url(../#CHEMIN{images/ajax-loader.gif})",1);
+		fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?>","background-position : center center",2);
+		fpdomutil.addNewRule(0,"#freepaper<?php echo $rang;?>","background-repeat : no-repeat",3);
+
+		$(function(){
+			//Options pour l'insertion d'un lecteur FreepapeR
+			var flashvars = {
+				[xmlDataPath : "(#GET{xmlPath})",]	//optionel : chemin du fichier XML des données du player (valeur par défaut : "freepaper.xml")
+				pdfURL : "<?php echo $s; ?>"	
+			};
+			var params = {
+				[width : (#GET{width}),]
+				[height : (#GET{height})]	
+			};
+			var attributes = {
+				[trace : (#GET{trace}),]
+				altContentId:"freepaper<?php echo $rang;?>"								
+			};
+			//Insertion du lecteur FreepapeR
+			freepaper.embedDoc(flashvars,params,attributes);
+		});
+	</script>
+
+</BOUCLE_pdf>
+
+
+
+
+
+
+

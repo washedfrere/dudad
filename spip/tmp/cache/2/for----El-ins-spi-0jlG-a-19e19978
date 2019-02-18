@@ -1,0 +1,37 @@
+a:9:{s:5:"texte";s:1868:"<div class="formulaire_spip formulaire_inscription ajax" id="formulaire_inscription">
+
+
+ 
+<form method="post" action="spip.php?aybxkapyiz">
+	<div><input name="aybxkapyiz" value="" type="hidden" />
+<input name="page" type="hidden" /><input type='hidden' name='formulaire_action' value='inscription' /><input type='hidden' name='formulaire_action_args' value='0jlG5JAlcaP0ti7P17bkPnImg2nhhUpE1EkYQbsZssl5LclEGIJ4ZAeMuU3EU20Hvx20NSqISkQTQusQMjTIZcYhLwSeERbjR6le1my0EeGG0vbt' /></div><fieldset>
+		
+		 
+		<legend>Inscribirse en este sitio</legend>
+		<p class='explication'>El espacio privado de este sitio est&aacute; abierto, mediante una inscripci&oacute;n. Una vez registrado/a, puedes consultar los art&iacute;culos en curso de redacci&oacute;n, proponer art&iacute;culos y participar en todos los foros.</p>
+		<legend>Identificadores personales</legend>
+		<p class='explication'>Indica aqu&iacute; tu nombre y direcci&oacute;n de correo electr&oacute;nico. Se te enviar&aacute; de inmediato por correo electr&oacute;nico tu identificador personal.</p>
+		<ul>
+			<li class='saisie_nom_inscription obligatoire'>
+				<label for="nom_inscription">Tu nombre o pseud&oacute;nimo</label>
+				
+				<input type="text" class="text" name="nom_inscription" id="nom_inscription" value="" size="30" />
+			</li>
+			<li class='saisie_mail_inscription obligatoire'>
+				<label for="mail_inscription">Tu direcci&oacute;n de correo electr&oacute;nico</label>
+				
+				<input type="text" class="text" name="mail_inscription" id="mail_inscription" value="" size="30" />
+			</li>
+		</ul>
+	</fieldset>
+	
+	<p style="display: none;">
+		<label for="nobot">Por favor, deje este campo vac&iacute;o&nbsp;:</label>
+		<input type="text" class="text" name="nobot" id="nobot" value="" size="10" />
+	</p>
+	<p class="boutons"><input type="submit" class="submit" value="Validar" /></p>
+ </form>
+
+
+</div>
+";s:9:"squelette";s:37:"html_ea4964e52faaf4de34bfbdd559384a66";s:6:"source";s:44:"squelettes-dist/formulaires/inscription.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"2/for----El-ins-spi-0jlG-a-19e19978";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:3600;}s:5:"duree";i:0;s:8:"contexte";a:16:{s:15:"nom_inscription";s:0:"";s:16:"mail_inscription";s:0:"";s:2:"id";s:0:"";s:12:"_commentaire";s:235:"El espacio privado de este sitio est&aacute; abierto, mediante una inscripci&oacute;n. Una vez registrado/a, puedes consultar los art&iacute;culos en curso de redacci&oacute;n, proponer art&iacute;culos y participar en todos los foros.";s:4:"form";s:11:"inscription";s:6:"action";s:19:"spip.php?aybxkapyiz";s:15:"formulaire_args";s:112:"0jlG5JAlcaP0ti7P17bkPnImg2nhhUpE1EkYQbsZssl5LclEGIJ4ZAeMuU3EU20Hvx20NSqISkQTQusQMjTIZcYhLwSeERbjR6le1my0EeGG0vbt";s:7:"erreurs";a:0:{}s:10:"message_ok";s:0:"";s:14:"message_erreur";s:0:"";s:8:"editable";s:1:" ";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-02-17 12:01:04";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-02-17 12:01:04";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

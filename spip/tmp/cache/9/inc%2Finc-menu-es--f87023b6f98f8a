@@ -1,0 +1,67 @@
+a:9:{s:5:"texte";s:2415:"<div id="navigation">
+    <h2 class="structure">Navegaci&oacute;n</h2>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-menu-principal',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+
+<div class="menu" id="menu-rubriques">
+
+
+
+
+
+
+
+
+	<h3 class="structure">Secciones</h3>
+	<ul>
+
+		<li>
+			<a class="lien" href="spip.php?rubrique2" title="Artículos sobre ciencia en general, incluidos aquellos relativos a la ciencia aunque no sigan los estándares y dictámenes de la mayoría. Lo que no es verdad, también tiene que salir a la luz.">Ciencia</a>
+
+		
+			<ul>
+		
+				<li>
+					<a class="lien article" href="spip.php?article1" title="Física inversa Diagrama básico: http://www.torredekapter.es/spip/IM... Este esquema contiene representada la base de la matemática física mecánica-dinámica a utilizar en el siguiente desarrollo. Consta de una linea horizontal; la linea espacio-temporal, así denominada por ser la que contiene tanto las longitudes como los tiempos, cada uno en su propia escala que haremos coincidentes en el esquema. Cada par de círculos concéntricos situados sobre esa linea espacio-temporal marca un momento de (...)">Parámetros iniciales mecánica</a>
+				</li>
+		
+			</ul>
+
+		
+		</li>
+
+		<li>
+			<a class="lien" href="spip.php?rubrique1" title="Escritos de historia en general que pueden explicar, o no, cómo ha llegado la humanidad a donde ha llegado... y por qué no ha llegado a otro sitio. Incluimos aquí nuevos descubrimientos y ensayos, teorías, suposiciones o cualquier otro artículo relacionado con la historia de la Humanidad.">Historia</a>
+
+		
+			<ul>
+		
+				<li>
+					<a class="lien article" href="spip.php?article2" title="PIEDRAS, CANTERAS Y EREMITAS EN EL CAMINO DEL GRIAL Juan Carlos Sánchez Que el Grial es el gran mito de Occidente nadie lo puede cuestionar, ríos de tinta se han escrito sobre el tema en todos los planos inimaginables... pero el Grial sigue ahí, oculto, en el centro de un laberinto en el que vamos a intentar abrir una vía de acceso nueva. Pudiera parecer pretencioso y osado que a día de hoy alguien pueda abrir una nueva vía de acceso a la cumbre de ese Münsalwäsche (...)">Piedras, canteros y eremitas en el camino del Grial</a>
+				</li>
+		
+			</ul>
+
+		
+		</li>
+
+	</ul>
+
+
+
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-menu-agenda',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div>
+
+</div>
+";s:9:"squelette";s:37:"html_07ec8ae675b136490e42e6710301210f";s:6:"source";s:39:"plugins/auto/ahuntsic/inc/inc-menu.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"9/inc%2Finc-menu-es--f87023b6f98f8a";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"7200";}s:5:"duree";i:7200;s:8:"contexte";a:5:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:24:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:24:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:1071:"
+	<item xml:lang="es">
+		<title>F&#237;sica inversa</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article3</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article3</guid>
+		<dc:date>2009-05-14T23:39:35Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>Administrador</dc:creator>
+
+
+
+		<description>Diagrama b&#225;sico: Este esquema contiene representada la base de la matem&#225;tica f&#237;sica mec&#225;nica-din&#225;mica a utilizar en el siguiente desarrollo. Consta de una linea horizontal; la linea espacio-temporal, as&#237; denominada por ser la que contiene tanto las longitudes como los tiempos, cada uno en su propia escala que haremos coincidentes en el esquema. Cada par de c&#237;rculos conc&#233;ntricos situados sobre esa linea espacio-temporal marca un momento de medici&#243;n. Y cada l&#237;nea vertical indica una serie de (...)
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique2" rel="directory"&gt;Ciencia&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"0/inc-rss-item-3-es--4a7102a7a904ad";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:1:"3";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-06-08 04:31:37";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-06-08 04:31:37";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

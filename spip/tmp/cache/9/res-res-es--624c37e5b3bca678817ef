@@ -1,0 +1,107 @@
+a:9:{s:5:"texte";s:2358:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+	<title>[Escribas TorredeKápter] : Archives</title>
+	<?php
+	$contexte_inclus = array('fond' => 'inc/inc-meta',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	<?php
+	$contexte_inclus = array('fond' => 'styles',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</head>
+<body dir="ltr" class="es plan">
+<div id="page">
+
+<!-- *****************************************************************
+	Bandeau, titre du site et menu langue
+	Header and main menu (top and right) 
+    ************************************************************* -->
+	
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bandeau',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<!-- *****************************************************************
+	Contenu principal (centre)
+	Main content (center) 
+    ************************************************************* -->
+
+	<div id="bloc-contenu">
+		
+		
+		
+		<h2>En resumen</h2>
+		<h3>Mostrar por mes : <em>Espa&#241;ol</em></h3>
+	
+	
+		
+			
+			<div id="plan">
+			<h3>2009</h3>
+
+			<ul>
+		
+		
+			
+			  <li>mayo
+  				<ul>
+		
+				  <li><a href="spip.php?article1">Parámetros iniciales mecánica</a></li>
+	
+				</ul>
+			  </li>
+			</ul>
+			</div><!-- plan -->
+	
+	</div><!-- bloc-contenu -->
+
+	
+        
+
+<!-- *****************************************************************
+	Menus contextuels (droite)
+	Contextual menus (right) 
+    ************************************************************* -->
+	<div id="encart">
+    <?php
+	$contexte_inclus = array('fond' => 'inc/inc-annonces',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+    <?php
+	$contexte_inclus = array('fond' => 'inc/inc-breves',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+    <?php
+	$contexte_inclus = array('fond' => 'inc/inc-syndic',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	</div><!-- encart -->
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-menu',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bas',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</div><!-- page -->
+
+</body>
+</html>
+
+
+";s:9:"squelette";s:37:"html_236a3045bb019aa9a81c29aac0e5720c";s:6:"source";s:33:"plugins/auto/ahuntsic/resume.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"9/res-res-es--624c37e5b3bca678817ef";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"7200";}s:5:"duree";i:7200;s:8:"contexte";a:6:{s:4:"page";s:6:"resume";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 20:15:43";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 20:15:43";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

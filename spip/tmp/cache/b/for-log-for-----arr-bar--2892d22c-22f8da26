@@ -1,0 +1,14 @@
+a:9:{s:5:"texte";s:451:"
+<fieldset>
+<legend><b>&iquest;Qui&eacute;n eres?</b> (opcional)</legend>
+ 
+	<p class='explication'>Tu nombre (o seud&oacute;nimo): <strong>David</strong> <span class="details">&#91;<a href="<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/url_logout.php");
+inclure_balise_dynamique(balise_URL_LOGOUT_dyn(''),1, 5);
+if ($lang_select) lang_select();
+?>" rel="nofollow">Desconectarse</a>&#93;</span></p>
+	
+
+
+</fieldset>";s:9:"squelette";s:37:"html_4defc989f058c782f60c2db9216c98c7";s:6:"source";s:48:"squelettes-dist/formulaires/inc-login_forum.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:2:{s:5:"cache";s:35:"b/for-log-for-----arr-bar--2892d22c";s:7:"session";s:8:"22f8da26";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:3600;}s:5:"duree";i:0;s:8:"contexte";a:29:{s:6:"modere";s:0:"";s:8:"nom_site";s:0:"";s:5:"table";s:0:"";s:5:"texte";s:0:"";s:6:"config";a:1:{s:14:"afficher_barre";s:1:" ";}s:5:"titre";s:11:"Nueva breve";s:6:"action";s:0:"";s:7:"_hidden";s:491:"<input type='hidden' name='id_article' value='' /><input type='hidden' name='id_breve' value='1' /><input type='hidden' name='id_forum' value='' /><input type='hidden' name='id_rubrique' value='' /><input type='hidden' name='id_syndic' value='' /><input type='hidden' name='arg' value='' /><input type='hidden' name='hash' value='' /><input type='hidden' name='verif_' value='ok' /><input type='hidden' name='afficher_texte' value='' /><input type='hidden' name='retour_forum' value='%21' />";s:8:"url_site";s:7:"http://";s:20:"cle_ajouter_document";N;s:23:"formats_documents_forum";a:0:{}s:16:"ajouter_document";N;s:5:"nobot";N;s:14:"ajouter_groupe";s:0:"";s:11:"ajouter_mot";a:1:{i:0;s:0:"";}s:8:"id_forum";s:1:"0";s:5:"_sign";s:5:"_1___";s:4:"form";s:5:"forum";s:15:"formulaire_args";s:172:"qnxK5NIlbaLrz6GmHAIpJqtd5/cwiTTwEX+CrgPjQGktXOTbb1zhGzyFDJR7kNwpNS/Rp3AKPU/xthrAF20OZlYBn28KuKysNoqGZTTCCaayOpwN0c6df4aCDXs9TQ87n+oLFeeiok7mDnmC6UzIvmHms0ypoS3IxUug3NFo/Q4=";s:2:"id";s:3:"new";s:7:"erreurs";a:0:{}s:10:"message_ok";s:0:"";s:14:"message_erreur";s:0:"";s:8:"editable";s:1:" ";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-12-13 04:25:07";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-12-13 04:25:07";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

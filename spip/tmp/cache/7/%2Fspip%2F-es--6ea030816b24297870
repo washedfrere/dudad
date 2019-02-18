@@ -1,0 +1,147 @@
+a:9:{s:5:"texte";s:3835:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+	<title>[Escribas TorredeKápter]</title>
+	<?php
+	$contexte_inclus = array('fond' => 'inc/inc-meta',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	<?php
+	$contexte_inclus = array('fond' => 'styles',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	<script type="text/javascript">
+function iPhoneAlert() {
+if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.
+match(/iPod/i))){
+var question = confirm("Souhaitez-vous naviguer sur le site optimisé pour iPhone?")
+if (question){
+window.location = "http://www.torredekapter.es/spip/spip.php?page=ispip";
+}else{
+
+}
+}
+}
+</script><!-- fin script -->
+
+</head>
+<body dir="ltr" class="es sommaire">
+<div id="page" class="sommaire">
+
+<!-- *****************************************************************
+	Bandeau, titre du site et menu langue
+	Header and main menu (top and right) 
+    ************************************************************* -->
+
+  <?php
+	$contexte_inclus = array('fond' => 'inc/inc-bandeau',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<!-- *****************************************************************
+	Contenu principal (centre)
+	Main content (center) 
+    ************************************************************* -->
+  <div id="bloc-contenu">
+    <div class="edito">
+		<?php
+	$contexte_inclus = array_merge(array (
+  'lang' => 'es',
+  'date' => '2009-05-14 21:24:15',
+  'date_default' => true,
+  'date_redac' => '2009-05-14 21:24:15',
+  'date_redac_default' => true,
+),array('fond' => 'inc/inc-sommaire-edito',
+	'self' => './',
+	'lang' => 'es'));
+	include _DIR_RESTREINT . "public.php";
+?>
+    </div><!-- edito -->
+    
+    <h2 class="structure">Los art&iacute;culos m&aacute;s recientes</h2>
+    <?php
+	$contexte_inclus = array_merge(array (
+  'lang' => 'es',
+  'date' => '2009-05-14 21:24:15',
+  'date_default' => true,
+  'date_redac' => '2009-05-14 21:24:15',
+  'date_redac_default' => true,
+),array('fond' => 'inc/inc-sommaire-articles',
+	'self' => './',
+	'lang' => 'es'));
+	include _DIR_RESTREINT . "public.php";
+?>
+    
+     
+  </div><!-- bloc-contenu-->
+
+<!-- *****************************************************************
+	Menus contextuels (droite)
+	Contextual menus (right) 
+    ************************************************************* -->
+  <div id="encart">  
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-trad',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-annonces',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-breves',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-syndic',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+    <!-- Inscription au site -->
+    <div class="menu" id="inscription">
+        <ul>
+          <li><b>Inscribirse en este sitio</b>            
+            <ul>
+              <li>
+                <?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_INSCRIPTION', '1comite', '', ''),1, 51);
+if ($lang_select) lang_select();
+?>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div><!-- menu -->
+
+
+  </div><!-- encart -->
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-menu',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bas',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!-- page-->
+</body>
+</html>";s:9:"squelette";s:37:"html_4c502ef4455545b8959bb1cb6a84d5bb";s:6:"source";s:35:"plugins/auto/ahuntsic/sommaire.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"7/%2Fspip%2F-es--6ea030816b24297870";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"7200";}s:5:"duree";i:7200;s:8:"contexte";a:5:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:24:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:24:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

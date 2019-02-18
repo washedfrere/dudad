@@ -1,0 +1,5 @@
+a:9:{s:5:"texte";s:521:"<div id="entete">
+<a rel="start home" href="http://www.torredekapter.es/spip/" title="&#1053;&#1072; &#1075;&#1083;&#1072;&#1074;&#1085;&#1091;&#1102;" class="accueil"><img src="local/cache-vignettes/L300xH50/siteon0-0c400.png" alt="" width='300' height='50'  onmouseover="this.src='local/cache-vignettes/L300xH50/siteoff0-3a0c0.png'" onmouseout="this.src='local/cache-vignettes/L300xH50/siteon0-0c400.png'" class='spip_logos'  style='height:50px;width:300px;' /> <strong id="nom_site_spip">Escribas</strong></a>
+
+</div>
+";s:9:"squelette";s:37:"html_d24c1394b9a28fda2c449ac8dfa9da16";s:6:"source";s:31:"squelettes-dist/inc-entete.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"4/inc-entete-ru--7595465c7bf378e7e2";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"lang";s:2:"ru";s:4:"date";s:19:"2010-10-13 01:09:55";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-13 01:09:55";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

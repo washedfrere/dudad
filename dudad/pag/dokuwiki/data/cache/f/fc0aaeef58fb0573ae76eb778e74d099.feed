@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="http://www.dudad.es/pag/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://www.dudad.es/pag/dokuwiki/feed.php">
+        <title>dudad.es</title>
+        <description></description>
+        <link>http://www.dudad.es/pag/dokuwiki/</link>
+        <image rdf:resource="http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico" />
+       <dc:date>2016-04-28T09:28:51+02:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=dudad.es&amp;rev=1304334340&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=filosofia:filosofia&amp;rev=1304334308&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=ciencia:ciencia&amp;rev=1304334005&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=historia:historia&amp;rev=1304333825&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=infinito&amp;rev=1301965583&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=conciencia&amp;rev=1301697303&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=consciente&amp;rev=1301696135&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=inconsciente&amp;rev=1301592058&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=conocimiento&amp;rev=1301591582&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=pensamiento&amp;rev=1301582402&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=ser&amp;rev=1301582291&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico">
+        <title>dudad.es</title>
+        <link>http://www.dudad.es/pag/dokuwiki/</link>
+        <url>http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico</url>
+    </image>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=dudad.es&amp;rev=1304334340&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-05-02T13:05:40+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>dudad.es</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=dudad.es&amp;rev=1304334340&amp;do=diff</link>
+        <description>Tras una profunda reflexión, he decidido que el contenido de esta wiki sea diferente a lo que se espera de una wiki.
+
+----------
+
+
+Como espacio colaborativo que es, podría aparecer aquí el amplio conocimiento de todas las áreas en las que la mente pensante ha metido sus narices para extraer hasta el último pedazo de realidad que la mente es capaz de obtener pese a sus propios engaños.</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=filosofia:filosofia&amp;rev=1304334308&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-05-02T13:05:08+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>filosofia:filosofia - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=filosofia:filosofia&amp;rev=1304334308&amp;do=diff</link>
+        <description>Hay muchos pensamientos de muchas mentes que intentan resolver el problema de la existencia. Digo problema porque la razón no abarca lo profundo del existir. Somos algo más que carne y huesos, esto está aceptado desde que alguien se plantea la más insignificante pregunta sobre su vida. Hay que profundizar, hay que conseguir traspasar la barrera de la razón y adentrarse en el mundo de los sueños y las alegorías. Tratamos de explicar lo inexplicable y a esa explicación la llamamos filosofía, donde…</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=ciencia:ciencia&amp;rev=1304334005&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-05-02T13:00:05+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>ciencia:ciencia - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=ciencia:ciencia&amp;rev=1304334005&amp;do=diff</link>
+        <description>La ciencia es mucho más antigua de lo que creemos. Basta buscar en la historia para encontrar auténticas proezas técnicas de las que nadie puede dar cuenta y cuyo anacronismo es patente. Por eso, aquí no solo aparecen los descubrimientos más recientes, sino que tomamos en cuenta incluso los descartes y los pasos atrás que la humanidad ha hecho respecto del conocimiento racional del medio en el que vive.</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=historia:historia&amp;rev=1304333825&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-05-02T12:57:05+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>historia:historia - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=historia:historia&amp;rev=1304333825&amp;do=diff</link>
+        <description>La humanidad ha recorrido un largo camino desde su aparición. Muchas de las personas que han vivido antes que nosotros han dejado registrados sus conocimientos en algún medio tangible o intangible. Trataremos de extraer esas experiencias y de contar aquellas que han conseguido otras personas.</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=infinito&amp;rev=1301965583&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-04-05T03:06:23+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>infinito - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=infinito&amp;rev=1301965583&amp;do=diff</link>
+        <description>Eterno, sin principio ni fin, de tamaño tal que no se alcanzan jamás los estremos, de duración tal que nunca empezó y nunca terminará.
+
+La mente es incapaz de concebir el infinito y sólo puede imaginar cosas que pueden asemejarse a él, cosas de las que no vemos el principio ni el final, cosas de las que desconocemos cuándo empezaron y aún no sabemos cuándo terminarán, pero es imposible abarcarlo mentalmente.</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=conciencia&amp;rev=1301697303&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-04-02T00:35:03+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>conciencia - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=conciencia&amp;rev=1301697303&amp;do=diff</link>
+        <description>Ese es uno de los significados de la palabra “conciencia”: el sentido interior que diferencia lo bueno de lo malo. También podemos aplicarlo a la “parte” de nuestro ser que se conoce a sí misma, aunque, incoherentemente, gran parte del propio conocimiento es inconsciente.</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=consciente&amp;rev=1301696135&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-04-02T00:15:35+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>consciente - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=consciente&amp;rev=1301696135&amp;do=diff</link>
+        <description>O, al menos, ese atributo se le asigna a lo que llamamos consciente. Parece algo obvio, pero sólo conocemos una parte muy pequeña de lo que hacemos. No somos capaces de captar la ingente cantidad de cosas que hacemos a lo largo de un día, siquiera de un minuto de nuestra vida. Hacerse consciente de algo significa mucho más que, simplemente, darse cuenta de lo que se está haciendo: es el resultado de un detallado y dedicado estudio del cómo, porqué y cuándo se hace lo que se hace o se dice lo que…</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=inconsciente&amp;rev=1301592058&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-03-31T19:20:58+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>inconsciente - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=inconsciente&amp;rev=1301592058&amp;do=diff</link>
+        <description>La mejor forma de referirse a este término es como “lo inconsciente”, dado que no se trata de una parte del ser, sino de conocimiento que permanece en algún lugar de la mente de forma escondida a lo que la persona cree saber.
+
+----------
+
+
+Cuando nos referimos a “el inconsciente” parece que nos referimos a una parte del ser, o de su mente, que tiene entidad propia, como si fuera un ser vivo dentro de otro ser vivo, pero todo forma parte del mismo ser, por lo que podríamos afirmar que “el inconsc…</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=conocimiento&amp;rev=1301591582&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-03-31T19:13:02+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>conocimiento - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=conocimiento&amp;rev=1301591582&amp;do=diff</link>
+        <description>El conocimiento son los datos, por decirlo de alguna manera. Los datos que guarda la mente a nivel consciente o inconsciente.
+
+
+----------
+
+
+El conocimiento de una persona se puede comprobar tanto por lo que esta dice como por lo que esta hace. A través de la acción (la palabra también es acción) una persona demuestra su conocimiento de lo que está haciendo o hablando.
+A nivel verbal, es posible que el conocimiento inconsciente quede oculto por la dificultad del pensamiento consciente de traer e…</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=pensamiento&amp;rev=1301582402&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-03-31T16:40:02+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>pensamiento</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=pensamiento&amp;rev=1301582402&amp;do=diff</link>
+        <description>Facultad, acción o efecto del pensar.
+El pensamiento es una carretera que discurre entre las ideas, en el mundo de la mente. La unión de ideas produce un pensamiento y el ser consciente es capaz de darse cuenta de esta unión de ideas y expresarlo a sus semejantes por medio del mundo físico.</description>
+    </item>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=ser&amp;rev=1301582291&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-03-31T16:38:11+02:00</dc:date>
+        <dc:creator>editor</dc:creator>
+        <title>ser - creado</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=ser&amp;rev=1301582291&amp;do=diff</link>
+        <description>Sustancia, perceptible o no, que es capaz de realizar un cambio en su entorno, sea este del tipo que sea. El acto de ser, en sí mismo, es la expresión de dicha capacidad de alteración del entorno.
+Una piedra en un camino, carece de la cualidad de ser, pero una piedra lanzada, comienza a tener cierta esencia, cierta capacidad para cambiar su entorno, según sus características físicas, químicas y energéticas. (la dureza de la piedra o su masa, la reacción con el elemento que la rodea o la energía …</description>
+    </item>
+</rdf:RDF>

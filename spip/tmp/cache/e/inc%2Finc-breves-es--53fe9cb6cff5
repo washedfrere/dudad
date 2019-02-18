@@ -1,0 +1,21 @@
+a:9:{s:5:"texte";s:443:"    <!-- Breves -->
+    
+    
+    
+    <div class="menu">
+    <h2 class="structure">&Uacute;ltimos breves</h2>
+      <ul>
+        <li><b>Nuevas breves</b>
+          <ul>
+            
+          	<li><span>14 de mayo de 2009</span>
+              <a href="spip.php?breve1" title="En construcción ... permanente-mente.">Nueva breve</a>
+          	</li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div><!-- menu -->
+    
+    
+    ";s:9:"squelette";s:37:"html_2e46d2b01b607d725f7f610710e53fcd";s:6:"source";s:41:"plugins/auto/ahuntsic/inc/inc-breves.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"e/inc%2Finc-breves-es--53fe9cb6cff5";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:24:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:24:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

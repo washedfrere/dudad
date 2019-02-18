@@ -1,0 +1,21 @@
+a:9:{s:5:"texte";s:791:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Inscribirse en este sitio</title>
+<meta name="description" content="Lugar para compartir conocimientos de las palomas allegadas y reci&#233;n llegadas" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+<body class="page_sommaire">
+<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_INSCRIPTION', '1comite', '', 'nom_inscription'),1, 11);
+if ($lang_select) lang_select();
+?></body>
+</html>
+";s:9:"squelette";s:37:"html_b860cb4a2bcac4efb67ba37d83ea19ee";s:6:"source";s:33:"squelettes-dist/identifiants.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"3/ide-ide-nom-ins-1com--d7f96112096";}s:7:"entetes";a:4:{s:12:"X-Spip-Cache";s:1:"0";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=utf-8";}s:5:"duree";i:0;s:8:"contexte";a:7:{s:4:"page";s:12:"identifiants";s:5:"focus";s:15:"nom_inscription";s:4:"mode";s:7:"1comite";s:4:"date";s:19:"2010-06-19 18:15:27";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-06-19 18:15:27";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

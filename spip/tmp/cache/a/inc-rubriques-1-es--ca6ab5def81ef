@@ -1,0 +1,39 @@
+a:9:{s:5:"texte";s:585:"
+
+
+<div class="menu rubriques">
+	<h2>Secciones</h2>
+	<ul>
+	
+		<li>
+			<a href="spip.php?rubrique6">Administración</a>
+
+			
+
+		</li>
+	
+		<li>
+			<a href="spip.php?rubrique7" class="on">Contenidos</a>
+
+			
+			<ul>
+				 
+					<li><a href="spip.php?rubrique2">Ciencia</a>	</li>
+				 
+					<li><a href="spip.php?rubrique1" class="on">Historia</a>	</li>
+				 
+					<li><a href="spip.php?rubrique4">Metafísica</a>	</li>
+				 
+					<li><a href="spip.php?rubrique3">Salud</a>	</li>
+				 
+					<li><a href="spip.php?rubrique5">Tecnología</a>	</li>
+				
+			</ul>
+			
+
+		</li>
+	
+
+	</ul>
+</div>
+";s:9:"squelette";s:37:"html_c3a12bd384ca27c6694535234983d3a8";s:6:"source";s:34:"squelettes-dist/inc-rubriques.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"a/inc-rubriques-1-es--ca6ab5def81ef";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:11:"id_rubrique";s:1:"1";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-20 19:08:28";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-20 19:08:28";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

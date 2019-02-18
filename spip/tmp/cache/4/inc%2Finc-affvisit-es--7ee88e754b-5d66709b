@@ -1,0 +1,21 @@
+a:9:{s:5:"texte";s:456:"<?php
+$query = "SELECT SUM(visites) AS total_absolu FROM spip_visites";
+	$result = spip_query($query);
+
+	if ($row = spip_fetch_array($result)) {
+		$total_absolu = $row['total_absolu'];
+	}
+
+
+$query = "SELECT visites FROM spip_visites WHERE date=NOW()";
+		$result = spip_query($query);
+	
+	if ($row = @spip_fetch_array($result)) {
+		$visites_today = $row['visites'];
+}
+
+$total_gen = $total_absolu + $visites_today;
+
+echo "<strong>".$total_gen."</strong>";
+
+?>";s:9:"squelette";s:37:"html_87aaf3b06b85822fb4e56c63a581b436";s:6:"source";s:43:"plugins/auto/ahuntsic/inc/inc-affvisit.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:2:{s:5:"cache";s:35:"4/inc%2Finc-affvisit-es--7ee88e754b";s:7:"session";s:8:"5d66709b";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:24:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:24:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

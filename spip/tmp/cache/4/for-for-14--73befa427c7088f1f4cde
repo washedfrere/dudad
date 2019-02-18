@@ -1,0 +1,122 @@
+a:9:{s:5:"texte";s:3323:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Publicar un mensaje - Escribas</title>
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<meta name="robots" content="none" />
+</head>
+
+<body class="page_forum">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div id="conteneur">
+    <div id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a>
+    
+            
+            
+            &gt; <a href="spip.php?rubrique7">Contenidos</a>
+            
+            &gt; <a href="spip.php?rubrique2">Ciencia</a>
+            
+            &gt; <a href="spip.php?article14">Masa Variable</a>
+            
+            
+    
+            
+    
+            &gt; <strong class="on">Publicar un mensaje</strong>
+            
+        </div><!--#hierarchie-->
+
+        <div class="cartouche">
+            <h1>Publicar un mensaje</h1>
+        </div>
+
+        <div class="menu articles">
+            <h2>En respuesta a:</h2>
+        
+            
+            
+            
+            
+            <h3><a href="spip.php?article14">Masa Variable</a></h3>
+            <small>13 de diciembre de 2009, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+            <div class="introduction">Introducción
+
+El concepto de masa es algo que me ha atraído desde que empecé a estudiar física de niño. Me fascinaba que algo tuviera una esencia desconocida pero que fuera de tanta utilidad práctica.
+
+Según fui creciendo, mi interés fue creciendo conmigo, puesto que cuanto más buceaba en los libros de física (alumbrado más por mi curiosidad que por el profesorado, todo sea dicho) más veía que ese concepto se resistía a ser definido en manera alguna.
+
+Es a día de hoy, mayo del 2009 que todavía no he&nbsp;(...)</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+        </div>
+
+        <?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_FORUM', 'Masa Variable', '', 'pos', '', '0', '0', '14', '0', '0', '', '', '', ''),1, 105);
+if ($lang_select) lang_select();
+?>
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 116);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+	
+	
+	<div id="extra">
+	&nbsp;
+	</div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/forum.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>";s:9:"squelette";s:37:"html_7d97ade31497917a97294ba1987ea848";s:6:"source";s:26:"squelettes-dist/forum.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"4/for-for-14--73befa427c7088f1f4cde";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:4:"page";s:5:"forum";s:10:"id_article";s:2:"14";s:4:"date";s:19:"2010-09-08 18:32:30";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-08 18:32:30";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

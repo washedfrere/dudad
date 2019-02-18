@@ -1,0 +1,20 @@
+a:9:{s:5:"texte";s:1384:"<?xml version="1.0" encoding="utf-8" ?>
+
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:thr="http://purl.org/syndication/thread/1.0">
+<channel xml:lang="es">
+	<title>&#91;Escribas&#93; RSS (Mis tareas)</title>
+	<link>http://www.torredekapter.es/spip/ecrire/</link>
+	<description></description>
+	<language>es</language>
+
+	<item>
+		<title>Art&#237;culo propuesto : Salud y Enfermedad</title>
+		<link>http://www.torredekapter.es/spip/ecrire/?exec=articles&amp;id_article=10</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/ecrire/?exec=articles&amp;id_article=10</guid>
+		<dc:date>2009-05-16T10:49:12Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+	<dc:creator>David &lt;david@torredekapter.es&gt;</dc:creator>
+		<description>Como introducci&#243;n a este apartado sobre la Salud, voy a escribir unas l&#237;neas para mostrar la idea subyacente. La Salud Resulta que la salud, seg&#250;n la entendemos y la vivimos, es un estado inexistente, porque no hay nadie que est&#233; realmente sano. Parece una paradoja abrir un tema para tratar de algo que no existe y alguna persona se preguntar&#225; por qu&#233; estoy diciendo &#233;sto. La salud es la conjunci&#243;n de varios factores en un ser vivo. Entran en juego tanto los pormenores f&#237;sicos como los pormenores (...)</description>
+	</item></channel>
+</rss>";s:9:"squelette";s:37:"html_05e62a138a00320152d87583f730a858";s:6:"source";s:14:"prive/rss.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"1/rss-rss-a-sui-5-ff--01be4f7abc410";}s:7:"entetes";a:2:{s:12:"Content-Type";s:23:"text/xml; charset=utf-8";s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:8:{s:4:"page";s:3:"rss";s:2:"op";s:8:"a_suivre";s:2:"id";s:1:"5";s:3:"cle";s:8:"ff6d709d";s:4:"date";s:19:"2009-05-16 14:00:44";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-16 14:00:44";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

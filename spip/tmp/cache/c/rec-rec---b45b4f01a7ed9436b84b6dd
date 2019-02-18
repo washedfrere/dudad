@@ -1,0 +1,88 @@
+a:9:{s:5:"texte";s:1590:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Resultados de la b&uacute;squeda - Escribas</title>
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<meta name="robots" content="none" />
+</head>
+
+<body class="page_recherche pas_surlignable">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+	
+	<div id="conteneur">
+	<div id="contenu pas_surlignable">
+		
+		
+		<div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; Buscar</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+	
+	
+	<div id="navigation">
+	
+		
+		<?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 120);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+	
+	
+	<div id="extra">
+	&nbsp;
+	</div><!--#extra-->
+	
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/recherche.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+    
+</div><!--#page-->
+</body>
+</html>";s:9:"squelette";s:37:"html_7c066b3b0901a5ea690b12c667e8a4e7";s:6:"source";s:30:"squelettes-dist/recherche.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"c/rec-rec---b45b4f01a7ed9436b84b6dd";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:4:"page";s:9:"recherche";s:9:"recherche";s:0:"";s:4:"date";s:19:"2010-08-10 18:22:09";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-08-10 18:22:09";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

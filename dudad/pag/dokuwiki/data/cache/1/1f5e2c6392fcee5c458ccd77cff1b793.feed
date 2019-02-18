@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="http://www.dudad.es/pag/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://www.dudad.es/pag/dokuwiki/feed.php">
+        <title>dudad.es filosofia</title>
+        <description></description>
+        <link>http://www.dudad.es/pag/dokuwiki/</link>
+        <image rdf:resource="http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico" />
+       <dc:date>2016-03-24T04:25:59+01:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=filosofia:filosofia&amp;rev=1304334308&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico">
+        <title>dudad.es</title>
+        <link>http://www.dudad.es/pag/dokuwiki/</link>
+        <url>http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico</url>
+    </image>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=filosofia:filosofia&amp;rev=1304334308&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-05-02T13:05:08+01:00</dc:date>
+        <title>filosofia:filosofia</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=filosofia:filosofia&amp;rev=1304334308&amp;do=diff</link>
+        <description>Hay muchos pensamientos de muchas mentes que intentan resolver el problema de la existencia. Digo problema porque la razón no abarca lo profundo del existir. Somos algo más que carne y huesos, esto está aceptado desde que alguien se plantea la más insignificante pregunta sobre su vida. Hay que profundizar, hay que conseguir traspasar la barrera de la razón y adentrarse en el mundo de los sueños y las alegorías. Tratamos de explicar lo inexplicable y a esa explicación la llamamos filosofía, donde…</description>
+    </item>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+a:9:{s:5:"texte";s:1311:"	<br class="nettoyeur" />
+	<div class="edito">
+		<h3 class="edito-titre">Los art&iacute;culos m&aacute;s recientes</h3>
+	</div>
+
+    
+    
+    
+    
+	  <br class="nettoyeur" />
+	  <div class="logo-liste-art">
+		<a href="spip.php?article1"><img src="local/cache-vignettes/L150xH25/rubon0-59132.png" alt="" width='150' height='25' class='spip_logos'  style='height:25px;width:150px;' /></a>
+	  </div>
+	  
+      <h3><a href="spip.php?article1" class="titre-article">Parámetros iniciales mecánica</a></h3>
+      
+      <div class="detail">
+        <span class="">Jueves 14 de mayo de 2009</span>
+        <span class="auteur-article">por  <a href="spip.php?auteur1">Torredekapter</a></span>
+      </div><!-- detail -->
+
+      <div class="texte">
+	<div class="extrait"><div class="">Física inversa
+
+Diagrama básico: 
+
+http://www.torredekapter.es/spip/IM...
+
+Este esquema contiene representada la base de la matemática física mecánica-dinámica a utilizar en el siguiente desarrollo. Consta de una linea horizontal; la linea espacio-temporal, así denominada por ser la que contiene tanto&nbsp;(...)</div>
+      	<div class="suite"><a href="spip.php?article1" title="...continuar" >continuar</a></div>
+		
+	</div><!-- fin extrait -->
+      </div><!-- fin texte -->
+      <br class="nettoyeur" />
+    
+
+    
+
+    ";s:9:"squelette";s:37:"html_06127b2c99c23b9789e8d5caf000c957";s:6:"source";s:52:"plugins/auto/ahuntsic/inc/inc-sommaire-articles.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"6/inc-som-art-es-2009_05_1-4640050e";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:23:19";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:23:19";s:18:"date_redac_default";b:1;s:4:"self";s:2:"./";}s:2:"gz";b:0;}

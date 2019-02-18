@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>culturnova.com, v&iacute;a a CVLTVRAE</title>
+<link rel="stylesheet" type="text/css" href="estilomarkt.css" />
+</head>
+<body onload="presenta(0);">
+<img id="fondo" src="fondomarkt.png" border="0">
+<img id="subracab" src="subracab.png" border="0">
+<img id="sol1" src="culturnovasol1.png" border="0">
+<img id="sol2" src="culturnovasol2.png" border="0">
+<img id="logo1" src="culturnovatitulo.png" border="0">
+<a href="culturae/intro.html" id="logo2" border="0" onmouseover="animando('on');" onmouseout="animando('off');"
+><img src="culturaetitulo.png" border="0"></a>
+<div id="contenido1" class="contenido"><h1>CVLTURAE: riesgos c&oacute;modos</h1><br>Pronto podr&aacute; ver y utilizar <sub>CVLTVRAE</sub> para gestionar de f&aacute;cilmente la burocracia de Prevenci&oacute;n de Riesgos Laborales.<br>Le servir&aacute;...<br> a usted, como empresario;<br> a usted, como trabajador;<br> a usted, como inspector;<br> a usted, como delegado.</div>
+<div id="contenido2" class="contenido"></div>
+<script type="text/javascript">
+var htimersol2;
+var yaactivo="no";
+var activosol2="no";
+var xlogo;
+var ylogo;
+var axlogo;
+var aylogo;
+var htimerpres;
+var htimetransp;
+var transp1=100;
+var transp2=0;
+var transicionms=100;
+function alaesquina()
+{
+ if  (activosol2!="si")
+ {
+   activosol2="si";
+   xlogo=parseFloat(document.getElementById('sol2').style.left);
+   ylogo=parseFloat(document.getElementById('sol2').style.top);
+   axlogo= -(xlogo+113)/10;
+   aylogo= -ylogo/2;
+   htimersol2=setInterval("alaesquina()",60);
+ }
+ else
+ {
+   xlogo-=axlogo;
+   ylogo-=aylogo;
+   axlogo+=(xlogo+113)/100;
+   aylogo+=ylogo/200;
+   if (xlogo < -113) xlogo=-113;
+   if (ylogo < 0) ylogo=0;
+   if (axlogo<1) axlogo+=1;
+   if (aylogo<1) aylogo+=1;
+   if ( xlogo==-113 && ylogo ==0)
+   {
+      activolsol2="no";
+      clearInterval(htimersol2);
+   }
+   else
+   {
+      document.getElementById('sol2').style.left=xlogo+'px';
+      document.getElementById('sol2').style.top=ylogo+'px';
+   }
+ }
+}
+
+function animando(onoff)
+{
+  if (onoff=="on")
+  {
+    if  ( yaactivo!="si" )
+    {
+	  yaactivo="si";
+	  activosol2="no";
+      document.getElementById('sol2').src='culturnovasol2.gif';
+      alaesquina();
+    }
+	else
+	{
+	  if (activosol2=="no") htimersol2=setTimeout("alaesquina()",60);
+	}
+  }
+  else
+  {
+    document.getElementById('sol2').src='culturnovasol2.png';
+    document.getElementById('sol2').style.left='10px';
+    document.getElementById('sol2').style.top='15px';
+    yaactivo="no";
+    clearInterval(htimersol2);
+  }
+}
+
+function presenta(pag)
+{
+    switch(pag)
+	{
+	  case 0:
+	  document.getElementById('contenido1').innerHTML='<img src="escritoriolleno.png" border="0" align="right"/><h1>CVLTURAE: riesgos c&oacute;modos</h1><br>Pronto podr&aacute; ver y utilizar <sub>CVLTVRAE</sub> para gestionar f&aacute;cilmente la Prevenci&oacute;n de Riesgos Laborales.<br><img src="rellenaform.png" border="0" align="left"/>Le servir&aacute;...';
+	  htimerpres=setTimeout("presenta(1);",10000);
+	  htimertransp=setInterval("dedosauno()",transicionms);
+	  break;
+	  case 1:
+	  document.getElementById('contenido2').innerHTML='<h1>Facilidades para todos</h1><img src="sencillez.png" border="0" align="left"/><br>Cualquiera puede utilizar el programa que proporcionamos, ya que est&aacute pensado para ser intuitivo y sencillo, sin m&aacute;s adornos que los necesarios y proveiendo de una elevada funcionalidad.';
+	  htimerpres=setTimeout("presenta(2);",7000);
+	  htimertransp=setInterval("deunoados()",transicionms);
+	  break;
+	  case 2:
+	  document.getElementById('contenido1').innerHTML='<img src="cloudcomp.png" border="0" align="right"/><h1>Desde cualquier sitio</h1><br>No hace falta invertir cantidades desorbitadas en un sistema inform&aacute;tico porque cualquier ordenador con acceso a internet puede utilizar nuestros servicios. Su documentación est&aacute; a nuestro cargo, segura y vigilada.';
+	  htimerpres=setTimeout("presenta(3);",7000);
+	  htimertransp=setInterval("dedosauno()",transicionms);
+	  break
+	  case 3:
+	  document.getElementById('contenido2').innerHTML='<img src="llaves.png" border="0" align="right"/><h1>Usuarios internos y externos</h1><br>La empresa dispone de las llaves de su local y de la misma manera, las llaves para entrar en la plataforma las tiene su due&ntilde;o con varias copias para ofrecer la entrada a diferentes "estancias"';
+	  htimerpres=setTimeout("presenta(4);",9000);
+	  htimertransp=setInterval("deunoados()",transicionms);
+	  break;
+	  case 4:
+	  document.getElementById('contenido1').innerHTML='<h1>Avisador de Revisi&oacute;n</h1><img src="notas.png" border="0" align="left"/><br>Sepa cu&aacute;ndo puede ir a realizarse la revisi&oacute;n m&eacute;dica, el estado de aptitud de los trabajadores, que cada trabajador pueda saberlo y, adem&aacute;s pueda acceder a aquella informaci&oacute;n que le interesa.';
+	  htimerpres=setTimeout("presenta(0);",7000);
+	  htimertransp=setInterval("dedosauno()",transicionms);
+	  break;
+	  case 5:
+	  document.getElementById('contenido2').innerHTML='<h1>Cont&aacute;ctenos e inf&oacute;rmese</h1><img src="reunion.png" border="0" align="left"/><br>Si la publicidad es fr&iacute;a e impersonal, puede hablar con nosotros y veremos, desde la cercan&iacute;a del trato humano, de qu&eacute; manera podemos ayudarle en sus labores de prevenci&oacute;n de riesgos.';
+	  htimerpres=setTimeout("presenta(0);",8000);
+	  htimertransp=setInterval("deunoados()",transicionms);
+	  break;
+	}
+}
+function deunoados()
+{
+    transp1-=10;
+	transp2+=10;
+	if ( transp1<0) transp1=0;
+	if (transp2>100) transp2=100;
+	ponertransp(transp1,transp2);
+	if (transp1==0 &&transp2==100) clearInterval(htimertransp);
+}
+function dedosauno()
+{
+    transp1+=10;
+	transp2-=10;
+	if ( transp1>100) transp1=100;
+	if (transp2<0) transp2=0;
+	ponertransp(transp1,transp2);
+	if (transp1==100 &&transp2==0) clearInterval(htimertransp);
+}
+function ponertransp(tr1,tr2)
+{
+var tpc1=tr1/100;
+var tpc2=tr2/100;
+document.getElementById('contenido1').style.filter="alpha(opacity="+tr1+")";
+document.getElementById('contenido1').style.opacity=tpc1;
+document.getElementById('contenido2').style.filter="alpha(opacity="+tr2+")";
+document.getElementById('contenido2').style.opacity=tpc2;
+}
+</script>
+</body>
+</html>

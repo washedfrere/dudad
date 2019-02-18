@@ -1,0 +1,33 @@
+a:9:{s:5:"texte";s:1766:"<!-- META DATA -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-language" content="es" />
+	<meta name="language" content="es" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="generator" content="SPIP 2.0.8 [13982]" />
+	<meta name="robots" content="index,follow" />
+	<link rel="schema.DCTERMS"  href="http://purl.org/dc/terms/" />
+	<link rel="schema.DC"       href="http://purl.org/dc/elements/1.1/" />
+
+  
+	<!-- META pages recapitulatives - META summary pages -->
+
+  <meta name="keywords" content="Historia,Ciencia" />
+  <meta name="description" content="Lugar para compartir conocimientos de las palomas allegadas y reci&#233;n llegadas" />
+  <meta name="author" content="Torredekapter" />
+  <!-- META Dublin Core - voir: http://uk.dublincore.org/documents/dcq-html/  -->
+  <meta name="DC.title" content="Escribas TorredeKápter" />
+  <meta name="DC.language" scheme="ISO639-1" content="es" />
+  <meta name="DC.identifier" scheme="DCTERMS.URI" content="http://www.torredekapter.es/spip" />
+  <meta name="DC.source" scheme="DCTERMS.URI" content="http://www.torredekapter.es/spip" />
+  <meta name="DC.creator" content="Torredekapter" />
+  <meta name="DC.description" content="Lugar para compartir conocimientos de las palomas allegadas y reci&#233;n llegadas" />
+  <meta name="DC.subject" content="Historia,Ciencia" />
+  <meta name="DC.date" scheme="ISO8601" content="2009-05-14T19:24:15Z" />
+
+
+
+  <link rel="shortcut icon" href="local/cache-gd2/3907a0c430e7d562b4aa5473ea7ff571.ico" type="image/x-icon" />
+
+  <link rel="alternate" type="application/rss+xml" title="Sindicar el sitio completo : Escribas TorredeKápter" href="http://www.torredekapter.es/spip/spip.php?page=backend" />
+
+";s:9:"squelette";s:37:"html_38e0483239853375181be3ebfe70fe74";s:6:"source";s:39:"plugins/auto/ahuntsic/inc/inc-meta.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"f/inc%2Finc-meta-es--7d38e6cfaa37d4";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:24:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:24:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

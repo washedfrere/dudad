@@ -1,0 +1,1 @@
+a:2:{i:0;s:10:"1260675830";i:1;a:2:{i:0;a:2:{i:6;s:15:"Administración";i:7;s:10:"Contenidos";}i:7;a:5:{i:2;s:7:"Ciencia";i:1;s:8:"Historia";i:4;s:11:"Metafísica";i:3;s:5:"Salud";i:5;s:11:"Tecnología";}}}

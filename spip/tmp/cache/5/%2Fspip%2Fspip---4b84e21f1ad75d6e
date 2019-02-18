@@ -1,0 +1,140 @@
+a:9:{s:5:"texte";s:4543:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Ciencia - Escribas</title>
+<meta name="description" content="Artículos sobre ciencia en general, incluidos aquellos relativos a la ciencia aunque no sigan los estándares y dictámenes de la mayoría. Lo que no (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<link rel="alternate" type="application/rss+xml" title="Sindicar esta secci&oacute;n" href="http://www.torredekapter.es/spip/spip.php?page=backend&amp;id_rubrique=2" />
+</head>
+
+<body class="page_rubrique">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div id="conteneur">
+    <div id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <strong class="on">Ciencia</strong></div>
+
+        <div class="cartouche">
+            <img src="local/cache-vignettes/L50xH25/rubon2-bfa08.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff2-e7574.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon2-bfa08.jpg'" class='spip_logos'  style='height:25px;width:50px;' />
+            <h1 class="">Ciencia</h1>
+            <p><small>&Uacute;ltima actualizaci&oacute;n : 14 de febrero.</small></p>
+        </div>
+
+        <div class="chapo"><p>Artículos sobre ciencia en general, incluidos aquellos relativos a la ciencia aunque no sigan los estándares y dictámenes de la mayoría. Lo que no es verdad, también tiene que salir a la luz.</p></div>
+
+        
+        
+        <div class="menu articles">
+            
+            <h2>Art&iacute;culos de esta secci&oacute;n</h2>
+            <ul>
+                
+                <li>
+                    
+                    <h3><a href="spip.php?article19">Regravitación Newtoniana</a></h3>
+                    <small>14 de febrero, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+                </li>
+                
+                <li>
+                    
+                    <h3><a href="spip.php?article14">Masa Variable</a></h3>
+                    <small>13 de diciembre de 2009, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+                </li>
+                
+                <li>
+                    
+                    <h3><a href="spip.php?article18">Relatividad lumínica</a></h3>
+                    <small>14 de junio de 2009, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+                </li>
+                
+                <li>
+                    
+                    <h3><a href="spip.php?article16">Velocidad máxima</a></h3>
+                    <small>21 de mayo de 2009, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+                </li>
+                
+                <li>
+                    
+                    <h3><a href="spip.php?article3">Física inversa</a></h3>
+                    <small>15 de mayo de 2009, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur1">Administrador</a></span></small>
+                </li>
+                
+            </ul>
+            
+        </div>
+        
+
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 149);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        
+    </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/rubrique.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_d06122a5ec1b836faab79572bb364311";s:6:"source";s:29:"squelettes-dist/rubrique.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"5/%2Fspip%2Fspip---4b84e21f1ad75d6e";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"3600";}s:5:"duree";i:3600;s:8:"contexte";a:6:{s:9:"rubrique2";s:0:"";s:11:"id_rubrique";s:1:"2";s:4:"date";s:19:"2010-09-24 16:40:43";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-24 16:40:43";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

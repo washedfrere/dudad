@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:1129:"
+	<item xml:lang="es">
+		<title>Regravitaci&#243;n Newtoniana</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article19</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article19</guid>
+		<dc:date>2010-02-14T18:23:38Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>David</dc:creator>
+
+
+
+		<description>Reformulaci&#243;n de la f&#243;rmula de atracci&#243;n Este va a ser un art&#237;culo breve, porque lo &#250;nico que voy a hacer es plasmar los a&#241;os que llevo d&#225;ndole vueltas a la famosa ecuaci&#243;n de la gravedad de Newton: F=G&#183;m&#183;m'/d&#178; Extremadamente sencilla. Tan sencilla que debe ocultar algo en su interior. Y buceando; y calculando; e investigando; y comparando me top&#233; un d&#237;a con que la famosa constante de gravitaci&#243;n (G) se puede reescribir utilizando otra constante m&#225;s actual (por haber sido &quot;descubierta&quot; despu&#233;s), que es, (...)
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique2" rel="directory"&gt;Ciencia&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"4/inc-rss-item-19-es--805a7f6ae624e";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:2:"19";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-17 00:49:51";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-17 00:49:51";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

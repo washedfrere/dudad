@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:1145:"
+	<item xml:lang="es">
+		<title>Ampliaci&#243;n de las p&#225;ginas</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article6</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article6</guid>
+		<dc:date>2009-05-15T17:16:02Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>Administrador</dc:creator>
+
+
+
+		<description>Parecer&#225; algo absurdo, pero acabo de descubrir que muchas de las p&#225;ginas creadas con CMS est&#225;n dise&#241;adas de modo que su tama&#241;o sea un m&#250;ltiplo del tipo de letra empleado, de tal manera que en un monitor medianamente grande se ven algo rid&#237;culas. Cuando veas una p&#225;gina que deja mucho espacio a los lados, prueba a aumentar el tama&#241;o de la letra, ver&#225;s c&#243;mo se va ajustando a tu monitor la p&#225;gina. En Firefox, se puede hacer con la tecla Ctrl y &quot;+&quot; para aumentar o Ctrl y &quot;-&quot; para reducir, con Ctrl+&quot;0&quot; se (...)
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique5" rel="directory"&gt;Tecnolog&#237;a&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"1/inc-rss-item-6-es--6d29e038bf7995";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:1:"6";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-02-06 09:13:42";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-02-06 09:13:42";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

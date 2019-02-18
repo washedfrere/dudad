@@ -1,0 +1,55 @@
+a:9:{s:5:"texte";s:1655:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Contrase&ntilde;a olvidada - Escribas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="none" />
+<meta name="generator" content="SPIP 2.0.8 [13982]" />
+
+<link rel="stylesheet" href="prive/spip_style.css" type="text/css" />
+<link rel="stylesheet" href="prive/minipres.css" type="text/css" />
+<link rel="stylesheet" href="squelettes-dist/spip_formulaires.css" type="text/css" />
+
+
+
+<script src="prive/javascript/jquery.js" type="text/javascript"></script>
+
+<script src="prive/javascript/jquery.form.js" type="text/javascript"></script>
+
+<script src="prive/javascript/ajaxCallback.js" type="text/javascript"></script>
+<!-- insert_head -->
+
+</head>
+<body class='pass' >
+
+<div id='minipres'>
+
+	<h3 class="spip">Escribas</h3>
+		
+	<div class="formulaire_spip pass">
+		 
+		  <?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_OUBLI'),1, 15);
+if ($lang_select) lang_select();
+?>
+		
+		
+	</div>
+	<div style='text-align:right'>
+	<script type="text/javascript"><!--
+	document.write("<a style='color: #e86519' href='")
+	document.write((window.opener) ? "javascript:close()" : "./")
+	document.write("'>Abandonar esta ventana<" + "/a>");
+	//--></script>
+	<noscript>
+		&#91;<a href='./'>Volver al sitio p&uacute;blico</a>&#93;
+	</noscript>
+	</div>
+	
+</div><!--#minipres-->
+
+</body>
+</html>";s:9:"squelette";s:37:"html_43a47f000baf6006a044751471e023d7";s:6:"source";s:20:"prive/spip_pass.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"0/spi-pas-spi-pas--995a9e28e4f50361";}s:7:"entetes";a:2:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"page";s:9:"spip_pass";s:4:"date";s:19:"2010-09-08 18:33:06";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-08 18:33:06";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

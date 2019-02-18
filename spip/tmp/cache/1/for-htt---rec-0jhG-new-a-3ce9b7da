@@ -1,0 +1,10 @@
+a:9:{s:5:"texte";s:449:"<div class="formulaire_spip formulaire_recherche" id="formulaire_recherche">
+<form action="http://www.torredekapter.es/spip/spip.php?page=recherche" method="get"><div>
+	<input name="page" value="recherche" type="hidden" />
+	
+	<label for="recherche">Buscar</label>
+	<input type="text" class="text" size="10" name="recherche" id="recherche" accesskey="4" />
+	<input type="submit" class="submit" value="&gt;&gt;" title="Buscar" />
+</div></form>
+</div>
+";s:9:"squelette";s:37:"html_35cfb8bb802f6d7be6e04761cbe4f7bf";s:6:"source";s:42:"squelettes-dist/formulaires/recherche.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"1/for-htt---rec-0jhG-new-a-3ce9b7da";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:3600;}s:5:"duree";i:0;s:8:"contexte";a:14:{s:6:"action";s:56:"http://www.torredekapter.es/spip/spip.php?page=recherche";s:9:"recherche";s:0:"";s:4:"lang";s:0:"";s:4:"form";s:9:"recherche";s:15:"formulaire_args";s:96:"0jhG5NAldWf1hjKLWyx9Bv36O5FM84oWk7njOfce9pk75/cqnpcRALXAvfuUIcOEKHsfuTUDKsHMFvg/4SWqMlYz7VrJZwOm";s:2:"id";s:3:"new";s:7:"erreurs";a:0:{}s:10:"message_ok";s:0:"";s:14:"message_erreur";s:0:"";s:8:"editable";s:1:" ";s:4:"date";s:19:"2010-08-10 18:22:09";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-08-10 18:22:09";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

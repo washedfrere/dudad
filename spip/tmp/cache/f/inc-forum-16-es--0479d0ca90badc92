@@ -1,0 +1,38 @@
+a:9:{s:5:"texte";s:715:"
+
+
+
+<h2>1
+Mensaje</h2>
+
+
+
+<ul class="forum">
+
+	
+
+	<li class="forum-fil">
+
+		<div class="forum-message">
+			<div class="forum-chapo">
+				<strong class="forum-titre"><a href="#forum2" name="forum2" id="forum2">Velocidad máxima</a></strong>
+				<small>10 de diciembre de 2009&nbsp;00:18, por  <span class="">washedfrere</span></small>
+			</div>
+			<div class="forum-texte">
+				<p>¿Seguro que no creamos nosotros el universo tangible y sus leyes? Tengo ciertas dudas al respecto.</p>
+				
+				
+
+				
+
+				<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=16&amp;id_forum=2" rel="noindex nofollow">Responder este mensaje</a></p>
+			</div>
+		</div>
+
+		
+
+	</li>
+	
+
+</ul>
+";s:9:"squelette";s:37:"html_f9bfdf2f688bb73aa1d5a55210485c44";s:6:"source";s:30:"squelettes-dist/inc-forum.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"f/inc-forum-16-es--0479d0ca90badc92";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:2:"16";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-16 12:27:43";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-16 12:27:43";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

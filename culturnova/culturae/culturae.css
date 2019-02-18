@@ -1,0 +1,48 @@
+body {margin:0; padding:0; background-image:url('fondonova.png'); background-repeat:no-repeat; background-position:left top;background-attachment:fixed}
+#menu{position:absolute; left:0px; top:0px;}
+#logo{position:absolute; right:10px; top:5px;}
+#contenido{position:absolute; left:10%; top:10%; width:90%; height:90%; text-align:justify; text-decoration:none; font-family:"Times New Roman", Times, serif; font-size:1.3em;}
+a:hover {background-color:#FFFF00;}
+form{
+border:solid 2px #aabb00;
+background:#4488bb;
+margin:0 auto;
+width:400px;
+padding:14px;
+}
+legend {
+color:#333333;
+font-family:arial;
+font-size:21px;
+letter-spacing:-1px;
+padding-bottom:20px;
+padding-top:8px;
+}
+label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+.boton{
+clear:both;
+margin:0 auto;
+width:100px;
+height:31px;
+background:#696969;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+}
+
+.aceptar {
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #708090;
+width:200px;
+margin:2px 0 20px 10px;
+}

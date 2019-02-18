@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:1048:"
+	<item xml:lang="es">
+		<title>Relatividad lum&#237;nica</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article18</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article18</guid>
+		<dc:date>2009-06-14T11:53:02Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>David</dc:creator>
+
+
+
+		<description>Relatividad lum&#237;nica Relaci&#243;n entre un movimiento y su observaci&#243;n a una distancia s. En la imagen se presenta un objeto en movimiento descendente a una velocidad v y un observador evaluando dicho movimiento a una distancia s perpendicular al movimiento del objeto. El objeto se representa por un c&#237;rculo azul y el observador por un ojo. El objeto pasa por dos puntos de control 0 y 1 situados en su direcci&#243;n de desplazamiento. Cuando el objeto pasa por el punto 0, digamos que ha ocurrido en el (...)
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique2" rel="directory"&gt;Ciencia&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"9/inc-rss-item-18-es--112a736334da4";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:2:"18";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-17 00:49:52";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-17 00:49:52";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

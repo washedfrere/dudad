@@ -1,0 +1,215 @@
+a:9:{s:5:"texte";s:5358:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Mapa del sitio - Escribas</title>
+<meta name="description" content="Lugar para compartir conocimientos de las palomas allegadas y reci&#233;n llegadas" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<meta name="robots" content="none" />
+</head>
+
+<body class="page_plan">
+<div id="page">
+	
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+	
+    <div id="conteneur">
+    <div id="contenu">
+        
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <strong class="on">Mapa del sitio</strong></div>
+    
+        <div class="cartouche">
+            <h1>Mapa del sitio</h1>
+        </div>
+        
+        
+        
+        <h2><a href="spip.php?rubrique6">Administración</a></h2>
+        
+        
+        
+        <h3>Art&iacute;culos</h3>
+        <ul>
+            
+            <li><a href="spip.php?article4">Participación</a></li>
+            
+            <li><a href="spip.php?article5">Usuarios Registrados</a></li>
+            
+        </ul>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <h2><a href="spip.php?rubrique7">Contenidos</a></h2>
+        
+        
+        
+        <h3>Art&iacute;culos</h3>
+        <ul>
+            
+            <li><a href="spip.php?article7">Continente y contenido</a></li>
+            
+        </ul>
+        
+        
+        
+        <ul>
+            
+            <li>
+                <strong><a href="spip.php?rubrique2">Ciencia</a></strong>
+                
+                
+                <ul>
+                    
+                    <li><a href="spip.php?article3">Física inversa</a></li>
+                    
+                    <li><a href="spip.php?article14">Masa Variable</a></li>
+                    
+                    <li><a href="spip.php?article19">Regravitación Newtoniana</a></li>
+                    
+                    <li><a href="spip.php?article18">Relatividad lumínica</a></li>
+                    
+                    <li><a href="spip.php?article16">Velocidad máxima</a></li>
+                    
+                </ul>
+                
+                
+                
+            </li>
+            
+            <li>
+                <strong><a href="spip.php?rubrique1">Historia</a></strong>
+                
+                
+                <ul>
+                    
+                    <li><a href="spip.php?article9">CLAVE MGDL</a></li>
+                    
+                    <li><a href="spip.php?article2">Piedras, canteros y eremitas en el camino del Grial</a></li>
+                    
+                </ul>
+                
+                
+                
+            </li>
+            
+            <li>
+                <strong><a href="spip.php?rubrique4">Metafísica</a></strong>
+                
+                
+                <ul>
+                    
+                    <li><a href="spip.php?article17">Muchos Planos y Una Realidad</a></li>
+                    
+                    <li><a href="spip.php?article13">Yo Soy</a></li>
+                    
+                </ul>
+                
+                
+                
+            </li>
+            
+            <li>
+                <strong><a href="spip.php?rubrique3">Salud</a></strong>
+                
+                
+                <ul>
+                    
+                    <li><a href="spip.php?article12">Altruismo y salud</a></li>
+                    
+                    <li><a href="spip.php?article10">Salud y Enfermedad</a></li>
+                    
+                </ul>
+                
+                
+                
+            </li>
+            
+            <li>
+                <strong><a href="spip.php?rubrique5">Tecnología</a></strong>
+                
+                
+                <ul>
+                    
+                    <li><a href="spip.php?article6">Ampliación de las páginas</a></li>
+                    
+                </ul>
+                
+                
+                
+            </li>
+            
+        </ul>
+        
+        
+        
+        
+        <h3>Breves</h3>
+        <ul>
+            
+            <li><a href="spip.php?breve1">Nueva breve</a></li>
+            
+        </ul>
+        
+        
+        
+        
+        
+        
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 92);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+	
+	
+	<div id="extra">
+	&nbsp;
+	</div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/plan.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>";s:9:"squelette";s:37:"html_4bdf104353f2ea8aeaa82147bf501e86";s:6:"source";s:25:"squelettes-dist/plan.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"4/plan%2Fspip%2Fspip-plan--49bd6918";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"page";s:4:"plan";s:4:"date";s:19:"2010-09-30 08:52:16";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-30 08:52:16";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

@@ -1,0 +1,188 @@
+a:9:{s:5:"texte";s:9460:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Escribas</title>
+<meta name="description" content="Lugar para compartir conocimientos de las palomas allegadas y recién llegadas" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_sommaire">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+	<div class="hfeed" id="conteneur">
+	<div id="contenu">
+		
+		<div class="cartouche invisible">
+			<h1 class="invisible">Escribas</h1>
+		</div>
+		
+		<div class="chapo"><p>Lugar para compartir conocimientos de las palomas allegadas y recién llegadas</p></div>
+		
+		
+		
+		<div class="menu articles">
+			<a name='pagination_articles_recents' id='pagination_articles_recents'></a>
+			<h2>&Uacute;ltimos art&iacute;culos</h2>
+			<ul>
+				
+				<li class="hentry">
+					<a href="spip.php?article12"><img src="local/cache-vignettes/L50xH25/rubon3-920f9.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff3-e7631.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon3-920f9.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article12" rel="bookmark">Altruismo y salud</a></h3>
+					<small><abbr class="published" title="2009-12-13T03:43:50Z">13 de diciembre de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">En esto de la salud, el negocio está servido. El que más gana es el que da con la enfermedad más difícil de curar, porque siempre tendrá clientes.
+
+De alguna manera, nuestra sociedad necesita de la enfermedad. Incongruente pero cierto. Sin la enfermedad, nuestra sociedad no tendría tanto trasiego económico y hasta la economía más robusta se convertiría en la ruina absoluta.
+
+Altruismo vs Egoismo
+
+Algunos dedican más tiempo buscando solución a los males ajenos por la dificultad que supone encontrar&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article14"><img src="local/cache-vignettes/L50xH25/rubon2-bfa08.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff2-e7574.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon2-bfa08.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article14" rel="bookmark">Masa Variable</a></h3>
+					<small><abbr class="published" title="2009-12-13T03:43:46Z">13 de diciembre de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">Introducción
+
+El concepto de masa es algo que me ha atraído desde que empecé a estudiar física de niño. Me fascinaba que algo tuviera una esencia desconocida pero que fuera de tanta utilidad práctica.
+
+Según fui creciendo, mi interés fue creciendo conmigo, puesto que cuanto más buceaba en los libros de física (alumbrado más por mi curiosidad que por el profesorado, todo sea dicho) más veía que ese concepto se resistía a ser definido en manera alguna.
+
+Es a día de hoy, mayo del 2009 que todavía no he&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article18"><img src="local/cache-vignettes/L50xH25/rubon2-bfa08.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff2-e7574.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon2-bfa08.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article18" rel="bookmark">Relatividad lumínica</a></h3>
+					<small><abbr class="published" title="2009-06-14T11:53:02Z">14 de junio de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">Relatividad lumínica
+
+Relación entre un movimiento y su observación a una distancia s. En la imagen se presenta un objeto en movimiento descendente a una velocidad v y un observador evaluando dicho movimiento a una distancia s perpendicular al movimiento del objeto. El objeto se representa por un círculo azul y el observador por un ojo.
+
+El objeto pasa por dos puntos de control 0 y 1 situados en su dirección de desplazamiento. Cuando el objeto pasa por el punto 0, digamos que ha ocurrido en el&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article17"><img src="local/cache-vignettes/L50xH25/rubon4-d0de3.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff4-9afa6.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon4-d0de3.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article17" rel="bookmark">Muchos Planos y Una Realidad</a></h3>
+					<small><abbr class="published" title="2009-05-24T02:28:09Z">24 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">Con este título tan atractivo, me dispongo a escribir sobre la visión particular de un Universo constituido por múltiples planos.
+
+Planos de la realidad
+
+Resulta que, primero, hay que definir qué es eso de plano. También podríamos denominarlos capas, pero esto implicaría que habría unas encima y otras debajo, en cambio, los planos pueden coexistir en un mismo espacio sin que dicho espacio se sature y sin aplicar ninguna jerarquía que haga más válido uno que otro.
+
+Un plano es una focalización de la&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article16"><img src="local/cache-vignettes/L50xH25/rubon2-bfa08.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff2-e7574.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon2-bfa08.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article16" rel="bookmark">Velocidad máxima</a></h3>
+					<small><abbr class="published" title="2009-05-21T18:04:53Z">21 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">Tras andar buscando explicación sobre la velocidad de la luz durante varios años, la verdad es que aún no he encontrado ninguna que me satisfaga.
+
+Lo más que he llegado es a constatar la variabilidad de la velocidad de la luz, al menos en un medio, como bien demuestra el conocido fenómeno de la difracción, donde un haz de luz entra en un prisma y sale de éste descompuesta en un precioso degradado de colores, donde el ángulo de cada color corresponde con la relación de velocidad fuera del prisma /&nbsp;(...)</div>
+				</li>
+				
+			</ul>
+			<p class="pagination"><strong class='on'>0</strong>
+<span class='separateur'>|</span>
+
+
+<a href='spip.php?lzgqvcpbufq&amp;debut_articles_recents=5#pagination_articles_recents' class='lien_pagination' rel='nofollow'>5</a>
+<span class='separateur'>|</span>
+
+
+<a href='spip.php?lzgqvcpbufq&amp;debut_articles_recents=10#pagination_articles_recents' class='lien_pagination' rel='nofollow'>10</a></p>
+		</div>
+		
+		
+		
+		
+		<div class="menu">
+			<h2>&Uacute;ltimos breves</h2>
+			<ul>
+				
+				<li>14 de mayo de 2009 &ndash; <a href="spip.php?breve1">Nueva breve</a></li>
+				
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div class="menu">
+			<h2>&Uacute;ltimos comentarios</h2>
+			<ul>
+				
+				<li>13 de diciembre de 2009 &ndash; <a href="spip.php?breve1#forum3" title="Nueva breve">No entiendo qué quiere decir esto.</a></li>
+				
+				<li>10 de diciembre de 2009 &ndash; <a href="spip.php?article16#forum2" title="Velocidad máxima">¿Seguro que no creamos nosotros el universo tangible y sus leyes? Tengo&nbsp;(...)</a></li>
+				
+				<li>25 de mayo de 2009 &ndash; <a href="spip.php?article17#forum1" title="Muchos Planos y Una Realidad">Me ha parecido muy bien</a></li>
+				
+			</ul>
+		</div>
+		
+		
+		
+		
+	
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+	
+	
+	<div id="navigation">
+		
+		
+		<?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 92);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+	
+	
+	<div id="extra">
+		
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_INSCRIPTION', '1comite', '', ''),1, 100);
+if ($lang_select) lang_select();
+?>
+		
+	</div><!--#extra-->
+	
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/sommaire.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+</div><!--#page-->
+</body>
+</html>";s:9:"squelette";s:37:"html_36e14230dc082b098a9b88402f149ec9";s:6:"source";s:29:"squelettes-dist/sommaire.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"3/%2Fspip%2Fspip---65c98448f286c1c8";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"3600";}s:5:"duree";i:3600;s:8:"contexte";a:5:{s:11:"lzgqvcpbufq";s:0:"";s:4:"date";s:19:"2010-02-05 16:02:19";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-02-05 16:02:19";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

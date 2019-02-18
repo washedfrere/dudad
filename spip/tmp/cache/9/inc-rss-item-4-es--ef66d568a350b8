@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:922:"
+	<item xml:lang="es">
+		<title>Participaci&#243;n</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article4</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article4</guid>
+		<dc:date>2009-05-15T00:19:03Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>Administrador</dc:creator>
+
+
+
+		<description>Tenemos dispuesto para nosotros mismos un sistema de contenidos creciente para que todos colaboremos en esparcir el escaso conocimiento que la raz&#243;n otorga. Muy probablemente, encontraremos aqu&#237; material inspirador para que nuestro coraz&#243;n haga su trabajo mientras la mente se entretiene jugando a la raz&#243;n y a la l&#243;gica. Para participar, s&#243;lo hay que hacerlo.
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique6" rel="directory"&gt;Administraci&#243;n&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"9/inc-rss-item-4-es--ef66d568a350b8";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:1:"4";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-11-18 14:39:30";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-11-18 14:39:30";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

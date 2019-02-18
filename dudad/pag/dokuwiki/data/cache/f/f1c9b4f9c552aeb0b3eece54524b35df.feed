@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="http://www.dudad.es/pag/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://www.dudad.es/pag/dokuwiki/feed.php">
+        <title>dudad.es historia</title>
+        <description></description>
+        <link>http://www.dudad.es/pag/dokuwiki/</link>
+        <image rdf:resource="http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico" />
+       <dc:date>2016-04-25T18:08:26+02:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://www.dudad.es/pag/dokuwiki/doku.php?id=historia:historia&amp;rev=1304333825&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico">
+        <title>dudad.es</title>
+        <link>http://www.dudad.es/pag/dokuwiki/</link>
+        <url>http://www.dudad.es/pag/dokuwiki/lib/images/favicon.ico</url>
+    </image>
+    <item rdf:about="http://www.dudad.es/pag/dokuwiki/doku.php?id=historia:historia&amp;rev=1304333825&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2011-05-02T12:57:05+02:00</dc:date>
+        <title>historia:historia</title>
+        <link>http://www.dudad.es/pag/dokuwiki/doku.php?id=historia:historia&amp;rev=1304333825&amp;do=diff</link>
+        <description>La humanidad ha recorrido un largo camino desde su aparición. Muchas de las personas que han vivido antes que nosotros han dejado registrados sus conocimientos en algún medio tangible o intangible. Trataremos de extraer esas experiencias y de contar aquellas que han conseguido otras personas.</description>
+    </item>
+</rdf:RDF>

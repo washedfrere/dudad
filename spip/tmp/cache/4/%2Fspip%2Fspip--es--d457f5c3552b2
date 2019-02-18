@@ -1,0 +1,166 @@
+a:9:{s:5:"texte";s:4833:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+	<title>[Escribas TorredeKápter] : Ciencia</title>
+	<?php
+	$contexte_inclus = array('fond' => 'inc/inc-meta',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	<link rel="alternate" type="application/rss+xml" title="Sindicar esta secci&oacute;n : Ciencia" href="http://www.torredekapter.es/spip/spip.php?page=backend&amp;id_rubrique=2" />
+
+	<?php
+	$contexte_inclus = array('fond' => 'styles',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+<body dir="ltr" class="es rubrique sect2  rub2">
+<div id="page" class="rubrique rub2">
+
+<!-- *****************************************************************
+	Bandeau, titre du site et menu langue
+	Header and main menu (top and right) 
+    ************************************************************* -->
+	
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bandeau',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<!-- *****************************************************************
+	Contenu principal (centre)
+	Main content (center) 
+    ************************************************************* -->
+	<div id="bloc-contenu">
+		<h5>
+		<a href="http://www.torredekapter.es/spip" title="Portada del sitio : Escribas TorredeKápter">Portada del sitio</a>
+    
+		<b class='separateur'>&gt;</b> Ciencia
+		</h5>
+		<div class="ligne-debut"></div><!-- ligne-debut -->
+    	<div class="logo-liste-art">
+    		<img src="local/cache-vignettes/L120xH20/rubon0-7f021.png" alt="" width='120' height='20' class='spip_logos'  style='height:20px;width:120px;' />
+    	</div>
+    <h1 class="titre-article">Ciencia</h1>
+	<div class="chapo " id="description">
+        <p>Artículos sobre ciencia en general, incluidos aquellos relativos a la ciencia aunque no sigan los estándares y dictámenes de la mayoría. Lo que no es verdad, también tiene que salir a la luz.</p>
+        
+	</div><!-- chapo -->
+	
+
+		
+	
+
+
+		
+
+
+		<?php
+	$contexte_inclus = array_merge(array (
+  'rubrique2' => '',
+  'lang' => 'es',
+  'id_rubrique' => '2',
+  'date' => '2009-05-14 20:16:09',
+  'date_default' => true,
+  'date_redac' => '2009-05-14 20:16:09',
+  'date_redac_default' => true,
+),array('fond' => 'inc/inc-rub-articles',
+	'id_rubrique' => '2',
+	'id_secteur' => '2',
+	'self' => 'spip.php?rubrique2',
+	'lang' => 'es'));
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		
+		
+		<br class="nettoyeur" />
+	</div><!-- bloc-contenu -->
+	
+<!-- *****************************************************************
+	Menus contextuels (droite)
+	Contextual menus (right) 
+    ************************************************************* -->
+  <div id="encart">  
+
+<?php
+	$contexte_inclus = array_merge(array (
+  'rubrique2' => '',
+  'lang' => 'es',
+  'id_rubrique' => '2',
+  'date' => '2009-05-14 20:16:09',
+  'date_default' => true,
+  'date_redac' => '2009-05-14 20:16:09',
+  'date_redac_default' => true,
+),array('fond' => 'inc/inc-annonces',
+	'self' => 'spip.php?rubrique2',
+	'lang' => 'es'));
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array_merge(array (
+  'rubrique2' => '',
+  'lang' => 'es',
+  'id_rubrique' => '2',
+  'date' => '2009-05-14 20:16:09',
+  'date_default' => true,
+  'date_redac' => '2009-05-14 20:16:09',
+  'date_redac_default' => true,
+),array('fond' => 'inc/inc-breves',
+	'id_rubrique' => '2',
+	'self' => 'spip.php?rubrique2',
+	'lang' => 'es'));
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<?php
+	$contexte_inclus = array_merge(array (
+  'rubrique2' => '',
+  'lang' => 'es',
+  'id_rubrique' => '2',
+  'date' => '2009-05-14 20:16:09',
+  'date_default' => true,
+  'date_redac' => '2009-05-14 20:16:09',
+  'date_redac_default' => true,
+),array('fond' => 'inc/inc-syndic',
+	'id_rubrique' => '2',
+	'self' => 'spip.php?rubrique2',
+	'lang' => 'es'));
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+  </div><!-- encart -->
+
+<!-- *****************************************************************
+	Navigation principale et rubriques (haut et/ou gauche)
+	Main and Sections Navigation (top and/orleft) 
+    ************************************************************* -->
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-menu',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<!-- *****************************************************************
+	Pied de page - Footer
+    ************************************************************* -->
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bas',
+	'id_rubrique' => '2',
+	'id_secteur' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!-- page -->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_3f1b6bfefbdb51b29ff0fbd23584098f";s:6:"source";s:35:"plugins/auto/ahuntsic/rubrique.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"4/%2Fspip%2Fspip--es--d457f5c3552b2";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"7200";}s:5:"duree";i:7200;s:8:"contexte";a:7:{s:9:"rubrique2";s:0:"";s:4:"lang";s:2:"es";s:11:"id_rubrique";s:1:"2";s:4:"date";s:19:"2009-05-14 20:16:09";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 20:16:09";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

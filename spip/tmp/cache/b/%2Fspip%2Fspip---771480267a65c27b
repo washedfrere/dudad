@@ -1,0 +1,163 @@
+a:9:{s:5:"texte";s:7590:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Velocidad máxima - Escribas</title>
+<meta name="description" content="Tras andar buscando explicaci&#243;n sobre la velocidad de la luz durante varios a&#241;os, la verdad es que a&#250;n no he encontrado ninguna que me satisfaga. (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <a href="spip.php?rubrique2">Ciencia</a> &gt; <strong class="on">Velocidad máxima</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Velocidad máxima</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-05-21T18:04:53Z">Jueves 21 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p>Tras andar buscando explicación sobre la velocidad de la luz durante varios años, la verdad es que aún no he encontrado ninguna que me satisfaga.</p>
+
+<p>Lo más que he llegado es a constatar la variabilidad de la velocidad de la luz, al menos en un medio, como bien demuestra el conocido fenómeno de la difracción, donde un haz de luz entra en un prisma y sale de éste descompuesta en un precioso degradado de colores, donde el ángulo de cada color corresponde con la relación de velocidad fuera del prisma / dentro del prisma. El color violeta va más deprisa que el rojo dentro del prisma. (estoy ultimando un estudio sobre la posible constancia del índice de refracción que causaría una posible diferencia de velocidad de la luz en el vacío dependiendo de la longitud de onda, pero eso es otro tema)</p>
+
+<p>En concreto, tras darle mil vueltas al interferómetro de Fizeau, donde el agua parece arrastrar o frenar la luz según el sentido de su marcha, he de reconocer que sigo sin entenderlo, pero lo que ya tengo claro es que existe una interacción entre la luz y la materia a una profundidad tal que me hace pensar que estamos buscando donde no es (porque no sabemos dónde buscar, más que nada, ya que nosotros no construimos el universo y sus leyes)</p>
+
+<p><strong>Hecho básico</strong></p>
+
+<p>Pues el hecho parece ser que la velocidad de la luz es constante y máxima para la materia. Los aceleradores de partículas tienen que tener en cuenta el incremento de masa (energía) de la partícula acelerada para poder seguirla acelerando.</p>
+
+<p>El hecho es que la velocidad de la luz es la misma para todo observador, tenga éste la velocidad que tenga, relativa a cualquier punto del espacio (que nunca será superior a la de la luz)</p>
+
+<p>Tras este hecho, se esconden un montón de incógnitas, de entre las cuales, extraigo la de: "todo está interconectado".</p>
+
+<p><strong>Adición de Velocidad</strong></p>
+
+<p>Einstein produjo, entre otras muchas cosas, una fórmula para sumar velocidades de tal manera que su cómputo nunca superara la velocidad de la luz. Vale. Parece funcionar, pero me preocupa una cosa que surge de esta mágica suma: ¿cómo sabe cada partícula que la otra está yendo a una velocidad tal que la hace frenarse para que entre las dos nunca superen la velocidad de la luz?</p>
+
+<p>Es más. El resultado de la suma de velocidades, es relativa a un tercer observador que no está en ninguno de los puntos en los que se miden las velocidades. Este tercer observador es el único que puede medir las velocidades de ambos puntos y concluir que su suma nunca es superior a la de la luz.</p>
+
+<p>Parece que dos puntos cualesquiera del espacio jamás tendrán una velocidad tal que su suma sea superior a la de la luz, ya se estén acercando o separando. Dicha suma siempre estará referida a un tercer observador. Esto parece querer decir que entre ambos puntos existe una interconexión inmediata y que el único que puede verlo es un tercer punto. Es como el misterio de la Santísima Trinidad.</p>
+
+<p>La suma de las velocidades, tal y como se hace en la mecánica clásica, obviamente arrojan resultados superiores a los de la luz, pero esa suma no sirve para velocidades altas (cercanas a la de la luz) De hecho, la suma de velocidades de Einstein es sólo un artificio matemático para que su resultado se modere conforme dichas velocidades multiplicadas alcanzan o sobrepasan el cuadrado de la velocidad de la luz.</p>
+
+<p><strong>Mosca detrás de la oreja</strong></p>
+
+<p>Aquí hay algo raro. Aún no se dónde y qué es, pero, como le pasará a más de uno y de una, todo esto suena a que estamos pasando algo por alto.</p>
+
+<p>Es increíble cómo a Einstein no le dieron el Nobel por su teoría de la relatividad porque el jurado encargado de evaluarla no la entendió. Y no es de extrañar. Yo no soy físico titulado, pero por lo que he podido hablar con físicos de estudios universitarios, la teoría de la relatividad la entienden muy pocos, pero es que ni a Einstein, ni a Lorentz ni a Maxwell ni a muchos otros a partir de un punto concreto que aún estoy por descubrir.</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '16',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=16" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique2">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article19">Regravitación Newtoniana</a></li>
+                
+                <li><a href="spip.php?article14">Masa Variable</a></li>
+                
+                <li><a href="spip.php?article18">Relatividad lumínica</a></li>
+                
+                <li><a href="spip.php?article16" class="on">Velocidad máxima</a></li>
+                
+                <li><a href="spip.php?article3">Física inversa</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"b/%2Fspip%2Fspip---771480267a65c27b";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:9:"article16";s:0:"";s:10:"id_article";s:2:"16";s:4:"date";s:19:"2010-10-16 12:27:43";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-16 12:27:43";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

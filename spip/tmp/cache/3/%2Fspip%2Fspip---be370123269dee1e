@@ -1,0 +1,202 @@
+a:9:{s:5:"texte";s:11453:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Masa Variable - Escribas</title>
+<meta name="description" content="Introducci&#243;n El concepto de masa es algo que me ha atra&#237;do desde que empec&#233; a estudiar f&#237;sica de ni&#241;o. Me fascinaba que algo tuviera una esencia (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <a href="spip.php?rubrique2">Ciencia</a> &gt; <strong class="on">Masa Variable</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Masa Variable</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-12-13T03:43:46Z">Domingo 13 de diciembre de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p><strong>Introducción</strong></p>
+
+<p>El concepto de <strong>masa</strong> es algo que me ha atraído desde que empecé a estudiar física de niño. Me fascinaba que algo tuviera una esencia desconocida pero que fuera de tanta utilidad práctica.</p>
+
+<p>Según fui creciendo, mi interés fue creciendo conmigo, puesto que cuanto más buceaba en los libros de física (alumbrado más por mi curiosidad que por el profesorado, todo sea dicho) más veía que ese concepto se resistía a ser definido en manera alguna.</p>
+
+<p>Es a día de hoy, mayo del 2009 que todavía no he encontrado una explicación satisfactoria. Muchas proposiciones, mucha teoría, mucho Einstein, Bohr y relatividad y cuantos y nada. Se han construido teorías modificando teorías previas basadas en teorías anteriores basadas en... suposiciones. Sí, suposiciones, como la de que la masa es constante.</p>
+
+<p><strong>Diagrama base</strong></p>
+
+<p>Como en otros escritos de ciencia, planto aquí un diagrama espacio-temporal para poder visualizar los conceptos básicos de velocidad y aceleración. Parece de perogrullo, pero dependiendo de cuándo se pueda obtener cada valor, podemos hacernos una idea de qué estamos hablando.</p>
+
+<p><span class='spip_document_8 spip_documents spip_documents_center' >
+<img src='local/cache-vignettes/L500xH302/100000000000020D0000013D801F4C83-d8df6.png' width='500' height='302'  alt="" style='height:302px;width:500px;' /></span></p>
+
+<h3 class="spip">A vueltas con la Masa</h3>
+<p>Poco hace que descubrí un asunto muy turbio mientras investigaba el porqué de haber elegido para la física mecánica clásica la base temporal en lugar de la base espacial (en otro artículo de por aquí) y mientras le daba vueltas a cómo acoplar el concepto de fuerza a la ecuación Newtoniana de inercia (la famosa F=m·a) vi cómo dicha ecuación no era Newtoniana.</p>
+
+<p>Newton, en 1682, escribió en sus principios matemáticos que la fuerza es directamente proporcional a la variación de la cantidad de movimiento (esto es el producto de la velocidad por la masa) con respecto del tiempo.</p>
+
+<p>Más o menos, esto es :
+<img src="local/cache-vignettes/L95xH75/85e4e93d00dce1f010a6b794e649cebf-f8f4a.png" style='height:75px;width:95px;vertical-align:middle;'  width='95' height='75'  alt="F=\frac{d\left(m\cdot \stackrel{\to }{v}\right)}{\mathrm{dt}}" title="F=\frac{d\left(m\cdot \stackrel{\to }{v}\right)}{\mathrm{dt}}" /></p>
+
+<p>Fué luego un tal Euler, en 1752, que dijo algo así como... &#8217;si la masa es constante, entonces se puede sacar de la derivada y quedaría que...&#8217;</p>
+
+<p><img src="local/cache-vignettes/L135xH60/f91da89aa4078b5cd00c484f30fc54d3-d231e.png" style='height:60px;width:135px;vertical-align:middle;'  width='135' height='60'  alt="F=m\cdot \frac{d\stackrel{\to }{v}}{\mathrm{dt}}=m\cdot \stackrel{\to }{a}" title="F=m\cdot \frac{d\stackrel{\to }{v}}{\mathrm{dt}}=m\cdot \stackrel{\to }{a}" /></p>
+
+<p>Es decir que fuerza es igual a masa por aceleración. Y se quedó tan fresco, porque la física del momento era incapaz de realizar un experimento en aceleradores de partículas que dieran como resultado un aumento de la masa con la velocidad... absurdo, claro, pero esos son los resultados.</p>
+
+<p>Con esta premisa de la masa constante, se ha venido trabajando desde hace más de 200 años y la física ha generado un sinfín de teorías para adaptar lo antiguo a los modernos resultados, desde la relatividad general con su máximo de velocidad admisible hasta la cuántica con sus variables en evolución eterna y partículas cada vez más &#8217;sub&#8217; y cada vez más numerosas.</p>
+
+<p>Dios me libre de ser un erudito de la física para no caer en el pozo de los conceptos fijos.</p>
+
+<p>Me planteo una duda que creo que es bastante aceptable: ¿qué hubiera ocurrido si Euler no hubiera supuesto que la masa era constante?</p>
+
+<p><strong>Masa Inconstante</strong></p>
+
+<p>La variación del <i>momento</i> con respecto del tiempo es algo muy profundo con apariencia trivial.</p>
+
+<p>Hoy día, los experimentos parecen demostrar que la velocidad de la luz es el límite y que la aceleración producida por cualquier fuerza a esa velocidad es cero, o, lo que es igual matemáticamente, la fuerza a aplicar para acelerar una partícula más allá de la velocidad de la luz es infinita.</p>
+
+<p>Haciendo uso de matemáticas lo más simples posibles, podríamos decir que, cuando V2 es la velocidad de la luz:
+<img src="local/cache-vignettes/L325xH50/4b358f0ac6d56065841303ff341ad2cb-e51d6.png" style='height:50px;width:325px;vertical-align:middle;'  width='325' height='50'  alt="F=\frac{{m}_{2}\cdot {V}_{2}-{m}_{1}\cdot {V}_{1}}{{T}_{2}}=\frac{{m}_{2}}{{T}_{2}}\cdot \frac{{D}_{2}}{{T}_{2}}-\frac{{m}_{1}}{{T}_{2}}\cdot \frac{{D}_{1}}{{T}_{1}}=\infty " title="F=\frac{{m}_{2}\cdot {V}_{2}-{m}_{1}\cdot {V}_{1}}{{T}_{2}}=\frac{{m}_{2}}{{T}_{2}}\cdot \frac{{D}_{2}}{{T}_{2}}-\frac{{m}_{1}}{{T}_{2}}\cdot \frac{{D}_{1}}{{T}_{1}}=\infty " /></p>
+
+<p>Y aquí podemos deducir una serie de curiosidades.</p>
+
+<p>a) Para que la fuerza valiera infinito, podría ser que T sub 2 fuera cero, pero tenemos que D sub 2 entre T sub 2 es la velocidad de la luz y ésta no es infinito, por lo que T sub 2 no puede valer cero, al menos por lógica.</p>
+
+<p>b) Apoyando a este razonamiento, si T sub 2 fuera cero, los dos sumandos de la ecuación serían infinito, por lo que la fuerza sería indeterminada en lugar de infinita (sinceramente, la fuerza es indeterminada, pero tiende a infinito y con eso me quedo)</p>
+
+<p>c) Si el primer término de la ecuación es infinito, el término que resta, no es relevante, puesto que infinito menos cualquier cosa sigue siendo infinito.</p>
+
+<p>Vamos estrechando el cerco para cazar al infinito.</p>
+
+<p>d) En definitiva, para que el primer término de la suma sea infinito, queda la posibilidad que la masa sea infinito. Resulta que este es el único valor lógico para todas las variables que entran en juego en la ecuación.</p>
+
+<p>Tenemos, pues, que la masa adquiere valor con la velocidad y que se vuelve infinito cuando su velocidad es la de la luz.</p>
+
+<p>Esto es curioso, porque en mis pesquisas para la fuerza de la gravedad, resulta que aparece la velocidad de la luz como parámetro base (un trabajo que ya publicaré, pero doy como pista que trata de eliminar la engorrosa constante G de la ecuación de Newton)</p>
+
+<p>Parece ser que la velocidad de la luz es un límite físico del mundo físico por algún motivo y que la masa está relacionada con este límite. Nada descabellado teniendo en cuenta que la masa es un valor de la materia contenida en un volumen dado de espacio, por lo tanto algo físico.</p>
+
+<h3 class="spip">Más Planteamientos</h3>
+<p>¿Si un objeto adquiere la velocidad de la luz su fuerza de atracción gravitatoria se incrementa en proporción y se vuelve infinita? Por el simple hecho de que los aceleradores de partículas no han sido tragados por un agujero negro provocado por ellos mismos, <strong>parece ser</strong> que no es así. Aunque queda la posibilidad de que los aceleradores de partículas no estén acelerando partículas sino otra cosa que no tiene masa o que no puede relacionarse con ésta.</p>
+
+<p>Podría ser que la fuerza gravitatoria generada sí aumente con la velocidad, pero en una proporción no lineal a la masa, con lo que habría que plantearse la corrección de las actuales teorías gravitatorias, incluidas las que se empeñan en curvar el espacio.</p>
+
+<p>¿Tiene algo que ver el aumento de masa con la fuerza giroscópica? Por la web he podido leer observaciones sobre el comportamiento anómalo de objetos girando a velocidades de decenas de miles de revoluciones por segundo. Hay toda una matemática soportando la idea de las fuerzas centrípetas actuando como tensores para mantener en posición un giroscopio, pero aún no he buceado en el asunto tanto como para averiguar su exactitud, no ya matemática, sino de planteamiento.</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '14',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=14" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique2">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article19">Regravitación Newtoniana</a></li>
+                
+                <li><a href="spip.php?article14" class="on">Masa Variable</a></li>
+                
+                <li><a href="spip.php?article18">Relatividad lumínica</a></li>
+                
+                <li><a href="spip.php?article16">Velocidad máxima</a></li>
+                
+                <li><a href="spip.php?article3">Física inversa</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"3/%2Fspip%2Fspip---be370123269dee1e";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:9:"article14";s:0:"";s:10:"id_article";s:2:"14";s:4:"date";s:19:"2010-10-15 21:02:51";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-15 21:02:51";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

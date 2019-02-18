@@ -1,0 +1,211 @@
+a:10:{s:17:"auto/compositions";a:17:{s:3:"nom";s:12:"Compositions";s:7:"version";s:3:"0.9";s:6:"auteur";s:59:"	
+ 	[Cedric Morin->http://www.yterium.com]
+_ © 2007-2009
+	";s:4:"icon";s:26:"images/compositions-64.png";s:11:"description";s:437:"
+	Plugin permettant de definir la type de composition des objets de spip (article, rubrique...) depuis la page de chaque objet.
+	(un champ composition est ajoute et sa valeur peut etre definie par l'admin en choisissant une des pr&eacute;sentations)
+
+	Les rubriques peuvent aussi se voir attribue un article d'accueil via un select.
+_ Les champs id_article_accueil et composition peuvent ensuite etre utilis&eacute; par les squelettes.
+	";s:4:"lien";s:40:"http://www.spip-contrib.net/Compositions";s:4:"etat";s:6:"stable";s:7:"licence";s:3:"GPL";s:7:"install";a:1:{i:0;s:21:"base/compositions.php";}s:9:"fonctions";a:1:{i:0;s:26:"compositions_fonctions.php";}s:6:"prefix";s:12:"compositions";s:8:"pipeline";a:4:{i:0;a:2:{s:3:"nom";s:27:"declarer_tables_principales";s:7:"inclure";s:21:"base/compositions.php";}i:1;a:2:{s:3:"nom";s:14:"affiche_droite";s:7:"inclure";s:25:"compositions_pipeline.php";}i:2;a:2:{s:3:"nom";s:9:"autoriser";s:7:"inclure";s:25:"compositions_pipeline.php";}i:3;a:2:{s:3:"nom";s:8:"styliser";s:7:"inclure";s:25:"compositions_pipeline.php";}}s:12:"version_base";s:5:"0.3.0";s:9:"necessite";a:2:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[2.0.6;]";}i:1;a:2:{s:2:"id";s:10:"spip_bonux";s:7:"version";s:6:"[1.3;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1242160140;}s:14:"auto/freepaper";a:14:{s:3:"nom";s:9:"FreepapeR";s:7:"version";s:5:"0.7.0";s:6:"auteur";s:76:"	
+[Frank RUZZIN->mailto:franck@lededansdubocal.net], août-novembre 2008
+	";s:4:"icon";s:26:"img_pack/freepaperLogo.png";s:11:"description";s:1615:"
+{{Un lecteur de fichier PDF}}
+
+<u>Caractéristiques :</u>
+-* - SPIP 1.9.x et SPIP 2.0
+-* - Le lecteur FreepapeR est écrit en actionscript. Il est inséré dans la page grâce au plugin Flash Player.
+-* - Il permet de lire en pleine page des documents au format PDF.
+-* - on utilise pour la conversion de format la boîte à outils [swftools->http://www.swftools.org]
+
+<u>Balise :</u>
+-* - <code>#FREEPAPER</code> intégration avec les valeurs par défaut
+-* - <code>#FREEPAPER{xmlData="NomDeFichier"}</code> chemin du fichier xml de configuration (dans le dossier xml du plugin). Défaut : freepaper.xml
+-* - <code>#FREEPAPER{largeur=nbPixels}</code> largeur de la page FreepapeR. Défaut : 600
+-* - <code>#FREEPAPER{hauteur=nbPixels}</code> hauteur de la page FreepapeR. Défaut : 800
+-* - <code>#FREEPAPER{trace="true" ou "false"}</code> activation du mode verbeux. Défaut : false
+
+Tous ces paramètres sont optionnels et peuvent &ecirc;tre utilisés conjointement (tout ou partie) lors de l'implantation du lecteur dans le squelette. Tous les fichiers PDF joints à l'article sont inséré dans la page.
+
+<u>Modèle à insérer dans le texte d'un article</u>
+-* <code><contentfreepaperxxx -> ou xxx est l'id du document PDF
+|xmlData=(chemin fichier xml de configuration) -> par défaut freepaper.xml
+|hauteur=nbPixels -> par défaut 600
+|largeur=nbPixels -> par défaut 800
+|trace=true ou false -> par défaut false
+>
+</code>
+
+Tous ces paramètres sont optionnels et peuvent &ecirc;tre utilisés conjointement (tout ou partie) lors de l'implantation du lecteur dans l'article. 
+
+	";s:4:"lien";s:73:"
+-* Plus d'infos ? - [Le dedans du bocal->http://lededansdubocal.net]
+	";s:4:"etat";s:6:"stable";s:9:"fonctions";a:1:{i:0;s:35:" 
+		freepaper_mes_fonctions.php
+	";}s:6:"prefix";s:9:"freepaper";s:8:"pipeline";a:2:{i:0;a:2:{s:3:"nom";s:11:"insert_head";s:7:"inclure";s:22:"freepaper_pipeline.php";}i:1;a:2:{s:3:"nom";s:15:"affichage_final";s:7:"inclure";s:22:"freepaper_pipeline.php";}}s:9:"necessite";a:0:{}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1228741116;}s:15:"auto/spip-bonux";a:15:{s:3:"nom";s:14:"SPIP Bonux 2.0";s:7:"version";s:3:"1.8";s:6:"auteur";s:48:"Cedric Morin, Mathieu Marcillaud, romy.tetue.net";s:4:"icon";s:23:"img_pack/spip-bonux.png";s:11:"description";s:143:"Le plugin qui lave plus SPIP que SPIP, avec des chouettes cadeaux dedans ! Interface douce, boucles POUR et CONDITION, tableaux, compteur, etc.";s:4:"lien";s:38:"http://www.spip-contrib.net/SPIP-Bonux";s:4:"etat";s:6:"stable";s:7:"licence";s:17:"(c) 2008-2009 GPL";s:9:"fonctions";a:3:{i:0;s:30:"public/spip_bonux_criteres.php";i:1;s:29:"public/spip_bonux_balises.php";i:2;s:24:"spip_bonux_fonctions.php";}s:6:"prefix";s:10:"spip_bonux";s:8:"pipeline";a:0:{}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[2.0.0;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1241209046;}s:14:"auto/swfupload";a:13:{s:3:"nom";s:9:"SWFupload";s:7:"version";s:3:"0.6";s:6:"auteur";s:48:"Phil 2008, [erational->http://www.erational.org]";s:4:"icon";s:23:"images/swfupload-24.png";s:11:"description";s:249:"Permet de t&eacute;l&eacute;charger des images par lot dans le dossier upload sans acc&egrave;s FTP
+_ Permet de t&eacute;l&eacute;charger des images par dans un article.
+_ si vous avez cfg: [configuration->index.php?exec=cfg&amp;cfg=swfupload]
+  ";s:4:"lien";s:51:"[->http://www.spip-contrib.net/Un-plugin-SWFUpload]";s:4:"etat";s:3:"dev";s:6:"prefix";s:9:"swfupload";s:8:"pipeline";a:3:{i:0;a:3:{s:3:"nom";s:15:"ajouter_boutons";s:6:"action";s:14:"ajouterBoutons";s:7:"inclure";s:23:"swfupload_pipelines.php";}i:1;a:2:{s:3:"nom";s:12:"header_prive";s:7:"inclure";s:23:"swfupload_pipelines.php";}i:2;a:2:{s:3:"nom";s:14:"affiche_milieu";s:7:"inclure";s:23:"swfupload_pipelines.php";}}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[1.9.0;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1241903612;}s:13:"auto/ahuntsic";a:13:{s:3:"nom";s:18:"Squelette Ahuntsic";s:7:"version";s:5:"1.0.0";s:6:"auteur";s:84:"
+		[André Vincent->http://andre-vincent.info] - © 2006-2008 - Licence GNU/GPL   
+	";s:11:"description";s:193:"<multi>
+		Activate this plugin to enable {{Ahuntsic}} as the default template of your site.
+	[fr]
+		Activer ce {plugin} pour sélectionner le squelette {{Ahuntsic}} pour votre site.
+	  </multi>";s:4:"lien";s:68:"
+		[Documentation : edu.ca.edu->http://edu.ca.edu/rubrique43.html]
+	";s:4:"etat";s:6:"stable";s:7:"options";a:1:{i:0;s:20:"ahuntsic_options.php";}s:6:"prefix";s:8:"ahuntsic";s:8:"pipeline";a:0:{}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[2.0.0;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1229417462;}s:18:"auto/barre_typo_v2";a:14:{s:3:"nom";s:253:"<multi>
+    [fr]Barre Typo V2 pour 1.9.2 et suivantes
+    [ar]شريط تنسيق إصدار ٢ لـ١.٩.٢ وما بعده
+    [en]Typographical toolbar V2 for 1.9.2 and newer versions
+    [de]Typografische Toolbar V2 für 1.9.2 und neuer
+    </multi>";s:7:"version";s:5:"2.5.3";s:6:"auteur";s:5363:"
+-* [Jacques->http://www.spip-contrib.net/_Jacques-PYRAT_]
+-* <multi>[fr]Extensibilit&eacute; : Bill (Stephane LAURENT - spipcarto@gmail.com) : des pipelines pour rajouter des boutons et la possibilit&eacute; de rajouter des traitements dans pre_propre[ar]زيادة الوظائف: بيل (ستيفان لوران - spipcarto@gmail.com): أنابيب لإضافة أزرار وامكان اضافة معالجات في دالة pre_propre[en]Extended by Bill (Stephane LAURENT - spipcarto@gmail.com): Pipelines to add buttons and possibilty to add more processing in pre_propre[de]Erweiterungen: Bill (Stephane LAURENT - spipcarto@gmail.com): Pipelines zum Hinzufügen von Buttons und der Möglichkeit der Verarbeitung in pre_propre</multi>
+-* <multi>[fr]Prévisualisation [ar]عرض مسبق [en]Preview[de]Vorschau</multi>: [->http://www.spip-contrib.net/Previsualisation-dynamique-d]
+-* <multi>[fr]Editeur de tableaux [ar]محرر الجداول [en]Table editor[de]Tabelleneditor</multi>: [Christian Quentin->http://www.spip-contrib.net/_quentic_]
+   <multi>
+   [fr]à partir du travail de [Courcy->http://www.spip-contrib.net/_courcy_] dans l'[article->http://www.spip-contrib.net/Editeur-de-tableau-pour-la-1-7] pour l'&eacute;diteur de tableau
+_ Le code initial de Courcy a a &eacute;t&eacute; en grande partie r&eacute;-&eacute;crit pour : 
+-** g&eacute;n&eacute;rer une syntaxe de tableau SPIP et non HTML (l'&eacute;diteur de couleur de cellules disparait donc aussi)
+-** pour permettre de cr&eacute;er mais aussi de modifier un tableau existant
+-** pour int&eacute;grer les &eacute;l&eacute;ments HTML titre et r&eacute;sum&eacute; de tableau
+-* Galerie de documents : [SCRIPT ORIGINAL POUR SPIP 1.7.2->http://www.gasteroprod.com/la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html]
+-* Statistiques : [Joseph->http://www.spip-contrib.net/Joseph] &agrave; partir d'une [contribution de François Schreuer->http://www.spip-contrib.net/Mesurer-la-longueur-d-un-article].
+_ ADAPTATION POUR SPIP 1.9.2 par [Coyote->http://www.spip-contrib.net/_Coyote_] (28 mars 2007)
+   [ar]بالاعتماد على عمل [Courcy->http://www.spip-contrib.net/_courcy_] في [المقال->http://www.spip-contrib.net/Editeur-de-tableau-pour-la-1-7] لمحرر الجداول
+_ تمت اعادة كتابة معظم برمجيات Courcy من اجل:
+-** انتاج علامات جداول SPIP وليس HTML (تم حذف محرر الةان الخلايا ايضاً)
+-** السماح بانشاء جدول او تعديل جدول موجود
+-** دمج علامات HTML المتعلقة بعنوان الجدول وملخصه
+-* صالة عرض المستندات: [سكريبت اصلي للاصدار ١.٧.٢ -> http://www.gasteroprod.com/la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html]
+-* الاحصاءات: [Joseph->http://www.spip-contrib.net/Joseph] اعتماداً على [مساهمة من François Schreuer->http://www.spip-contrib.net/Mesurer-la-longueur-d-un-article].
+_ تكييف لـSPIP ١.٩.٢ من [Coyote->http://www.spip-contrib.net/_Coyote_] (٢٨ آذار ٢٠٠٧).
+   [en]based on the work of [Courcy->http://www.spip-contrib.net/_courcy_] in the  [article->http://www.spip-contrib.net/Editeur-de-tableau-pour-la-1-7] for the table editor
+_ The initial Courcy code has been mostly rewritten to: 
+-** generate a SPIP table syntax not a HTML syntax (the colour editor for the cells is scrapped along the way)
+-** allow to create and modify an existing table
+-** integrate HTML elements such as the table title and summary
+-* Documents gallery: [ORIGINAL SCRIPT FOR SPIP 1.7.2->http://www.gasteroprod.com/la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html]
+-* Statistics: [Joseph->http://www.spip-contrib.net/Joseph] based on a [contribution from François Schreuer->http://www.spip-contrib.net/Mesurer-la-longueur-d-un-article].
+_ CUSTOMISATION FOR SPIP 1.9.2 from [Coyote->http://www.spip-contrib.net/_Coyote_] (28 March 2007)
+   [de]auf der Arbeit von [Courcy->http://www.spip-contrib.net/_courcy_] basierend, im [Artikel->http://www.spip-contrib.net/Editeur-de-tableau-pour-la-1-7] über den Tabelleneditor
+_ Der urspr&uuml;ngliche Code von Courcy wurde weitgehend neu geschrieben um:
+-** eine Syntaxe der SPIP Tabellen zu generieren, und nicht HTML (der Farbeditor der Zellen ist somit nicht vorhanden)
+-** um eine existierende Tabelle zu ver&auml;ndern oder eine neue zu erzeugen
+-** um die HTML-Elemente Tabellentitel und -zusammenfassung zu integrieren
+-* Dokumentengallerie: [Originalskript f&uuml;r SPIP 1.7.2->http://www.gasteroprod.com/la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html]
+-* Statistiken: [Joseph->http://www.spip-contrib.net/Joseph] basierend auf eine [Kontribution von Fran&ccedil;ois Schreuer->http://www.spip-contrib.net/Mesurer-la-longueur-d-un-article].
+_ Adaptation f&uuml;r SPIP 1.9.2 von [Coyote->http://www.spip-contrib.net/_Coyote_] (28. M&auml;rz 2007)
+   </multi>
+-* [Joel Savignon->http://www.neosystem.com/] pour le navigateur de rubriques/articles/breves.
+_ <multi>
+   [fr]© 2007 - Distribué sous licence GNU/GPL
+   [ar]© ٢٠٠٧ - موزع بموجب الترخيص العام GNU/GPL
+   [en]© 2007 - distributed under the GNU/GPL license
+   [de]© 2007 - Vertrieben unter der Lizenz GNU/GPL
+  </multi>
+    ";s:4:"icon";s:35:"
+    img_pack/moinecopiste.gif
+    ";s:11:"description";s:2026:"
+<multi>
+[fr]Améliore la barre typographique de SPIP.
+
+La barre est enrichie de plusieurs barres thématiques pour:
+-* La gestion des liens hypertextes avec gestion des bulles
+-* La gestion des tableaux
+-* Une fonction chercher/remplacer dans le texte de l'article
+-* L'insertion des caractères spéciaux
+-* Changer la casse
+-* Calculer les statistiques du texte (mots, signes, caract&egrave;res)
+[ar]تحسين شريط ادوات الكتابة في SPIP
+
+وتأتي عدة اشرطة متخصصة لإغناء هذا الشريط من أجل:
+-* إدارة وصلات هايبرتكست مع إدارة للبالونات
+-* إدارة الجداول
+-* وظيفة بحث واستبدال في مادة المقال
+-* إدراج حروف خاصة
+-* تغيير الاحرف اللاتينية من صغيرة الى كبيرة وبالعكس
+-* حساب احصاءات النص (الكلمات والاحرف)
+[en]Enhances SPIP's typographical toolbar
+
+The toolbar is enriched with several special toolbars aiming at:
+-* the management of hypertext links with balloon help
+-* tables management
+-* a search/replace function in the article's body
+-* inserting special characters
+-* changing case
+-* text statistics (words, characters)
+[de]Verbessert die typografische Toolbar von SPIP
+
+Die Toolbar ist mit mehreren thematischen Toolbars bereichert f&uuml;r:
+-* Verwaltung der hypertext links mit Hilfeblasen
+-* Tabellenverwaltung
+-* Eine Such- und Ersetzenfunktion im Artikeltext
+-* Einfügen von Spezialzeichen
+-* &Auml;nderung der Gross- und Kleinschrift
+-* Textstatistik berechnen (Worte, Zeichen, Buchstaben)
+</multi>
+
+{<multi>
+[fr]Certaines icones proviennent de
+[ar]بعض الايقونات تأتي من
+[en]Some icons are courtesy of
+[de]Einige Ikone stammen von
+</multi> [FamFamFam->http://www.famfamfam.com/lab/icons/silk/].}
+
+[<multi>
+[fr]Exemple d'utilisation
+[ar]مثال تطبيقي
+[en]practical example
+[de]Praktische Beispiele
+</multi>->http://www.pyrat.net/Raccourcis-Typographiques-de-SPIP.html]
+
+    ";s:4:"lien";s:57:"http://www.spip-contrib.net/Plugin-Barre-Typographique-V2";s:4:"etat";s:6:"stable";s:7:"options";a:1:{i:0;s:31:" 
+        typo_options.php
+    ";}s:6:"prefix";s:17:"BarreTypoEnrichie";s:8:"pipeline";a:1:{i:0;a:2:{s:3:"nom";s:12:"header_prive";s:7:"inclure";s:18:"barre_enrichie.php";}}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[1.9.0;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1229469092;}s:8:"auto/cfg";a:15:{s:3:"nom";s:90:"<multi>
+    [fr]cfg: moteur de configuration
+    [de]cfg: Konfigurationsmotor
+    </multi>";s:7:"version";s:6:"1.12.3";s:6:"auteur";s:163:"bertrand Gugger [->http://toggg.com/], Matthieu Marcillaud
+_ © 2008 - <multi>[fr]Distribué sous licence[en]License[de]Vertrieb unter Lizenz</multi> GNU/LGPL
+    ";s:4:"icon";s:17:"
+    cfg.png
+    ";s:11:"description";s:576:"<multi>
+[fr]Ce plugin permet de gérer très simplement des interfaces de configuration pour différents modules.
+
+Il est utilisé par de nombreux plugins, mais il peut aussi avoir d'autres usages comme le paramétrage de squelettes.
+[en]This plugin manage some configuration graphic user interfaces for some modules.
+[de]Dieses Plugin ermöglicht es, in sehr einfacher Weise die Konfigurationsschnittstellen verschiedener Module zu verwalten.
+
+Es wird von vielen Plugins verwendet, kann aber auch anderen Nutzen finden wie die Parametereinstellung von Skeletten.
+    </multi>";s:4:"lien";s:40:"http://www.spip-contrib.net/?rubrique575";s:4:"etat";s:6:"stable";s:7:"options";a:1:{i:0;s:15:"cfg_options.php";}s:9:"fonctions";a:1:{i:0;s:17:"cfg_fonctions.php";}s:6:"prefix";s:3:"cfg";s:8:"pipeline";a:6:{i:0;a:2:{s:3:"nom";s:15:"ajouter_boutons";s:7:"inclure";s:16:"cfg_pipeline.php";}i:1;a:2:{s:3:"nom";s:12:"header_prive";s:7:"inclure";s:16:"cfg_pipeline.php";}i:2;a:2:{s:3:"nom";s:18:"formulaire_charger";s:7:"inclure";s:16:"cfg_pipeline.php";}i:3;a:2:{s:3:"nom";s:19:"formulaire_verifier";s:7:"inclure";s:16:"cfg_pipeline.php";}i:4;a:2:{s:3:"nom";s:18:"formulaire_traiter";s:7:"inclure";s:16:"cfg_pipeline.php";}i:5;a:2:{s:3:"nom";s:29:"editer_contenu_formulaire_cfg";s:7:"inclure";s:16:"cfg_pipeline.php";}}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[1.9.0;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1241442752;}s:17:"auto/image_ragged";a:13:{s:3:"nom";s:17:" 
+	Image Ragged
+	";s:7:"version";s:3:"0.1";s:6:"auteur";s:79:"	
+	 Copyright Arnaud Martin
+	 integre en plugin par Pierre Andrews (Mortimer)
+	";s:11:"description";s:429:"
+ Filtre trouve sur paris-beyrouth:
+ http://www.paris-beyrouth.org/Un-habillage-irregulier-2
+
+
+Utilisation:
+-* {&lt;img234|ragged&gt;}
+-* {&lt;img234|ragged|left&gt;} pour specifier l'alignement (droite ou gauche)
+-* {&lt;img234|ragged|margin=100&gt;} pour specifier la marge autour de l'image
+-* {&lt;img234|ragged|couleur&gt;} pour specifier la couleur de fond à decouper. Si on n'en specifie pas, on detoure le transparent.
+	";s:4:"lien";s:51:"http://www.spip-contrib.net/Un-habillage-irregulier";s:4:"etat";s:6:"stable";s:9:"fonctions";a:1:{i:0;s:28:" 
+	image_ragged_filtre.php
+	";}s:6:"prefix";s:12:"image_ragged";s:8:"pipeline";a:0:{}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[1.9.0;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1229469092;}s:13:"auto/snippets";a:12:{s:3:"nom";s:13:" 
+	Snippets
+	";s:7:"version";s:3:"0.1";s:6:"auteur";s:104:"	
+	© 2006 Cedric Morin [notre-ville.net->http://www.notre-ville.net]  Distribué sous licence GNU/GPL
+	";s:11:"description";s:47:"
+	Import/Export XML généralisé de contenus
+	";s:4:"lien";s:55:"http://www.spip-contrib.net/Import-export-avec-Snippets";s:4:"etat";s:4:"test";s:6:"prefix";s:8:"snippets";s:8:"pipeline";a:1:{i:0;a:2:{s:3:"nom";s:14:"affiche_droite";s:7:"inclure";s:21:"snippets_pipeline.php";}}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:4:"SPIP";s:7:"version";s:8:"[1.9.0;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1229469092;}s:13:"odt2spip_v0.1";a:13:{s:3:"nom";s:8:"odt2spip";s:7:"version";s:4:"0.12";s:6:"auteur";s:61:"cy_altern
+_ © 2009 - distribué sous licence GNU/LGPL
+    ";s:4:"icon";s:22:"images/odt2spip-64.png";s:11:"description";s:554:"<multi>
+[fr]générateur d'articles spip à partir de fichiers OO.o Writer (.odt)
+_ Nécessite le plugin [Snippets->http://files.spip.org/spip-zone/snippets.zip] installé et activé
+_ La transformation des fichiers ODT impose que l'extension XSL de PHP soit active sur le serveur apache
+_ La conversion des formules mathématiques repose sur la librairie XSLT {{MathML 2.0 to LaTeX}} de Vasil Yaroshevich [->http://www.raleigh.ru/MathML/mmltex/index.php?lang=en]
+        [en]Spip's articles generator from OO.o Writer files (.odt)
+        </multi>";s:4:"lien";s:0:"";s:4:"etat";s:6:"stable";s:6:"prefix";s:8:"odt2spip";s:8:"pipeline";a:1:{i:0;a:2:{s:3:"nom";s:14:"affiche_droite";s:7:"inclure";s:22:"odt2spip_pipelines.php";}}s:9:"necessite";a:1:{i:0;a:2:{s:2:"id";s:8:"snippets";s:7:"version";s:6:"[0.1;]";}}s:7:"utilise";a:0:{}s:4:"path";a:1:{i:0;a:1:{s:3:"dir";s:0:"";}}s:9:"filemtime";i:1240582216;}}

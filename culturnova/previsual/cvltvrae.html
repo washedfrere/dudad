@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>CVLTVRAE</title>
+<link rel="stylesheet" type="text/css" href="culturae.css" />
+<script type="text/javascript" src="cvltvrae.js"></script>
+</head>
+<body onload="entrada()" onunload="salida()">
+<img id="logo" src="culturaetitulo.png" border="0" />
+<img id="sol" src="soltransp.png" border="0" />
+<div id="menu"><b>Men&uacute;:</b><br /><br />
+<a id="mninicio" title="INICIO"
+	onclick="accion('menu','0');"
+><img src="mninicio.png" border="0"  alt="inicio"/></a><br />
+<a id="mnapps" title="APLICACIONES"
+	onclick="accion('menu','1');"
+><img src="mnapps.png" border="0"  alt="aplicaciones" /></a><br />
+<a id="mninform" title="INFORMES"
+	onclick="accion('menu','2');"
+><img src="mninform.png" border="0" alt="Informes" /></a><br />
+<a id="mnmsg" title="MENSAJERIA"
+	onclick="accion('menu','3');"
+><img src="mnmsg.png" border="0" alt="mensajeria" /></a><br />
+<a id="mnopc" title="OPCIONES"
+	onclick="accion('menu','4');"
+><img src="mnopc.png" border="0" alt="opciones" /></a><br />
+<a id="mnexit" title="SALIR"
+	onclick="accion('menu','z');"
+><img src="mnexit.png" border="0" alt="salir" /></a><br />
+</div>
+<div id="mensaje">
+<img src="interr.png" border="0" />
+Mensaje del sistema, consejo, <img src="exclam.png" border="0" />advertencia, posibilidades y cualquier otra cosa que necesite saber el usuario, <img src="err.png" border="0" />incluyendo mensajes de error.
+</div>
+<div id="contenedor"></div>
+<div id="contenido">contenido</div>
+<div id="bloqueo"><img src="progreso.gif" border="0" /></div>
+</body>
+</html>

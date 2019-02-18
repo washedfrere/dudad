@@ -1,0 +1,38 @@
+a:9:{s:5:"texte";s:636:"
+
+
+
+<h2>1
+Mensaje</h2>
+
+
+
+<ul class="forum">
+
+	
+
+	<li class="forum-fil">
+
+		<div class="forum-message">
+			<div class="forum-chapo">
+				<strong class="forum-titre"><a href="#forum3" name="forum3" id="forum3">Nueva breve</a></strong>
+				<small>13 de diciembre de 2009&nbsp;04:26, por  <span class="">David</span></small>
+			</div>
+			<div class="forum-texte">
+				<p>No entiendo qué quiere decir esto.</p>
+				
+				
+
+				
+
+				<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_breve=1&amp;id_forum=3" rel="noindex nofollow">Responder este mensaje</a></p>
+			</div>
+		</div>
+
+		
+
+	</li>
+	
+
+</ul>
+";s:9:"squelette";s:37:"html_f9bfdf2f688bb73aa1d5a55210485c44";s:6:"source";s:30:"squelettes-dist/inc-forum.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"f/inc-forum-1-es--ff20273efd46524a8";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:8:"id_breve";s:1:"1";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-10 01:50:36";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-10 01:50:36";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

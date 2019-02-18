@@ -1,0 +1,8 @@
+a:9:{s:5:"texte";s:1054:"<div id="pied">
+	<a href="http://www.spip.net/" title="&#1057;&#1072;&#1081;&#1090; &#1088;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090; &#1085;&#1072; SPIP"><img src="squelettes-dist/spip.png" alt="SPIP" width="48" height="16" /></a> | 
+	<a href="squelettes-dist/article.html" title="voir le squelette de cette page" rel="nofollow">squelette</a> | <a href="http://www.torredekapter.es/spip/spip.php?page=login&amp;url=spip.php%3Farticle9" rel="nofollow" class='login_modal'>Se connecter</a> | 
+	<a rel="contents" href="http://www.torredekapter.es/spip/spip.php?page=plan">&#1050;&#1072;&#1088;&#1090;&#1072; &#1089;&#1072;&#1081;&#1090;&#1072;</a> | 
+	<a href="http://www.torredekapter.es/spip/spip.php?page=backend" rel="alternate" title="RSS &#1074;&#1089;&#1077;&#1075;&#1086; &#1089;&#1072;&#1081;&#1090;&#1072;"><img src="squelettes-dist/feed.png" alt="RSS &#1080; iCal" width="16" height="16" />&nbsp;RSS&nbsp;2.0</a>
+</div>
+<!-- SPIP-CRON --><div style="background-image: url('http://www.torredekapter.es/spip/spip.php?action=cron');"></div>
+";s:9:"squelette";s:37:"html_d8829f3fa844421a77bda8b36e925128";s:6:"source";s:29:"squelettes-dist/inc-pied.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:2:{s:5:"cache";s:35:"8/inc-pie-squ-dis-ru--41142522bb967";s:7:"session";s:0:"";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:4:"skel";s:28:"squelettes-dist/article.html";s:4:"lang";s:2:"ru";s:4:"date";s:19:"2010-10-13 01:09:56";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-13 01:09:56";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

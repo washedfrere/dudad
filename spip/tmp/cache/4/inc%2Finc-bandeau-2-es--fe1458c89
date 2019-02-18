@@ -1,0 +1,7 @@
+a:9:{s:5:"texte";s:224:"<!-- L'entete du site -->
+<div id="entete">
+	<a href="http://www.torredekapter.es/spip" title="Portada del sitio : Escribas TorredeKápter" class="nom-site"><span>Escribas TorredeKápter</span></a>
+
+
+  
+</div><!-- entete -->";s:9:"squelette";s:37:"html_1880c9be5afcc7157fa218385afd3f8e";s:6:"source";s:42:"plugins/auto/ahuntsic/inc/inc-bandeau.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"4/inc%2Finc-bandeau-2-es--fe1458c89";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:11:"id_rubrique";s:1:"2";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 20:16:09";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 20:16:09";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

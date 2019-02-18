@@ -1,0 +1,29 @@
+a:9:{s:5:"texte";s:2538:"<!-- META DATA -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-language" content="es" />
+	<meta name="language" content="es" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="generator" content="SPIP 2.0.8 [13982]" />
+	<meta name="robots" content="index,follow" />
+	<link rel="schema.DCTERMS"  href="http://purl.org/dc/terms/" />
+	<link rel="schema.DC"       href="http://purl.org/dc/elements/1.1/" />
+
+  <!-- META article -->
+  <meta name="Description" content="Física inversa Diagrama básico: http://www.torredekapter.es/spip/IM... Este esquema contiene representada la base de la matemática física mecánica-dinámica a utilizar en el siguiente desarrollo. Consta de una linea horizontal; la linea espacio-temporal, así denominada por ser la que contiene tanto las longitudes como los tiempos, cada uno en su propia escala que haremos coincidentes en el esquema. Cada par de círculos concéntricos situados sobre esa linea espacio-temporal marca un momento de (...)" />
+  <meta name="Author" content="Torredekapter" />
+
+  <!-- META Dublin Core - voir: http://uk.dublincore.org/documents/dcq-html/  -->
+  <meta name="DC.title" content="Parámetros iniciales mecánica" />
+  <meta name="DC.language" scheme="ISO639-1" content="es" />
+  <meta name="DC.identifier" scheme="DCTERMS.URI" content="http://www.torredekapter.es/spip/spip.php?article1" />
+  <meta name="DC.source" scheme="DCTERMS.URI" content="http://www.torredekapter.es/spip" />
+  <meta name="DC.creator" content="Torredekapter" />
+  <meta name="DC.description" content="F&#237;sica inversa Diagrama b&#225;sico: http://www.torredekapter.es/spip/IM... Este esquema contiene representada la base de la matem&#225;tica f&#237;sica mec&#225;nica-din&#225;mica a utilizar en el siguiente desarrollo. Consta de una linea horizontal; la linea espacio-temporal, as&#237; denominada por ser la que contiene tanto las longitudes como los tiempos, cada uno en su propia escala que haremos coincidentes en el esquema. Cada par de c&#237;rculos conc&#233;ntricos situados sobre esa linea espacio-temporal marca un momento de (...)" />
+  <meta name="DC.date" scheme="ISO8601" content="2009-05-14T17:48:36Z" />
+
+
+  <link rel="shortcut icon" href="local/cache-gd2/f4105f1f67317d54705f533b79e488d4.png" type="image/x-icon" />
+
+  <link rel="alternate" type="application/rss+xml" title="Sindicar el sitio completo : Escribas TorredeKápter" href="http://www.torredekapter.es/spip/spip.php?page=backend" />
+
+";s:9:"squelette";s:37:"html_38e0483239853375181be3ebfe70fe74";s:6:"source";s:39:"plugins/auto/ahuntsic/inc/inc-meta.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"7/inc%2Finc-meta-1-es--912a5af32ba9";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:1:"1";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 20:14:54";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 20:14:54";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

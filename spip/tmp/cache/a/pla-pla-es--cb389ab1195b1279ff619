@@ -1,0 +1,96 @@
+a:9:{s:5:"texte";s:2551:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+	<title>[Escribas TorredeKápter] : Mapa del sitio</title>
+	<?php
+	$contexte_inclus = array('fond' => 'inc/inc-meta',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	<?php
+	$contexte_inclus = array('fond' => 'styles',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+<body dir="ltr" class="es plan">
+<div id="page">
+
+<!-- *****************************************************************
+	Bandeau, titre du site et menu langue
+	Header and main menu (top and right) 
+    ************************************************************* -->
+	
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bandeau',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<!-- *****************************************************************
+	Contenu principal (centre)
+	Main content (center) 
+    ************************************************************* -->
+	<div id="bloc-contenu">
+			
+		
+		<h2>Mapa del sitio</h2>
+		<div id="plan">
+			
+			<h2>Espa&#241;ol</h2>
+				<div class="plan-archives" style="clear:both;">
+				<img src="local/cache-vignettes/L120xH20/rubon0-7f021.png" alt="" align="right" width='120' height='20' class='spip_logos'  style='height:20px;width:120px;' />
+				<h3><a href="spip.php?rubrique2">Ciencia</a></h3>
+				</div>
+				
+				<ul>
+					
+						<li><a href="spip.php?article1">Parámetros iniciales mecánica</a></li>
+					
+				</ul>
+				
+					
+			
+		</div><!-- plan -->
+	</div><!-- bloc-contenu -->
+
+<!-- *****************************************************************
+	Menus contextuels (droite)
+	Contextual menus (right) 
+    ************************************************************* -->
+	<div id="encart">
+    <?php
+	$contexte_inclus = array('fond' => 'inc/inc-annonces',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+    <?php
+	$contexte_inclus = array('fond' => 'inc/inc-breves',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+    <?php
+	$contexte_inclus = array('fond' => 'inc/inc-syndic',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	</div><!-- encart -->
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-menu',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bas',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</div><!-- page -->
+
+</body>
+</html>
+
+
+";s:9:"squelette";s:37:"html_613dbbd288979775342cee68d98f779e";s:6:"source";s:31:"plugins/auto/ahuntsic/plan.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"a/pla-pla-es--cb389ab1195b1279ff619";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"7200";}s:5:"duree";i:7200;s:8:"contexte";a:6:{s:4:"page";s:4:"plan";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 20:15:27";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 20:15:27";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

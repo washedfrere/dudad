@@ -1,0 +1,5 @@
+a:11:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:0;}i:2;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:43:"Esta es la página de inicio de la wiki de ";}i:2;i:1;}i:3;a:3:{i:0;s:12:"internallink";i:1;a:2:{i:0;s:17:"dudad.es:dudad.es";i:1;N;}i:2;i:44;}i:4;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:1:"
+";}i:2;i:65;}i:5;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:66;}i:6;a:3:{i:0;s:2:"hr";i:1;a:0:{}i:2;i:66;}i:7;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:66;}i:8;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:321:"
+Desarrollaremos aquí todo tipo de conceptos bajo un amplio espectro de paradigmas intentando ver las ideas desde todos los puntos de vista posibles.
+Dado que cada palabra es subjetiva, necesitamos definirla desde cada conciencia evaluadora para darle la mayor de las riquezas al significado de lo que estamos hablando.
+";}i:2;i:71;}i:9;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:391;}i:10;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:391;}}

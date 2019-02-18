@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:1074:"
+	<item xml:lang="es">
+		<title>Usuarios Registrados</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article5</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article5</guid>
+		<dc:date>2009-05-15T00:31:12Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>Administrador</dc:creator>
+
+
+
+		<description>Aquel que lo desee, puede registrarse en nuestro sistema de documentos SPIP. Para ello, tenemos dispuesto un sistema autom&#225;tico de entrada. S&#243;lo es necesario escribir el nombre (o un alias inventado) y una direcci&#243;n de correo a la que se mandar&#225;, de forma mec&#225;nica, un mensaje con el identificador de entrada (usuario). As&#237; de sencillo. A partir de ese momento, puedes empezar a crear en nuestro espacio como si fuera el tuyo (salvo las l&#243;gicas restricciones que tenemos todos para no estropear, por (...)
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique6" rel="directory"&gt;Administraci&#243;n&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"6/inc-rss-item-5-es--ec80aa084f04f0";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:1:"5";s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-11-18 14:39:30";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-11-18 14:39:30";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

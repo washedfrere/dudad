@@ -1,0 +1,127 @@
+a:9:{s:5:"texte";s:3254:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Contenidos - Escribas</title>
+<meta name="description" content="Contenidos de los Escribas de Torre de Kápter" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<link rel="alternate" type="application/rss+xml" title="Sindicar esta secci&oacute;n" href="http://www.torredekapter.es/spip/spip.php?page=backend&amp;id_rubrique=7" />
+</head>
+
+<body class="page_rubrique">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div id="conteneur">
+    <div id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <strong class="on">Contenidos</strong></div>
+
+        <div class="cartouche">
+            <img src="local/cache-vignettes/L30xH32/rubon0-37e4c.png" alt="" width='30' height='32'  onmouseover="this.src='local/cache-vignettes/L30xH32/ruboff0-1eeb6.png'" onmouseout="this.src='local/cache-vignettes/L30xH32/rubon0-37e4c.png'" class='spip_logos'  style='height:32px;width:30px;' />
+            <h1 class="">Contenidos</h1>
+            <p><small>&Uacute;ltima actualizaci&oacute;n : 20 de mayo de 2009.</small></p>
+        </div>
+
+        <div class="chapo"><p>Contenidos de los Escribas de Torre de Kápter</p></div>
+
+        
+        
+        <div class="menu articles">
+            
+            <h2>Art&iacute;culos de esta secci&oacute;n</h2>
+            <ul>
+                
+                <li>
+                    
+                    <h3><a href="spip.php?article7">Continente y contenido</a></h3>
+                    <small>15 de mayo de 2009, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur1">Administrador</a></span></small>
+                </li>
+                
+            </ul>
+            
+        </div>
+        
+
+
+        
+        
+
+        
+        
+        <div class="menu">
+            
+            <h2>Breves</h2>
+            <ul>
+                
+                <li>14 de mayo de 2009 &ndash; <a href="spip.php?breve1">Nueva breve</a></li>
+                
+            </ul>
+            
+        </div>
+        
+
+        
+        
+
+        
+        
+
+        
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '7',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 149);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        
+    </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/rubrique.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_d06122a5ec1b836faab79572bb364311";s:6:"source";s:29:"squelettes-dist/rubrique.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"7/%2Fspip%2Fspip---e3d63d278a6b4b11";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"3600";}s:5:"duree";i:3600;s:8:"contexte";a:6:{s:9:"rubrique7";s:0:"";s:11:"id_rubrique";s:1:"7";s:4:"date";s:19:"2010-10-10 01:49:24";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-10 01:49:24";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

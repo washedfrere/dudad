@@ -1,0 +1,175 @@
+a:9:{s:5:"texte";s:5703:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Regravitación Newtoniana - Escribas</title>
+<meta name="description" content="Reformulaci&#243;n de la f&#243;rmula de atracci&#243;n Este va a ser un art&#237;culo breve, porque lo &#250;nico que voy a hacer es plasmar los a&#241;os que llevo d&#225;ndole (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <a href="spip.php?rubrique2">Ciencia</a> &gt; <strong class="on">Regravitación Newtoniana</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Regravitación Newtoniana</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2010-02-14T18:23:38Z">Domingo 14 de febrero de 2010</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><h3 class="spip">Reformulación de la fórmula de atracción</h3>
+<p>Este va a ser un artículo breve, porque lo único que voy a hacer es plasmar los años que llevo dándole vueltas a la famosa ecuación de la gravedad de Newton:
+F=G·m·m&#8217;/d²</p>
+
+<p>Extremadamente sencilla. Tan sencilla que debe ocultar algo en su interior. Y buceando; y calculando; e investigando; y comparando me topé un día con que la famosa constante de gravitación (G) se puede reescribir utilizando otra constante más actual (por haber sido "descubierta" después), que es, nada más y nada menos, la velocidad de la luz (c).</p>
+
+<p>Procedo a plasmar el resultado y, luego, quizá explique algo:
+<i>F=G&#8217;·m·m&#8217;/(4·c·4·Pi·d²)</i></p>
+
+<p>Ordenando un poco:</p>
+
+<h3 class="spip">F= G&#8217; · m/(4·c) · m&#8217;/(4·Pi·d²)</h3>
+<p>Bien.</p>
+
+<p>G&#8217; es tan solo una constante de conversión cuyo valor es 1. Está puesta ahí para que las unidades coincidan, porque sin prestar atención a las unidades, numéricamente se cumple que:</p>
+
+<p>F = m/(4·c) · m&#8217;/(4·Pi·d²)</p>
+
+<p>(Con una desviación de 3.82E-13, un valor cercano al error de medida de la constante G incluso hoy día <i>G es una de las constantes más difíciles de medir y con mayor error de medida</i>)</p>
+
+<p>La constante G&#8217; es, pues, un simple añadido formal, cuyo valor es 1 m/s² / Kg/m³ / s.
+O, más técnicamente G&#8217;=1 m⁴·Kg⁻¹·s⁻³</p>
+
+<p>El resto de componentes de la ecuación son:</p>
+
+<p>m/4c : La masa "atraída" dividida por cuatro veces la velocidad de la luz. [Kg·s·m⁻¹]</p>
+
+<p>m&#8217;/(4·Pi·d²) : La masa "atractora" repartida en la superficie de una esfera "virtual" de radio la distancia entre los dos centros de masa.[Kg·m⁻²]</p>
+
+<p>Si combinamos G&#8217; con uno de los dos términos, obtenemos bien:</p>
+
+<p>G&#8217;·m/(4·c) : [m³·s⁻²] , que equivale a [m² · m·s⁻²] (¡superficie por aceleración!)</p>
+
+<p>o bien:</p>
+
+<p>G&#8217;·m&#8217;/(4·Pi·d²) : [m²·s⁻³] que equivale a [m·s⁻² · m·s⁻¹] (¡aceleración por velocidad!)</p>
+
+<p>Y nada más que añadir, excepto:</p>
+
+<h3 class="spip">piénsalo un poco más aún</h3>
+<p>.</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '19',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=19" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '2',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique2">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article19" class="on">Regravitación Newtoniana</a></li>
+                
+                <li><a href="spip.php?article14">Masa Variable</a></li>
+                
+                <li><a href="spip.php?article18">Relatividad lumínica</a></li>
+                
+                <li><a href="spip.php?article16">Velocidad máxima</a></li>
+                
+                <li><a href="spip.php?article3">Física inversa</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"3/%2Fspip%2Fspip---218dee10b6109b8d";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:9:"article19";s:0:"";s:10:"id_article";s:2:"19";s:4:"date";s:19:"2010-10-10 01:45:41";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-10 01:45:41";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

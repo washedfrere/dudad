@@ -1,0 +1,27 @@
+a:9:{s:5:"texte";s:1068:"
+	<item xml:lang="es">
+		<title>Velocidad m&#225;xima</title>
+		<link>http://www.torredekapter.es/spip/spip.php?article16</link>
+		<guid isPermaLink="true">http://www.torredekapter.es/spip/spip.php?article16</guid>
+		<dc:date>2009-05-21T18:04:53Z</dc:date>
+		<dc:format>text/html</dc:format>
+		<dc:language>es</dc:language>
+		<dc:creator>David</dc:creator>
+
+
+
+		<description>Tras andar buscando explicaci&#243;n sobre la velocidad de la luz durante varios a&#241;os, la verdad es que a&#250;n no he encontrado ninguna que me satisfaga. Lo m&#225;s que he llegado es a constatar la variabilidad de la velocidad de la luz, al menos en un medio, como bien demuestra el conocido fen&#243;meno de la difracci&#243;n, donde un haz de luz entra en un prisma y sale de &#233;ste descompuesta en un precioso degradado de colores, donde el &#225;ngulo de cada color corresponde con la relaci&#243;n de velocidad fuera del prisma / (...)
+
+-
+&lt;a href="http://www.torredekapter.es/spip/spip.php?rubrique2" rel="directory"&gt;Ciencia&lt;/a&gt;
+
+
+		</description>
+
+
+
+		
+
+	</item>
+
+";s:9:"squelette";s:37:"html_7ce3167dda66ff6ab693917369884ab1";s:6:"source";s:33:"squelettes-dist/inc-rss-item.html";s:11:"process_ins";s:4:"html";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"0/inc-rss-item-16-es--fcab95c887b30";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:10:"id_article";s:2:"16";s:4:"lang";s:2:"es";s:4:"date";s:19:"2010-10-17 00:49:52";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-17 00:49:52";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

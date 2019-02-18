@@ -1,0 +1,133 @@
+a:9:{s:5:"texte";s:4145:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Ampliación de las páginas - Escribas</title>
+<meta name="description" content="Parecer&#225; algo absurdo, pero acabo de descubrir que muchas de las p&#225;ginas creadas con CMS est&#225;n dise&#241;adas de modo que su tama&#241;o sea un m&#250;ltiplo del (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <a href="spip.php?rubrique5">Tecnología</a> &gt; <strong class="on">Ampliación de las páginas</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Ampliación de las páginas</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-05-15T17:16:02Z">Viernes 15 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur1">Administrador</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p>Parecerá algo absurdo, pero acabo de descubrir que muchas de las páginas creadas con CMS están diseñadas de modo que su tamaño sea un múltiplo del tipo de letra empleado, de tal manera que en un monitor medianamente grande se ven algo ridículas.</p>
+
+<p>Cuando veas una página que deja mucho espacio a los lados, prueba a aumentar el tamaño de la letra, verás cómo se va ajustando a tu monitor la página. En Firefox, se puede hacer con la tecla Ctrl y "+"  para aumentar o Ctrl y "-" para reducir, con Ctrl+"0" se deja el tipo de letra "normal".</p>
+
+<p>En este sitio web, he adaptado el formato de los estilos para que ocupen gran parte de la pantalla, por lo que puede ocurrir que en monitores más pequeños se vea extremadamente grande, así que habrá que reducir el tipo de letra.</p>
+
+<p>De todas formas, he optimizado el formato para que los textos se vean mejor aunque la barra de accesos de la derecha quede fuera de la pantalla... de lo que se trata es de ofrecer información, ¿no?</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '6',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=6" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '5',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique5">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article6" class="on">Ampliación de las páginas</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"2/%2Fspip%2Fspip---8b4dcd475c302839";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:8:"article6";s:0:"";s:10:"id_article";s:1:"6";s:4:"date";s:19:"2010-08-22 01:01:50";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-08-22 01:01:50";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

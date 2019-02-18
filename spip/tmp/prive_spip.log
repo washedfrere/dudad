@@ -1,0 +1,176 @@
+Dec 13 04:42:40 62.32.171.219 (pid 23633) calcul (1.4ms) [../plugins/auto/compositions/prive/editer/inc-compositions] exec=articles, id_article=12, type=article, id=12, lang=es, date='2009-12-13 04:42:40', date_default=1, date_redac='2009-12-13 04:42:40', date_redac_default=1 (250 octets)
+Dec 13 04:42:40 62.32.171.219 (pid 23633) calcul (0.1ms) [../plugins/auto/compositions/formulaires/editer_composition_objet] id_article=12, _hidden='<input type='hidden' name='..', form=editer_composition_objet, action=./?exec=articles, formulaire_args=wjhM5JA1daLkpjAfR0DpYo93o2M.., id=new, lang=es, date='2009-12-13 04:42:40', date_default=1, date_redac='2009-12-13 04:42:40', date_redac_default=1 (0 octets)
+Dec 13 04:42:40 62.32.171.219 (pid 23633) calcul (7.2ms) [../plugins/auto/compositions/prive/editer/compositions] exec=articles, id_article=12, type=article, id=12, lang=es, date='2009-12-13 04:42:40', date_default=1, date_redac='2009-12-13 04:42:40', date_redac_default=1 (0 octets)
+Dec 13 04:42:40 62.32.171.219 (pid 23633) calcul (5.5ms) [../prive/contenu/article] id=12, id_rubrique=3, lang=es, date='2009-12-13 04:42:40', date_default=1, date_redac='2009-12-13 04:42:40', date_redac_default=1 (3796 octets)
+Dec 13 04:42:41 62.32.171.219 (pid 23638) Taille du CACHE estimee (b): 0.9 Mo
+Dec 13 04:42:41 62.32.171.219 (pid 23638) cron: invalideur (0.013s) 1
+Dec 13 04:42:52 62.32.171.219 (pid 23851) redirige 302: http://www.torredekapter.es/spip/spip.php?page=login
+Dec 13 04:43:46 62.32.171.219 (pid 24167) langues utilisees: es
+Dec 13 04:43:46 62.32.171.219 (pid 24167) notifications_instituerarticle_dist(instituerarticle,14,a:2:{s:6:"statut";s:6:"publie";s:13:"statut_ancien";s:4:"prop";})
+Dec 13 04:43:50 62.32.171.219 (pid 24200) langues utilisees: es
+Dec 13 04:43:50 62.32.171.219 (pid 24200) notifications_instituerarticle_dist(instituerarticle,12,a:2:{s:6:"statut";s:6:"publie";s:13:"statut_ancien";s:4:"prop";})
+Dec 19 08:55:19 62.32.163.85 (pid 16932) renouvellement de l'alea_ephemere
+Dec 19 08:55:19 62.32.163.85 (pid 16932) redirige 302: http://www.torredekapter.es/spip/spip.php?page=login&url=%2Fspip%2Fecrire%2F
+Dec 19 08:55:33 62.32.163.85 (pid 17074) Erreur mysql 1064
+Dec 19 08:55:33 62.32.163.85 (pid 17074) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT `db284950304`.spip_auteurs_articles
+FROM id_auteur=5
+Dec 19 08:55:33 62.32.163.85 (pid 17074) Erreur mysql 1064
+Dec 19 08:55:33 62.32.163.85 (pid 17074) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT spip_auteurs_articles
+FROM id_auteur=5
+Dec 19 08:55:33 62.32.163.85 (pid 17074) Erreur requete  (.html)
+Dec 19 08:55:33 62.32.163.85 (pid 17074) Erreur SQL: <tt><b>Error SQL</b><br />
+ spip_auteurs_articles
+FROM id_auteur=5
+<br /><span style='color: red'><b>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2</b></span><br /></tt>
+&nbsp;&nbsp;<a class='aide'
+href='http://www.torredekapter.es/spip/ecrire/?exec=aide_index&amp;aide=erreur_mysql&amp;var_lang=es'
+onclick="javascript:window.open(this.href,'spip_aide', 'scrollbars=yes, resizable=yes, width=740, height=580'); return false;"><img src='../prive/images/aide.gif'
+alt="Ayuda"  title="Ayuda sobre este elemento" class='aide' /></a> |  ()
+Dec 19 08:55:35 62.32.163.85 (pid 17098) debut d'optimisation de la table spip_resultats
+Dec 19 08:55:35 62.32.163.85 (pid 17098) fin d'optimisation de la table spip_resultats
+Dec 19 08:55:35 62.32.163.85 (pid 17098) Optimisation des tables: aucun lien mort
+Dec 19 08:55:35 62.32.163.85 (pid 17098) cron: optimiser (0.570s) -1261196888
+Dec 19 08:56:06 62.32.163.85 (pid 17613) Erreur mysql 1064
+Dec 19 08:56:06 62.32.163.85 (pid 17613) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT `db284950304`.spip_auteurs_articles
+FROM id_auteur=5
+Dec 19 08:56:06 62.32.163.85 (pid 17613) Erreur mysql 1064
+Dec 19 08:56:06 62.32.163.85 (pid 17613) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT spip_auteurs_articles
+FROM id_auteur=5
+Dec 19 08:56:06 62.32.163.85 (pid 17613) Erreur requete  (.html)
+Dec 19 08:56:06 62.32.163.85 (pid 17613) Erreur SQL: <tt><b>Error SQL</b><br />
+ spip_auteurs_articles
+FROM id_auteur=5
+<br /><span style='color: red'><b>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2</b></span><br /></tt>
+&nbsp;&nbsp;<a class='aide'
+href='http://www.torredekapter.es/spip/ecrire/?exec=aide_index&amp;aide=erreur_mysql&amp;var_lang=es'
+onclick="javascript:window.open(this.href,'spip_aide', 'scrollbars=yes, resizable=yes, width=740, height=580'); return false;"><img src='../prive/images/aide.gif'
+alt="Ayuda"  title="Ayuda sobre este elemento" class='aide' /></a> |  ()
+Dec 19 08:56:07 62.32.163.85 (pid 17631) Popularite: purger referer depuis 2009-12-16
+Dec 19 08:56:07 62.32.163.85 (pid 17631) cron: popularites (0.011s) 1
+Dec 20 01:36:56 62.32.173.78 (pid 11952) renouvellement de l'alea_ephemere
+Dec 20 01:36:56 62.32.173.78 (pid 11952) ajoute session ../tmp/sessions/5_0af4f2d07c2777e574f2592a22fa4fe9.php cookie 864000
+Dec 20 01:36:56 62.32.173.78 (pid 11952) Erreur mysql 1064
+Dec 20 01:36:56 62.32.173.78 (pid 11952) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT `db284950304`.spip_auteurs_articles
+FROM id_auteur=5
+Dec 20 01:36:56 62.32.173.78 (pid 11952) Erreur mysql 1064
+Dec 20 01:36:56 62.32.173.78 (pid 11952) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT spip_auteurs_articles
+FROM id_auteur=5
+Dec 20 01:36:56 62.32.173.78 (pid 11952) Erreur requete  (.html)
+Dec 20 01:36:56 62.32.173.78 (pid 11952) Erreur SQL: <tt><b>Error SQL</b><br />
+ spip_auteurs_articles
+FROM id_auteur=5
+<br /><span style='color: red'><b>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2</b></span><br /></tt>
+&nbsp;&nbsp;<a class='aide'
+href='http://www.torredekapter.es/spip/ecrire/?exec=aide_index&amp;aide=erreur_mysql&amp;var_lang=es'
+onclick="javascript:window.open(this.href,'spip_aide', 'scrollbars=yes, resizable=yes, width=740, height=580'); return false;"><img src='../prive/images/aide.gif'
+alt="Ayuda"  title="Ayuda sobre este elemento" class='aide' /></a> |  ()
+Dec 20 01:37:36 62.32.173.78 (pid 12483) calcul (0.9ms) [../prive/infos/rubrique] type=rubrique, lang=es, date='2009-12-20 01:37:36', date_default=1, date_redac='2009-12-20 01:37:36', date_redac_default=1 (0 octets)
+Dec 20 01:37:37 62.32.173.78 (pid 12483) calcul (0.8ms) [../prive/contenu/rubrique] lang=es, date='2009-12-20 01:37:37', date_default=1, date_redac='2009-12-20 01:37:37', date_redac_default=1 (0 octets)
+Feb 14 18:55:44 62.32.179.249 (pid 25675) renouvellement de l'alea_ephemere
+Feb 14 18:55:44 62.32.179.249 (pid 25675) ajoute session ../tmp/sessions/5_e4ceb18eddf978af2366979f8bb17a5c.php cookie 864000
+Feb 14 18:55:45 62.32.179.249 (pid 25675) Erreur mysql 1064
+Feb 14 18:55:45 62.32.179.249 (pid 25675) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT `db284950304`.spip_auteurs_articles
+FROM id_auteur=5
+Feb 14 18:55:45 62.32.179.249 (pid 25675) Erreur mysql 1064
+Feb 14 18:55:45 62.32.179.249 (pid 25675) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2 - 
+SELECT spip_auteurs_articles
+FROM id_auteur=5
+Feb 14 18:55:45 62.32.179.249 (pid 25675) Erreur requete  (.html)
+Feb 14 18:55:45 62.32.179.249 (pid 25675) Erreur SQL: <tt><b>Error SQL</b><br />
+ spip_auteurs_articles
+FROM id_auteur=5
+<br /><span style='color: red'><b>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 2</b></span><br /></tt>
+&nbsp;&nbsp;<a class='aide'
+href='http://www.torredekapter.es/spip/ecrire/?exec=aide_index&amp;aide=erreur_mysql&amp;var_lang=es'
+onclick="javascript:window.open(this.href,'spip_aide', 'scrollbars=yes, resizable=yes, width=740, height=580'); return false;"><img src='../prive/images/aide.gif'
+alt="Ayuda"  title="Ayuda sobre este elemento" class='aide' /></a> |  ()
+Feb 14 18:55:58 62.32.179.249 (pid 25858) cron: maintenance (0.063s) 1
+Feb 14 18:56:05 62.32.179.249 (pid 26009) calcul (1.4ms) [../prive/editer/article] icone_retour='<a style='float: left; ' cl..', redirect=http://www.torredekapter.es.., titre='Sin t&iacute;tulo', new=new, id_rubrique=7, config_fonc=articles_edit_config, lang=es, date='2010-02-14 18:56:05', date_default=1, date_redac='2010-02-14 18:56:05', date_redac_default=1 (705 octets)
+Feb 14 18:56:05 62.32.179.249 (pid 26009) generer_url_entite: entite  () inconnue 
+Feb 14 18:56:05 62.32.179.249 (pid 26009) calcul (0.170s) [../prive/formulaires/editer_article] id_secteur=7, id_article=oui, id_parent=7, config=a:110:{s:16:"charset_sql_ba.., _browser_caret=
+onselect='storeCaret(this).., _hidden='<input type='hidden' name='..', _pipeline=a:2:{i:0;s:20:"editer_conte.., _action=a:2:{i:0;s:14:"editer_artic.., form=editer_article, action=./?exec=articles_edit&amp;n.., formulaire_args=0jxq4NI1bePk9jqrwnOafWzKk/i.., id=new, editable=' ', lang=es (17631 octets)
+Feb 14 18:56:09 62.32.179.249 (pid 26058) debut d'optimisation de la table spip_types_documents
+Feb 14 18:56:09 62.32.179.249 (pid 26058) fin d'optimisation de la table spip_types_documents
+Feb 14 18:56:09 62.32.179.249 (pid 26058) Optimisation des tables: aucun lien mort
+Feb 14 18:56:09 62.32.179.249 (pid 26058) cron: optimiser (0.036s) -1266112775
+Feb 14 19:09:51 62.32.179.249 (pid 7714) redirige 302: http://www.torredekapter.es/spip/ecrire/?exec=articles&id_article=19
+Feb 14 19:09:52 62.32.179.249 (pid 7726) calcul (0.032s) [../prive/infos/article] type=article, id=19, lang=es, date='2010-02-14 19:09:52', date_default=1, date_redac='2010-02-14 19:09:52', date_redac_default=1 (1618 octets)
+Feb 14 19:09:52 62.32.179.249 (pid 7726) generer_url_entite: entite  () inconnue 
+Feb 14 19:09:52 62.32.179.249 (pid 7726) calcul (0.012s) [../plugins/auto/compositions/prive/editer/inc-compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:09:52', date_default=1, date_redac='2010-02-14 19:09:52', date_redac_default=1 (250 octets)
+Feb 14 19:09:52 62.32.179.249 (pid 7726) calcul (0.2ms) [../plugins/auto/compositions/formulaires/editer_composition_objet] id_article=19, _hidden='<input type='hidden' name='..', form=editer_composition_objet, action=./?exec=articles, formulaire_args=wjhG5JAlcaP0pjIftxXkPlN3gy6.., id=new, lang=es, date='2010-02-14 19:09:52', date_default=1, date_redac='2010-02-14 19:09:52', date_redac_default=1 (0 octets)
+Feb 14 19:09:52 62.32.179.249 (pid 7726) calcul (0.094s) [../plugins/auto/compositions/prive/editer/compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:09:52', date_default=1, date_redac='2010-02-14 19:09:52', date_redac_default=1 (0 octets)
+Feb 14 19:09:52 62.32.179.249 (pid 7726) calcul (0.026s) [../prive/contenu/article] id=19, id_rubrique=2, lang=es, date='2010-02-14 19:09:52', date_default=1, date_redac='2010-02-14 19:09:52', date_redac_default=1 (2578 octets)
+Feb 14 19:09:55 62.32.179.249 (pid 7769) Popularite: purger referer depuis 2010-02-12
+Feb 14 19:09:55 62.32.179.249 (pid 7769) cron: popularites (0.023s) 1
+Feb 14 19:10:09 62.32.179.249 (pid 8241) calcul (1.3ms) [../prive/editer/article] icone_retour='<a style='float: left; ' cl..', redirect=http://www.torredekapter.es.., titre='Regravitación Newtoniana', new=19, id_rubrique=2, config_fonc=articles_edit_config, lang=es, date='2010-02-14 19:10:09', date_default=1, date_redac='2010-02-14 19:10:09', date_redac_default=1 (712 octets)
+Feb 14 19:10:09 62.32.179.249 (pid 8241) generer_url_entite: entite  () inconnue 
+Feb 14 19:10:09 62.32.179.249 (pid 8241) calcul (0.015s) [../prive/formulaires/editer_article] id_article=19, titre='Regravitación Newtoniana', texte='{{{Reformulación de la fó..', date='2010-02-14 19:09:51', statut=prepa, id_secteur=7, maj='2010-02-14 19:09:51', export=oui, accepter_forum=pos, date_modif='2010-02-14 19:09:51', langue_choisie=non, id_parent=2, config=a:110:{s:16:"charset_sql_ba.., langue=es, _browser_caret=
+onselect='storeCaret(this).., _hidden='<input type='hidden' name='..', _pipeline=a:2:{i:0;s:20:"editer_conte.., _action=a:2:{i:0;s:14:"editer_artic.., form=editer_article, action=./?exec=articles_edit, formulaire_args=0jzq4BIkbeLUoT7HYklqnQ/jEb3.., id=new, editable=' ', lang=es (21529 octets)
+Feb 14 19:10:10 62.32.179.249 (pid 8270) traite la session ../tmp/visites/071c3a198c
+Feb 14 19:10:10 62.32.179.249 (pid 8270) traite la session ../tmp/visites/e730aae829
+Feb 14 19:10:10 62.32.179.249 (pid 8270) cron: visites (0.081s) 1
+Feb 14 19:10:32 62.32.179.249 (pid 8606) Erreur - 'premiere_revision' non definie !
+Feb 14 19:10:32 62.32.179.249 (pid 8606) redirige 302: http://www.torredekapter.es/spip/ecrire/?exec=articles&id_article=19
+Feb 14 19:10:33 62.32.179.249 (pid 8623) calcul (0.017s) [../prive/infos/article] type=article, id=19, lang=es, date='2010-02-14 19:10:33', date_default=1, date_redac='2010-02-14 19:10:33', date_redac_default=1 (1618 octets)
+Feb 14 19:10:33 62.32.179.249 (pid 8623) generer_url_entite: entite  () inconnue 
+Feb 14 19:10:33 62.32.179.249 (pid 8623) calcul (1.5ms) [../plugins/auto/compositions/prive/editer/inc-compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:10:33', date_default=1, date_redac='2010-02-14 19:10:33', date_redac_default=1 (250 octets)
+Feb 14 19:10:33 62.32.179.249 (pid 8623) calcul (0.1ms) [../plugins/auto/compositions/formulaires/editer_composition_objet] id_article=19, _hidden='<input type='hidden' name='..', form=editer_composition_objet, action=./?exec=articles, formulaire_args=wjhG5JAlcaP0pjIftxXkPlN3gy6.., id=new, lang=es, date='2010-02-14 19:10:33', date_default=1, date_redac='2010-02-14 19:10:33', date_redac_default=1 (0 octets)
+Feb 14 19:10:33 62.32.179.249 (pid 8623) calcul (0.013s) [../plugins/auto/compositions/prive/editer/compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:10:33', date_default=1, date_redac='2010-02-14 19:10:33', date_redac_default=1 (0 octets)
+Feb 14 19:10:33 62.32.179.249 (pid 8623) calcul (8.3ms) [../prive/contenu/article] id=19, id_rubrique=2, lang=es, date='2010-02-14 19:10:33', date_default=1, date_redac='2010-02-14 19:10:33', date_redac_default=1 (2600 octets)
+Feb 14 19:10:44 62.32.179.249 (pid 8827) calcul (1.2ms) [../prive/editer/article] icone_retour='<a style='float: left; ' cl..', redirect=http://www.torredekapter.es.., titre='Regravitación Newtoniana', new=19, id_rubrique=2, config_fonc=articles_edit_config, lang=es, date='2010-02-14 19:10:44', date_default=1, date_redac='2010-02-14 19:10:44', date_redac_default=1 (712 octets)
+Feb 14 19:10:44 62.32.179.249 (pid 8827) generer_url_entite: entite  () inconnue 
+Feb 14 19:10:44 62.32.179.249 (pid 8827) calcul (0.013s) [../prive/formulaires/editer_article] id_article=19, titre='Regravitación Newtoniana', texte='{{{Reformulación de la fó..', date='2010-02-14 19:09:51', statut=prepa, id_secteur=7, maj='2010-02-14 19:10:32', export=oui, accepter_forum=pos, date_modif='2010-02-14 19:10:32', langue_choisie=non, id_parent=2, config=a:108:{s:16:"charset_sql_ba.., langue=es, _browser_caret=
+onselect='storeCaret(this).., _hidden='<input type='hidden' name='..', _pipeline=a:2:{i:0;s:20:"editer_conte.., _action=a:2:{i:0;s:14:"editer_artic.., form=editer_article, action=./?exec=articles_edit, formulaire_args=0jzq4BIkbeLUoT7HYklqnQ/jEb3.., id=new, editable=' ', lang=es (21535 octets)
+Feb 14 19:11:28 62.32.179.249 (pid 9528) Erreur - 'premiere_revision' non definie !
+Feb 14 19:11:29 62.32.179.249 (pid 9528) redirige 302: http://www.torredekapter.es/spip/ecrire/?exec=articles&id_article=19
+Feb 14 19:11:29 62.32.179.249 (pid 9551) calcul (3.0ms) [../prive/infos/article] type=article, id=19, lang=es, date='2010-02-14 19:11:29', date_default=1, date_redac='2010-02-14 19:11:29', date_redac_default=1 (1618 octets)
+Feb 14 19:11:29 62.32.179.249 (pid 9551) generer_url_entite: entite  () inconnue 
+Feb 14 19:11:29 62.32.179.249 (pid 9551) calcul (1.6ms) [../plugins/auto/compositions/prive/editer/inc-compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:11:29', date_default=1, date_redac='2010-02-14 19:11:29', date_redac_default=1 (250 octets)
+Feb 14 19:11:29 62.32.179.249 (pid 9551) calcul (0.1ms) [../plugins/auto/compositions/formulaires/editer_composition_objet] id_article=19, _hidden='<input type='hidden' name='..', form=editer_composition_objet, action=./?exec=articles, formulaire_args=wjhG5JAlcaP0pjIftxXkPlN3gy6.., id=new, lang=es, date='2010-02-14 19:11:29', date_default=1, date_redac='2010-02-14 19:11:29', date_redac_default=1 (0 octets)
+Feb 14 19:11:29 62.32.179.249 (pid 9551) calcul (7.2ms) [../plugins/auto/compositions/prive/editer/compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:11:29', date_default=1, date_redac='2010-02-14 19:11:29', date_redac_default=1 (0 octets)
+Feb 14 19:11:29 62.32.179.249 (pid 9551) calcul (5.3ms) [../prive/contenu/article] id=19, id_rubrique=2, lang=es, date='2010-02-14 19:11:29', date_default=1, date_redac='2010-02-14 19:11:29', date_redac_default=1 (2607 octets)
+Feb 14 19:12:21 62.32.179.249 (pid 10475) calcul (1.2ms) [../prive/editer/article] icone_retour='<a style='float: left; ' cl..', redirect=http://www.torredekapter.es.., titre='Regravitación Newtoniana', new=19, id_rubrique=2, config_fonc=articles_edit_config, lang=es, date='2010-02-14 19:12:21', date_default=1, date_redac='2010-02-14 19:12:21', date_redac_default=1 (712 octets)
+Feb 14 19:12:21 62.32.179.249 (pid 10475) generer_url_entite: entite  () inconnue 
+Feb 14 19:12:21 62.32.179.249 (pid 10475) calcul (0.013s) [../prive/formulaires/editer_article] id_article=19, titre='Regravitación Newtoniana', texte='{{{Reformulación de la fó..', date='2010-02-14 19:09:51', statut=prepa, id_secteur=7, maj='2010-02-14 19:11:29', export=oui, accepter_forum=pos, date_modif='2010-02-14 19:11:29', langue_choisie=non, id_parent=2, config=a:108:{s:16:"charset_sql_ba.., langue=es, _browser_caret=
+onselect='storeCaret(this).., _hidden='<input type='hidden' name='..', _pipeline=a:2:{i:0;s:20:"editer_conte.., _action=a:2:{i:0;s:14:"editer_artic.., form=editer_article, action=./?exec=articles_edit, formulaire_args=0jzq4BIkbeLUoT7HYklqnQ/jEb3.., id=new, editable=' ', lang=es (21537 octets)
+Feb 14 19:13:53 62.32.179.249 (pid 12038) Erreur - 'premiere_revision' non definie !
+Feb 14 19:13:53 62.32.179.249 (pid 12038) redirige 302: http://www.torredekapter.es/spip/ecrire/?exec=articles&id_article=19
+Feb 14 19:13:54 62.32.179.249 (pid 12077) calcul (3.2ms) [../prive/infos/article] type=article, id=19, lang=es, date='2010-02-14 19:13:54', date_default=1, date_redac='2010-02-14 19:13:54', date_redac_default=1 (1618 octets)
+Feb 14 19:13:54 62.32.179.249 (pid 12077) generer_url_entite: entite  () inconnue 
+Feb 14 19:13:54 62.32.179.249 (pid 12077) calcul (1.7ms) [../plugins/auto/compositions/prive/editer/inc-compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:13:54', date_default=1, date_redac='2010-02-14 19:13:54', date_redac_default=1 (250 octets)
+Feb 14 19:13:54 62.32.179.249 (pid 12077) calcul (0.1ms) [../plugins/auto/compositions/formulaires/editer_composition_objet] id_article=19, _hidden='<input type='hidden' name='..', form=editer_composition_objet, action=./?exec=articles, formulaire_args=wjhG5JAlcaP0pjIftxXkPlN3gy6.., id=new, lang=es, date='2010-02-14 19:13:54', date_default=1, date_redac='2010-02-14 19:13:54', date_redac_default=1 (0 octets)
+Feb 14 19:13:54 62.32.179.249 (pid 12077) calcul (7.3ms) [../plugins/auto/compositions/prive/editer/compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:13:54', date_default=1, date_redac='2010-02-14 19:13:54', date_redac_default=1 (0 octets)
+Feb 14 19:13:54 62.32.179.249 (pid 12077) calcul (5.5ms) [../prive/contenu/article] id=19, id_rubrique=2, lang=es, date='2010-02-14 19:13:54', date_default=1, date_redac='2010-02-14 19:13:54', date_redac_default=1 (2816 octets)
+Feb 14 19:13:56 62.32.179.249 (pid 12096) Taille du CACHE estimee (7): 4.9 Mo
+Feb 14 19:13:56 62.32.179.249 (pid 12096) cron: invalideur (0.093s) 1
+Feb 14 19:15:47 62.32.179.249 (pid 14197) calcul (1.2ms) [../prive/editer/article] icone_retour='<a style='float: left; ' cl..', redirect=http://www.torredekapter.es.., titre='Regravitación Newtoniana', new=19, id_rubrique=2, config_fonc=articles_edit_config, lang=es, date='2010-02-14 19:15:47', date_default=1, date_redac='2010-02-14 19:15:47', date_redac_default=1 (712 octets)
+Feb 14 19:15:47 62.32.179.249 (pid 14197) generer_url_entite: entite  () inconnue 
+Feb 14 19:15:47 62.32.179.249 (pid 14197) calcul (0.034s) [../prive/formulaires/editer_article] id_article=19, titre='Regravitación Newtoniana', texte='{{{Reformulación de la fó..', date='2010-02-14 19:09:51', statut=prepa, id_secteur=7, maj='2010-02-14 19:13:53', export=oui, accepter_forum=pos, date_modif='2010-02-14 19:13:53', langue_choisie=non, id_parent=2, config=a:110:{s:16:"charset_sql_ba.., langue=es, _browser_caret=
+onselect='storeCaret(this).., _hidden='<input type='hidden' name='..', _pipeline=a:2:{i:0;s:20:"editer_conte.., _action=a:2:{i:0;s:14:"editer_artic.., form=editer_article, action=./?exec=articles_edit, formulaire_args=0jzq4BIkbeLUoT7HYklqnQ/jEb3.., id=new, editable=' ', lang=es (21730 octets)
+Feb 14 19:21:11 62.32.179.249 (pid 19906) Erreur - 'premiere_revision' non definie !
+Feb 14 19:21:11 62.32.179.249 (pid 19906) redirige 302: http://www.torredekapter.es/spip/ecrire/?exec=articles&id_article=19
+Feb 14 19:21:11 62.32.179.249 (pid 19919) calcul (3.2ms) [../prive/infos/article] type=article, id=19, lang=es, date='2010-02-14 19:21:11', date_default=1, date_redac='2010-02-14 19:21:11', date_redac_default=1 (1618 octets)
+Feb 14 19:21:11 62.32.179.249 (pid 19919) generer_url_entite: entite  () inconnue 
+Feb 14 19:21:11 62.32.179.249 (pid 19919) calcul (1.7ms) [../plugins/auto/compositions/prive/editer/inc-compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:21:11', date_default=1, date_redac='2010-02-14 19:21:11', date_redac_default=1 (250 octets)
+Feb 14 19:21:11 62.32.179.249 (pid 19919) calcul (0.1ms) [../plugins/auto/compositions/formulaires/editer_composition_objet] id_article=19, _hidden='<input type='hidden' name='..', form=editer_composition_objet, action=./?exec=articles, formulaire_args=wjhG5JAlcaP0pjIftxXkPlN3gy6.., id=new, lang=es, date='2010-02-14 19:21:11', date_default=1, date_redac='2010-02-14 19:21:11', date_redac_default=1 (0 octets)
+Feb 14 19:21:11 62.32.179.249 (pid 19919) calcul (7.4ms) [../plugins/auto/compositions/prive/editer/compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:21:11', date_default=1, date_redac='2010-02-14 19:21:11', date_redac_default=1 (0 octets)
+Feb 14 19:21:11 62.32.179.249 (pid 19919) calcul (6.4ms) [../prive/contenu/article] id=19, id_rubrique=2, lang=es, date='2010-02-14 19:21:11', date_default=1, date_redac='2010-02-14 19:21:11', date_redac_default=1 (3246 octets)
+Feb 14 19:21:16 62.32.179.249 (pid 19989) cron: visites (0.8ms) 1
+Feb 14 19:21:57 62.32.179.249 (pid 20771) langues utilisees: es
+Feb 14 19:21:57 62.32.179.249 (pid 20771) notifications_instituerarticle_dist(instituerarticle,19,a:2:{s:6:"statut";s:4:"prop";s:13:"statut_ancien";s:5:"prepa";})
+Feb 14 19:21:57 62.32.179.249 (pid 20771) redirige 302: ./?exec=articles&id_article=19
+Feb 14 19:21:58 62.32.179.249 (pid 20777) calcul (3.7ms) [../prive/infos/article] type=article, id=19, lang=es, date='2010-02-14 19:21:58', date_default=1, date_redac='2010-02-14 19:21:58', date_redac_default=1 (1531 octets)
+Feb 14 19:21:58 62.32.179.249 (pid 20777) generer_url_entite: entite  () inconnue 
+Feb 14 19:21:58 62.32.179.249 (pid 20777) calcul (2.0ms) [../plugins/auto/compositions/prive/editer/inc-compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:21:58', date_default=1, date_redac='2010-02-14 19:21:58', date_redac_default=1 (250 octets)
+Feb 14 19:21:58 62.32.179.249 (pid 20777) calcul (0.2ms) [../plugins/auto/compositions/formulaires/editer_composition_objet] id_article=19, _hidden='<input type='hidden' name='..', form=editer_composition_objet, action=./?exec=articles, formulaire_args=wjhG5JAlcaP0pjIftxXkPlN3gy6.., id=new, lang=es, date='2010-02-14 19:21:58', date_default=1, date_redac='2010-02-14 19:21:58', date_redac_default=1 (0 octets)
+Feb 14 19:21:58 62.32.179.249 (pid 20777) calcul (8.8ms) [../plugins/auto/compositions/prive/editer/compositions] exec=articles, id_article=19, type=article, id=19, lang=es, date='2010-02-14 19:21:58', date_default=1, date_redac='2010-02-14 19:21:58', date_redac_default=1 (0 octets)
+Feb 14 19:21:58 62.32.179.249 (pid 20777) calcul (5.8ms) [../prive/contenu/article] id=19, id_rubrique=2, lang=es, date='2010-02-14 19:21:58', date_default=1, date_redac='2010-02-14 19:21:58', date_redac_default=1 (3246 octets)
+Feb 14 19:23:38 62.32.179.249 (pid 22029) langues utilisees: es
+Feb 14 19:23:38 62.32.179.249 (pid 22029) notifications_instituerarticle_dist(instituerarticle,19,a:2:{s:6:"statut";s:6:"publie";s:13:"statut_ancien";s:4:"prop";})

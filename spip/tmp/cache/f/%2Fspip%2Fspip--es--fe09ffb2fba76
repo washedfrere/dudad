@@ -1,0 +1,111 @@
+a:9:{s:5:"texte";s:3715:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+	<title>[Escribas TorredeKápter] : Torredekapter</title>
+	<?php
+	$contexte_inclus = array('fond' => 'inc/inc-meta',
+	'id_auteur' => '1',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	<link rel="alternate" type="application/rss+xml" title="Torredekapter" href="http://www.torredekapter.es/spip/spip.php?page=backend&amp;id_auteur=1" />
+	<?php
+	$contexte_inclus = array('fond' => 'styles',
+	'id_auteur' => '1',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+<body dir="ltr" class="es auteur aut1">
+<div id="page" class="auteur">
+
+<!-- *****************************************************************
+	Bandeau, titre du site et menu langue
+	Header and main menu (top and right) 
+    ************************************************************* -->
+	
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bandeau',
+	'id_auteur' => '1',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<!-- *****************************************************************
+	Contenu principal (centre)
+	Main content (center) 
+    ************************************************************* -->
+	<div id="bloc-contenu">
+		<div class="cartouche">
+		
+			<h1 class="">Torredekapter</h1>
+			<div class="texte">
+				
+				
+				
+				<br />
+				<h2 id="message">Enviar un mensaje privado a este autor o autora</h2><?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_ECRIRE_AUTEUR', '1', '', 'administrador@torredekapter.es'),1, 27);
+if ($lang_select) lang_select();
+?>
+			</div><!-- texte -->
+		</div><!-- cartouche -->
+		<!-- Articles de l'auteur -->
+		<h2>Art&iacute;culos de esta autora o autor</h2>
+		
+			<h3><a href="http://www.torredekapter.es/spip/spip.php?action=converser&amp;redirect=http://www.torredekapter.es/spip%2Fspip.php?article1&amp;var_lang=es" hreflang="es" title="Física inversa Diagrama básico: http://www.torredekapter.es/spip/IM... Este esquema contiene representada la base de la matemática física mecánica-dinámica a utilizar en el siguiente desarrollo. Consta de una linea horizontal; la linea espacio-temporal, así denominada por ser la que contiene tanto las longitudes como los tiempos, cada uno en su propia escala que haremos coincidentes en el esquema. Cada par de círculos concéntricos situados sobre esa linea espacio-temporal marca un momento de (...)">Parámetros iniciales mecánica</a></h3>
+			<div class="detail">
+				Jueves 14 de mayo de 2009
+			</div>
+		
+	</div><!-- bloc-contenu -->
+
+<!-- *****************************************************************
+	Menus contextuels (droite)
+	Contextual menus (right) 
+    ************************************************************* -->
+	<div id="encart">
+	<?php
+	$contexte_inclus = array('fond' => 'inc/inc-annonces',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+		
+		<!-- Tous les auteurs -->
+			<div class="menu">
+				<ul class="titre">
+					<li><b>Todos los autores y autoras</b>
+						
+						<ul>
+							<li>
+								<a href="spip.php?auteur1">Torredekapter</a>	
+							</li>
+						</ul>
+						
+					</li>
+				</ul>
+			</div><!-- menu -->
+		
+	</div><!-- encart -->
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-menu',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+<?php
+	$contexte_inclus = array('fond' => 'inc/inc-bas',
+	'id_auteur' => '1',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</div><!-- page -->
+
+</body>
+</html>
+
+ ";s:9:"squelette";s:37:"html_4f9a710a8d6a65d75f81cf509278ab6f";s:6:"source";s:33:"plugins/auto/ahuntsic/auteur.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"f/%2Fspip%2Fspip--es--fe09ffb2fba76";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"7200";}s:5:"duree";i:7200;s:8:"contexte";a:7:{s:7:"auteur1";s:0:"";s:4:"lang";s:2:"es";s:9:"id_auteur";s:1:"1";s:4:"date";s:19:"2009-05-14 20:15:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 20:15:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

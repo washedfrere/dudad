@@ -1,0 +1,143 @@
+a:9:{s:5:"texte";s:5947:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Altruismo y salud - Escribas</title>
+<meta name="description" content="En esto de la salud, el negocio est&#225; servido. El que m&#225;s gana es el que da con la enfermedad m&#225;s dif&#237;cil de curar, porque siempre tendr&#225; clientes. (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <a href="spip.php?rubrique3">Salud</a> &gt; <strong class="on">Altruismo y salud</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Altruismo y salud</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-12-13T03:43:50Z">Domingo 13 de diciembre de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p>En esto de la salud, el negocio está servido. El que más gana es el que da con la enfermedad más difícil de curar, porque siempre tendrá clientes.</p>
+
+<p>De alguna manera, nuestra sociedad necesita de la enfermedad. Incongruente pero cierto. Sin la enfermedad, nuestra sociedad no tendría tanto trasiego económico y hasta la economía más robusta se convertiría en la ruina absoluta.</p>
+
+<p><strong>Altruismo vs Egoismo</strong></p>
+
+<p>Algunos dedican más tiempo buscando solución a los males ajenos por la dificultad que supone encontrar solución a los propios y ofrecen consejos, estudios e incluso soluciones a otras personas. A esta labor podríamos llamarla "curar a los demás para curarse", puesto que, en su más íntimo ser, aquellas personas que se fijan en los problemas ajenos tratan de curar los propios a través de sentirse bien haciendo bien a los demás. O también podríamos llamarla "buscarse la vida con los problemas de los demás", que significa que, como todo hijo de vecino, hay que comer y tener un techo bajo el que cobijarse y qué mejor manera que ganarse el sustento a través de una fuente inagotable de ganancias: la enfermedad.</p>
+
+<p>Hubo un momento en mi propia vida en el que pretendí crear un centro de relajación y autocuración a través de la meditación. Y hubo un motivo para no crearlo: frenar la enfermedad como modo de ganar dinero. Mejor explicado, resulta que si hubiera creado un centro de atención a los problemas de los demás, mi vida se hubiera visto sujeta a la existencia de tales problemas, por lo que la curación de todo el mundo supondría un problema para mí. Es un modo de vida, una manera de enfocar la curación. Mi intención era la de ayudar a otras personas a curarse, pero no la de crear la necesidad de que existan enfermedadas para poder vivir de ellas.</p>
+
+<p>La salud, entonces, no puede ser utilizada para ganar dinero y debería ser utilizada para expandirla a todo ser viviente.</p>
+
+<p>Bajo este punto de vista, cualquier organización, centro, persona o lugar dedicado a la curación como centro de su vida, es un centro de lucro. El altruismo significa hacer por y para los demás, mientras que el egoísmo significa hacer por y para la propia persona.</p>
+
+<p>Esto significa que la medicina actual es egoísta, pero también significa que las medicinas alternativas también son egoístas. Esto deja un panorama bastante alejado de las buenas intenciones de muchos profesionales que dedican gran parte de sus esfuerzos en encontrar curas a las enfermedades, pero qué le vamos a hacer. También es bienintencionado un mono al sacar un pez del río para que no se ahogue... y con su buena intención acaba asfixiándolo. La buena intención no basta, por lo que se ve.</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '12',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=12" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '3',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique3">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article12" class="on">Altruismo y salud</a></li>
+                
+                <li><a href="spip.php?article10">Salud y Enfermedad</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"0/%2Fspip%2Fspip---11a395b0dcabede6";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:9:"article12";s:0:"";s:10:"id_article";s:2:"12";s:4:"date";s:19:"2010-09-08 18:31:06";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-08 18:31:06";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

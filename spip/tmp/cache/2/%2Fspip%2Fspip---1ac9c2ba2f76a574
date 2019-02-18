@@ -1,0 +1,107 @@
+a:9:{s:5:"texte";s:2802:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Nueva breve - Escribas</title>
+<meta name="description" content="En construcci&#243;n ... permanente-mente." />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+<link rel="alternate" type="application/rss+xml" title="&Uacute;ltimos breves" href="http://www.torredekapter.es/spip/spip.php?page=backend-breves" />
+</head>
+
+<body class="page_breve">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div id="conteneur">
+    <div id="contenu">
+
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/" >Portada del sitio</a> &gt; <a href="spip.php?rubrique7">Contenidos</a> &gt; <strong class="on">Nueva breve</strong></div>
+
+        <div class="cartouche">
+            
+            <h1 class="">Nueva breve</h1>
+            <p><small><abbr class="published" title="2009-05-14T17:34:17Z">Jueves 14 de mayo de 2009</abbr></small></p>
+        </div>
+        
+        <div class="texte"><p>En <strong>construcción</strong> ... permanente-mente.</p></div>
+        
+        
+        
+        
+        <a href="#forum" name="forum" id="forum"></a>
+        <?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_breve' => '1',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+        <p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_breve=1" rel="noindex nofollow">Comentar esta breve</a></p>
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '7',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 49);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2>Otros breves</h2>
+            <ul>
+                
+                <li>14 de mayo de 2009 &ndash; <a href="spip.php?breve1" class="on">Nueva breve</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        
+        
+    </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/breve.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_730d56a50f07975ebd0d204d4532151c";s:6:"source";s:26:"squelettes-dist/breve.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"2/%2Fspip%2Fspip---1ac9c2ba2f76a574";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:6:"breve1";s:0:"";s:8:"id_breve";s:1:"1";s:4:"date";s:19:"2010-10-10 01:50:36";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-10-10 01:50:36";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

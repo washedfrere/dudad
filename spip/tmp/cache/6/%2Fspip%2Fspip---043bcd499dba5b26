@@ -1,0 +1,141 @@
+a:9:{s:5:"texte";s:4967:"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Usuarios Registrados - Escribas</title>
+<meta name="description" content="Aquel que lo desee, puede registrarse en nuestro sistema de documentos SPIP. Para ello, tenemos dispuesto un sistema autom&#225;tico de entrada. S&#243;lo (...)" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_article">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+    <div class="hfeed" id="conteneur">
+    <div class="hentry" id="contenu">
+    
+        
+        <div id="hierarchie"><a href="http://www.torredekapter.es/spip/">Portada del sitio</a> &gt; <a href="spip.php?rubrique6">Administración</a> &gt; <strong class="on">Usuarios Registrados</strong></div>
+
+        <div class="cartouche">
+            <div class="surlignable">
+				
+				
+				<h1 class="entry-title">Usuarios Registrados</h1>
+				
+            </div>
+
+            <p><small><abbr class="published" title="2009-05-15T00:31:12Z">Viernes 15 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur1">Administrador</a></span></small></p>
+
+            
+            </div>
+		
+        <div class="surlignable">
+			
+			<div class="texte entry-content"><p><strong>Aquel que lo desee, puede registrarse</strong> en nuestro sistema de documentos <a href='http://es.wikipedia.org/wiki/SPIP' class='spip_glossaire'>SPIP</a>.</p>
+
+<p>Para ello, tenemos dispuesto un sistema automático de entrada. Sólo es necesario escribir el nombre (o un alias inventado) y una dirección de correo a la que se mandará, de forma mecánica, un mensaje con el identificador de entrada (usuario). Así de sencillo.</p>
+
+<p><strong>A partir de ese momento, puedes empezar a crear</strong> en nuestro espacio como si fuera el tuyo (salvo las lógicas restricciones que tenemos todos para no estropear, por descuido, el sitio este tan chulo)</p>
+
+<p>En cada sección puedes incluir artículos, notas, escribir en los comentarios, foros... lo que se te ocurra. La única cosa que pedimos es que se haga desde la verdad, o desde el corazón (porque la verdad es esquiva muchas veces)</p>
+
+<p>Para crear un artículo-documento, <strong>se disponen de herramientas</strong> (un editor y un administrador de imágenes) para su escritura, aunque también se pueden importar artículos escritos en formato ODT (OpenOffice), si ya los tenéis escritos y no os apetece reescribirlos. Para ello, tendréis que contar con un editor que sea capaz de exportar en ese formato vuestros documentos.</p>
+
+<p>Estaba pensando en incluir múltiples formatos de documento y convertir ésto en un Gestor Documental, pero creo que la forma de leer y compartir no sería igual que hincando las muñecas y tecleando o empujando el ratón con toda la pasión del mundo para leer ávidamente todo cuanto por aquí se está mostrando.</p>
+
+<p>Las tareas de administración corresponden al administrador, por lo que los usuarios registrados podrán crear y modificar contenidos, pero nunca alterar el aspecto de toda la web de torredekápter.</p></div>
+		</div>
+
+
+		
+        
+		
+
+
+
+		
+		
+
+
+		
+
+        
+
+		
+		<a href="#forum" name="forum" id="forum"></a>
+		<?php
+	$contexte_inclus = array('fond' => 'inc-forum',
+	'id_article' => '5',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		<p class="repondre"><a href="http://www.torredekapter.es/spip/spip.php?page=forum&amp;id_article=5" rel="noindex nofollow">Comentar este art&iacute;culo</a></p> 
+
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+
+
+    
+    <div id="navigation">
+
+        
+        <?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'id_rubrique' => '6',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 72);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+    
+    
+    <div id="extra">
+
+        
+        
+        <div class="menu">
+            <h2><a href="spip.php?rubrique6">En la misma secci&oacute;n</a></h2>
+            <ul>
+                
+                <li><a href="spip.php?article5" class="on">Usuarios Registrados</a></li>
+                
+                <li><a href="spip.php?article4">Participación</a></li>
+                
+            </ul>
+        </div>
+        
+
+        
+        </div><!--#extra-->
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/article.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+</div><!--#page-->
+</body>
+</html>
+";s:9:"squelette";s:37:"html_7b25f536f47d963219c3a0d8038129b5";s:6:"source";s:28:"squelettes-dist/article.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"6/%2Fspip%2Fspip---043bcd499dba5b26";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:6:{s:8:"article5";s:0:"";s:10:"id_article";s:1:"5";s:4:"date";s:19:"2010-09-08 18:31:47";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-08 18:31:47";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

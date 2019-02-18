@@ -1,0 +1,55 @@
+<plugin>
+	<nom>FreepapeR</nom>
+	<icon>img_pack/freepaperLogo.png</icon>
+	<version>0.7.0</version>
+	<etat>stable</etat>
+	<description>
+{{Un lecteur de fichier PDF}}
+
+<u>Caract&#233;ristiques :</u>
+-* - SPIP 1.9.x et SPIP 2.0
+-* - Le lecteur FreepapeR est &#233;crit en actionscript. Il est ins&#233;r&#233; dans la page gr&#226;ce au plugin Flash Player.
+-* - Il permet de lire en pleine page des documents au format PDF.
+-* - on utilise pour la conversion de format la bo&#238;te &#224; outils [swftools->http://www.swftools.org]
+
+<u>Balise :</u>
+-* - <code>#FREEPAPER</code> int&#233;gration avec les valeurs par d&#233;faut
+-* - <code>#FREEPAPER{xmlData="NomDeFichier"}</code> chemin du fichier xml de configuration (dans le dossier xml du plugin). D&#233;faut : freepaper.xml
+-* - <code>#FREEPAPER{largeur=nbPixels}</code> largeur de la page FreepapeR. D&#233;faut : 600
+-* - <code>#FREEPAPER{hauteur=nbPixels}</code> hauteur de la page FreepapeR. D&#233;faut : 800
+-* - <code>#FREEPAPER{trace="true" ou "false"}</code> activation du mode verbeux. D&#233;faut : false
+
+Tous ces param&#232;tres sont optionnels et peuvent &ecirc;tre utilis&#233;s conjointement (tout ou partie) lors de l'implantation du lecteur dans le squelette. Tous les fichiers PDF joints &#224; l'article sont ins&#233;r&#233; dans la page.
+
+<u>Mod&#232;le &#224; ins&#233;rer dans le texte d'un article</u>
+-* <code><contentfreepaperxxx -> ou xxx est l'id du document PDF
+|xmlData=(chemin fichier xml de configuration) -> par d&#233;faut freepaper.xml
+|hauteur=nbPixels -> par d&#233;faut 600
+|largeur=nbPixels -> par d&#233;faut 800
+|trace=true ou false -> par d&#233;faut false
+>
+</code>
+
+Tous ces param&#232;tres sont optionnels et peuvent &ecirc;tre utilis&#233;s conjointement (tout ou partie) lors de l'implantation du lecteur dans l'article. 
+
+	</description>
+	<auteur>	<!-- Auteur du plugin -->
+[Frank RUZZIN->mailto:franck@lededansdubocal.net], ao&#251;t-novembre 2008
+	</auteur>
+	<lien>
+-* Plus d'infos ? - [Le dedans du bocal->http://lededansdubocal.net]
+	</lien>
+	<prefix>freepaper</prefix>	
+    <fonctions> <!-- fichier charge a chaque recalul de page (espace public) -->
+		freepaper_mes_fonctions.php
+	</fonctions>
+	<!-- Définitions des fonctions qui s'insèrent dans les pipelines -->
+	<pipeline>
+		<nom>insert_head</nom>
+		<inclure>freepaper_pipeline.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>affichage_final</nom>
+		<inclure>freepaper_pipeline.php</inclure>
+	</pipeline>
+</plugin>

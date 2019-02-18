@@ -1,0 +1,188 @@
+a:9:{s:5:"texte";s:9201:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+<title>Escribas</title>
+<meta name="description" content="Lugar para compartir conocimientos de las palomas allegadas y recién llegadas" />
+<?php
+	$contexte_inclus = array('fond' => 'inc-head',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+</head>
+
+<body class="page_sommaire">
+<div id="page">
+
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-entete',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+
+	
+	<div class="hfeed" id="conteneur">
+	<div id="contenu">
+		
+		<div class="cartouche invisible">
+			<h1 class="invisible">Escribas</h1>
+		</div>
+		
+		<div class="chapo"><p>Lugar para compartir conocimientos de las palomas allegadas y recién llegadas</p></div>
+		
+		
+		
+		<div class="menu articles">
+			<a name='pagination_articles_recents' id='pagination_articles_recents'></a>
+			<h2>&Uacute;ltimos art&iacute;culos</h2>
+			<ul>
+				
+				<li class="hentry">
+					<a href="spip.php?article16"><img src="local/cache-vignettes/L50xH25/rubon2-bfa08.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff2-e7574.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon2-bfa08.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article16" rel="bookmark">Velocidad máxima</a></h3>
+					<small><abbr class="published" title="2009-05-21T18:04:53Z">21 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">Tras andar buscando explicación sobre la velocidad de la luz durante varios años, la verdad es que aún no he encontrado ninguna que me satisfaga.
+
+Lo más que he llegado es a constatar la variabilidad de la velocidad de la luz, al menos en un medio, como bien demuestra el conocido fenómeno de la difracción, donde un haz de luz entra en un prisma y sale de éste descompuesta en un precioso degradado de colores, donde el ángulo de cada color corresponde con la relación de velocidad fuera del prisma /&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article10"><img src="local/cache-vignettes/L50xH25/rubon3-920f9.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff3-e7631.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon3-920f9.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article10" rel="bookmark">Salud y Enfermedad</a></h3>
+					<small><abbr class="published" title="2009-05-20T01:32:00Z">20 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">Como introducción a este apartado sobre la Salud, voy a escribir unas líneas para mostrar la idea subyacente.
+
+La Salud
+
+Resulta que la salud, según la entendemos y la vivimos, es un estado inexistente, porque no hay nadie que esté realmente sano. Parece una paradoja abrir un tema para tratar de algo que no existe y alguna persona se preguntará por qué estoy diciendo ésto.
+
+La salud es la conjunción de varios factores en un ser vivo. Entran en juego tanto los pormenores físicos como los pormenores&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article13"><img src="local/cache-vignettes/L50xH25/rubon4-d0de3.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff4-9afa6.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon4-d0de3.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article13" rel="bookmark">Yo Soy</a></h3>
+					<small><abbr class="published" title="2009-05-17T13:32:02Z">17 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur5">David</a></span></small>
+					<div class="introduction entry-content">Pienso en mí, en mi tamaño.
+
+Veo cómo hay cosas más pequeñas que mi cuerpo. Por ahora, no me interesan.
+
+Veo cómo hay cosas más grandes que mi cuerpo. Por ahora, me interesan.
+
+Imagino algo más grande que mi cuerpo. Un edificio me viene a la mente. En ese edificio puedo deambular arriba y abajo, recorrer sus pasillos y entrar o salir de sus estancias.
+
+Pienso en algo más grande aún.
+
+Imagino un país. Un pais contiene muchas personas como yo y puedo recorrerlo de extremo a extremo. Me lleva mucho&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article9"><img src="local/cache-vignettes/L50xH25/rubon1-ad5fc.jpg" alt="" width='50' height='25'  onmouseover="this.src='local/cache-vignettes/L50xH25/ruboff1-b84a3.jpg'" onmouseout="this.src='local/cache-vignettes/L50xH25/rubon1-ad5fc.jpg'" class='spip_logos'  style='height:25px;width:50px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article9" rel="bookmark">CLAVE MGDL</a></h3>
+					<small><abbr class="published" title="2009-05-15T22:46:05Z">16 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur2">Caios</a></span></small>
+					<div class="introduction entry-content">INTROITO
+
+Estas hojas verán la luz muy a pesar de su autor, que es el principal instigador para que ni una de sus letras salgan de su mente. El, como nadie en este mundo, sabe que cada palabra que la tinta mancille el blanco de la ignorancia divina, servirá para encuadrarle dentro del selecto club de los alucinados, de aquellos que abandonan la ciencia porque no les queda más recurso que la elucubración, en resumen, aquellos que concitan la indiferencia del selecto club de los científicos y por&nbsp;(...)</div>
+				</li>
+				
+				<li class="hentry">
+					<a href="spip.php?article7"><img src="local/cache-vignettes/L30xH32/rubon0-37e4c.png" alt="" width='30' height='32'  onmouseover="this.src='local/cache-vignettes/L30xH32/ruboff0-1eeb6.png'" onmouseout="this.src='local/cache-vignettes/L30xH32/rubon0-37e4c.png'" class='spip_logos'  style='height:32px;width:30px;' /></a>
+					<h3 class="entry-title"><a href="spip.php?article7" rel="bookmark">Continente y contenido</a></h3>
+					<small><abbr class="published" title="2009-05-15T19:01:04Z">15 de mayo de 2009</abbr>, por  <span class="vcard author"><a class="url fn spip_in" href="spip.php?auteur1">Administrador</a></span></small>
+					<div class="introduction entry-content">Aquí estamos, bajo un epígrafe común a todos los temas que engloban este sitio de documentos "interesantes".
+
+Desde el menú de Contenidos podemos acceder a los temas principales y leer o escribir, dependiendo de nuestro estado en el momento de acceder.
+
+Como siempre, por siempre, que la creatividad se adueñe; que la creatividad sea dueña de lo que por aquí se muestre.</div>
+				</li>
+				
+			</ul>
+			<p class="pagination"><a href='./#pagination_articles_recents' class='lien_pagination' rel='nofollow'>0</a>
+<span class='separateur'>|</span>
+
+
+<strong class='on'>5</strong>
+<span class='separateur'>|</span>
+
+
+<a href='./?debut_articles_recents=10#pagination_articles_recents' class='lien_pagination' rel='nofollow'>10</a></p>
+		</div>
+		
+		
+		
+		
+		<div class="menu">
+			<h2>&Uacute;ltimos breves</h2>
+			<ul>
+				
+				<li>14 de mayo de 2009 &ndash; <a href="spip.php?breve1">Nueva breve</a></li>
+				
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div class="menu">
+			<h2>&Uacute;ltimos comentarios</h2>
+			<ul>
+				
+				<li>13 de diciembre de 2009 &ndash; <a href="spip.php?breve1#forum3" title="Nueva breve">No entiendo qué quiere decir esto.</a></li>
+				
+				<li>10 de diciembre de 2009 &ndash; <a href="spip.php?article16#forum2" title="Velocidad máxima">¿Seguro que no creamos nosotros el universo tangible y sus leyes? Tengo&nbsp;(...)</a></li>
+				
+				<li>25 de mayo de 2009 &ndash; <a href="spip.php?article17#forum1" title="Muchos Planos y Una Realidad">Me ha parecido muy bien</a></li>
+				
+			</ul>
+		</div>
+		
+		
+		
+		
+	
+	</div><!--#contenu-->
+	</div><!--#conteneur-->
+	
+	
+	<div id="navigation">
+		
+		
+		<?php
+	$contexte_inclus = array('fond' => 'inc-rubriques',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 92);
+if ($lang_select) lang_select();
+?>
+
+    </div><!--#navigation-->
+	
+	
+	<div id="extra">
+		
+		
+		<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_INSCRIPTION', '1comite', '', ''),1, 100);
+if ($lang_select) lang_select();
+?>
+		
+	</div><!--#extra-->
+	
+	
+	<?php
+	$contexte_inclus = array('fond' => 'inc-pied',
+	'skel' => 'squelettes-dist/sommaire.html',
+	'lang' => 'es');
+	include _DIR_RESTREINT . "public.php";
+?>
+	
+</div><!--#page-->
+</body>
+</html>";s:9:"squelette";s:37:"html_36e14230dc082b098a9b88402f149ec9";s:6:"source";s:29:"squelettes-dist/sommaire.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"7/%2Fspip%2F-5--a39fbadc46bcd00fdd5";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";s:4:"3600";}s:5:"duree";i:3600;s:8:"contexte";a:5:{s:22:"debut_articles_recents";s:1:"5";s:4:"date";s:19:"2010-09-08 18:31:02";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2010-09-08 18:31:02";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}

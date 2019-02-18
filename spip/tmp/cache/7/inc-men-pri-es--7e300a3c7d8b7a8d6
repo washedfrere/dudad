@@ -1,0 +1,35 @@
+a:9:{s:5:"texte";s:1125:"	<div class="menu" id="menu-principal">
+		<ul>
+			<li id="menu-principal-accueil"><a href="http://www.torredekapter.es/spip" title="Portada del sitio : Escribas TorredeKápter" accesskey="0">Portada del sitio</a></li>
+
+			
+			
+
+			<li id="menu-principal-contact"><a href="spip.php?auteur1" title="Contacto"  accesskey="7">Contacto</a></li>
+			
+						
+
+			<li id="menu-principal-plan"><a href="http://www.torredekapter.es/spip/spip.php?page=plan" title="Mapa del sitio" accesskey="3">Mapa del sitio</a></li>
+
+			
+
+			<li id="menu-principal-resume"><a href="http://www.torredekapter.es/spip/spip.php?page=resume" title="En resumen" accesskey="5">En resumen</a></li>
+			
+	
+			<li id="menu-principal-recherche">
+			<div class="menu" id="menu-recherche">
+				<h3 class="structure">Buscar</h3>
+					<ul>
+						<li>
+					<?php 
+$lang_select = lang_select("es");
+include_once(_DIR_RACINE . "ecrire/balise/formulaire_.php");
+inclure_balise_dynamique(balise_FORMULAIRE__dyn('FORMULAIRE_RECHERCHE', '', ''),1, 0);
+if ($lang_select) lang_select();
+?>			
+						</li>			
+					</ul>
+			</div><!-- menu-recherche -->
+			</li>
+		</ul>
+	</div>";s:9:"squelette";s:37:"html_8d806dd5df60190558baf3feb8ecc4cf";s:6:"source";s:49:"plugins/auto/ahuntsic/inc/inc-menu-principal.html";s:11:"process_ins";s:3:"php";s:11:"invalideurs";a:1:{s:5:"cache";s:35:"7/inc-men-pri-es--7e300a3c7d8b7a8d6";}s:7:"entetes";a:1:{s:12:"X-Spip-Cache";i:86400;}s:5:"duree";i:0;s:8:"contexte";a:5:{s:4:"lang";s:2:"es";s:4:"date";s:19:"2009-05-14 21:24:15";s:12:"date_default";b:1;s:10:"date_redac";s:19:"2009-05-14 21:24:15";s:18:"date_redac_default";b:1;}s:2:"gz";b:0;}
